@@ -1,0 +1,942 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		D4031E97425D8295BF9D115C /* Pods_ANT_iOS.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C3D2928A46DF521094C213F0 /* Pods_ANT_iOS.framework */; };
+		F34ADDB91EE68B5400328C8E /* AdvertScrollView.m in Sources */ = {isa = PBXBuildFile; fileRef = F34ADDB81EE68B5400328C8E /* AdvertScrollView.m */; };
+		F34C93541EE692F300091195 /* BaseConst.swift in Sources */ = {isa = PBXBuildFile; fileRef = F34C93531EE692F300091195 /* BaseConst.swift */; };
+		F35BB7611EE14CEF0032EC02 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F35BB7601EE14CEF0032EC02 /* ViewController.swift */; };
+		F35BB7661EE14CEF0032EC02 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F35BB7651EE14CEF0032EC02 /* Assets.xcassets */; };
+		F35BB7691EE14CEF0032EC02 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F35BB7671EE14CEF0032EC02 /* LaunchScreen.storyboard */; };
+		F35BB7721EE14DC80032EC02 /* AppTabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F35BB7711EE14DC80032EC02 /* AppTabBarController.swift */; };
+		F35BB77D1EE1503B0032EC02 /* AppNavigationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F35BB77C1EE1503B0032EC02 /* AppNavigationController.swift */; };
+		F35BB7801EE163DD0032EC02 /* BaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F35BB77F1EE163DD0032EC02 /* BaseViewController.swift */; };
+		F365D6781EE63C8900500391 /* FarmRecordCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = F365D6771EE63C8900500391 /* FarmRecordCell.swift */; };
+		F365D67A1EE6415B00500391 /* FarmActivityModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F365D6791EE6415B00500391 /* FarmActivityModel.swift */; };
+		F365D67D1EE6791700500391 /* CetuTypeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F365D67C1EE6791700500391 /* CetuTypeViewController.swift */; };
+		F365D6891EE67A4100500391 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F365D6881EE67A4100500391 /* AppDelegate.swift */; };
+		F365D6E41EE67AAE00500391 /* TAAbstractDotView.m in Sources */ = {isa = PBXBuildFile; fileRef = F365D68F1EE67AAE00500391 /* TAAbstractDotView.m */; };
+		F365D6E51EE67AAE00500391 /* TAAnimatedDotView.m in Sources */ = {isa = PBXBuildFile; fileRef = F365D6911EE67AAE00500391 /* TAAnimatedDotView.m */; };
+		F365D6E61EE67AAE00500391 /* TADotView.m in Sources */ = {isa = PBXBuildFile; fileRef = F365D6931EE67AAE00500391 /* TADotView.m */; };
+		F365D6E71EE67AAE00500391 /* TAPageControl.m in Sources */ = {isa = PBXBuildFile; fileRef = F365D6951EE67AAE00500391 /* TAPageControl.m */; };
+		F365D6E81EE67AAE00500391 /* SDCollectionViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = F365D6971EE67AAE00500391 /* SDCollectionViewCell.m */; };
+		F365D6E91EE67AAE00500391 /* SDCycleScrollView.m in Sources */ = {isa = PBXBuildFile; fileRef = F365D6991EE67AAE00500391 /* SDCycleScrollView.m */; };
+		F365D6EA1EE67AAE00500391 /* UIView+SDExtension.m in Sources */ = {isa = PBXBuildFile; fileRef = F365D69B1EE67AAE00500391 /* UIView+SDExtension.m */; };
+		F365D6EB1EE67AAE00500391 /* NSData+ImageContentType.m in Sources */ = {isa = PBXBuildFile; fileRef = F365D69E1EE67AAE00500391 /* NSData+ImageContentType.m */; };
+		F365D6EC1EE67AAE00500391 /* SDImageCache.m in Sources */ = {isa = PBXBuildFile; fileRef = F365D6A01EE67AAE00500391 /* SDImageCache.m */; };
+		F365D6ED1EE67AAE00500391 /* SDWebImageCompat.m in Sources */ = {isa = PBXBuildFile; fileRef = F365D6A21EE67AAE00500391 /* SDWebImageCompat.m */; };
+		F365D6EE1EE67AAE00500391 /* SDWebImageDecoder.m in Sources */ = {isa = PBXBuildFile; fileRef = F365D6A41EE67AAE00500391 /* SDWebImageDecoder.m */; };
+		F365D6EF1EE67AAE00500391 /* SDWebImageDownloader.m in Sources */ = {isa = PBXBuildFile; fileRef = F365D6A61EE67AAE00500391 /* SDWebImageDownloader.m */; };
+		F365D6F01EE67AAE00500391 /* SDWebImageDownloaderOperation.m in Sources */ = {isa = PBXBuildFile; fileRef = F365D6A81EE67AAE00500391 /* SDWebImageDownloaderOperation.m */; };
+		F365D6F11EE67AAE00500391 /* SDWebImageManager.m in Sources */ = {isa = PBXBuildFile; fileRef = F365D6AA1EE67AAE00500391 /* SDWebImageManager.m */; };
+		F365D6F21EE67AAE00500391 /* SDWebImagePrefetcher.m in Sources */ = {isa = PBXBuildFile; fileRef = F365D6AD1EE67AAE00500391 /* SDWebImagePrefetcher.m */; };
+		F365D6F31EE67AAE00500391 /* UIButton+WebCache.m in Sources */ = {isa = PBXBuildFile; fileRef = F365D6AF1EE67AAE00500391 /* UIButton+WebCache.m */; };
+		F365D6F41EE67AAE00500391 /* UIImage+GIF.m in Sources */ = {isa = PBXBuildFile; fileRef = F365D6B11EE67AAE00500391 /* UIImage+GIF.m */; };
+		F365D6F51EE67AAE00500391 /* UIImage+MultiFormat.m in Sources */ = {isa = PBXBuildFile; fileRef = F365D6B31EE67AAE00500391 /* UIImage+MultiFormat.m */; };
+		F365D6F61EE67AAE00500391 /* UIImageView+HighlightedWebCache.m in Sources */ = {isa = PBXBuildFile; fileRef = F365D6B51EE67AAE00500391 /* UIImageView+HighlightedWebCache.m */; };
+		F365D6F71EE67AAE00500391 /* UIImageView+WebCache.m in Sources */ = {isa = PBXBuildFile; fileRef = F365D6B71EE67AAE00500391 /* UIImageView+WebCache.m */; };
+		F365D6F81EE67AAE00500391 /* UIView+WebCacheOperation.m in Sources */ = {isa = PBXBuildFile; fileRef = F365D6B91EE67AAE00500391 /* UIView+WebCacheOperation.m */; };
+		F365D6F91EE67AAE00500391 /* Constraint.swift in Sources */ = {isa = PBXBuildFile; fileRef = F365D6BB1EE67AAE00500391 /* Constraint.swift */; };
+		F365D6FA1EE67AAE00500391 /* ConstraintAttributes.swift in Sources */ = {isa = PBXBuildFile; fileRef = F365D6BC1EE67AAE00500391 /* ConstraintAttributes.swift */; };
+		F365D6FB1EE67AAE00500391 /* ConstraintConfig.swift in Sources */ = {isa = PBXBuildFile; fileRef = F365D6BD1EE67AAE00500391 /* ConstraintConfig.swift */; };
+		F365D6FC1EE67AAE00500391 /* ConstraintConstantTarget.swift in Sources */ = {isa = PBXBuildFile; fileRef = F365D6BE1EE67AAE00500391 /* ConstraintConstantTarget.swift */; };
+		F365D6FD1EE67AAE00500391 /* ConstraintDescription.swift in Sources */ = {isa = PBXBuildFile; fileRef = F365D6BF1EE67AAE00500391 /* ConstraintDescription.swift */; };
+		F365D6FE1EE67AAE00500391 /* ConstraintDSL.swift in Sources */ = {isa = PBXBuildFile; fileRef = F365D6C01EE67AAE00500391 /* ConstraintDSL.swift */; };
+		F365D6FF1EE67AAE00500391 /* ConstraintInsets.swift in Sources */ = {isa = PBXBuildFile; fileRef = F365D6C11EE67AAE00500391 /* ConstraintInsets.swift */; };
+		F365D7001EE67AAE00500391 /* ConstraintInsetTarget.swift in Sources */ = {isa = PBXBuildFile; fileRef = F365D6C21EE67AAE00500391 /* ConstraintInsetTarget.swift */; };
+		F365D7011EE67AAE00500391 /* ConstraintItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = F365D6C31EE67AAE00500391 /* ConstraintItem.swift */; };
+		F365D7021EE67AAE00500391 /* ConstraintLayoutGuide+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = F365D6C41EE67AAE00500391 /* ConstraintLayoutGuide+Extensions.swift */; };
+		F365D7031EE67AAE00500391 /* ConstraintLayoutGuide.swift in Sources */ = {isa = PBXBuildFile; fileRef = F365D6C51EE67AAE00500391 /* ConstraintLayoutGuide.swift */; };
+		F365D7041EE67AAE00500391 /* ConstraintLayoutGuideDSL.swift in Sources */ = {isa = PBXBuildFile; fileRef = F365D6C61EE67AAE00500391 /* ConstraintLayoutGuideDSL.swift */; };
+		F365D7051EE67AAE00500391 /* ConstraintLayoutSupport.swift in Sources */ = {isa = PBXBuildFile; fileRef = F365D6C71EE67AAE00500391 /* ConstraintLayoutSupport.swift */; };
+		F365D7061EE67AAE00500391 /* ConstraintLayoutSupportDSL.swift in Sources */ = {isa = PBXBuildFile; fileRef = F365D6C81EE67AAE00500391 /* ConstraintLayoutSupportDSL.swift */; };
+		F365D7071EE67AAE00500391 /* ConstraintMaker.swift in Sources */ = {isa = PBXBuildFile; fileRef = F365D6C91EE67AAE00500391 /* ConstraintMaker.swift */; };
+		F365D7081EE67AAE00500391 /* ConstraintMakerEditable.swift in Sources */ = {isa = PBXBuildFile; fileRef = F365D6CA1EE67AAE00500391 /* ConstraintMakerEditable.swift */; };
+		F365D7091EE67AAE00500391 /* ConstraintMakerExtendable.swift in Sources */ = {isa = PBXBuildFile; fileRef = F365D6CB1EE67AAE00500391 /* ConstraintMakerExtendable.swift */; };
+		F365D70A1EE67AAE00500391 /* ConstraintMakerFinalizable.swift in Sources */ = {isa = PBXBuildFile; fileRef = F365D6CC1EE67AAE00500391 /* ConstraintMakerFinalizable.swift */; };
+		F365D70B1EE67AAE00500391 /* ConstraintMakerPriortizable.swift in Sources */ = {isa = PBXBuildFile; fileRef = F365D6CD1EE67AAE00500391 /* ConstraintMakerPriortizable.swift */; };
+		F365D70C1EE67AAE00500391 /* ConstraintMakerRelatable.swift in Sources */ = {isa = PBXBuildFile; fileRef = F365D6CE1EE67AAE00500391 /* ConstraintMakerRelatable.swift */; };
+		F365D70D1EE67AAE00500391 /* ConstraintMultiplierTarget.swift in Sources */ = {isa = PBXBuildFile; fileRef = F365D6CF1EE67AAE00500391 /* ConstraintMultiplierTarget.swift */; };
+		F365D70E1EE67AAE00500391 /* ConstraintOffsetTarget.swift in Sources */ = {isa = PBXBuildFile; fileRef = F365D6D01EE67AAE00500391 /* ConstraintOffsetTarget.swift */; };
+		F365D70F1EE67AAE00500391 /* ConstraintPriority.swift in Sources */ = {isa = PBXBuildFile; fileRef = F365D6D11EE67AAE00500391 /* ConstraintPriority.swift */; };
+		F365D7101EE67AAE00500391 /* ConstraintPriorityTarget.swift in Sources */ = {isa = PBXBuildFile; fileRef = F365D6D21EE67AAE00500391 /* ConstraintPriorityTarget.swift */; };
+		F365D7111EE67AAE00500391 /* ConstraintRelatableTarget.swift in Sources */ = {isa = PBXBuildFile; fileRef = F365D6D31EE67AAE00500391 /* ConstraintRelatableTarget.swift */; };
+		F365D7121EE67AAE00500391 /* ConstraintRelation.swift in Sources */ = {isa = PBXBuildFile; fileRef = F365D6D41EE67AAE00500391 /* ConstraintRelation.swift */; };
+		F365D7131EE67AAE00500391 /* ConstraintView+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = F365D6D51EE67AAE00500391 /* ConstraintView+Extensions.swift */; };
+		F365D7141EE67AAE00500391 /* ConstraintView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F365D6D61EE67AAE00500391 /* ConstraintView.swift */; };
+		F365D7151EE67AAE00500391 /* ConstraintViewDSL.swift in Sources */ = {isa = PBXBuildFile; fileRef = F365D6D71EE67AAE00500391 /* ConstraintViewDSL.swift */; };
+		F365D7161EE67AAE00500391 /* Debugging.swift in Sources */ = {isa = PBXBuildFile; fileRef = F365D6D81EE67AAE00500391 /* Debugging.swift */; };
+		F365D7171EE67AAE00500391 /* Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = F365D6D91EE67AAE00500391 /* Info.plist */; };
+		F365D7181EE67AAE00500391 /* LayoutConstraint.swift in Sources */ = {isa = PBXBuildFile; fileRef = F365D6DA1EE67AAE00500391 /* LayoutConstraint.swift */; };
+		F365D7191EE67AAE00500391 /* LayoutConstraintItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = F365D6DB1EE67AAE00500391 /* LayoutConstraintItem.swift */; };
+		F365D71A1EE67AAE00500391 /* UILayoutSupport+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = F365D6DD1EE67AAE00500391 /* UILayoutSupport+Extensions.swift */; };
+		F365D71B1EE67AAE00500391 /* NSObject+YYModel.m in Sources */ = {isa = PBXBuildFile; fileRef = F365D6E01EE67AAE00500391 /* NSObject+YYModel.m */; };
+		F365D71C1EE67AAE00500391 /* YYClassInfo.m in Sources */ = {isa = PBXBuildFile; fileRef = F365D6E21EE67AAE00500391 /* YYClassInfo.m */; };
+		F365D7201EE67B1700500391 /* AppCommon.m in Sources */ = {isa = PBXBuildFile; fileRef = F365D71F1EE67B1700500391 /* AppCommon.m */; };
+		F3D677381EE55EBB00BEB029 /* CropsCollectionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3D677371EE55EBB00BEB029 /* CropsCollectionView.swift */; };
+		F3D6773B1EE5625500BEB029 /* PlantModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3D6773A1EE5625500BEB029 /* PlantModel.swift */; };
+		F3F586841EE407FD0018412D /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3F586831EE407FD0018412D /* HomeViewController.swift */; };
+		F3F5870C1EE4375D0018412D /* HomeModuleCollectionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3F5870B1EE4375D0018412D /* HomeModuleCollectionView.swift */; };
+		F3F5870F1EE439EB0018412D /* NotificationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3F5870E1EE439EB0018412D /* NotificationViewController.swift */; };
+		F3F587131EE43BC40018412D /* UIColor+Addtions.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3F587121EE43BC40018412D /* UIColor+Addtions.swift */; };
+		F3F5871A1EE43CAD0018412D /* CircleViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3F587151EE43CAD0018412D /* CircleViewController.swift */; };
+		F3F5871B1EE43CAD0018412D /* FarmViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3F587171EE43CAD0018412D /* FarmViewController.swift */; };
+		F3F5871C1EE43CAD0018412D /* MineViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3F587191EE43CAD0018412D /* MineViewController.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		022A2B72FB17BBCF3E6BD8BC /* Pods-ANT_iOS.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ANT_iOS.release.xcconfig"; path = "Pods/Target Support Files/Pods-ANT_iOS/Pods-ANT_iOS.release.xcconfig"; sourceTree = "<group>"; };
+		71E885BB0AA338D183331694 /* Pods-ANT_iOS.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ANT_iOS.debug.xcconfig"; path = "Pods/Target Support Files/Pods-ANT_iOS/Pods-ANT_iOS.debug.xcconfig"; sourceTree = "<group>"; };
+		C3D2928A46DF521094C213F0 /* Pods_ANT_iOS.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ANT_iOS.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		F34ADDB71EE68B5400328C8E /* AdvertScrollView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AdvertScrollView.h; sourceTree = "<group>"; };
+		F34ADDB81EE68B5400328C8E /* AdvertScrollView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AdvertScrollView.m; sourceTree = "<group>"; };
+		F34C93531EE692F300091195 /* BaseConst.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BaseConst.swift; sourceTree = "<group>"; };
+		F35BB75B1EE14CEF0032EC02 /* ANT_iOS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ANT_iOS.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		F35BB7601EE14CEF0032EC02 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		F35BB7651EE14CEF0032EC02 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		F35BB7681EE14CEF0032EC02 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		F35BB76A1EE14CEF0032EC02 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F35BB7711EE14DC80032EC02 /* AppTabBarController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppTabBarController.swift; sourceTree = "<group>"; };
+		F35BB77C1EE1503B0032EC02 /* AppNavigationController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppNavigationController.swift; sourceTree = "<group>"; };
+		F35BB77F1EE163DD0032EC02 /* BaseViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BaseViewController.swift; sourceTree = "<group>"; };
+		F35BB7861EE16DCC0032EC02 /* Bridging-Header.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "Bridging-Header.h"; sourceTree = "<group>"; };
+		F365D6771EE63C8900500391 /* FarmRecordCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FarmRecordCell.swift; sourceTree = "<group>"; };
+		F365D6791EE6415B00500391 /* FarmActivityModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FarmActivityModel.swift; sourceTree = "<group>"; };
+		F365D67C1EE6791700500391 /* CetuTypeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CetuTypeViewController.swift; sourceTree = "<group>"; };
+		F365D6881EE67A4100500391 /* AppDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		F365D68E1EE67AAE00500391 /* TAAbstractDotView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TAAbstractDotView.h; sourceTree = "<group>"; };
+		F365D68F1EE67AAE00500391 /* TAAbstractDotView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TAAbstractDotView.m; sourceTree = "<group>"; };
+		F365D6901EE67AAE00500391 /* TAAnimatedDotView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TAAnimatedDotView.h; sourceTree = "<group>"; };
+		F365D6911EE67AAE00500391 /* TAAnimatedDotView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TAAnimatedDotView.m; sourceTree = "<group>"; };
+		F365D6921EE67AAE00500391 /* TADotView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TADotView.h; sourceTree = "<group>"; };
+		F365D6931EE67AAE00500391 /* TADotView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TADotView.m; sourceTree = "<group>"; };
+		F365D6941EE67AAE00500391 /* TAPageControl.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TAPageControl.h; sourceTree = "<group>"; };
+		F365D6951EE67AAE00500391 /* TAPageControl.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TAPageControl.m; sourceTree = "<group>"; };
+		F365D6961EE67AAE00500391 /* SDCollectionViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SDCollectionViewCell.h; sourceTree = "<group>"; };
+		F365D6971EE67AAE00500391 /* SDCollectionViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SDCollectionViewCell.m; sourceTree = "<group>"; };
+		F365D6981EE67AAE00500391 /* SDCycleScrollView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SDCycleScrollView.h; sourceTree = "<group>"; };
+		F365D6991EE67AAE00500391 /* SDCycleScrollView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SDCycleScrollView.m; sourceTree = "<group>"; };
+		F365D69A1EE67AAE00500391 /* UIView+SDExtension.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+SDExtension.h"; sourceTree = "<group>"; };
+		F365D69B1EE67AAE00500391 /* UIView+SDExtension.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+SDExtension.m"; sourceTree = "<group>"; };
+		F365D69D1EE67AAE00500391 /* NSData+ImageContentType.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSData+ImageContentType.h"; sourceTree = "<group>"; };
+		F365D69E1EE67AAE00500391 /* NSData+ImageContentType.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSData+ImageContentType.m"; sourceTree = "<group>"; };
+		F365D69F1EE67AAE00500391 /* SDImageCache.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SDImageCache.h; sourceTree = "<group>"; };
+		F365D6A01EE67AAE00500391 /* SDImageCache.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SDImageCache.m; sourceTree = "<group>"; };
+		F365D6A11EE67AAE00500391 /* SDWebImageCompat.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SDWebImageCompat.h; sourceTree = "<group>"; };
+		F365D6A21EE67AAE00500391 /* SDWebImageCompat.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SDWebImageCompat.m; sourceTree = "<group>"; };
+		F365D6A31EE67AAE00500391 /* SDWebImageDecoder.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SDWebImageDecoder.h; sourceTree = "<group>"; };
+		F365D6A41EE67AAE00500391 /* SDWebImageDecoder.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SDWebImageDecoder.m; sourceTree = "<group>"; };
+		F365D6A51EE67AAE00500391 /* SDWebImageDownloader.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SDWebImageDownloader.h; sourceTree = "<group>"; };
+		F365D6A61EE67AAE00500391 /* SDWebImageDownloader.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SDWebImageDownloader.m; sourceTree = "<group>"; };
+		F365D6A71EE67AAE00500391 /* SDWebImageDownloaderOperation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SDWebImageDownloaderOperation.h; sourceTree = "<group>"; };
+		F365D6A81EE67AAE00500391 /* SDWebImageDownloaderOperation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SDWebImageDownloaderOperation.m; sourceTree = "<group>"; };
+		F365D6A91EE67AAE00500391 /* SDWebImageManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SDWebImageManager.h; sourceTree = "<group>"; };
+		F365D6AA1EE67AAE00500391 /* SDWebImageManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SDWebImageManager.m; sourceTree = "<group>"; };
+		F365D6AB1EE67AAE00500391 /* SDWebImageOperation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SDWebImageOperation.h; sourceTree = "<group>"; };
+		F365D6AC1EE67AAE00500391 /* SDWebImagePrefetcher.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SDWebImagePrefetcher.h; sourceTree = "<group>"; };
+		F365D6AD1EE67AAE00500391 /* SDWebImagePrefetcher.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SDWebImagePrefetcher.m; sourceTree = "<group>"; };
+		F365D6AE1EE67AAE00500391 /* UIButton+WebCache.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIButton+WebCache.h"; sourceTree = "<group>"; };
+		F365D6AF1EE67AAE00500391 /* UIButton+WebCache.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIButton+WebCache.m"; sourceTree = "<group>"; };
+		F365D6B01EE67AAE00500391 /* UIImage+GIF.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImage+GIF.h"; sourceTree = "<group>"; };
+		F365D6B11EE67AAE00500391 /* UIImage+GIF.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImage+GIF.m"; sourceTree = "<group>"; };
+		F365D6B21EE67AAE00500391 /* UIImage+MultiFormat.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImage+MultiFormat.h"; sourceTree = "<group>"; };
+		F365D6B31EE67AAE00500391 /* UIImage+MultiFormat.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImage+MultiFormat.m"; sourceTree = "<group>"; };
+		F365D6B41EE67AAE00500391 /* UIImageView+HighlightedWebCache.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImageView+HighlightedWebCache.h"; sourceTree = "<group>"; };
+		F365D6B51EE67AAE00500391 /* UIImageView+HighlightedWebCache.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImageView+HighlightedWebCache.m"; sourceTree = "<group>"; };
+		F365D6B61EE67AAE00500391 /* UIImageView+WebCache.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImageView+WebCache.h"; sourceTree = "<group>"; };
+		F365D6B71EE67AAE00500391 /* UIImageView+WebCache.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImageView+WebCache.m"; sourceTree = "<group>"; };
+		F365D6B81EE67AAE00500391 /* UIView+WebCacheOperation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+WebCacheOperation.h"; sourceTree = "<group>"; };
+		F365D6B91EE67AAE00500391 /* UIView+WebCacheOperation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+WebCacheOperation.m"; sourceTree = "<group>"; };
+		F365D6BB1EE67AAE00500391 /* Constraint.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Constraint.swift; sourceTree = "<group>"; };
+		F365D6BC1EE67AAE00500391 /* ConstraintAttributes.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ConstraintAttributes.swift; sourceTree = "<group>"; };
+		F365D6BD1EE67AAE00500391 /* ConstraintConfig.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ConstraintConfig.swift; sourceTree = "<group>"; };
+		F365D6BE1EE67AAE00500391 /* ConstraintConstantTarget.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ConstraintConstantTarget.swift; sourceTree = "<group>"; };
+		F365D6BF1EE67AAE00500391 /* ConstraintDescription.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ConstraintDescription.swift; sourceTree = "<group>"; };
+		F365D6C01EE67AAE00500391 /* ConstraintDSL.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ConstraintDSL.swift; sourceTree = "<group>"; };
+		F365D6C11EE67AAE00500391 /* ConstraintInsets.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ConstraintInsets.swift; sourceTree = "<group>"; };
+		F365D6C21EE67AAE00500391 /* ConstraintInsetTarget.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ConstraintInsetTarget.swift; sourceTree = "<group>"; };
+		F365D6C31EE67AAE00500391 /* ConstraintItem.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ConstraintItem.swift; sourceTree = "<group>"; };
+		F365D6C41EE67AAE00500391 /* ConstraintLayoutGuide+Extensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "ConstraintLayoutGuide+Extensions.swift"; sourceTree = "<group>"; };
+		F365D6C51EE67AAE00500391 /* ConstraintLayoutGuide.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ConstraintLayoutGuide.swift; sourceTree = "<group>"; };
+		F365D6C61EE67AAE00500391 /* ConstraintLayoutGuideDSL.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ConstraintLayoutGuideDSL.swift; sourceTree = "<group>"; };
+		F365D6C71EE67AAE00500391 /* ConstraintLayoutSupport.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ConstraintLayoutSupport.swift; sourceTree = "<group>"; };
+		F365D6C81EE67AAE00500391 /* ConstraintLayoutSupportDSL.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ConstraintLayoutSupportDSL.swift; sourceTree = "<group>"; };
+		F365D6C91EE67AAE00500391 /* ConstraintMaker.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ConstraintMaker.swift; sourceTree = "<group>"; };
+		F365D6CA1EE67AAE00500391 /* ConstraintMakerEditable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ConstraintMakerEditable.swift; sourceTree = "<group>"; };
+		F365D6CB1EE67AAE00500391 /* ConstraintMakerExtendable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ConstraintMakerExtendable.swift; sourceTree = "<group>"; };
+		F365D6CC1EE67AAE00500391 /* ConstraintMakerFinalizable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ConstraintMakerFinalizable.swift; sourceTree = "<group>"; };
+		F365D6CD1EE67AAE00500391 /* ConstraintMakerPriortizable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ConstraintMakerPriortizable.swift; sourceTree = "<group>"; };
+		F365D6CE1EE67AAE00500391 /* ConstraintMakerRelatable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ConstraintMakerRelatable.swift; sourceTree = "<group>"; };
+		F365D6CF1EE67AAE00500391 /* ConstraintMultiplierTarget.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ConstraintMultiplierTarget.swift; sourceTree = "<group>"; };
+		F365D6D01EE67AAE00500391 /* ConstraintOffsetTarget.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ConstraintOffsetTarget.swift; sourceTree = "<group>"; };
+		F365D6D11EE67AAE00500391 /* ConstraintPriority.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ConstraintPriority.swift; sourceTree = "<group>"; };
+		F365D6D21EE67AAE00500391 /* ConstraintPriorityTarget.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ConstraintPriorityTarget.swift; sourceTree = "<group>"; };
+		F365D6D31EE67AAE00500391 /* ConstraintRelatableTarget.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ConstraintRelatableTarget.swift; sourceTree = "<group>"; };
+		F365D6D41EE67AAE00500391 /* ConstraintRelation.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ConstraintRelation.swift; sourceTree = "<group>"; };
+		F365D6D51EE67AAE00500391 /* ConstraintView+Extensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "ConstraintView+Extensions.swift"; sourceTree = "<group>"; };
+		F365D6D61EE67AAE00500391 /* ConstraintView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ConstraintView.swift; sourceTree = "<group>"; };
+		F365D6D71EE67AAE00500391 /* ConstraintViewDSL.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ConstraintViewDSL.swift; sourceTree = "<group>"; };
+		F365D6D81EE67AAE00500391 /* Debugging.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Debugging.swift; sourceTree = "<group>"; };
+		F365D6D91EE67AAE00500391 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F365D6DA1EE67AAE00500391 /* LayoutConstraint.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LayoutConstraint.swift; sourceTree = "<group>"; };
+		F365D6DB1EE67AAE00500391 /* LayoutConstraintItem.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LayoutConstraintItem.swift; sourceTree = "<group>"; };
+		F365D6DC1EE67AAE00500391 /* SnapKit.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SnapKit.h; sourceTree = "<group>"; };
+		F365D6DD1EE67AAE00500391 /* UILayoutSupport+Extensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UILayoutSupport+Extensions.swift"; sourceTree = "<group>"; };
+		F365D6DF1EE67AAE00500391 /* NSObject+YYModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSObject+YYModel.h"; sourceTree = "<group>"; };
+		F365D6E01EE67AAE00500391 /* NSObject+YYModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSObject+YYModel.m"; sourceTree = "<group>"; };
+		F365D6E11EE67AAE00500391 /* YYClassInfo.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YYClassInfo.h; sourceTree = "<group>"; };
+		F365D6E21EE67AAE00500391 /* YYClassInfo.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YYClassInfo.m; sourceTree = "<group>"; };
+		F365D6E31EE67AAE00500391 /* YYModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YYModel.h; sourceTree = "<group>"; };
+		F365D71E1EE67B1700500391 /* AppCommon.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AppCommon.h; sourceTree = "<group>"; };
+		F365D71F1EE67B1700500391 /* AppCommon.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AppCommon.m; sourceTree = "<group>"; };
+		F3D677371EE55EBB00BEB029 /* CropsCollectionView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CropsCollectionView.swift; sourceTree = "<group>"; };
+		F3D6773A1EE5625500BEB029 /* PlantModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PlantModel.swift; sourceTree = "<group>"; };
+		F3F586831EE407FD0018412D /* HomeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
+		F3F5870B1EE4375D0018412D /* HomeModuleCollectionView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomeModuleCollectionView.swift; sourceTree = "<group>"; };
+		F3F5870E1EE439EB0018412D /* NotificationViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NotificationViewController.swift; sourceTree = "<group>"; };
+		F3F587121EE43BC40018412D /* UIColor+Addtions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIColor+Addtions.swift"; sourceTree = "<group>"; };
+		F3F587151EE43CAD0018412D /* CircleViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CircleViewController.swift; sourceTree = "<group>"; };
+		F3F587171EE43CAD0018412D /* FarmViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FarmViewController.swift; sourceTree = "<group>"; };
+		F3F587191EE43CAD0018412D /* MineViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MineViewController.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		F35BB7581EE14CEF0032EC02 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D4031E97425D8295BF9D115C /* Pods_ANT_iOS.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		B807C1F0A7796CE2E520B8F4 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				C3D2928A46DF521094C213F0 /* Pods_ANT_iOS.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		F34ADDB61EE68B5400328C8E /* AdvertScrollView */ = {
+			isa = PBXGroup;
+			children = (
+				F34ADDB71EE68B5400328C8E /* AdvertScrollView.h */,
+				F34ADDB81EE68B5400328C8E /* AdvertScrollView.m */,
+			);
+			path = AdvertScrollView;
+			sourceTree = "<group>";
+		};
+		F35BB7521EE14CEF0032EC02 = {
+			isa = PBXGroup;
+			children = (
+				F35BB75D1EE14CEF0032EC02 /* ANT_iOS */,
+				F35BB75C1EE14CEF0032EC02 /* Products */,
+				FC01FD51F34BE930C40425C2 /* Pods */,
+				B807C1F0A7796CE2E520B8F4 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		F35BB75C1EE14CEF0032EC02 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				F35BB75B1EE14CEF0032EC02 /* ANT_iOS.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		F35BB75D1EE14CEF0032EC02 /* ANT_iOS */ = {
+			isa = PBXGroup;
+			children = (
+				F35BB7651EE14CEF0032EC02 /* Assets.xcassets */,
+				F365D6871EE67A4100500391 /* AppDelegate */,
+				F35BB7701EE14DA50032EC02 /* Base */,
+				F35BB7731EE14DEF0032EC02 /* Modules */,
+				F3D677391EE5624800BEB029 /* Models */,
+				F365D71D1EE67ADC00500391 /* Manager */,
+				F3F587101EE43B3E0018412D /* Component */,
+				F365D68A1EE67A8600500391 /* Utils */,
+				F365D68B1EE67AAE00500391 /* Resources */,
+				F365D6861EE67A1B00500391 /* Others */,
+				F35BB7861EE16DCC0032EC02 /* Bridging-Header.h */,
+			);
+			path = ANT_iOS;
+			sourceTree = "<group>";
+		};
+		F35BB7701EE14DA50032EC02 /* Base */ = {
+			isa = PBXGroup;
+			children = (
+				F35BB77F1EE163DD0032EC02 /* BaseViewController.swift */,
+				F35BB7711EE14DC80032EC02 /* AppTabBarController.swift */,
+				F35BB77C1EE1503B0032EC02 /* AppNavigationController.swift */,
+				F34C93531EE692F300091195 /* BaseConst.swift */,
+			);
+			path = Base;
+			sourceTree = "<group>";
+		};
+		F35BB7731EE14DEF0032EC02 /* Modules */ = {
+			isa = PBXGroup;
+			children = (
+				F3F586821EE407FD0018412D /* Home */,
+				F3F587161EE43CAD0018412D /* Farm */,
+				F3F587141EE43CAD0018412D /* Circle */,
+				F3F587181EE43CAD0018412D /* Mine */,
+			);
+			path = Modules;
+			sourceTree = "<group>";
+		};
+		F365D66F1EE63B1C00500391 /* FarmActivity */ = {
+			isa = PBXGroup;
+			children = (
+				F365D6771EE63C8900500391 /* FarmRecordCell.swift */,
+			);
+			path = FarmActivity;
+			sourceTree = "<group>";
+		};
+		F365D67B1EE6602D00500391 /* CeTu */ = {
+			isa = PBXGroup;
+			children = (
+				F365D67C1EE6791700500391 /* CetuTypeViewController.swift */,
+			);
+			path = CeTu;
+			sourceTree = "<group>";
+		};
+		F365D6861EE67A1B00500391 /* Others */ = {
+			isa = PBXGroup;
+			children = (
+				F35BB7601EE14CEF0032EC02 /* ViewController.swift */,
+				F35BB7671EE14CEF0032EC02 /* LaunchScreen.storyboard */,
+				F35BB76A1EE14CEF0032EC02 /* Info.plist */,
+			);
+			name = Others;
+			sourceTree = "<group>";
+		};
+		F365D6871EE67A4100500391 /* AppDelegate */ = {
+			isa = PBXGroup;
+			children = (
+				F365D6881EE67A4100500391 /* AppDelegate.swift */,
+			);
+			path = AppDelegate;
+			sourceTree = "<group>";
+		};
+		F365D68A1EE67A8600500391 /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+				F365D71E1EE67B1700500391 /* AppCommon.h */,
+				F365D71F1EE67B1700500391 /* AppCommon.m */,
+			);
+			path = Utils;
+			sourceTree = "<group>";
+		};
+		F365D68B1EE67AAE00500391 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				F365D68C1EE67AAE00500391 /* SDCycleScrollView */,
+				F365D69C1EE67AAE00500391 /* SDWebImage */,
+				F365D6BA1EE67AAE00500391 /* SnapKit */,
+				F365D6DE1EE67AAE00500391 /* YYModel */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		F365D68C1EE67AAE00500391 /* SDCycleScrollView */ = {
+			isa = PBXGroup;
+			children = (
+				F365D68D1EE67AAE00500391 /* PageControl */,
+				F365D6961EE67AAE00500391 /* SDCollectionViewCell.h */,
+				F365D6971EE67AAE00500391 /* SDCollectionViewCell.m */,
+				F365D6981EE67AAE00500391 /* SDCycleScrollView.h */,
+				F365D6991EE67AAE00500391 /* SDCycleScrollView.m */,
+				F365D69A1EE67AAE00500391 /* UIView+SDExtension.h */,
+				F365D69B1EE67AAE00500391 /* UIView+SDExtension.m */,
+			);
+			path = SDCycleScrollView;
+			sourceTree = "<group>";
+		};
+		F365D68D1EE67AAE00500391 /* PageControl */ = {
+			isa = PBXGroup;
+			children = (
+				F365D68E1EE67AAE00500391 /* TAAbstractDotView.h */,
+				F365D68F1EE67AAE00500391 /* TAAbstractDotView.m */,
+				F365D6901EE67AAE00500391 /* TAAnimatedDotView.h */,
+				F365D6911EE67AAE00500391 /* TAAnimatedDotView.m */,
+				F365D6921EE67AAE00500391 /* TADotView.h */,
+				F365D6931EE67AAE00500391 /* TADotView.m */,
+				F365D6941EE67AAE00500391 /* TAPageControl.h */,
+				F365D6951EE67AAE00500391 /* TAPageControl.m */,
+			);
+			path = PageControl;
+			sourceTree = "<group>";
+		};
+		F365D69C1EE67AAE00500391 /* SDWebImage */ = {
+			isa = PBXGroup;
+			children = (
+				F365D69D1EE67AAE00500391 /* NSData+ImageContentType.h */,
+				F365D69E1EE67AAE00500391 /* NSData+ImageContentType.m */,
+				F365D69F1EE67AAE00500391 /* SDImageCache.h */,
+				F365D6A01EE67AAE00500391 /* SDImageCache.m */,
+				F365D6A11EE67AAE00500391 /* SDWebImageCompat.h */,
+				F365D6A21EE67AAE00500391 /* SDWebImageCompat.m */,
+				F365D6A31EE67AAE00500391 /* SDWebImageDecoder.h */,
+				F365D6A41EE67AAE00500391 /* SDWebImageDecoder.m */,
+				F365D6A51EE67AAE00500391 /* SDWebImageDownloader.h */,
+				F365D6A61EE67AAE00500391 /* SDWebImageDownloader.m */,
+				F365D6A71EE67AAE00500391 /* SDWebImageDownloaderOperation.h */,
+				F365D6A81EE67AAE00500391 /* SDWebImageDownloaderOperation.m */,
+				F365D6A91EE67AAE00500391 /* SDWebImageManager.h */,
+				F365D6AA1EE67AAE00500391 /* SDWebImageManager.m */,
+				F365D6AB1EE67AAE00500391 /* SDWebImageOperation.h */,
+				F365D6AC1EE67AAE00500391 /* SDWebImagePrefetcher.h */,
+				F365D6AD1EE67AAE00500391 /* SDWebImagePrefetcher.m */,
+				F365D6AE1EE67AAE00500391 /* UIButton+WebCache.h */,
+				F365D6AF1EE67AAE00500391 /* UIButton+WebCache.m */,
+				F365D6B01EE67AAE00500391 /* UIImage+GIF.h */,
+				F365D6B11EE67AAE00500391 /* UIImage+GIF.m */,
+				F365D6B21EE67AAE00500391 /* UIImage+MultiFormat.h */,
+				F365D6B31EE67AAE00500391 /* UIImage+MultiFormat.m */,
+				F365D6B41EE67AAE00500391 /* UIImageView+HighlightedWebCache.h */,
+				F365D6B51EE67AAE00500391 /* UIImageView+HighlightedWebCache.m */,
+				F365D6B61EE67AAE00500391 /* UIImageView+WebCache.h */,
+				F365D6B71EE67AAE00500391 /* UIImageView+WebCache.m */,
+				F365D6B81EE67AAE00500391 /* UIView+WebCacheOperation.h */,
+				F365D6B91EE67AAE00500391 /* UIView+WebCacheOperation.m */,
+			);
+			path = SDWebImage;
+			sourceTree = "<group>";
+		};
+		F365D6BA1EE67AAE00500391 /* SnapKit */ = {
+			isa = PBXGroup;
+			children = (
+				F365D6BB1EE67AAE00500391 /* Constraint.swift */,
+				F365D6BC1EE67AAE00500391 /* ConstraintAttributes.swift */,
+				F365D6BD1EE67AAE00500391 /* ConstraintConfig.swift */,
+				F365D6BE1EE67AAE00500391 /* ConstraintConstantTarget.swift */,
+				F365D6BF1EE67AAE00500391 /* ConstraintDescription.swift */,
+				F365D6C01EE67AAE00500391 /* ConstraintDSL.swift */,
+				F365D6C11EE67AAE00500391 /* ConstraintInsets.swift */,
+				F365D6C21EE67AAE00500391 /* ConstraintInsetTarget.swift */,
+				F365D6C31EE67AAE00500391 /* ConstraintItem.swift */,
+				F365D6C41EE67AAE00500391 /* ConstraintLayoutGuide+Extensions.swift */,
+				F365D6C51EE67AAE00500391 /* ConstraintLayoutGuide.swift */,
+				F365D6C61EE67AAE00500391 /* ConstraintLayoutGuideDSL.swift */,
+				F365D6C71EE67AAE00500391 /* ConstraintLayoutSupport.swift */,
+				F365D6C81EE67AAE00500391 /* ConstraintLayoutSupportDSL.swift */,
+				F365D6C91EE67AAE00500391 /* ConstraintMaker.swift */,
+				F365D6CA1EE67AAE00500391 /* ConstraintMakerEditable.swift */,
+				F365D6CB1EE67AAE00500391 /* ConstraintMakerExtendable.swift */,
+				F365D6CC1EE67AAE00500391 /* ConstraintMakerFinalizable.swift */,
+				F365D6CD1EE67AAE00500391 /* ConstraintMakerPriortizable.swift */,
+				F365D6CE1EE67AAE00500391 /* ConstraintMakerRelatable.swift */,
+				F365D6CF1EE67AAE00500391 /* ConstraintMultiplierTarget.swift */,
+				F365D6D01EE67AAE00500391 /* ConstraintOffsetTarget.swift */,
+				F365D6D11EE67AAE00500391 /* ConstraintPriority.swift */,
+				F365D6D21EE67AAE00500391 /* ConstraintPriorityTarget.swift */,
+				F365D6D31EE67AAE00500391 /* ConstraintRelatableTarget.swift */,
+				F365D6D41EE67AAE00500391 /* ConstraintRelation.swift */,
+				F365D6D51EE67AAE00500391 /* ConstraintView+Extensions.swift */,
+				F365D6D61EE67AAE00500391 /* ConstraintView.swift */,
+				F365D6D71EE67AAE00500391 /* ConstraintViewDSL.swift */,
+				F365D6D81EE67AAE00500391 /* Debugging.swift */,
+				F365D6D91EE67AAE00500391 /* Info.plist */,
+				F365D6DA1EE67AAE00500391 /* LayoutConstraint.swift */,
+				F365D6DB1EE67AAE00500391 /* LayoutConstraintItem.swift */,
+				F365D6DC1EE67AAE00500391 /* SnapKit.h */,
+				F365D6DD1EE67AAE00500391 /* UILayoutSupport+Extensions.swift */,
+			);
+			path = SnapKit;
+			sourceTree = "<group>";
+		};
+		F365D6DE1EE67AAE00500391 /* YYModel */ = {
+			isa = PBXGroup;
+			children = (
+				F365D6DF1EE67AAE00500391 /* NSObject+YYModel.h */,
+				F365D6E01EE67AAE00500391 /* NSObject+YYModel.m */,
+				F365D6E11EE67AAE00500391 /* YYClassInfo.h */,
+				F365D6E21EE67AAE00500391 /* YYClassInfo.m */,
+				F365D6E31EE67AAE00500391 /* YYModel.h */,
+			);
+			path = YYModel;
+			sourceTree = "<group>";
+		};
+		F365D71D1EE67ADC00500391 /* Manager */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Manager;
+			sourceTree = "<group>";
+		};
+		F3D677321EE5584F00BEB029 /* Classes */ = {
+			isa = PBXGroup;
+			children = (
+				F34ADDB61EE68B5400328C8E /* AdvertScrollView */,
+			);
+			path = Classes;
+			sourceTree = "<group>";
+		};
+		F3D677391EE5624800BEB029 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				F3D6773A1EE5625500BEB029 /* PlantModel.swift */,
+				F365D6791EE6415B00500391 /* FarmActivityModel.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		F3F586821EE407FD0018412D /* Home */ = {
+			isa = PBXGroup;
+			children = (
+				F3F586831EE407FD0018412D /* HomeViewController.swift */,
+				F365D67B1EE6602D00500391 /* CeTu */,
+				F365D66F1EE63B1C00500391 /* FarmActivity */,
+				F3F5870D1EE439BF0018412D /* Noti */,
+				F3F5870A1EE4372B0018412D /* CollectionItem */,
+			);
+			path = Home;
+			sourceTree = "<group>";
+		};
+		F3F5870A1EE4372B0018412D /* CollectionItem */ = {
+			isa = PBXGroup;
+			children = (
+				F3F5870B1EE4375D0018412D /* HomeModuleCollectionView.swift */,
+				F3D677371EE55EBB00BEB029 /* CropsCollectionView.swift */,
+			);
+			path = CollectionItem;
+			sourceTree = "<group>";
+		};
+		F3F5870D1EE439BF0018412D /* Noti */ = {
+			isa = PBXGroup;
+			children = (
+				F3F5870E1EE439EB0018412D /* NotificationViewController.swift */,
+			);
+			path = Noti;
+			sourceTree = "<group>";
+		};
+		F3F587101EE43B3E0018412D /* Component */ = {
+			isa = PBXGroup;
+			children = (
+				F3D677321EE5584F00BEB029 /* Classes */,
+				F3F587111EE43B3E0018412D /* Categories */,
+			);
+			path = Component;
+			sourceTree = "<group>";
+		};
+		F3F587111EE43B3E0018412D /* Categories */ = {
+			isa = PBXGroup;
+			children = (
+				F3F587121EE43BC40018412D /* UIColor+Addtions.swift */,
+			);
+			path = Categories;
+			sourceTree = "<group>";
+		};
+		F3F587141EE43CAD0018412D /* Circle */ = {
+			isa = PBXGroup;
+			children = (
+				F3F587151EE43CAD0018412D /* CircleViewController.swift */,
+			);
+			path = Circle;
+			sourceTree = "<group>";
+		};
+		F3F587161EE43CAD0018412D /* Farm */ = {
+			isa = PBXGroup;
+			children = (
+				F3F587171EE43CAD0018412D /* FarmViewController.swift */,
+			);
+			path = Farm;
+			sourceTree = "<group>";
+		};
+		F3F587181EE43CAD0018412D /* Mine */ = {
+			isa = PBXGroup;
+			children = (
+				F3F587191EE43CAD0018412D /* MineViewController.swift */,
+			);
+			path = Mine;
+			sourceTree = "<group>";
+		};
+		FC01FD51F34BE930C40425C2 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				71E885BB0AA338D183331694 /* Pods-ANT_iOS.debug.xcconfig */,
+				022A2B72FB17BBCF3E6BD8BC /* Pods-ANT_iOS.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		F35BB75A1EE14CEF0032EC02 /* ANT_iOS */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F35BB76D1EE14CEF0032EC02 /* Build configuration list for PBXNativeTarget "ANT_iOS" */;
+			buildPhases = (
+				CB1C7F7B28DF434AA221674C /* [CP] Check Pods Manifest.lock */,
+				F35BB7571EE14CEF0032EC02 /* Sources */,
+				F35BB7581EE14CEF0032EC02 /* Frameworks */,
+				F35BB7591EE14CEF0032EC02 /* Resources */,
+				0D05EF03B5EB438BA9AD077C /* [CP] Embed Pods Frameworks */,
+				5044B3D0E066B3C31FF9816C /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = ANT_iOS;
+			productName = ANT_iOS;
+			productReference = F35BB75B1EE14CEF0032EC02 /* ANT_iOS.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		F35BB7531EE14CEF0032EC02 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0830;
+				LastUpgradeCheck = 0830;
+				ORGANIZATIONNAME = qianmo;
+				TargetAttributes = {
+					F35BB75A1EE14CEF0032EC02 = {
+						CreatedOnToolsVersion = 8.3.2;
+						DevelopmentTeam = KK59AKUJZC;
+						LastSwiftMigration = 0830;
+						ProvisioningStyle = Automatic;
+					};
+				};
+			};
+			buildConfigurationList = F35BB7561EE14CEF0032EC02 /* Build configuration list for PBXProject "ANT_iOS" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = F35BB7521EE14CEF0032EC02;
+			productRefGroup = F35BB75C1EE14CEF0032EC02 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				F35BB75A1EE14CEF0032EC02 /* ANT_iOS */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		F35BB7591EE14CEF0032EC02 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F35BB7691EE14CEF0032EC02 /* LaunchScreen.storyboard in Resources */,
+				F35BB7661EE14CEF0032EC02 /* Assets.xcassets in Resources */,
+				F365D7171EE67AAE00500391 /* Info.plist in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		0D05EF03B5EB438BA9AD077C /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-ANT_iOS/Pods-ANT_iOS-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		5044B3D0E066B3C31FF9816C /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-ANT_iOS/Pods-ANT_iOS-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		CB1C7F7B28DF434AA221674C /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		F35BB7571EE14CEF0032EC02 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F365D67A1EE6415B00500391 /* FarmActivityModel.swift in Sources */,
+				F365D7151EE67AAE00500391 /* ConstraintViewDSL.swift in Sources */,
+				F365D6FA1EE67AAE00500391 /* ConstraintAttributes.swift in Sources */,
+				F365D6F81EE67AAE00500391 /* UIView+WebCacheOperation.m in Sources */,
+				F365D7091EE67AAE00500391 /* ConstraintMakerExtendable.swift in Sources */,
+				F365D6F31EE67AAE00500391 /* UIButton+WebCache.m in Sources */,
+				F365D6FB1EE67AAE00500391 /* ConstraintConfig.swift in Sources */,
+				F365D70F1EE67AAE00500391 /* ConstraintPriority.swift in Sources */,
+				F365D6F11EE67AAE00500391 /* SDWebImageManager.m in Sources */,
+				F365D6E61EE67AAE00500391 /* TADotView.m in Sources */,
+				F365D7161EE67AAE00500391 /* Debugging.swift in Sources */,
+				F365D7041EE67AAE00500391 /* ConstraintLayoutGuideDSL.swift in Sources */,
+				F365D7121EE67AAE00500391 /* ConstraintRelation.swift in Sources */,
+				F35BB7721EE14DC80032EC02 /* AppTabBarController.swift in Sources */,
+				F365D6EF1EE67AAE00500391 /* SDWebImageDownloader.m in Sources */,
+				F365D6F91EE67AAE00500391 /* Constraint.swift in Sources */,
+				F3F5871A1EE43CAD0018412D /* CircleViewController.swift in Sources */,
+				F365D6ED1EE67AAE00500391 /* SDWebImageCompat.m in Sources */,
+				F365D6E41EE67AAE00500391 /* TAAbstractDotView.m in Sources */,
+				F365D70A1EE67AAE00500391 /* ConstraintMakerFinalizable.swift in Sources */,
+				F365D7111EE67AAE00500391 /* ConstraintRelatableTarget.swift in Sources */,
+				F365D6F71EE67AAE00500391 /* UIImageView+WebCache.m in Sources */,
+				F365D70B1EE67AAE00500391 /* ConstraintMakerPriortizable.swift in Sources */,
+				F35BB7611EE14CEF0032EC02 /* ViewController.swift in Sources */,
+				F365D7131EE67AAE00500391 /* ConstraintView+Extensions.swift in Sources */,
+				F365D71C1EE67AAE00500391 /* YYClassInfo.m in Sources */,
+				F365D6E91EE67AAE00500391 /* SDCycleScrollView.m in Sources */,
+				F3F5871B1EE43CAD0018412D /* FarmViewController.swift in Sources */,
+				F365D6F61EE67AAE00500391 /* UIImageView+HighlightedWebCache.m in Sources */,
+				F3F5870C1EE4375D0018412D /* HomeModuleCollectionView.swift in Sources */,
+				F365D70D1EE67AAE00500391 /* ConstraintMultiplierTarget.swift in Sources */,
+				F365D7201EE67B1700500391 /* AppCommon.m in Sources */,
+				F365D6EC1EE67AAE00500391 /* SDImageCache.m in Sources */,
+				F365D6E51EE67AAE00500391 /* TAAnimatedDotView.m in Sources */,
+				F365D6F51EE67AAE00500391 /* UIImage+MultiFormat.m in Sources */,
+				F365D71B1EE67AAE00500391 /* NSObject+YYModel.m in Sources */,
+				F34ADDB91EE68B5400328C8E /* AdvertScrollView.m in Sources */,
+				F365D6F01EE67AAE00500391 /* SDWebImageDownloaderOperation.m in Sources */,
+				F3D6773B1EE5625500BEB029 /* PlantModel.swift in Sources */,
+				F365D67D1EE6791700500391 /* CetuTypeViewController.swift in Sources */,
+				F3F5871C1EE43CAD0018412D /* MineViewController.swift in Sources */,
+				F365D7141EE67AAE00500391 /* ConstraintView.swift in Sources */,
+				F3D677381EE55EBB00BEB029 /* CropsCollectionView.swift in Sources */,
+				F365D7181EE67AAE00500391 /* LayoutConstraint.swift in Sources */,
+				F365D7071EE67AAE00500391 /* ConstraintMaker.swift in Sources */,
+				F365D6781EE63C8900500391 /* FarmRecordCell.swift in Sources */,
+				F365D7031EE67AAE00500391 /* ConstraintLayoutGuide.swift in Sources */,
+				F365D6FE1EE67AAE00500391 /* ConstraintDSL.swift in Sources */,
+				F365D7051EE67AAE00500391 /* ConstraintLayoutSupport.swift in Sources */,
+				F365D6EB1EE67AAE00500391 /* NSData+ImageContentType.m in Sources */,
+				F35BB7801EE163DD0032EC02 /* BaseViewController.swift in Sources */,
+				F3F5870F1EE439EB0018412D /* NotificationViewController.swift in Sources */,
+				F34C93541EE692F300091195 /* BaseConst.swift in Sources */,
+				F365D7191EE67AAE00500391 /* LayoutConstraintItem.swift in Sources */,
+				F365D6E71EE67AAE00500391 /* TAPageControl.m in Sources */,
+				F365D6EE1EE67AAE00500391 /* SDWebImageDecoder.m in Sources */,
+				F365D7011EE67AAE00500391 /* ConstraintItem.swift in Sources */,
+				F365D6E81EE67AAE00500391 /* SDCollectionViewCell.m in Sources */,
+				F365D71A1EE67AAE00500391 /* UILayoutSupport+Extensions.swift in Sources */,
+				F365D6FF1EE67AAE00500391 /* ConstraintInsets.swift in Sources */,
+				F365D7061EE67AAE00500391 /* ConstraintLayoutSupportDSL.swift in Sources */,
+				F365D6FC1EE67AAE00500391 /* ConstraintConstantTarget.swift in Sources */,
+				F365D7021EE67AAE00500391 /* ConstraintLayoutGuide+Extensions.swift in Sources */,
+				F3F586841EE407FD0018412D /* HomeViewController.swift in Sources */,
+				F35BB77D1EE1503B0032EC02 /* AppNavigationController.swift in Sources */,
+				F365D7101EE67AAE00500391 /* ConstraintPriorityTarget.swift in Sources */,
+				F365D6891EE67A4100500391 /* AppDelegate.swift in Sources */,
+				F365D70C1EE67AAE00500391 /* ConstraintMakerRelatable.swift in Sources */,
+				F365D70E1EE67AAE00500391 /* ConstraintOffsetTarget.swift in Sources */,
+				F365D6F21EE67AAE00500391 /* SDWebImagePrefetcher.m in Sources */,
+				F365D6EA1EE67AAE00500391 /* UIView+SDExtension.m in Sources */,
+				F365D6F41EE67AAE00500391 /* UIImage+GIF.m in Sources */,
+				F365D7081EE67AAE00500391 /* ConstraintMakerEditable.swift in Sources */,
+				F365D7001EE67AAE00500391 /* ConstraintInsetTarget.swift in Sources */,
+				F3F587131EE43BC40018412D /* UIColor+Addtions.swift in Sources */,
+				F365D6FD1EE67AAE00500391 /* ConstraintDescription.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		F35BB7671EE14CEF0032EC02 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				F35BB7681EE14CEF0032EC02 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		F35BB76B1EE14CEF0032EC02 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		F35BB76C1EE14CEF0032EC02 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		F35BB76E1EE14CEF0032EC02 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 71E885BB0AA338D183331694 /* Pods-ANT_iOS.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				DEVELOPMENT_TEAM = KK59AKUJZC;
+				INFOPLIST_FILE = ANT_iOS/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.qianmo.ANT-iOS";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "ANT_iOS/Bridging-Header.h";
+				SWIFT_VERSION = 3.0;
+				USER_HEADER_SEARCH_PATHS = "${SRCROOT}/**";
+			};
+			name = Debug;
+		};
+		F35BB76F1EE14CEF0032EC02 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 022A2B72FB17BBCF3E6BD8BC /* Pods-ANT_iOS.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				DEVELOPMENT_TEAM = KK59AKUJZC;
+				INFOPLIST_FILE = ANT_iOS/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.qianmo.ANT-iOS";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "ANT_iOS/Bridging-Header.h";
+				SWIFT_VERSION = 3.0;
+				USER_HEADER_SEARCH_PATHS = "${SRCROOT}/**";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		F35BB7561EE14CEF0032EC02 /* Build configuration list for PBXProject "ANT_iOS" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F35BB76B1EE14CEF0032EC02 /* Debug */,
+				F35BB76C1EE14CEF0032EC02 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		F35BB76D1EE14CEF0032EC02 /* Build configuration list for PBXNativeTarget "ANT_iOS" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F35BB76E1EE14CEF0032EC02 /* Debug */,
+				F35BB76F1EE14CEF0032EC02 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = F35BB7531EE14CEF0032EC02 /* Project object */;
+}
