@@ -19,11 +19,11 @@ class HomeViewController: BaseViewController {
     override func loadSubViews() {
         super.loadSubViews()
         self.titleLabel.text = "首页"
+        self.leftBtn.isHidden = true
         self.rightBtn.isHidden = false
         self.rightBtn .setImage(UIImage.init(named: "ic_home_message"), for: .normal)
-        self.headerView.backgroundColor? = UIColor.white
+        self.headerView.backgroundColor = UIColor.white
         
-
         self.headerView.addSubview(self.cycleScrollView)
         self.cycleScrollView.snp.makeConstraints { (make) in
             make.left.top.right.equalTo(self.headerView);
@@ -111,7 +111,6 @@ class HomeViewController: BaseViewController {
         
 
         self.contentView.addSubview(self.tableView)
-        self.tableView.register(UITableViewCell.self, forCellReuseIdentifier: "cell")
         self.tableView.snp.makeConstraints { (make) in
             make.edges.equalTo(self.view).inset(UIEdgeInsetsMake(64, 0, 49, 0));
         }
@@ -132,9 +131,9 @@ class HomeViewController: BaseViewController {
         let plantData = PlantModel()
         plantData.plant_crop_nam = "水果"
         plantData.crop_variety = "爱谁谁"
-        self.cropsCollectionView.dataArray = [plantData,plantData,plantData]
+        self.cropsCollectionView.dataArray = [plantData,plantData,plantData,plantData,plantData]
         
-        
+        //农事活动
         let activityData = FarmActivityModel()
         activityData.created_at = "2017-6-6"
         activityData.activity_ame = "爱农田-Swift版"
@@ -177,8 +176,10 @@ class HomeViewController: BaseViewController {
         let tableView = UITableView(frame: CGRect(x: 0, y: 0, width: 0, height: 0), style: .plain)
         tableView.delegate = self
         tableView.dataSource = self
+        tableView.backgroundColor = BaseColor.BackGroundColor
         tableView.showsVerticalScrollIndicator = false
         tableView.register(FarmRecordCell.self, forCellReuseIdentifier: classTableViewCellIdentifier)
+        tableView.tableFooterView = UIView(frame: .zero)
         return tableView
     }()
 }
@@ -214,6 +215,21 @@ extension HomeViewController: UITableViewDelegate, UITableViewDataSource {
     
     func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
         return 100
+    }
+    
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        tableView.deselectRow(at: indexPath, animated: true)
+    }
+    
+    func tableView(_ tableView: UITableView, willDisplay cell: UITableViewCell, forRowAt indexPath: IndexPath) {
+        
+        if(cell.responds(to: #selector(setter: UITableViewCell.separatorInset))){
+            cell.separatorInset = .zero
+        }
+        
+        if(cell.responds(to: #selector(setter: UIView.layoutMargins))){
+            cell.layoutMargins = .zero
+        }
     }
 }
 

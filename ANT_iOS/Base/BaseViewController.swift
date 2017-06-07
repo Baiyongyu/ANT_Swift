@@ -26,8 +26,7 @@ class BaseViewController: UIViewController {
         self.view.addSubview(self.navBar)
         self.navBar.addSubview(self.leftBtn)
         self.navBar.addSubview(self.rightBtn)
-//        self.leftBtn.isHidden = (self.navigationController?.childViewControllers.count)! <= 1
-        self.leftBtn.isHidden = true
+        self.leftBtn.isHidden = self.navigationController?.childViewControllers.count == 1
         self.rightBtn.isHidden = true
         self.navBar.addSubview(self.titleLabel)
         layoutNavigationBar()

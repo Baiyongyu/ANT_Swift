@@ -76,8 +76,24 @@ extension HomeModuleCollectionView: UICollectionViewDelegate,UICollectionViewDat
     }
     
     func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
+        
+        if indexPath.item == 0 {
+            let loanVC = LoanInsureViewController()
+            loanVC.types = LoanOrInsureType.loan
+            AppCommon.push(loanVC, animated: true)
+        }
+        if indexPath.item == 1 {
+            AppCommon.push(ShopListViewController(), animated: true)
+        }
+        
         if indexPath.item == 2 {
             AppCommon.push(CetuTypeViewController(), animated: true)
+        }
+        
+        if indexPath.item == 3 {
+            let loanVC = LoanInsureViewController()
+            loanVC.types = LoanOrInsureType.insure
+            AppCommon.push(loanVC, animated: true)
         }
     }
     

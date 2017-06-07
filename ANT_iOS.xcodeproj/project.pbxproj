@@ -8,8 +8,14 @@
 
 /* Begin PBXBuildFile section */
 		D4031E97425D8295BF9D115C /* Pods_ANT_iOS.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C3D2928A46DF521094C213F0 /* Pods_ANT_iOS.framework */; };
+		F3320AE91EE79BF800327DC7 /* ShopListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3320AE81EE79BF800327DC7 /* ShopListViewController.swift */; };
+		F3320AEB1EE7A4BE00327DC7 /* ShopModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3320AEA1EE7A4BE00327DC7 /* ShopModel.swift */; };
 		F34ADDB91EE68B5400328C8E /* AdvertScrollView.m in Sources */ = {isa = PBXBuildFile; fileRef = F34ADDB81EE68B5400328C8E /* AdvertScrollView.m */; };
 		F34C93541EE692F300091195 /* BaseConst.swift in Sources */ = {isa = PBXBuildFile; fileRef = F34C93531EE692F300091195 /* BaseConst.swift */; };
+		F34C93561EE6991300091195 /* MessageModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F34C93551EE6991300091195 /* MessageModel.swift */; };
+		F34C93591EE69EC400091195 /* LoanInsureViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F34C93581EE69EC400091195 /* LoanInsureViewController.swift */; };
+		F34C935C1EE6A6D000091195 /* SettingsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F34C935B1EE6A6D000091195 /* SettingsViewController.swift */; };
+		F34C935E1EE6B58600091195 /* CacheManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = F34C935D1EE6B58600091195 /* CacheManager.swift */; };
 		F35BB7611EE14CEF0032EC02 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F35BB7601EE14CEF0032EC02 /* ViewController.swift */; };
 		F35BB7661EE14CEF0032EC02 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F35BB7651EE14CEF0032EC02 /* Assets.xcassets */; };
 		F35BB7691EE14CEF0032EC02 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F35BB7671EE14CEF0032EC02 /* LaunchScreen.storyboard */; };
@@ -93,9 +99,15 @@
 		022A2B72FB17BBCF3E6BD8BC /* Pods-ANT_iOS.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ANT_iOS.release.xcconfig"; path = "Pods/Target Support Files/Pods-ANT_iOS/Pods-ANT_iOS.release.xcconfig"; sourceTree = "<group>"; };
 		71E885BB0AA338D183331694 /* Pods-ANT_iOS.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ANT_iOS.debug.xcconfig"; path = "Pods/Target Support Files/Pods-ANT_iOS/Pods-ANT_iOS.debug.xcconfig"; sourceTree = "<group>"; };
 		C3D2928A46DF521094C213F0 /* Pods_ANT_iOS.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ANT_iOS.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		F3320AE81EE79BF800327DC7 /* ShopListViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ShopListViewController.swift; sourceTree = "<group>"; };
+		F3320AEA1EE7A4BE00327DC7 /* ShopModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ShopModel.swift; sourceTree = "<group>"; };
 		F34ADDB71EE68B5400328C8E /* AdvertScrollView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AdvertScrollView.h; sourceTree = "<group>"; };
 		F34ADDB81EE68B5400328C8E /* AdvertScrollView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AdvertScrollView.m; sourceTree = "<group>"; };
 		F34C93531EE692F300091195 /* BaseConst.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BaseConst.swift; sourceTree = "<group>"; };
+		F34C93551EE6991300091195 /* MessageModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MessageModel.swift; sourceTree = "<group>"; };
+		F34C93581EE69EC400091195 /* LoanInsureViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoanInsureViewController.swift; sourceTree = "<group>"; };
+		F34C935B1EE6A6D000091195 /* SettingsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SettingsViewController.swift; sourceTree = "<group>"; };
+		F34C935D1EE6B58600091195 /* CacheManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CacheManager.swift; sourceTree = "<group>"; };
 		F35BB75B1EE14CEF0032EC02 /* ANT_iOS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ANT_iOS.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F35BB7601EE14CEF0032EC02 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		F35BB7651EE14CEF0032EC02 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -225,6 +237,14 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
+		F3320AE71EE79BE200327DC7 /* Shop */ = {
+			isa = PBXGroup;
+			children = (
+				F3320AE81EE79BF800327DC7 /* ShopListViewController.swift */,
+			);
+			path = Shop;
+			sourceTree = "<group>";
+		};
 		F34ADDB61EE68B5400328C8E /* AdvertScrollView */ = {
 			isa = PBXGroup;
 			children = (
@@ -232,6 +252,22 @@
 				F34ADDB81EE68B5400328C8E /* AdvertScrollView.m */,
 			);
 			path = AdvertScrollView;
+			sourceTree = "<group>";
+		};
+		F34C93571EE69EAF00091195 /* Loan */ = {
+			isa = PBXGroup;
+			children = (
+				F34C93581EE69EC400091195 /* LoanInsureViewController.swift */,
+			);
+			path = Loan;
+			sourceTree = "<group>";
+		};
+		F34C935A1EE6A6C500091195 /* Setting */ = {
+			isa = PBXGroup;
+			children = (
+				F34C935B1EE6A6D000091195 /* SettingsViewController.swift */,
+			);
+			path = Setting;
 			sourceTree = "<group>";
 		};
 		F35BB7521EE14CEF0032EC02 = {
@@ -468,6 +504,7 @@
 		F365D71D1EE67ADC00500391 /* Manager */ = {
 			isa = PBXGroup;
 			children = (
+				F34C935D1EE6B58600091195 /* CacheManager.swift */,
 			);
 			path = Manager;
 			sourceTree = "<group>";
@@ -485,6 +522,8 @@
 			children = (
 				F3D6773A1EE5625500BEB029 /* PlantModel.swift */,
 				F365D6791EE6415B00500391 /* FarmActivityModel.swift */,
+				F34C93551EE6991300091195 /* MessageModel.swift */,
+				F3320AEA1EE7A4BE00327DC7 /* ShopModel.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -493,6 +532,8 @@
 			isa = PBXGroup;
 			children = (
 				F3F586831EE407FD0018412D /* HomeViewController.swift */,
+				F3320AE71EE79BE200327DC7 /* Shop */,
+				F34C93571EE69EAF00091195 /* Loan */,
 				F365D67B1EE6602D00500391 /* CeTu */,
 				F365D66F1EE63B1C00500391 /* FarmActivity */,
 				F3F5870D1EE439BF0018412D /* Noti */,
@@ -555,6 +596,7 @@
 			isa = PBXGroup;
 			children = (
 				F3F587191EE43CAD0018412D /* MineViewController.swift */,
+				F34C935A1EE6A6C500091195 /* Setting */,
 			);
 			path = Mine;
 			sourceTree = "<group>";
@@ -719,10 +761,12 @@
 				F35BB7611EE14CEF0032EC02 /* ViewController.swift in Sources */,
 				F365D7131EE67AAE00500391 /* ConstraintView+Extensions.swift in Sources */,
 				F365D71C1EE67AAE00500391 /* YYClassInfo.m in Sources */,
+				F3320AE91EE79BF800327DC7 /* ShopListViewController.swift in Sources */,
 				F365D6E91EE67AAE00500391 /* SDCycleScrollView.m in Sources */,
 				F3F5871B1EE43CAD0018412D /* FarmViewController.swift in Sources */,
 				F365D6F61EE67AAE00500391 /* UIImageView+HighlightedWebCache.m in Sources */,
 				F3F5870C1EE4375D0018412D /* HomeModuleCollectionView.swift in Sources */,
+				F34C93561EE6991300091195 /* MessageModel.swift in Sources */,
 				F365D70D1EE67AAE00500391 /* ConstraintMultiplierTarget.swift in Sources */,
 				F365D7201EE67B1700500391 /* AppCommon.m in Sources */,
 				F365D6EC1EE67AAE00500391 /* SDImageCache.m in Sources */,
@@ -730,6 +774,7 @@
 				F365D6F51EE67AAE00500391 /* UIImage+MultiFormat.m in Sources */,
 				F365D71B1EE67AAE00500391 /* NSObject+YYModel.m in Sources */,
 				F34ADDB91EE68B5400328C8E /* AdvertScrollView.m in Sources */,
+				F3320AEB1EE7A4BE00327DC7 /* ShopModel.swift in Sources */,
 				F365D6F01EE67AAE00500391 /* SDWebImageDownloaderOperation.m in Sources */,
 				F3D6773B1EE5625500BEB029 /* PlantModel.swift in Sources */,
 				F365D67D1EE6791700500391 /* CetuTypeViewController.swift in Sources */,
@@ -746,6 +791,7 @@
 				F35BB7801EE163DD0032EC02 /* BaseViewController.swift in Sources */,
 				F3F5870F1EE439EB0018412D /* NotificationViewController.swift in Sources */,
 				F34C93541EE692F300091195 /* BaseConst.swift in Sources */,
+				F34C93591EE69EC400091195 /* LoanInsureViewController.swift in Sources */,
 				F365D7191EE67AAE00500391 /* LayoutConstraintItem.swift in Sources */,
 				F365D6E71EE67AAE00500391 /* TAPageControl.m in Sources */,
 				F365D6EE1EE67AAE00500391 /* SDWebImageDecoder.m in Sources */,
@@ -757,6 +803,7 @@
 				F365D6FC1EE67AAE00500391 /* ConstraintConstantTarget.swift in Sources */,
 				F365D7021EE67AAE00500391 /* ConstraintLayoutGuide+Extensions.swift in Sources */,
 				F3F586841EE407FD0018412D /* HomeViewController.swift in Sources */,
+				F34C935C1EE6A6D000091195 /* SettingsViewController.swift in Sources */,
 				F35BB77D1EE1503B0032EC02 /* AppNavigationController.swift in Sources */,
 				F365D7101EE67AAE00500391 /* ConstraintPriorityTarget.swift in Sources */,
 				F365D6891EE67A4100500391 /* AppDelegate.swift in Sources */,
@@ -766,6 +813,7 @@
 				F365D6EA1EE67AAE00500391 /* UIView+SDExtension.m in Sources */,
 				F365D6F41EE67AAE00500391 /* UIImage+GIF.m in Sources */,
 				F365D7081EE67AAE00500391 /* ConstraintMakerEditable.swift in Sources */,
+				F34C935E1EE6B58600091195 /* CacheManager.swift in Sources */,
 				F365D7001EE67AAE00500391 /* ConstraintInsetTarget.swift in Sources */,
 				F3F587131EE43BC40018412D /* UIColor+Addtions.swift in Sources */,
 				F365D6FD1EE67AAE00500391 /* ConstraintDescription.swift in Sources */,

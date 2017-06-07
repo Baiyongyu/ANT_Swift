@@ -67,7 +67,7 @@ class FarmRecordCell: UITableViewCell {
             timeLabel.text = activityData?.created_at
             activityNameLabel.text = activityData?.activity_ame
             nameLabel.text = activityData?.name
-            inputsQuantityLabel.text = activityData?.ammount
+            inputsQuantityLabel.text = (activityData?.ammount)! + "斤/亩"
         }
     }
 

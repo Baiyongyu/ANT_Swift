@@ -15,7 +15,6 @@ class CetuTypeViewController: BaseViewController {
     override func loadSubViews() {
         super.loadSubViews()
         self.titleLabel.text = "测土配肥"
-        self.leftBtn.isHidden = false
         
         let bgView = UIImageView()
         bgView.image = UIImage.init(named: "ic_cetu_bg")

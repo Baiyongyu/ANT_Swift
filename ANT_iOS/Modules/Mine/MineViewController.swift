@@ -83,7 +83,7 @@ class MineViewController: BaseViewController {
         titleArray = ["我的订单","测土配肥记录","消费记录","收货地址","客服热线","设置"]
         iconArray = ["ic_mine_order","ic_mine_cetu","ic_mine_payrecord","ic_mine_address","ic_mine_hotline","ic_mine_settings"]
         
-        avatarImageView.sd_setImage(with: NSURL.init(string: "http://img2.imgtn.bdimg.com/it/u=960594752,2162202648&fm=26&gp=0.jpg")! as URL, placeholderImage: UIImage.init(named: "placeholder.jpg"))
+        avatarImageView.sd_setImage(with: NSURL.init(string: "http://img2.imgtn.bdimg.com/it/u=960594752,2162202648&fm=26&gp=0.jpg")! as URL, placeholderImage: IMAGE_AVATAR_PLACEHOLDER)
         nameLabel.text = "我是路飞，要成为海贼王的男人！"
         self.tableView.reloadData()
     }
@@ -97,6 +97,7 @@ class MineViewController: BaseViewController {
         let tableView = UITableView(frame: CGRect(x: 0, y: 0, width: 0, height: 0), style: .plain)
         tableView.delegate = self
         tableView.dataSource = self
+        tableView.backgroundColor = BaseColor.BackGroundColor
         tableView.showsVerticalScrollIndicator = false
         tableView.register(UITableViewCell.self, forCellReuseIdentifier: "Cell")
         tableView.tableFooterView = UIView(frame: .zero)
@@ -114,10 +115,25 @@ extension MineViewController: UITableViewDelegate, UITableViewDataSource, UIScro
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "Cell", for: indexPath)
-        cell.selectionStyle = .none
         cell.accessoryType = .disclosureIndicator
         cell.imageView?.image = UIImage.init(named: iconArray[indexPath.row] as! String)
         cell.textLabel?.text = titleArray[indexPath.row] as? String
+        cell.textLabel?.font = UIFont.systemFont(ofSize: 15)
+        
+        if cell.textLabel?.text == "客服热线" {
+            cell.accessoryType = .none
+            let hotlineLabel = UILabel()
+            hotlineLabel.font = UIFont.systemFont(ofSize: 14)
+            hotlineLabel.textColor = UIColor.orange
+            hotlineLabel.text = PhoneNumber
+            cell.contentView.addSubview(hotlineLabel)
+            hotlineLabel.snp.makeConstraints({ (make) in
+                make.right.equalTo(cell.contentView).offset(-20);
+                make.centerY.equalTo(cell.contentView);
+            })
+            
+        }
+        
         return cell
     }
     
@@ -143,6 +159,27 @@ extension MineViewController: UITableViewDelegate, UITableViewDataSource, UIScro
             let scale: CGFloat = totalOffset / self.headerView.bounds.size.height
             let width: CGFloat = SCREEN_WIDTH
             self.imageView.frame = CGRect(x: -(width * scale - width) / 2, y: offset_y, width: width * scale, height: totalOffset)
+        }
+    }
+    
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        tableView.deselectRow(at: indexPath, animated: true)
+        if indexPath.row == 4 {
+            let urlString = "tel://" + PhoneNumber
+            if let url = URL(string: urlString) {
+                //根据iOS系统版本，分别处理
+                if #available(iOS 10, *) {
+                    UIApplication.shared.open(url, options: [:],
+                                              completionHandler: {
+                                                (success) in
+                    })
+                } else {
+                    UIApplication.shared.openURL(url)
+                }
+            }
+        }
+        if indexPath.row == 5 {
+            AppCommon.push(SettingsViewController(), animated: true)
         }
     }
 }

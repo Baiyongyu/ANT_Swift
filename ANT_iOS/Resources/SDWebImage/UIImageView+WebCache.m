@@ -72,7 +72,7 @@ static char TAG_ACTIVITY_SHOW;
                 else if (image) {
                     
                     CATransition *animation = [CATransition animation];
-                    animation.duration = .85f;
+                    animation.duration = .5f;
                     animation.type = kCATransitionFade;
                     animation.removedOnCompletion = YES;
                     [wself.layer addAnimation:animation forKey:@"transition"];

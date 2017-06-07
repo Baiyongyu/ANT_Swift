@@ -102,6 +102,7 @@ UIViewController *topMostViewController() {
 //    else {
 //        [self pushWithVCClass:NSClassFromString(className) properties:nil];
 //    }
+    [self pushWithVCClass:NSClassFromString(className) properties:nil];
 }
 
 + (void)popViewControllerAnimated:(BOOL)animated {
