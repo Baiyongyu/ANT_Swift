@@ -1,0 +1,35 @@
+body,html {
+	font-size: 625%;
+	padding: 0;
+	margin: 0;
+}
+
+.webContent {
+	padding:0.65rem 0 0.35rem 0;
+}
+.webContent img {
+	display: block;
+	width: 0.8rem;
+	height: 0.75rem;
+	margin: 0 auto;
+}
+.titleLabel1 {
+	font-size: 0.14rem;
+	color: #FF520C;
+	text-align: center;
+	margin-top: 0.25rem;
+}
+.titleLabel2 {
+	font-size: 0.13rem;
+	color: #666666;
+	text-align: center;
+}
+.titleLabel2 a {
+	text-decoration: none;
+	color: #FF520C;
+}
+.img1,.img2,.img3 {
+	width: 100%;
+	display: block;
+	margin-bottom: 0.1rem;
+}

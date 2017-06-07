@@ -125,7 +125,7 @@ class HomeViewController: BaseViewController {
                                                      "https://ss0.bdstatic.com/5aV1bjqh_Q23odCf/static/superman/img/logo/logo_white_fe6da1ec.png",
                                                      "https://ss0.bdstatic.com/5aV1bjqh_Q23odCf/static/superman/img/logo/logo_white_fe6da1ec.png"]
         // 新闻滚动
-        self.advertScrollView.titles = ["曹勇就是个大坑货","永远不想相信产品说的话","大勇你个产品汪"]
+        self.advertScrollView.titles = ["曹勇就是个大坑货","永远不要相信产品说的话","大勇你个产品汪"]
         
         // 当前种植
         let plantData = PlantModel()

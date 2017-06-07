@@ -76,7 +76,9 @@ extension FarmViewController: UICollectionViewDelegate, UICollectionViewDataSour
     }
 
     func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
-        
+        if indexPath.item == 3 {
+            AppCommon.push(WebThingsViewController(), animated: true)
+        }
     }
 }
 

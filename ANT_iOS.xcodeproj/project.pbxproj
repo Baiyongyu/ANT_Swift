@@ -93,6 +93,8 @@
 		F3F5871A1EE43CAD0018412D /* CircleViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3F587151EE43CAD0018412D /* CircleViewController.swift */; };
 		F3F5871B1EE43CAD0018412D /* FarmViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3F587171EE43CAD0018412D /* FarmViewController.swift */; };
 		F3F5871C1EE43CAD0018412D /* MineViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3F587191EE43CAD0018412D /* MineViewController.swift */; };
+		F3FC1E881EE7E09D00CD66E1 /* WebThingsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3FC1E871EE7E09D00CD66E1 /* WebThingsViewController.swift */; };
+		F3FC1E8A1EE7E2EA00CD66E1 /* webthing in Resources */ = {isa = PBXBuildFile; fileRef = F3FC1E891EE7E2EA00CD66E1 /* webthing */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -215,6 +217,8 @@
 		F3F587151EE43CAD0018412D /* CircleViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CircleViewController.swift; sourceTree = "<group>"; };
 		F3F587171EE43CAD0018412D /* FarmViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FarmViewController.swift; sourceTree = "<group>"; };
 		F3F587191EE43CAD0018412D /* MineViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MineViewController.swift; sourceTree = "<group>"; };
+		F3FC1E871EE7E09D00CD66E1 /* WebThingsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WebThingsViewController.swift; sourceTree = "<group>"; };
+		F3FC1E891EE7E2EA00CD66E1 /* webthing */ = {isa = PBXFileReference; lastKnownFileType = folder; path = webthing; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -374,6 +378,7 @@
 		F365D68B1EE67AAE00500391 /* Resources */ = {
 			isa = PBXGroup;
 			children = (
+				F3FC1E891EE7E2EA00CD66E1 /* webthing */,
 				F365D68C1EE67AAE00500391 /* SDCycleScrollView */,
 				F365D69C1EE67AAE00500391 /* SDWebImage */,
 				F365D6BA1EE67AAE00500391 /* SnapKit */,
@@ -588,6 +593,7 @@
 			isa = PBXGroup;
 			children = (
 				F3F587171EE43CAD0018412D /* FarmViewController.swift */,
+				F3FC1E861EE7E08600CD66E1 /* webthing */,
 			);
 			path = Farm;
 			sourceTree = "<group>";
@@ -599,6 +605,14 @@
 				F34C935A1EE6A6C500091195 /* Setting */,
 			);
 			path = Mine;
+			sourceTree = "<group>";
+		};
+		F3FC1E861EE7E08600CD66E1 /* webthing */ = {
+			isa = PBXGroup;
+			children = (
+				F3FC1E871EE7E09D00CD66E1 /* WebThingsViewController.swift */,
+			);
+			path = webthing;
 			sourceTree = "<group>";
 		};
 		FC01FD51F34BE930C40425C2 /* Pods */ = {
@@ -674,6 +688,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F3FC1E8A1EE7E2EA00CD66E1 /* webthing in Resources */,
 				F35BB7691EE14CEF0032EC02 /* LaunchScreen.storyboard in Resources */,
 				F35BB7661EE14CEF0032EC02 /* Assets.xcassets in Resources */,
 				F365D7171EE67AAE00500391 /* Info.plist in Resources */,
@@ -782,6 +797,7 @@
 				F365D7141EE67AAE00500391 /* ConstraintView.swift in Sources */,
 				F3D677381EE55EBB00BEB029 /* CropsCollectionView.swift in Sources */,
 				F365D7181EE67AAE00500391 /* LayoutConstraint.swift in Sources */,
+				F3FC1E881EE7E09D00CD66E1 /* WebThingsViewController.swift in Sources */,
 				F365D7071EE67AAE00500391 /* ConstraintMaker.swift in Sources */,
 				F365D6781EE63C8900500391 /* FarmRecordCell.swift in Sources */,
 				F365D7031EE67AAE00500391 /* ConstraintLayoutGuide.swift in Sources */,
