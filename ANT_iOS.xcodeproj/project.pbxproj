@@ -84,6 +84,12 @@
 		F365D71B1EE67AAE00500391 /* NSObject+YYModel.m in Sources */ = {isa = PBXBuildFile; fileRef = F365D6E01EE67AAE00500391 /* NSObject+YYModel.m */; };
 		F365D71C1EE67AAE00500391 /* YYClassInfo.m in Sources */ = {isa = PBXBuildFile; fileRef = F365D6E21EE67AAE00500391 /* YYClassInfo.m */; };
 		F365D7201EE67B1700500391 /* AppCommon.m in Sources */ = {isa = PBXBuildFile; fileRef = F365D71F1EE67B1700500391 /* AppCommon.m */; };
+		F398558B1EE8EBE80042990C /* AddressListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F398558A1EE8EBE80042990C /* AddressListViewController.swift */; };
+		F398558D1EE8F1920042990C /* AddressModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F398558C1EE8F1920042990C /* AddressModel.swift */; };
+		F39855951EE8FDF20042990C /* VerticalButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = F39855941EE8FDF20042990C /* VerticalButton.swift */; };
+		F39855971EE927A10042990C /* AddressEditViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F39855961EE927A10042990C /* AddressEditViewController.swift */; };
+		F398559A1EE93C870042990C /* SelectAreaAlert.swift in Sources */ = {isa = PBXBuildFile; fileRef = F39855991EE93C870042990C /* SelectAreaAlert.swift */; };
+		F398559C1EE954690042990C /* CommonUtils.swift in Sources */ = {isa = PBXBuildFile; fileRef = F398559B1EE954690042990C /* CommonUtils.swift */; };
 		F3D677381EE55EBB00BEB029 /* CropsCollectionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3D677371EE55EBB00BEB029 /* CropsCollectionView.swift */; };
 		F3D6773B1EE5625500BEB029 /* PlantModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3D6773A1EE5625500BEB029 /* PlantModel.swift */; };
 		F3F586841EE407FD0018412D /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3F586831EE407FD0018412D /* HomeViewController.swift */; };
@@ -208,6 +214,12 @@
 		F365D6E31EE67AAE00500391 /* YYModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YYModel.h; sourceTree = "<group>"; };
 		F365D71E1EE67B1700500391 /* AppCommon.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AppCommon.h; sourceTree = "<group>"; };
 		F365D71F1EE67B1700500391 /* AppCommon.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AppCommon.m; sourceTree = "<group>"; };
+		F398558A1EE8EBE80042990C /* AddressListViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AddressListViewController.swift; sourceTree = "<group>"; };
+		F398558C1EE8F1920042990C /* AddressModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AddressModel.swift; sourceTree = "<group>"; };
+		F39855941EE8FDF20042990C /* VerticalButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = VerticalButton.swift; sourceTree = "<group>"; };
+		F39855961EE927A10042990C /* AddressEditViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AddressEditViewController.swift; sourceTree = "<group>"; };
+		F39855991EE93C870042990C /* SelectAreaAlert.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SelectAreaAlert.swift; sourceTree = "<group>"; };
+		F398559B1EE954690042990C /* CommonUtils.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CommonUtils.swift; sourceTree = "<group>"; };
 		F3D677371EE55EBB00BEB029 /* CropsCollectionView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CropsCollectionView.swift; sourceTree = "<group>"; };
 		F3D6773A1EE5625500BEB029 /* PlantModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PlantModel.swift; sourceTree = "<group>"; };
 		F3F586831EE407FD0018412D /* HomeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
@@ -371,6 +383,7 @@
 			children = (
 				F365D71E1EE67B1700500391 /* AppCommon.h */,
 				F365D71F1EE67B1700500391 /* AppCommon.m */,
+				F398559B1EE954690042990C /* CommonUtils.swift */,
 			);
 			path = Utils;
 			sourceTree = "<group>";
@@ -514,9 +527,27 @@
 			path = Manager;
 			sourceTree = "<group>";
 		};
+		F39855891EE8EBD90042990C /* Address */ = {
+			isa = PBXGroup;
+			children = (
+				F398558A1EE8EBE80042990C /* AddressListViewController.swift */,
+				F39855961EE927A10042990C /* AddressEditViewController.swift */,
+			);
+			path = Address;
+			sourceTree = "<group>";
+		};
+		F39855981EE93B4E0042990C /* SelectAreaAlert */ = {
+			isa = PBXGroup;
+			children = (
+				F39855991EE93C870042990C /* SelectAreaAlert.swift */,
+			);
+			path = SelectAreaAlert;
+			sourceTree = "<group>";
+		};
 		F3D677321EE5584F00BEB029 /* Classes */ = {
 			isa = PBXGroup;
 			children = (
+				F39855981EE93B4E0042990C /* SelectAreaAlert */,
 				F34ADDB61EE68B5400328C8E /* AdvertScrollView */,
 			);
 			path = Classes;
@@ -529,6 +560,7 @@
 				F365D6791EE6415B00500391 /* FarmActivityModel.swift */,
 				F34C93551EE6991300091195 /* MessageModel.swift */,
 				F3320AEA1EE7A4BE00327DC7 /* ShopModel.swift */,
+				F398558C1EE8F1920042990C /* AddressModel.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -577,6 +609,7 @@
 			isa = PBXGroup;
 			children = (
 				F3F587121EE43BC40018412D /* UIColor+Addtions.swift */,
+				F39855941EE8FDF20042990C /* VerticalButton.swift */,
 			);
 			path = Categories;
 			sourceTree = "<group>";
@@ -602,6 +635,7 @@
 			isa = PBXGroup;
 			children = (
 				F3F587191EE43CAD0018412D /* MineViewController.swift */,
+				F39855891EE8EBD90042990C /* Address */,
 				F34C935A1EE6A6C500091195 /* Setting */,
 			);
 			path = Mine;
@@ -751,6 +785,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				F365D67A1EE6415B00500391 /* FarmActivityModel.swift in Sources */,
+				F39855951EE8FDF20042990C /* VerticalButton.swift in Sources */,
 				F365D7151EE67AAE00500391 /* ConstraintViewDSL.swift in Sources */,
 				F365D6FA1EE67AAE00500391 /* ConstraintAttributes.swift in Sources */,
 				F365D6F81EE67AAE00500391 /* UIView+WebCacheOperation.m in Sources */,
@@ -764,6 +799,7 @@
 				F365D7041EE67AAE00500391 /* ConstraintLayoutGuideDSL.swift in Sources */,
 				F365D7121EE67AAE00500391 /* ConstraintRelation.swift in Sources */,
 				F35BB7721EE14DC80032EC02 /* AppTabBarController.swift in Sources */,
+				F398558D1EE8F1920042990C /* AddressModel.swift in Sources */,
 				F365D6EF1EE67AAE00500391 /* SDWebImageDownloader.m in Sources */,
 				F365D6F91EE67AAE00500391 /* Constraint.swift in Sources */,
 				F3F5871A1EE43CAD0018412D /* CircleViewController.swift in Sources */,
@@ -774,6 +810,7 @@
 				F365D6F71EE67AAE00500391 /* UIImageView+WebCache.m in Sources */,
 				F365D70B1EE67AAE00500391 /* ConstraintMakerPriortizable.swift in Sources */,
 				F35BB7611EE14CEF0032EC02 /* ViewController.swift in Sources */,
+				F398559C1EE954690042990C /* CommonUtils.swift in Sources */,
 				F365D7131EE67AAE00500391 /* ConstraintView+Extensions.swift in Sources */,
 				F365D71C1EE67AAE00500391 /* YYClassInfo.m in Sources */,
 				F3320AE91EE79BF800327DC7 /* ShopListViewController.swift in Sources */,
@@ -789,6 +826,7 @@
 				F365D6F51EE67AAE00500391 /* UIImage+MultiFormat.m in Sources */,
 				F365D71B1EE67AAE00500391 /* NSObject+YYModel.m in Sources */,
 				F34ADDB91EE68B5400328C8E /* AdvertScrollView.m in Sources */,
+				F398558B1EE8EBE80042990C /* AddressListViewController.swift in Sources */,
 				F3320AEB1EE7A4BE00327DC7 /* ShopModel.swift in Sources */,
 				F365D6F01EE67AAE00500391 /* SDWebImageDownloaderOperation.m in Sources */,
 				F3D6773B1EE5625500BEB029 /* PlantModel.swift in Sources */,
@@ -798,6 +836,7 @@
 				F3D677381EE55EBB00BEB029 /* CropsCollectionView.swift in Sources */,
 				F365D7181EE67AAE00500391 /* LayoutConstraint.swift in Sources */,
 				F3FC1E881EE7E09D00CD66E1 /* WebThingsViewController.swift in Sources */,
+				F39855971EE927A10042990C /* AddressEditViewController.swift in Sources */,
 				F365D7071EE67AAE00500391 /* ConstraintMaker.swift in Sources */,
 				F365D6781EE63C8900500391 /* FarmRecordCell.swift in Sources */,
 				F365D7031EE67AAE00500391 /* ConstraintLayoutGuide.swift in Sources */,
@@ -827,6 +866,7 @@
 				F365D70E1EE67AAE00500391 /* ConstraintOffsetTarget.swift in Sources */,
 				F365D6F21EE67AAE00500391 /* SDWebImagePrefetcher.m in Sources */,
 				F365D6EA1EE67AAE00500391 /* UIView+SDExtension.m in Sources */,
+				F398559A1EE93C870042990C /* SelectAreaAlert.swift in Sources */,
 				F365D6F41EE67AAE00500391 /* UIImage+GIF.m in Sources */,
 				F365D7081EE67AAE00500391 /* ConstraintMakerEditable.swift in Sources */,
 				F34C935E1EE6B58600091195 /* CacheManager.swift in Sources */,

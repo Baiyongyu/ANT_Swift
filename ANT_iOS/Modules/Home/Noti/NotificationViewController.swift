@@ -39,6 +39,7 @@ class NotificationViewController: BaseViewController {
         tableView.delegate = self
         tableView.dataSource = self
         tableView.showsVerticalScrollIndicator = false
+        tableView.backgroundColor = BaseColor.BackGroundColor
         tableView.register(NotificationCell.self, forCellReuseIdentifier: classTableViewCellIdentifier)
         tableView.tableFooterView = UIView(frame: .zero)
         return tableView

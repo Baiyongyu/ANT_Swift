@@ -153,7 +153,7 @@ class HomeViewController: BaseViewController {
     }
     
     lazy var cycleScrollView: SDCycleScrollView = {
-        let cycleScrollView = SDCycleScrollView(frame: CGRect(x: 0, y: 0, width: SCREEN_WIDTH, height: SCREEN_HEIGHT - 44 - 64), delegate: self, placeholderImage: UIImage.init(named: "ic_default_image"))
+        let cycleScrollView = SDCycleScrollView(frame: CGRect(x: 0, y: 0, width: SCREEN_WIDTH, height: SCREEN_HEIGHT - 44 - 64), delegate: self, placeholderImage: IMAGE_PLACEHOLDER)
         return cycleScrollView!
     }()
     
@@ -188,7 +188,7 @@ class HomeViewController: BaseViewController {
 extension HomeViewController: SDCycleScrollViewDelegate {
     
     func cycleScrollView(_ cycleScrollView: SDCycleScrollView!, didSelectItemAt index: Int) {
-        
+//        http://h5.eqxiu.com/s/NABANe?eqrcode=1&from=timeline&isappinstalled=0
     }
 }
 

@@ -164,6 +164,11 @@ extension MineViewController: UITableViewDelegate, UITableViewDataSource, UIScro
     
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         tableView.deselectRow(at: indexPath, animated: true)
+        
+        if indexPath.row == 3 {
+            AppCommon.push(AddressListViewController(), animated: true)
+        }
+        
         if indexPath.row == 4 {
             let urlString = "tel://" + PhoneNumber
             if let url = URL(string: urlString) {

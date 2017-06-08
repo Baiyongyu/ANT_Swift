@@ -22,7 +22,6 @@ class SettingsViewController: BaseViewController {
         super.loadSubViews()
         self.titleLabel.text = "设置"
         self.contentView.addSubview(tableView)
-        print(CacheManager.cacheSize)
     }
     
     override func layoutConstraints() {

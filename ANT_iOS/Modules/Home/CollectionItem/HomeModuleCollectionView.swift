@@ -79,7 +79,7 @@ extension HomeModuleCollectionView: UICollectionViewDelegate,UICollectionViewDat
         
         if indexPath.item == 0 {
             let loanVC = LoanInsureViewController()
-            loanVC.types = LoanOrInsureType.loan
+            loanVC.selectType = .loan
             AppCommon.push(loanVC, animated: true)
         }
         if indexPath.item == 1 {
@@ -92,7 +92,7 @@ extension HomeModuleCollectionView: UICollectionViewDelegate,UICollectionViewDat
         
         if indexPath.item == 3 {
             let loanVC = LoanInsureViewController()
-            loanVC.types = LoanOrInsureType.insure
+            loanVC.selectType = .insure
             AppCommon.push(loanVC, animated: true)
         }
     }

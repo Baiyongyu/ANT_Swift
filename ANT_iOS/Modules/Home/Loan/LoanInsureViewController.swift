@@ -15,19 +15,31 @@ enum LoanOrInsureType {
 
 class LoanInsureViewController: BaseViewController {
     
-    var types: LoanOrInsureType?
-    let loanType = LoanOrInsureType.loan
+    var dataArray = NSArray()
+    
+    var selectType : LoanOrInsureType = .loan
     
     override func loadSubViews() {
         super.loadSubViews()
         
-        switch loanType {
-        case .loan:
+        if selectType == .loan {
             self.titleLabel.text = "办贷款"
-            break
-        case .insure:
+        }else {
             self.titleLabel.text = "买保险"
-            break
         }
+        
+        let bgView = UIImageView()
+        bgView.image = UIImage.init(named: "ic_cetu_bg")
+        self.contentView.addSubview(bgView)
+        bgView.snp.makeConstraints { (make) in
+            make.edges.equalTo(self.view).inset(UIEdgeInsetsMake(64, 0, 0, 0));
+        }
+        
+        self.dataArray = ["北京","上海","哈尔滨","杭州","南京","广东","大连","沈阳","北京","上海","哈尔滨","杭州","南京","广东","大连","沈阳"]
+        SelectAreaAlert().selectAreaAlert(title: "选择地区", titles: self.dataArray, codes: self.dataArray)
+    }
+    
+    override func loadData() {
+        
     }
 }

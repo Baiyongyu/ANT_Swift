@@ -36,6 +36,7 @@ class WebThingsViewController: BaseViewController {
             let touchPoint: CGPoint = recognizer.location(in: self.webView)
             let js = "document.elementFromPoint(\(touchPoint.x), \(touchPoint.y)).src"
             let urlToSave: String = self.webView.stringByEvaluatingJavaScript(from: js)!
+            print(urlToSave)
             
             let alertController = UIAlertController(title: "温馨提示", message: "是否要保存图片?", preferredStyle: .alert)
             let confirm = UIAlertAction(title: "确定", style: .destructive, handler: { (alertController:UIAlertAction) in
