@@ -97,6 +97,7 @@ class FarmRecordCell: UITableViewCell {
         let inputsQuantityLabel = UILabel()
         inputsQuantityLabel.font = UIFont.systemFont(ofSize: 14)
         inputsQuantityLabel.numberOfLines = 0
+        inputsQuantityLabel.textAlignment = .right
         return inputsQuantityLabel
     }()
     

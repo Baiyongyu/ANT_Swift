@@ -17,7 +17,7 @@ class LoanInsureViewController: BaseViewController {
     
     var dataArray = NSArray()
     
-    var selectType : LoanOrInsureType = .loan
+    var selectType: LoanOrInsureType?
     
     override func loadSubViews() {
         super.loadSubViews()

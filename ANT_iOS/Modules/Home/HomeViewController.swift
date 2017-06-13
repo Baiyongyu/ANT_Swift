@@ -222,11 +222,9 @@ extension HomeViewController: UITableViewDelegate, UITableViewDataSource {
     }
     
     func tableView(_ tableView: UITableView, willDisplay cell: UITableViewCell, forRowAt indexPath: IndexPath) {
-        
         if(cell.responds(to: #selector(setter: UITableViewCell.separatorInset))){
             cell.separatorInset = .zero
         }
-        
         if(cell.responds(to: #selector(setter: UIView.layoutMargins))){
             cell.layoutMargins = .zero
         }

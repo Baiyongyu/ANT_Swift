@@ -35,6 +35,7 @@ class CetuTypeViewController: BaseViewController {
             cetuTypeBtn.tag = 100+i
             cetuTypeBtn.setTitleColor(UIColor.orange, for: .normal)
             cetuTypeBtn.setTitleColor(UIColor.white, for: .highlighted)
+            cetuTypeBtn.addTarget(self, action: #selector(selectTypeAction(sender:)), for: .touchUpInside)
             self.contentView.addSubview(cetuTypeBtn)
             cetuTypeBtn.snp.makeConstraints({ (make) in
                 make.left.equalTo(20 + (SCREEN_WIDTH - 60)/2 * CGFloat(i) + CGFloat(20 * i))
@@ -42,6 +43,17 @@ class CetuTypeViewController: BaseViewController {
                 make.bottom.equalTo(bgView).offset(-55);
                 make.height.equalTo(44);
             })
+            
+        }
+    }
+    
+    func selectTypeAction(sender: UIButton) {
+        switch sender.tag - 100 {
+        case 0:
+            AppCommon.push(CetuViewController(), animated: true)
+        case 1:
+            AppCommon.push(CetuDataInputViewController(), animated: true)
+        default: break
             
         }
     }

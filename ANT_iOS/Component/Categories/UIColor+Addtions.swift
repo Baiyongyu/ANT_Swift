@@ -8,8 +8,7 @@
 
 import UIKit
 
-extension UIColor
-{
+extension UIColor {
     class func HexColor(_ hexColor: Int32 ) -> UIColor {
         let r = CGFloat(((hexColor & 0x00FF0000) >> 16)) / 255.0
         let g = CGFloat(((hexColor & 0x0000FF00) >> 8)) / 255.0

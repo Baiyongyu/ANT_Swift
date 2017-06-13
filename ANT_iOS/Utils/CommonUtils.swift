@@ -25,5 +25,4 @@ class CommonUtils: NSObject {
         animation.values = values as? [Any]
         view.layer.add(animation, forKey: nil)
     }
-    
 }

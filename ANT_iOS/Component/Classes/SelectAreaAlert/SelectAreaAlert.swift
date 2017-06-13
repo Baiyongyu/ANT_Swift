@@ -10,7 +10,9 @@ import UIKit
 
 class SelectAreaAlert: UIView {
 
+    //地区名称数组
     var titles = NSArray()
+    //地区id数组
     var codes = NSArray()
     
     var alertHeight: CGFloat?
@@ -42,6 +44,7 @@ class SelectAreaAlert: UIView {
         selectCollectionView.frame = CGRect(x: 20, y: lineView.frame.size.height+50, width: alertView.frame.size.width - 40, height: alertView.frame.size.height - 80)
     }
     
+    //外部调用的方法
     public func selectAreaAlert(title: String, titles: NSArray, codes: NSArray) {
         self.titleLabel.text = title
         self.titles = titles
@@ -122,6 +125,7 @@ class SelectAreaAlert: UIView {
     }
 }
 
+// 地区colection 代理
 extension SelectAreaAlert: UICollectionViewDelegate, UICollectionViewDataSource {
     
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
@@ -139,6 +143,7 @@ extension SelectAreaAlert: UICollectionViewDelegate, UICollectionViewDataSource 
     }
 }
 
+// 地区 cell
 class AreaLabelCell: UICollectionViewCell {
     
     override init(frame: CGRect) {
