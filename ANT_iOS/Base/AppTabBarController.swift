@@ -8,8 +8,8 @@
 
 import UIKit
 
-class AppTabBarController: UITabBarController {
-
+class AppTabBarController: UITabBarController, AppTabBarDelegate {
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
@@ -35,35 +35,51 @@ class AppTabBarController: UITabBarController {
         mine.tabBarItem.image = UIImage.init(named: "ic_tabbar_mine_normal")
         mine.tabBarItem.selectedImage = UIImage.init(named: "ic_tabbar_mine_selected")?.withRenderingMode(.alwaysOriginal)
         
+        //创建自己的tabbar，然后用kvc将自己的tabbar和系统的tabBar替换下
+        let tabbar = AppTabBar()
+        tabbar.myDelegate = self
+        //kvc实质是修改了系统的_tabBar
+        self.setValue(tabbar, forKeyPath: "tabBar")
+        
         self.tabBar.tintColor = UIColor.orange
         self.viewControllers = [home, farm, circle, mine];
     }
 
     override func tabBar(_ tabBar: UITabBar, didSelect item: UITabBarItem) {
-//        var index = NSInteger()
-//        index = (self.tabBar.items?.index(of: item))!
-//        animationWithIndex(index: index)
+        
+        // 使用枚举遍历,判断选中的tabBarItem等于数组中的第几个
+        for (key, value) in (tabBar.items?.enumerated())! {
+            if value == item {
+                print(key)
+                // 将下标传入动画方法
+                animationWithIndex(index: key)
+            }
+        }
     }
     
+    func tabBarPlusBtnClick(tabBar: AppTabBar) {
+        print("中间按钮")
+    }
     
-    func animationWithIndex(index: NSInteger) -> () {
-    
+    func animationWithIndex(index: NSInteger) {
+        var tabbarbuttonArray:[Any] = [Any]()
+        for tabBarButton in self.tabBar.subviews {
+            if tabBarButton.isKind(of: NSClassFromString("UITabBarButton")!) {
+                tabbarbuttonArray.append(tabBarButton)
+            }
+        }
+        let pulse = CABasicAnimation(keyPath: "transform.scale")
+        pulse.timingFunction = CAMediaTimingFunction(name:kCAMediaTimingFunctionEaseInEaseOut)
+        pulse.duration = 0.2
+        pulse.repeatCount = 1
+        pulse.autoreverses = true
+        pulse.fromValue = NSNumber.init(value: 0.7)
+        pulse.toValue = NSNumber.init(value: 1.0)
+        (tabbarbuttonArray[index] as AnyObject).layer.add(pulse, forKey: nil)
     }
     
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }
-    
-
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destinationViewController.
-        // Pass the selected object to the new view controller.
-    }
-    */
-
 }

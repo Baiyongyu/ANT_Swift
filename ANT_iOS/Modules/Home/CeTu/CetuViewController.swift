@@ -273,7 +273,6 @@ class CetuRecommendCell: UITableViewCell {
         }
     }
     
-    
     func recommendAction() {
         let adviceVC = CeTuAdviceViewController()
         AppCommon.push(adviceVC, animated: true)

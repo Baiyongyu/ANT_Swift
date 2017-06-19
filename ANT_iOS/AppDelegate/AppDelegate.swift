@@ -25,6 +25,10 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         nav.navigationBar.isHidden = true
         self.window?.rootViewController = nav
         
+        //版本检测
+        let versionManager = VersionManager()
+        versionManager.checkVersionUpdate()
+        
         return true
     }
 

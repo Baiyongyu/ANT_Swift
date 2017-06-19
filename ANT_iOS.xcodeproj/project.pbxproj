@@ -8,6 +8,8 @@
 
 /* Begin PBXBuildFile section */
 		D4031E97425D8295BF9D115C /* Pods_ANT_iOS.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C3D2928A46DF521094C213F0 /* Pods_ANT_iOS.framework */; };
+		F30EEEE31EF7599100C6A9FF /* VersionAlertView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F30EEEE21EF7599100C6A9FF /* VersionAlertView.swift */; };
+		F30EEEE51EF767A100C6A9FF /* VersionManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = F30EEEE41EF767A100C6A9FF /* VersionManager.swift */; };
 		F320DE761EEE669A005AF954 /* CetuViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F320DE751EEE669A005AF954 /* CetuViewController.swift */; };
 		F320DE781EEE7114005AF954 /* FormulaModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F320DE771EEE7114005AF954 /* FormulaModel.swift */; };
 		F320DE7A1EEE7A65005AF954 /* UIView+Additions.swift in Sources */ = {isa = PBXBuildFile; fileRef = F320DE791EEE7A65005AF954 /* UIView+Additions.swift */; };
@@ -16,6 +18,8 @@
 		F3320AEB1EE7A4BE00327DC7 /* ShopModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3320AEA1EE7A4BE00327DC7 /* ShopModel.swift */; };
 		F33FBB891EEF857C00F4B2A8 /* BuyFormulaPopView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F33FBB881EEF857C00F4B2A8 /* BuyFormulaPopView.swift */; };
 		F33FBB8B1EEF97DF00F4B2A8 /* CeTuAdviceViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F33FBB8A1EEF97DF00F4B2A8 /* CeTuAdviceViewController.swift */; };
+		F33FBB8E1EEFBEDA00F4B2A8 /* MenuControl.swift in Sources */ = {isa = PBXBuildFile; fileRef = F33FBB8D1EEFBEDA00F4B2A8 /* MenuControl.swift */; };
+		F33FBB981EEFDB2100F4B2A8 /* PlantManagerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F33FBB971EEFDB2100F4B2A8 /* PlantManagerViewController.swift */; };
 		F34ADDB91EE68B5400328C8E /* AdvertScrollView.m in Sources */ = {isa = PBXBuildFile; fileRef = F34ADDB81EE68B5400328C8E /* AdvertScrollView.m */; };
 		F34C93541EE692F300091195 /* BaseConst.swift in Sources */ = {isa = PBXBuildFile; fileRef = F34C93531EE692F300091195 /* BaseConst.swift */; };
 		F34C93561EE6991300091195 /* MessageModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F34C93551EE6991300091195 /* MessageModel.swift */; };
@@ -96,6 +100,8 @@
 		F39855971EE927A10042990C /* AddressEditViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F39855961EE927A10042990C /* AddressEditViewController.swift */; };
 		F398559A1EE93C870042990C /* SelectAreaAlert.swift in Sources */ = {isa = PBXBuildFile; fileRef = F39855991EE93C870042990C /* SelectAreaAlert.swift */; };
 		F398559C1EE954690042990C /* CommonUtils.swift in Sources */ = {isa = PBXBuildFile; fileRef = F398559B1EE954690042990C /* CommonUtils.swift */; };
+		F399DDD11EF38F6A0012AD94 /* AppTabBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = F399DDD01EF38F6A0012AD94 /* AppTabBar.swift */; };
+		F399DDD71EF3DA9B0012AD94 /* UIImage+Additions.swift in Sources */ = {isa = PBXBuildFile; fileRef = F399DDD61EF3DA9B0012AD94 /* UIImage+Additions.swift */; };
 		F3B764FA1EEF73E1009FF0BE /* PopUpPickerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3B764F91EEF73E1009FF0BE /* PopUpPickerView.swift */; };
 		F3D677381EE55EBB00BEB029 /* CropsCollectionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3D677371EE55EBB00BEB029 /* CropsCollectionView.swift */; };
 		F3D6773B1EE5625500BEB029 /* PlantModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3D6773A1EE5625500BEB029 /* PlantModel.swift */; };
@@ -114,6 +120,8 @@
 		022A2B72FB17BBCF3E6BD8BC /* Pods-ANT_iOS.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ANT_iOS.release.xcconfig"; path = "Pods/Target Support Files/Pods-ANT_iOS/Pods-ANT_iOS.release.xcconfig"; sourceTree = "<group>"; };
 		71E885BB0AA338D183331694 /* Pods-ANT_iOS.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ANT_iOS.debug.xcconfig"; path = "Pods/Target Support Files/Pods-ANT_iOS/Pods-ANT_iOS.debug.xcconfig"; sourceTree = "<group>"; };
 		C3D2928A46DF521094C213F0 /* Pods_ANT_iOS.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ANT_iOS.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		F30EEEE21EF7599100C6A9FF /* VersionAlertView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VersionAlertView.swift; sourceTree = "<group>"; };
+		F30EEEE41EF767A100C6A9FF /* VersionManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VersionManager.swift; sourceTree = "<group>"; };
 		F320DE751EEE669A005AF954 /* CetuViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CetuViewController.swift; sourceTree = "<group>"; };
 		F320DE771EEE7114005AF954 /* FormulaModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FormulaModel.swift; sourceTree = "<group>"; };
 		F320DE791EEE7A65005AF954 /* UIView+Additions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIView+Additions.swift"; sourceTree = "<group>"; };
@@ -122,6 +130,8 @@
 		F3320AEA1EE7A4BE00327DC7 /* ShopModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ShopModel.swift; sourceTree = "<group>"; };
 		F33FBB881EEF857C00F4B2A8 /* BuyFormulaPopView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BuyFormulaPopView.swift; sourceTree = "<group>"; };
 		F33FBB8A1EEF97DF00F4B2A8 /* CeTuAdviceViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CeTuAdviceViewController.swift; sourceTree = "<group>"; };
+		F33FBB8D1EEFBEDA00F4B2A8 /* MenuControl.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuControl.swift; sourceTree = "<group>"; };
+		F33FBB971EEFDB2100F4B2A8 /* PlantManagerViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlantManagerViewController.swift; sourceTree = "<group>"; };
 		F34ADDB71EE68B5400328C8E /* AdvertScrollView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AdvertScrollView.h; sourceTree = "<group>"; };
 		F34ADDB81EE68B5400328C8E /* AdvertScrollView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AdvertScrollView.m; sourceTree = "<group>"; };
 		F34C93531EE692F300091195 /* BaseConst.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BaseConst.swift; sourceTree = "<group>"; };
@@ -233,6 +243,8 @@
 		F39855961EE927A10042990C /* AddressEditViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AddressEditViewController.swift; sourceTree = "<group>"; };
 		F39855991EE93C870042990C /* SelectAreaAlert.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SelectAreaAlert.swift; sourceTree = "<group>"; };
 		F398559B1EE954690042990C /* CommonUtils.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CommonUtils.swift; sourceTree = "<group>"; };
+		F399DDD01EF38F6A0012AD94 /* AppTabBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppTabBar.swift; sourceTree = "<group>"; };
+		F399DDD61EF3DA9B0012AD94 /* UIImage+Additions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIImage+Additions.swift"; sourceTree = "<group>"; };
 		F3B764F91EEF73E1009FF0BE /* PopUpPickerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PopUpPickerView.swift; sourceTree = "<group>"; };
 		F3D677371EE55EBB00BEB029 /* CropsCollectionView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CropsCollectionView.swift; sourceTree = "<group>"; };
 		F3D6773A1EE5625500BEB029 /* PlantModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PlantModel.swift; sourceTree = "<group>"; };
@@ -267,12 +279,36 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
+		F30EEEE11EF7598100C6A9FF /* VersionAlertView */ = {
+			isa = PBXGroup;
+			children = (
+				F30EEEE21EF7599100C6A9FF /* VersionAlertView.swift */,
+			);
+			path = VersionAlertView;
+			sourceTree = "<group>";
+		};
 		F3320AE71EE79BE200327DC7 /* Shop */ = {
 			isa = PBXGroup;
 			children = (
 				F3320AE81EE79BF800327DC7 /* ShopListViewController.swift */,
 			);
 			path = Shop;
+			sourceTree = "<group>";
+		};
+		F33FBB8C1EEFBEC200F4B2A8 /* MenuControl */ = {
+			isa = PBXGroup;
+			children = (
+				F33FBB8D1EEFBEDA00F4B2A8 /* MenuControl.swift */,
+			);
+			path = MenuControl;
+			sourceTree = "<group>";
+		};
+		F33FBB961EEFDB0900F4B2A8 /* PlantManager */ = {
+			isa = PBXGroup;
+			children = (
+				F33FBB971EEFDB2100F4B2A8 /* PlantManagerViewController.swift */,
+			);
+			path = PlantManager;
 			sourceTree = "<group>";
 		};
 		F34ADDB61EE68B5400328C8E /* AdvertScrollView */ = {
@@ -341,6 +377,7 @@
 			children = (
 				F35BB77F1EE163DD0032EC02 /* BaseViewController.swift */,
 				F35BB7711EE14DC80032EC02 /* AppTabBarController.swift */,
+				F399DDD01EF38F6A0012AD94 /* AppTabBar.swift */,
 				F35BB77C1EE1503B0032EC02 /* AppNavigationController.swift */,
 				F34C93531EE692F300091195 /* BaseConst.swift */,
 			);
@@ -541,6 +578,7 @@
 			isa = PBXGroup;
 			children = (
 				F34C935D1EE6B58600091195 /* CacheManager.swift */,
+				F30EEEE41EF767A100C6A9FF /* VersionManager.swift */,
 			);
 			path = Manager;
 			sourceTree = "<group>";
@@ -573,6 +611,8 @@
 		F3D677321EE5584F00BEB029 /* Classes */ = {
 			isa = PBXGroup;
 			children = (
+				F30EEEE11EF7598100C6A9FF /* VersionAlertView */,
+				F33FBB8C1EEFBEC200F4B2A8 /* MenuControl */,
 				F3B764F81EEF73B3009FF0BE /* PopupMenu */,
 				F39855981EE93B4E0042990C /* SelectAreaAlert */,
 				F34ADDB61EE68B5400328C8E /* AdvertScrollView */,
@@ -639,6 +679,7 @@
 				F3F587121EE43BC40018412D /* UIColor+Addtions.swift */,
 				F39855941EE8FDF20042990C /* VerticalButton.swift */,
 				F320DE791EEE7A65005AF954 /* UIView+Additions.swift */,
+				F399DDD61EF3DA9B0012AD94 /* UIImage+Additions.swift */,
 			);
 			path = Categories;
 			sourceTree = "<group>";
@@ -655,6 +696,7 @@
 			isa = PBXGroup;
 			children = (
 				F3F587171EE43CAD0018412D /* FarmViewController.swift */,
+				F33FBB961EEFDB0900F4B2A8 /* PlantManager */,
 				F3FC1E861EE7E08600CD66E1 /* webthing */,
 			);
 			path = Farm;
@@ -814,6 +856,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				F365D67A1EE6415B00500391 /* FarmActivityModel.swift in Sources */,
+				F399DDD11EF38F6A0012AD94 /* AppTabBar.swift in Sources */,
 				F39855951EE8FDF20042990C /* VerticalButton.swift in Sources */,
 				F365D7151EE67AAE00500391 /* ConstraintViewDSL.swift in Sources */,
 				F365D6FA1EE67AAE00500391 /* ConstraintAttributes.swift in Sources */,
@@ -831,12 +874,14 @@
 				F398558D1EE8F1920042990C /* AddressModel.swift in Sources */,
 				F365D6EF1EE67AAE00500391 /* SDWebImageDownloader.m in Sources */,
 				F365D6F91EE67AAE00500391 /* Constraint.swift in Sources */,
+				F33FBB981EEFDB2100F4B2A8 /* PlantManagerViewController.swift in Sources */,
 				F3F5871A1EE43CAD0018412D /* CircleViewController.swift in Sources */,
 				F365D6ED1EE67AAE00500391 /* SDWebImageCompat.m in Sources */,
 				F365D6E41EE67AAE00500391 /* TAAbstractDotView.m in Sources */,
 				F33FBB8B1EEF97DF00F4B2A8 /* CeTuAdviceViewController.swift in Sources */,
 				F365D70A1EE67AAE00500391 /* ConstraintMakerFinalizable.swift in Sources */,
 				F365D7111EE67AAE00500391 /* ConstraintRelatableTarget.swift in Sources */,
+				F30EEEE31EF7599100C6A9FF /* VersionAlertView.swift in Sources */,
 				F365D6F71EE67AAE00500391 /* UIImageView+WebCache.m in Sources */,
 				F365D70B1EE67AAE00500391 /* ConstraintMakerPriortizable.swift in Sources */,
 				F35BB7611EE14CEF0032EC02 /* ViewController.swift in Sources */,
@@ -892,6 +937,7 @@
 				F365D6FC1EE67AAE00500391 /* ConstraintConstantTarget.swift in Sources */,
 				F365D7021EE67AAE00500391 /* ConstraintLayoutGuide+Extensions.swift in Sources */,
 				F3F586841EE407FD0018412D /* HomeViewController.swift in Sources */,
+				F30EEEE51EF767A100C6A9FF /* VersionManager.swift in Sources */,
 				F34C935C1EE6A6D000091195 /* SettingsViewController.swift in Sources */,
 				F320DE7A1EEE7A65005AF954 /* UIView+Additions.swift in Sources */,
 				F35BB77D1EE1503B0032EC02 /* AppNavigationController.swift in Sources */,
@@ -900,6 +946,7 @@
 				F365D70C1EE67AAE00500391 /* ConstraintMakerRelatable.swift in Sources */,
 				F365D70E1EE67AAE00500391 /* ConstraintOffsetTarget.swift in Sources */,
 				F365D6F21EE67AAE00500391 /* SDWebImagePrefetcher.m in Sources */,
+				F399DDD71EF3DA9B0012AD94 /* UIImage+Additions.swift in Sources */,
 				F365D6EA1EE67AAE00500391 /* UIView+SDExtension.m in Sources */,
 				F398559A1EE93C870042990C /* SelectAreaAlert.swift in Sources */,
 				F365D6F41EE67AAE00500391 /* UIImage+GIF.m in Sources */,
@@ -907,6 +954,7 @@
 				F34C935E1EE6B58600091195 /* CacheManager.swift in Sources */,
 				F320DE781EEE7114005AF954 /* FormulaModel.swift in Sources */,
 				F365D7001EE67AAE00500391 /* ConstraintInsetTarget.swift in Sources */,
+				F33FBB8E1EEFBEDA00F4B2A8 /* MenuControl.swift in Sources */,
 				F3F587131EE43BC40018412D /* UIColor+Addtions.swift in Sources */,
 				F365D6FD1EE67AAE00500391 /* ConstraintDescription.swift in Sources */,
 			);
