@@ -14,6 +14,7 @@
 		F320DE781EEE7114005AF954 /* FormulaModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F320DE771EEE7114005AF954 /* FormulaModel.swift */; };
 		F320DE7A1EEE7A65005AF954 /* UIView+Additions.swift in Sources */ = {isa = PBXBuildFile; fileRef = F320DE791EEE7A65005AF954 /* UIView+Additions.swift */; };
 		F320DE7C1EEE8044005AF954 /* CetuDataInputViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F320DE7B1EEE8044005AF954 /* CetuDataInputViewController.swift */; };
+		F32671C51EF7D39700121C9B /* ActionAlertView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F32671C41EF7D39700121C9B /* ActionAlertView.swift */; };
 		F3320AE91EE79BF800327DC7 /* ShopListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3320AE81EE79BF800327DC7 /* ShopListViewController.swift */; };
 		F3320AEB1EE7A4BE00327DC7 /* ShopModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3320AEA1EE7A4BE00327DC7 /* ShopModel.swift */; };
 		F33FBB891EEF857C00F4B2A8 /* BuyFormulaPopView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F33FBB881EEF857C00F4B2A8 /* BuyFormulaPopView.swift */; };
@@ -126,6 +127,7 @@
 		F320DE771EEE7114005AF954 /* FormulaModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FormulaModel.swift; sourceTree = "<group>"; };
 		F320DE791EEE7A65005AF954 /* UIView+Additions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIView+Additions.swift"; sourceTree = "<group>"; };
 		F320DE7B1EEE8044005AF954 /* CetuDataInputViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CetuDataInputViewController.swift; sourceTree = "<group>"; };
+		F32671C41EF7D39700121C9B /* ActionAlertView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ActionAlertView.swift; sourceTree = "<group>"; };
 		F3320AE81EE79BF800327DC7 /* ShopListViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ShopListViewController.swift; sourceTree = "<group>"; };
 		F3320AEA1EE7A4BE00327DC7 /* ShopModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ShopModel.swift; sourceTree = "<group>"; };
 		F33FBB881EEF857C00F4B2A8 /* BuyFormulaPopView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BuyFormulaPopView.swift; sourceTree = "<group>"; };
@@ -285,6 +287,14 @@
 				F30EEEE21EF7599100C6A9FF /* VersionAlertView.swift */,
 			);
 			path = VersionAlertView;
+			sourceTree = "<group>";
+		};
+		F32671C31EF7D33D00121C9B /* ActionAlertView */ = {
+			isa = PBXGroup;
+			children = (
+				F32671C41EF7D39700121C9B /* ActionAlertView.swift */,
+			);
+			path = ActionAlertView;
 			sourceTree = "<group>";
 		};
 		F3320AE71EE79BE200327DC7 /* Shop */ = {
@@ -611,6 +621,7 @@
 		F3D677321EE5584F00BEB029 /* Classes */ = {
 			isa = PBXGroup;
 			children = (
+				F32671C31EF7D33D00121C9B /* ActionAlertView */,
 				F30EEEE11EF7598100C6A9FF /* VersionAlertView */,
 				F33FBB8C1EEFBEC200F4B2A8 /* MenuControl */,
 				F3B764F81EEF73B3009FF0BE /* PopupMenu */,
@@ -934,6 +945,7 @@
 				F365D6FF1EE67AAE00500391 /* ConstraintInsets.swift in Sources */,
 				F365D7061EE67AAE00500391 /* ConstraintLayoutSupportDSL.swift in Sources */,
 				F320DE761EEE669A005AF954 /* CetuViewController.swift in Sources */,
+				F32671C51EF7D39700121C9B /* ActionAlertView.swift in Sources */,
 				F365D6FC1EE67AAE00500391 /* ConstraintConstantTarget.swift in Sources */,
 				F365D7021EE67AAE00500391 /* ConstraintLayoutGuide+Extensions.swift in Sources */,
 				F3F586841EE407FD0018412D /* HomeViewController.swift in Sources */,

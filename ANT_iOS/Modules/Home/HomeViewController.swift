@@ -121,9 +121,9 @@ class HomeViewController: BaseViewController {
     
     override func loadData() {
         // 头部滚动视图
-        self.cycleScrollView.imageURLStringsGroup = ["https://ss0.bdstatic.com/5aV1bjqh_Q23odCf/static/superman/img/logo/logo_white_fe6da1ec.png",
-                                                     "https://ss0.bdstatic.com/5aV1bjqh_Q23odCf/static/superman/img/logo/logo_white_fe6da1ec.png",
-                                                     "https://ss0.bdstatic.com/5aV1bjqh_Q23odCf/static/superman/img/logo/logo_white_fe6da1ec.png"]
+        self.cycleScrollView.imageURLStringsGroup = ["https://timgsa.baidu.com/timg?image&quality=80&size=b9999_10000&sec=1497949214433&di=ae83cb8483d9df8c4f8702d5f23ce45d&imgtype=0&src=http%3A%2F%2Fimg3.duitang.com%2Fuploads%2Fitem%2F201201%2F21%2F20120121164629_HAcYw.jpg",
+                                                     "https://timgsa.baidu.com/timg?image&quality=80&size=b9999_10000&sec=1497949236536&di=9ee3b94520d0d468e7965d089738a51d&imgtype=0&src=http%3A%2F%2Fimg1.gamersky.com%2Fimage2014%2F03%2F20140307zx_2%2Fgamersky_31small_62_20143710179F3.jpg",
+                                                     "https://timgsa.baidu.com/timg?image&quality=80&size=b9999_10000&sec=1497949253080&di=830853049c767682059db6bd995b08c3&imgtype=0&src=http%3A%2F%2Fwenwen.soso.com%2Fp%2F20110516%2F20110516210729-212837478.jpg"]
         // 新闻滚动
         self.advertScrollView.titles = ["曹勇就是个大坑货","永远不要相信产品说的话","大勇你个产品汪"]
         

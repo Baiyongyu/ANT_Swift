@@ -103,27 +103,6 @@ class VersionAlertView: UIView {
         self.removeFromSuperview()
     }
     
-    public func getAdaptiveLable(rect: CGRect, contentStr: String, isTitle: Bool) -> UILabel {
-        let contentLbl = UILabel(frame: rect)
-        contentLbl.numberOfLines = 0
-        contentLbl.text = contentStr
-        contentLbl.textAlignment = .center
-        if isTitle {
-            contentLbl.font = UIFont.boldSystemFont(ofSize: 18.0)
-        } else {
-            contentLbl.font = UIFont.systemFont(ofSize: 14.0)
-        }
-        
-        let mAttrStr = NSMutableAttributedString(string: contentStr)
-        let mParaStyle = NSMutableParagraphStyle()
-        mParaStyle.lineBreakMode = .byCharWrapping
-        mParaStyle.lineSpacing = 3.0
-        mAttrStr.addAttribute(NSParagraphStyleAttributeName, value: mParaStyle, range: NSRange(location: 0, length: contentStr.characters.count))
-        contentLbl.attributedText = mAttrStr
-        contentLbl.sizeToFit()
-        return contentLbl
-    }
-    
     lazy var closeButton: UIButton = {
         let closeButton = UIButton(type: UIButtonType.custom)
         closeButton.setImage(UIImage.init(named: "ic_close"), for: .normal)

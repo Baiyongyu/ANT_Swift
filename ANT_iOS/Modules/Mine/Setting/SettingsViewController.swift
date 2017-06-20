@@ -105,11 +105,9 @@ extension SettingsViewController: UITableViewDelegate, UITableViewDataSource {
     }
     
     func tableView(_ tableView: UITableView, willDisplay cell: UITableViewCell, forRowAt indexPath: IndexPath) {
-        
         if(cell.responds(to: #selector(setter: UITableViewCell.separatorInset))){
             cell.separatorInset = .zero
         }
-        
         if(cell.responds(to: #selector(setter: UIView.layoutMargins))){
             cell.layoutMargins = .zero
         }
@@ -118,18 +116,31 @@ extension SettingsViewController: UITableViewDelegate, UITableViewDataSource {
     
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         tableView.deselectRow(at: indexPath, animated: true)
-        if indexPath.row == 0 {
-            let alertController = UIAlertController(title: "清理缓存", message: "缓存大小为" + CacheManager.cacheSize + ", 确定要清理吗?", preferredStyle: .alert)
-            let confirm = UIAlertAction(title: "确定", style: .destructive, handler: { (alertController:UIAlertAction) in
-                if CacheManager.clearCache() {
-                    self.tableView.reloadData()
+        
+        switch indexPath.row {
+        case 0:
+            let alertView = ActionAlertView()
+            alertView.initWithTitle(titles: "清理缓存", message: "缓存大小为" + CacheManager.cacheSize + ", 确定要清理吗?", sureTitle: "确定", cancleTitle: "取消")
+            alertView.alertSelectIndex = { (index) -> Void in
+                if index == 2 {
+                    if CacheManager.clearCache() {
+                        self.tableView.reloadData()
+                    }
                 }
-            })
-            
-            let cancel = UIAlertAction(title: "取消", style: .cancel, handler: nil)
-            alertController.addAction(confirm)
-            alertController.addAction(cancel)
-            self.present(alertController, animated: true, completion: nil)
+            }
+            alertView.showAlertView()
+            break
+        case 1:
+            let alertView = ActionAlertView()
+            alertView.initWithTitle(titles: "退出当前账号？", message: "", sureTitle: "确定", cancleTitle: "取消")
+            alertView.alertSelectIndex = { (index) -> Void in
+                if index == 2 {
+                }
+            }
+            alertView.showAlertView()
+            break
+        default:
+            break
         }
     }
 }
