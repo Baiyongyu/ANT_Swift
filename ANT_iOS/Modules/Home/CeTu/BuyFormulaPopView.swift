@@ -132,6 +132,7 @@ class BuyFormulaPopView: UIView {
                 })
             }
         }
+        CommonUtils().setCAKeyframeAnimation(view: self.bgView)
     }
     
     func tapAction() {

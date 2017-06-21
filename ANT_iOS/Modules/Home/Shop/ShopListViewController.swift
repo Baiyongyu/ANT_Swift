@@ -71,11 +71,9 @@ extension ShopListViewController: UITableViewDelegate, UITableViewDataSource {
     }
     
     func tableView(_ tableView: UITableView, willDisplay cell: UITableViewCell, forRowAt indexPath: IndexPath) {
-        
         if(cell.responds(to: #selector(setter: UITableViewCell.separatorInset))){
             cell.separatorInset = .zero
         }
-        
         if(cell.responds(to: #selector(setter: UIView.layoutMargins))){
             cell.layoutMargins = .zero
         }
@@ -140,7 +138,7 @@ class ShopCell: UITableViewCell {
     
     var shopData: ShopModel? {
         didSet {
-            shopImageView.sd_setImage(with: NSURL.init(string: (shopData?.shopImageUrl)!)! as URL, placeholderImage: IMAGE_PLACEHOLDER)
+            shopImageView.kf.setImage(with: NSURL.init(string: (shopData?.shopImageUrl)!)! as URL, placeholder: IMAGE_PLACEHOLDER, options: nil, progressBlock: nil, completionHandler: nil)
             shopNameLabel.text = shopData?.shopName
             shopIntroLabel.text = shopData?.shopIntro
             distanceLabel.text = shopData?.distance

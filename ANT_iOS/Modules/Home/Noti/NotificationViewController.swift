@@ -54,9 +54,11 @@ extension NotificationViewController: UITableViewDelegate,UITableViewDataSource 
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: NotificationViewController.classTableViewCellIdentifier, for: indexPath) as! NotificationCell
-        cell.selectionStyle = .none
         cell.messageData = self.dataArray[indexPath.row] as? MessageModel
         return cell
+    }
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        tableView.deselectRow(at: indexPath, animated: true)
     }
     
     func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {

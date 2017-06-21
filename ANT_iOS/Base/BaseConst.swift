@@ -7,11 +7,14 @@
 //
 
 import UIKit
+/******************************* ThirdLib *******************************/
+import SnapKit
+import Kingfisher
 
 let SCREEN_WIDTH = UIScreen.main.bounds.size.width
 let SCREEN_HEIGHT = UIScreen.main.bounds.size.height
 let SCREEN = UIScreen.main.bounds
-let currentVersion = Bundle.main.infoDictionary!["CFBundleShortVersionString"] as! String
+let CurrentVersion = Bundle.main.infoDictionary!["CFBundleShortVersionString"] as! String
 
 let PhoneNumber = "0553-5010050"
 

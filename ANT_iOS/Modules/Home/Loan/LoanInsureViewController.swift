@@ -16,7 +16,6 @@ enum LoanOrInsureType {
 class LoanInsureViewController: BaseViewController {
     
     var dataArray = NSArray()
-    
     var selectType: LoanOrInsureType?
     
     override func loadSubViews() {

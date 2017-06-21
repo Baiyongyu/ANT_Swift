@@ -146,16 +146,6 @@ class MenuContainer: UIView, UITableViewDelegate, UITableViewDataSource, MenuCon
         layoutConstraints()
     }
     
-//    convenience init() {
-//        self.init()
-//        self.backgroundColor = UIColor.orange
-//        self.scrollAnimated = true
-//        self.addSubview(self.menuCtrl)
-//        self.addSubview(self.containerTableView)
-//        layoutConstraints()
-        
-//    }
-        
     
     func layoutConstraints() {
         self.menuCtrl.snp.makeConstraints { (make) in

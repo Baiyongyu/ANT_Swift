@@ -8,6 +8,8 @@
 
 import UIKit
 
+import Kingfisher
+
 class MineViewController: BaseViewController {
 
     
@@ -83,14 +85,14 @@ class MineViewController: BaseViewController {
         titleArray = ["我的订单","测土配肥记录","消费记录","收货地址","客服热线","设置"]
         iconArray = ["ic_mine_order","ic_mine_cetu","ic_mine_payrecord","ic_mine_address","ic_mine_hotline","ic_mine_settings"]
         
-        avatarImageView.sd_setImage(with: NSURL.init(string: "http://img2.imgtn.bdimg.com/it/u=960594752,2162202648&fm=26&gp=0.jpg")! as URL, placeholderImage: IMAGE_AVATAR_PLACEHOLDER)
+        avatarImageView.kf.setImage(with: NSURL.init(string: "http://img2.imgtn.bdimg.com/it/u=960594752,2162202648&fm=26&gp=0.jpg")! as URL, placeholder: IMAGE_AVATAR_PLACEHOLDER, options: [.transition(ImageTransition.fade(1))], progressBlock: nil, completionHandler: nil)
         nameLabel.text = "我是路飞，要成为海贼王的男人！"
         self.tableView.reloadData()
     }
 
     
     func tapHeaderAction() {
-        print("点击头像")
+//        print("点击头像")
     }
     
     lazy var tableView: UITableView = {

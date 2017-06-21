@@ -50,7 +50,7 @@ class AppTabBarController: UITabBarController, AppTabBarDelegate {
         // 使用枚举遍历,判断选中的tabBarItem等于数组中的第几个
         for (key, value) in (tabBar.items?.enumerated())! {
             if value == item {
-                print(key)
+//                print(key)
                 // 将下标传入动画方法
                 animationWithIndex(index: key)
             }
@@ -58,7 +58,7 @@ class AppTabBarController: UITabBarController, AppTabBarDelegate {
     }
     
     func tabBarPlusBtnClick(tabBar: AppTabBar) {
-        print("中间按钮")
+//        print("中间按钮")
     }
     
     func animationWithIndex(index: NSInteger) {

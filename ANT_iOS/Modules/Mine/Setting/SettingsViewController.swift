@@ -41,7 +41,7 @@ class SettingsViewController: BaseViewController {
         }
         
         headerView.addSubview(versionLabel)
-        versionLabel.text = "版本号" + currentVersion
+        versionLabel.text = "版本号" + CurrentVersion
         versionLabel.font = UIFont.systemFont(ofSize: 12)
         versionLabel.textAlignment = .center
         versionLabel.textColor = UIColor.lightGray

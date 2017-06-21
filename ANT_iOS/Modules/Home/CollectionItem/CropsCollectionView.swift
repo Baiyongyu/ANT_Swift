@@ -91,7 +91,7 @@ extension CropsCollectionView: UICollectionViewDelegate, UICollectionViewDataSou
     }
     
     func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
-        
+        AppCommon.push(PlantManagerViewController(), animated: true)
     }
 }
 
