@@ -6,12 +6,12 @@
     },
     {
       "idiom" : "universal",
-      "filename" : "ic_tabbar_add_bg@2x.png",
+      "filename" : "ic_message_normal@2x.png",
       "scale" : "2x"
     },
     {
       "idiom" : "universal",
-      "filename" : "ic_tabbar_add_bg@3x.png",
+      "filename" : "ic_message_normal@3x.png",
       "scale" : "3x"
     }
   ],

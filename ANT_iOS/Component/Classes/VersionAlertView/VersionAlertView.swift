@@ -105,7 +105,7 @@ class VersionAlertView: UIView {
     
     lazy var closeButton: UIButton = {
         let closeButton = UIButton(type: UIButtonType.custom)
-        closeButton.setImage(UIImage.init(named: "ic_close"), for: .normal)
+        closeButton.setImage(UIImage.init(named: "ic_delete_btn"), for: .normal)
         closeButton.addTarget(self, action: #selector(closeAction), for: .touchUpInside)
         return closeButton
     }()
@@ -140,7 +140,7 @@ class VersionAlertView: UIView {
         sureBtn.tag = 1
         sureBtn.layer.cornerRadius = 2
         sureBtn.layer.masksToBounds = true
-        sureBtn.backgroundColor = UIColor.orange
+        sureBtn.backgroundColor = BaseColor.ThemeColor
         sureBtn.addTarget(self, action: #selector(buttonEvent), for: .touchUpInside)
         return sureBtn
     }()

@@ -113,7 +113,7 @@ class HomeModuleCell: UICollectionViewCell {
 
         
         self.contentView.addSubview(bgView)
-        bgView.backgroundColor = UIColor.HexColor(0xf09056)
+        bgView.backgroundColor = BaseColor.ThemeColor
         bgView.layer.cornerRadius = 24
         bgView.snp.makeConstraints { (make) in
             make.top.equalTo(10);

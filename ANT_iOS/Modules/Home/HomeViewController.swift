@@ -21,13 +21,29 @@ class HomeViewController: BaseViewController {
         self.titleLabel.text = "首页"
         self.leftBtn.isHidden = true
         self.rightBtn.isHidden = false
-        self.rightBtn .setImage(UIImage.init(named: "ic_home_message"), for: .normal)
-        self.headerView.backgroundColor = UIColor.white
+        self.rightBtn.setImage(UIImage.init(named: "ic_message_selected"), for: .normal)
+        self.navBar.alpha = 0;
+        self.contentView.snp.updateConstraints { (make) in
+            make.edges.equalTo(self.view).inset(UIEdgeInsetsMake(0, 0, 49, 0));
+        }
         
+        let messageBtn = UIButton(type: UIButtonType.custom)
+        self.contentView.addSubview(messageBtn)
+        messageBtn.setImage(UIImage.init(named: "ic_message_normal"), for: .normal)
+        messageBtn.addTarget(self, action: #selector(HomeViewController.rightBtnAction), for: .touchUpInside)
+        messageBtn.snp.makeConstraints { (make) in
+            make.right.equalTo(self.view);
+            make.top.equalTo(self.view).offset(20);
+            make.width.equalTo(60);
+            make.height.equalTo(40);
+        }
+        
+        
+        self.headerView.backgroundColor = UIColor.white
         self.headerView.addSubview(self.cycleScrollView)
         self.cycleScrollView.snp.makeConstraints { (make) in
             make.left.top.right.equalTo(self.headerView);
-            make.height.equalTo(160);
+            make.height.equalTo(240);
         }
         
         let seperator1 = UIView()
@@ -77,7 +93,7 @@ class HomeViewController: BaseViewController {
         self.headerView.addSubview(advertScrollView)
         advertScrollView.snp.makeConstraints { (make) in
             make.top.equalTo(line1.snp.bottom);
-            make.left.equalTo(self.headerView);
+            make.left.equalTo(-10);
             make.right.equalTo(self.headerView);
             make.height.equalTo(44);
         }
@@ -112,7 +128,7 @@ class HomeViewController: BaseViewController {
 
         self.contentView.addSubview(self.tableView)
         self.tableView.snp.makeConstraints { (make) in
-            make.edges.equalTo(self.view).inset(UIEdgeInsetsMake(64, 0, 49, 0));
+            make.edges.equalTo(self.view).inset(UIEdgeInsetsMake(0, 0, 49, 0));
         }
         
         self.headerView.layoutIfNeeded()
@@ -153,7 +169,7 @@ class HomeViewController: BaseViewController {
     }
     
     lazy var cycleScrollView: SDCycleScrollView = {
-        let cycleScrollView = SDCycleScrollView(frame: CGRect(x: 0, y: 0, width: SCREEN_WIDTH, height: SCREEN_HEIGHT - 44 - 64), delegate: self, placeholderImage: IMAGE_PLACEHOLDER)
+        let cycleScrollView = SDCycleScrollView(frame: CGRect(x: 0, y: 0, width: SCREEN_WIDTH, height: 240), delegate: self, placeholderImage: IMAGE_PLACEHOLDER)
         return cycleScrollView!
     }()
     
@@ -195,7 +211,7 @@ extension HomeViewController: SDCycleScrollViewDelegate {
 //AdvertScrollView - Delegate
 extension HomeViewController: AdvertScrollViewDelegate {
     func advertScrollView(_ advertScrollView: AdvertScrollView!, didSelectedItemAt index: Int) {
-        print("新闻详情")
+        AppCommon.push(NewsViewController(), animated: true)
     }
 }
 
@@ -228,6 +244,14 @@ extension HomeViewController: UITableViewDelegate, UITableViewDataSource {
         if(cell.responds(to: #selector(setter: UIView.layoutMargins))){
             cell.layoutMargins = .zero
         }
+    }
+    
+    func scrollViewDidScroll(_ scrollView: UIScrollView) {
+        if tableView.contentOffset.y > 64 {
+            self.navBar.alpha = 1
+            return
+        }
+        self.navBar.alpha = tableView.contentOffset.y/64;
     }
 }
 

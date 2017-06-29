@@ -34,7 +34,7 @@ class FarmViewController: BaseViewController {
         let layout = UICollectionViewFlowLayout()
         layout.minimumLineSpacing = 1
         layout.minimumInteritemSpacing = 1
-        layout.itemSize = CGSize(width: SCREEN_WIDTH/3-2, height: 117)
+        layout.itemSize = CGSize(width: (SCREEN_WIDTH-2)/3, height: 117)
         
         let collectionView = UICollectionView(frame: CGRect(x: 0, y: -20, width: SCREEN_WIDTH, height: SCREEN_HEIGHT - 64), collectionViewLayout: layout)
         collectionView.delegate = self
@@ -65,7 +65,7 @@ extension FarmViewController: UICollectionViewDelegate, UICollectionViewDataSour
         let reusableView = collectionView.dequeueReusableSupplementaryView(ofKind: UICollectionElementKindSectionHeader, withReuseIdentifier: FarmViewController.reuseHeaderIdentifier, for: indexPath)
         
         let headerView = UIView(frame: CGRect(x: 0, y: 0, width: SCREEN_WIDTH, height: 150))
-        headerView.backgroundColor = UIColor.orange
+        headerView.backgroundColor = BaseColor.ThemeColor
         reusableView.addSubview(headerView)
         
         return reusableView

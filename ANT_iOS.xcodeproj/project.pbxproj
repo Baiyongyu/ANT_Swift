@@ -61,6 +61,7 @@
 		F365D71B1EE67AAE00500391 /* NSObject+YYModel.m in Sources */ = {isa = PBXBuildFile; fileRef = F365D6E01EE67AAE00500391 /* NSObject+YYModel.m */; };
 		F365D71C1EE67AAE00500391 /* YYClassInfo.m in Sources */ = {isa = PBXBuildFile; fileRef = F365D6E21EE67AAE00500391 /* YYClassInfo.m */; };
 		F365D7201EE67B1700500391 /* AppCommon.m in Sources */ = {isa = PBXBuildFile; fileRef = F365D71F1EE67B1700500391 /* AppCommon.m */; };
+		F376B1FA1F04EFB800447696 /* NewsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F376B1F91F04EFB800447696 /* NewsViewController.swift */; };
 		F398558B1EE8EBE80042990C /* AddressListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F398558A1EE8EBE80042990C /* AddressListViewController.swift */; };
 		F398558D1EE8F1920042990C /* AddressModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F398558C1EE8F1920042990C /* AddressModel.swift */; };
 		F39855951EE8FDF20042990C /* VerticalButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = F39855941EE8FDF20042990C /* VerticalButton.swift */; };
@@ -170,6 +171,7 @@
 		F365D6E31EE67AAE00500391 /* YYModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YYModel.h; sourceTree = "<group>"; };
 		F365D71E1EE67B1700500391 /* AppCommon.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AppCommon.h; sourceTree = "<group>"; };
 		F365D71F1EE67B1700500391 /* AppCommon.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AppCommon.m; sourceTree = "<group>"; };
+		F376B1F91F04EFB800447696 /* NewsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NewsViewController.swift; sourceTree = "<group>"; };
 		F398558A1EE8EBE80042990C /* AddressListViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AddressListViewController.swift; sourceTree = "<group>"; };
 		F398558C1EE8F1920042990C /* AddressModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AddressModel.swift; sourceTree = "<group>"; };
 		F39855941EE8FDF20042990C /* VerticalButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = VerticalButton.swift; sourceTree = "<group>"; };
@@ -481,6 +483,14 @@
 			path = Manager;
 			sourceTree = "<group>";
 		};
+		F376B1F81F04EF9400447696 /* News */ = {
+			isa = PBXGroup;
+			children = (
+				F376B1F91F04EFB800447696 /* NewsViewController.swift */,
+			);
+			name = News;
+			sourceTree = "<group>";
+		};
 		F39855891EE8EBD90042990C /* Address */ = {
 			isa = PBXGroup;
 			children = (
@@ -536,6 +546,7 @@
 			isa = PBXGroup;
 			children = (
 				F3F586831EE407FD0018412D /* HomeViewController.swift */,
+				F376B1F81F04EF9400447696 /* News */,
 				F3320AE71EE79BE200327DC7 /* Shop */,
 				F34C93571EE69EAF00091195 /* Loan */,
 				F365D67B1EE6602D00500391 /* CeTu */,
@@ -781,6 +792,7 @@
 				F3F5870C1EE4375D0018412D /* HomeModuleCollectionView.swift in Sources */,
 				F34C93561EE6991300091195 /* MessageModel.swift in Sources */,
 				F365D7201EE67B1700500391 /* AppCommon.m in Sources */,
+				F376B1FA1F04EFB800447696 /* NewsViewController.swift in Sources */,
 				F365D6EC1EE67AAE00500391 /* SDImageCache.m in Sources */,
 				F365D6E51EE67AAE00500391 /* TAAnimatedDotView.m in Sources */,
 				F365D6F51EE67AAE00500391 /* UIImage+MultiFormat.m in Sources */,

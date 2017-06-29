@@ -25,13 +25,17 @@ class MineViewController: BaseViewController {
         super.loadSubViews()
         self.titleLabel.text = "我的"
         self.contentView.addSubview(tableView)
+        self.navBar.alpha = 0;
+        self.contentView.snp.updateConstraints { (make) in
+            make.edges.equalTo(self.view).inset(UIEdgeInsetsMake(0, 0, 49, 0));
+        }
     }
     
     override func layoutConstraints() {
         
         
         tableView.snp.makeConstraints { (make) in
-            make.edges.equalTo(self.view).inset(UIEdgeInsetsMake(64, 0, 49, 0));
+            make.edges.equalTo(self.view).inset(UIEdgeInsetsMake(0, 0, 49, 0));
         }
         
         headerView.backgroundColor = UIColor.white
@@ -44,7 +48,7 @@ class MineViewController: BaseViewController {
         headerView.addSubview(imageView)
         imageView.snp.makeConstraints { (make) in
             make.left.right.top.equalTo(headerView);
-            make.height.equalTo(140);
+            make.height.equalTo(180);
         }
         
         headerView.addSubview(avatarImageView)
@@ -126,7 +130,7 @@ extension MineViewController: UITableViewDelegate, UITableViewDataSource, UIScro
             cell.accessoryType = .none
             let hotlineLabel = UILabel()
             hotlineLabel.font = UIFont.systemFont(ofSize: 14)
-            hotlineLabel.textColor = UIColor.orange
+            hotlineLabel.textColor = UIColor.gray
             hotlineLabel.text = PhoneNumber
             cell.contentView.addSubview(hotlineLabel)
             hotlineLabel.snp.makeConstraints({ (make) in

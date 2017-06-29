@@ -41,7 +41,7 @@ class AppTabBarController: UITabBarController, AppTabBarDelegate {
         //kvc实质是修改了系统的_tabBar
         self.setValue(tabbar, forKeyPath: "tabBar")
         
-        self.tabBar.tintColor = UIColor.orange
+        self.tabBar.tintColor = BaseColor.ThemeColor
         self.viewControllers = [home, farm, circle, mine];
     }
 

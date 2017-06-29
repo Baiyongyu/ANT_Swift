@@ -24,6 +24,10 @@ func RGBColorWith(_ red : Int,green : Int, blue :Int) -> UIColor {
 
 struct BaseColor {
     /**
+     主题色
+     */
+    static let ThemeColor = UIColor.HexColor(0x45a15c)
+    /**
      用于重要级段落文字信息 标题信息
      */
     static let BlackColor = UIColor.HexColor(0x000000)
@@ -51,7 +55,7 @@ struct BaseColor {
     /**
      用于界面背景颜色
      */
-    static let BackGroundColor = UIColor.HexColor(0xefefef)
+    static let BackGroundColor = UIColor.HexColor(0xf5f5f5)
     
     /**
      用于头部导航颜色(红色)

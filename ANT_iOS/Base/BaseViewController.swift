@@ -85,14 +85,16 @@ class BaseViewController: UIViewController {
     
     lazy var navBar: UIView = {
         let navBar = UIView()
-        navBar.backgroundColor = UIColor.orange
+        navBar.backgroundColor = UIColor.white
+        navBar.layer.shadowOffset = CGSize(width: 0, height: 0.3)
+        navBar.layer.shadowColor = UIColor.init(white: 0, alpha: 0.4).cgColor
+        navBar.layer.shadowOpacity = 0.3
         return navBar
     }()
     
     lazy var leftBtn: UIButton = {
         let leftBtn = UIButton(type: .custom)
-        leftBtn.setTitle("返回", for: .normal)
-        leftBtn.setImage(UIImage.init(named: "ic_nav_back"), for: .normal)
+        leftBtn.setImage(UIImage.init(named: "ic_back"), for: .normal)
         leftBtn.titleLabel?.font = UIFont.systemFont(ofSize: 17)
         leftBtn.contentMode = .center
         leftBtn.imageView?.layer.masksToBounds = true
@@ -112,7 +114,7 @@ class BaseViewController: UIViewController {
     lazy var titleLabel: UILabel = {
         let titleLabel = UILabel()
         titleLabel.font = UIFont.boldSystemFont(ofSize: 18)
-        titleLabel.textColor = UIColor.white
+        titleLabel.textColor = BaseColor.BlackColor
         titleLabel.textAlignment = .center
         return titleLabel
     }()
