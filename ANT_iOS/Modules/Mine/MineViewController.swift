@@ -27,7 +27,7 @@ class MineViewController: BaseViewController {
         self.contentView.addSubview(tableView)
         self.navBar.alpha = 0;
         self.contentView.snp.updateConstraints { (make) in
-            make.edges.equalTo(self.view).inset(UIEdgeInsetsMake(0, 0, 49, 0));
+            make.edges.equalTo(self.view).inset(UIEdgeInsetsMake(-20, 0, 49, 0));
         }
     }
     
@@ -35,7 +35,7 @@ class MineViewController: BaseViewController {
         
         
         tableView.snp.makeConstraints { (make) in
-            make.edges.equalTo(self.view).inset(UIEdgeInsetsMake(0, 0, 49, 0));
+            make.edges.equalTo(self.view).inset(UIEdgeInsetsMake(-20, 0, 49, 0));
         }
         
         headerView.backgroundColor = UIColor.white

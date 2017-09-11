@@ -47,7 +47,7 @@ class BaseViewController: UIViewController {
         self.leftBtn.snp.makeConstraints { (make) in
             make.left.equalTo(self.navBar).offset(0);
             make.top.equalTo(self.navBar).offset(20);
-            make.width.equalTo(80);
+            make.width.equalTo(60);
             make.height.equalTo(40);
         }
         
@@ -60,7 +60,7 @@ class BaseViewController: UIViewController {
         
         self.titleLabel.snp.makeConstraints { (make) in
             make.left.equalTo(self.leftBtn.snp.right).offset(5);
-            make.right.equalTo(self.rightBtn.snp.left).offset(-25);
+            make.right.equalTo(self.rightBtn.snp.left).offset(-5);
             make.top.equalTo(self.navBar).offset(20);
             make.height.equalTo(40);
         }

@@ -8,7 +8,14 @@
 
 import UIKit
 
-class AppTabBarController: UITabBarController, AppTabBarDelegate {
+class AppTabBarController: UITabBarController, AppTabBarDelegate, HyPopMenuViewDelegate {
+    
+    var menu = HyPopMenuView()
+    
+    func popMenuView(_ popMenuView: HyPopMenuView!, didSelectItemAt index: UInt) {
+        AppCommon.push(PublishViewController(), animated: true)
+    }
+    
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -43,6 +50,20 @@ class AppTabBarController: UITabBarController, AppTabBarDelegate {
         
         self.tabBar.tintColor = BaseColor.ThemeColor
         self.viewControllers = [home, farm, circle, mine];
+        
+        
+        menu = HyPopMenuView.sharedPopMenuManager()
+        let model1 = PopMenuModel.allocPopMenuModel(withImageNameString: "tabbar_compose_camera", atTitleString: "记农事", atTextColor: UIColor.gray, at: PopMenuTransitionTypeCustomizeApi, atTransitionRenderingColor: nil)
+        
+        let model2 = PopMenuModel.allocPopMenuModel(withImageNameString: "tabbar_compose_review", atTitleString: "农友圈", atTextColor: UIColor.gray, at: PopMenuTransitionTypeCustomizeApi, atTransitionRenderingColor: nil)
+        
+        let model3 = PopMenuModel.allocPopMenuModel(withImageNameString: "tabbar_compose_idea", atTitleString: "提问题", atTextColor: UIColor.gray, at: PopMenuTransitionTypeCustomizeApi, atTransitionRenderingColor: nil)
+        
+        menu.dataSource = [model1,model2,model3]
+        menu.delegate = self
+        menu.popMenuSpeed = 12.0
+        menu.automaticIdentificationColor = false
+        menu.animationType = HyPopMenuViewAnimationType.viscous
     }
 
     override func tabBar(_ tabBar: UITabBar, didSelect item: UITabBarItem) {
@@ -58,7 +79,8 @@ class AppTabBarController: UITabBarController, AppTabBarDelegate {
     }
     
     func tabBarPlusBtnClick(tabBar: AppTabBar) {
-//        print("中间按钮")
+        menu.backgroundType = HyPopMenuViewBackgroundTypeLightBlur;
+        menu.openMenu()
     }
     
     func animationWithIndex(index: NSInteger) {

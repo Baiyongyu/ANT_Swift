@@ -11,3 +11,9 @@
 #import "AdvertScrollView.h"
 #import "YYModel.h"
 #import "AppCommon.h"
+
+#import "UIColor+ImageGetColor.h"
+#import "HyPopMenuView.h"
+#import "PopMenuButton.h"
+#import "PopMenuModel.h"
+#import "popMenvTopView.h"

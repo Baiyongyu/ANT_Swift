@@ -24,7 +24,7 @@ class HomeViewController: BaseViewController {
         self.rightBtn.setImage(UIImage.init(named: "ic_message_selected"), for: .normal)
         self.navBar.alpha = 0;
         self.contentView.snp.updateConstraints { (make) in
-            make.edges.equalTo(self.view).inset(UIEdgeInsetsMake(0, 0, 49, 0));
+            make.edges.equalTo(self.view).inset(UIEdgeInsetsMake(-20, 0, 49, 0));
         }
         
         let messageBtn = UIButton(type: UIButtonType.custom)
@@ -37,7 +37,6 @@ class HomeViewController: BaseViewController {
             make.width.equalTo(60);
             make.height.equalTo(40);
         }
-        
         
         self.headerView.backgroundColor = UIColor.white
         self.headerView.addSubview(self.cycleScrollView)
@@ -52,7 +51,7 @@ class HomeViewController: BaseViewController {
         seperator1.snp.makeConstraints { (make) in
             make.left.right.equalTo(self.headerView);
             make.top.equalTo(self.cycleScrollView.snp.bottom);
-            make.height.equalTo(15);
+            make.height.equalTo(10);
         }
         
         let moduleCollectionView = HomeModuleCollectionView()
@@ -69,7 +68,7 @@ class HomeViewController: BaseViewController {
         seperator2.snp.makeConstraints { (make) in
             make.left.right.equalTo(self.headerView);
             make.top.equalTo(moduleCollectionView.snp.bottom);
-            make.height.equalTo(15);
+            make.height.equalTo(10);
         }
         
         // 农业头条
@@ -105,7 +104,7 @@ class HomeViewController: BaseViewController {
         seperator3.snp.makeConstraints { (make) in
             make.left.right.equalTo(self.headerView);
             make.top.equalTo(advertScrollView.snp.bottom);
-            make.height.equalTo(15);
+            make.height.equalTo(10);
         }
         
         self.headerView.addSubview(cropsCollectionView)
@@ -128,7 +127,7 @@ class HomeViewController: BaseViewController {
 
         self.contentView.addSubview(self.tableView)
         self.tableView.snp.makeConstraints { (make) in
-            make.edges.equalTo(self.view).inset(UIEdgeInsetsMake(0, 0, 49, 0));
+            make.edges.equalTo(self.view).inset(UIEdgeInsetsMake(-20, 0, 49, 0));
         }
         
         self.headerView.layoutIfNeeded()

@@ -8,9 +8,12 @@
 
 import UIKit
 
+typealias AlertResult = (_ index: NSInteger) -> Void
+
 class VersionAlertView: UIView {
     
     var alertView = UIView()
+    var resultIndex: AlertResult?
     
     //外部调用的方法
     func initWithTitle(titles: String, message: String) {
@@ -44,7 +47,7 @@ class VersionAlertView: UIView {
         }
         sureBtn.snp.makeConstraints { (make) in
             make.top.equalTo(titleLabel.snp.bottom).offset(20)
-            make.width.equalTo(150)
+            make.width.equalTo(200)
             make.height.equalTo(44)
             make.centerX.equalTo(alertView)
             make.bottom.equalTo(alertView).offset(-20)
@@ -99,7 +102,10 @@ class VersionAlertView: UIView {
         }
     }
     
-    func buttonEvent() {
+    func buttonEvent(sender: UIButton) {
+        if resultIndex != nil {
+            resultIndex!(NSInteger(sender.tag))
+        }
         self.removeFromSuperview()
     }
     

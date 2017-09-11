@@ -12,10 +12,13 @@ class VersionManager: NSObject {
     
     func checkVersionUpdate() {
         
-        let updateContent = "1、增加【圈子】，可以分享天然气信息，提问天然气问题\n2、用户可查询附近的气站，并在线购买\n3、增加【贷款、保险】可在线资讯贷款、保险信息\n4、可以更方便添加天然气记录"
+        let updateContent = "1、页面UI优化，更清爽\n2、增加农田管理模块，可绘制田块，添加种植计划\n3、基于田块位置展示天气预报\n4、农事记录可对应到作物和田块"
         
         let alertView = VersionAlertView()
         alertView.initWithTitle(titles: "发现新版本V\(CurrentVersion)", message: updateContent)
+        alertView.resultIndex = { (index) -> Void in
+            UIApplication.shared.openURL(NSURL.init(string: "http://itunes.apple.com/app/id1203569270")! as URL)
+        }
         alertView.showAlertView()
     }
     
