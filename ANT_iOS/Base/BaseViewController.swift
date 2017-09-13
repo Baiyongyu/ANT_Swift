@@ -45,16 +45,16 @@ class BaseViewController: UIViewController {
         }
         
         self.leftBtn.snp.makeConstraints { (make) in
-            make.left.equalTo(self.navBar).offset(0);
+            make.left.equalTo(self.navBar);
             make.top.equalTo(self.navBar).offset(20);
-            make.width.equalTo(60);
+            make.width.equalTo(50);
             make.height.equalTo(40);
         }
         
         self.rightBtn.snp.makeConstraints { (make) in
             make.right.equalTo(self.navBar);
             make.top.equalTo(self.navBar).offset(20);
-            make.width.equalTo(60);
+            make.width.equalTo(50);
             make.height.equalTo(40);
         }
         
@@ -69,9 +69,11 @@ class BaseViewController: UIViewController {
     }
     
     public func layoutConstraints() {
+        
     }
     
     public func loadData() {
+        
     }
     
     public func leftBtnAction() {
@@ -94,9 +96,8 @@ class BaseViewController: UIViewController {
     
     lazy var leftBtn: UIButton = {
         let leftBtn = UIButton(type: .custom)
-        leftBtn.setImage(UIImage.init(named: "ic_back"), for: .normal)
-        leftBtn.titleLabel?.font = UIFont.systemFont(ofSize: 17)
-        leftBtn.contentMode = .center
+        leftBtn.setImage(UIImage.icon(with: TBCityIconInfo.init(text: "\u{e62b}", size: 20, color: UIColor.black)), for: .normal)
+        leftBtn.setImage(UIImage.icon(with: TBCityIconInfo.init(text: "\u{e62b}", size: 20, color: UIColor.gray)), for: .highlighted)
         leftBtn.imageView?.layer.masksToBounds = true
         leftBtn.addTarget(self, action: #selector(BaseViewController.leftBtnAction), for: .touchUpInside)
         return leftBtn
@@ -104,9 +105,10 @@ class BaseViewController: UIViewController {
     
     lazy var rightBtn: UIButton = {
         let rightBtn = UIButton(type: .custom)
-        rightBtn.titleLabel?.font = UIFont.systemFont(ofSize: 17)
+        rightBtn.titleLabel?.font = UIFont.boldSystemFont(ofSize: 15)
         rightBtn.titleLabel?.textAlignment = .right
-        rightBtn.contentMode = .center
+        rightBtn.setTitleColor(UIColor.black, for: .normal)
+        rightBtn.setTitleColor(BaseColor.ThemeColor, for: .highlighted)
         rightBtn.addTarget(self, action: #selector(BaseViewController.rightBtnAction), for: .touchUpInside)
         return rightBtn
     }()
@@ -119,7 +121,6 @@ class BaseViewController: UIViewController {
         return titleLabel
     }()
     
-    
     lazy var contentView: UIScrollView = {
         let contentView = UIScrollView()
         contentView.isScrollEnabled = false
@@ -127,7 +128,6 @@ class BaseViewController: UIViewController {
         contentView.backgroundColor = BaseColor.BackGroundColor
         return contentView
     }()
-    
     
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()

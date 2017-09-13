@@ -8,7 +8,7 @@
 
 import UIKit
 protocol MenuControlDelegate {
-    func menuCtrl(menuCtrl: MenuControl, didSelectIndex index:NSInteger)
+    func menuCtrl(_ menuCtrl: MenuControl, didSelectIndex index:NSInteger)
 }
 
 class MenuControl: UIView {
@@ -19,8 +19,69 @@ class MenuControl: UIView {
     var textColor = UIColor()
     var selectedTextColor = UIColor()
     var indicatorColor = UIColor()
-    var titles = NSArray()
-    var selectedIndex = NSInteger()
+    var titles = NSArray() {
+        didSet {
+            for view in self.subviews {
+                view.removeFromSuperview()
+            }
+            for index in 0 ..< titles.count {
+                let menuBtn = UIButton(type: UIButtonType.custom)
+                menuBtn.tag = 1000 + index
+                menuBtn.setTitle(self.titles[index] as? String, for: .normal)
+                menuBtn.setTitleColor(self.textColor, for: .normal)
+                menuBtn.setTitleColor(self.selectedTextColor, for: .selected)
+                menuBtn.titleLabel?.font = self.font
+                self.addSubview(menuBtn)
+                if index == 0 {
+                    menuBtn.isSelected = true
+                    menuBtn.snp.makeConstraints({ (make) in
+                        make.width.equalTo(self).dividedBy(self.titles.count)
+                        make.top.height.equalTo(self)
+                        make.left.equalTo(0)
+                    })
+                    if (!(self.indicatorLine.superview != nil)) {
+                        self.indicatorLine.backgroundColor = self.indicatorColor
+                        self.addSubview(self.indicatorLine)
+                        self.indicatorLine.frame = CGRect(x: self.indicatorInset, y: self.bottom-2, width: SCREEN_WIDTH/CGFloat(self.titles.count)-2*self.indicatorInset, height: 2)
+                    }
+                }else {
+                    var formerBtn = UIButton(type: UIButtonType.custom)
+                    formerBtn = self.viewWithTag(1000+index-1) as! UIButton
+                    menuBtn.snp.makeConstraints({ (make) in
+                        make.width.equalTo(self).dividedBy(self.titles.count)
+                        make.top.height.equalTo(self)
+                        make.left.equalTo(formerBtn.snp.right)
+                    })
+                }
+                menuBtn.addTarget(self, action: #selector(menuBtnClick(sender:)), for: .touchUpInside)
+            }
+            if (!(self.seperatorLine.superview != nil)) {
+                self.addSubview(self.seperatorLine)
+                self.seperatorLine.snp.makeConstraints({ (make) in
+                    make.left.right.bottom.equalTo(self)
+                    make.height.equalTo(0.5)
+                })
+            }
+        }
+    }
+    var selectedIndex = NSInteger() {
+        didSet {
+            if self.titles.count == 0 {
+                return
+            }
+            for i in 0 ..< self.titles.count {
+                var menuBtn = UIButton()
+                menuBtn = self.viewWithTag(1000+i) as! UIButton
+                menuBtn.isSelected = (i == selectedIndex)
+            }
+            self.animating = true
+            UIView.animate(withDuration: 0.3, animations: {
+                self.indicatorLine.left = self.width/CGFloat(self.titles.count) + self.indicatorInset
+            }) { (true) in
+                self.animating = false
+            }
+        }
+    }
 //    var indicatorLine = UIView()
     var indicatorInset = CGFloat()
     var animating = Bool()
@@ -29,10 +90,9 @@ class MenuControl: UIView {
     
     override init(frame: CGRect) {
         super.init(frame: frame)
-        
-        self.indicatorColor = UIColor.orange
-        self.selectedTextColor = UIColor.orange
-        self.textColor = UIColor.lightGray
+        self.indicatorColor = BaseColor.ThemeColor
+        self.selectedTextColor = BaseColor.ThemeColor
+        self.textColor = UIColor.gray
         self.font = UIFont.systemFont(ofSize: 14)
     }
     
@@ -45,72 +105,9 @@ class MenuControl: UIView {
         selectedIndex = sender.tag - 1000
         if self.selectedIndex != selectedIndex {
             self.selectedIndex = selectedIndex
-            if ((self.delegate?.menuCtrl(menuCtrl: self, didSelectIndex: selectedIndex)) != nil) {
-                self.delegate?.menuCtrl(menuCtrl: self, didSelectIndex: selectedIndex)
+            if ((self.delegate?.menuCtrl(self, didSelectIndex: selectedIndex)) != nil) {
+                self.delegate?.menuCtrl(self, didSelectIndex: selectedIndex)
             }
-        }
-    }
-    
-    func setTitles(titles: NSArray) {
-        self.titles = titles
-        for view in self.subviews {
-            view.removeFromSuperview()
-        }
-        for i in 0 ..< self.titles.count {
-            let menuBtn = UIButton(type: UIButtonType.custom)
-            menuBtn.tag = 1000 + i
-            menuBtn.setTitle(self.titles[i] as? String, for: .normal)
-            menuBtn.setTitleColor(self.textColor, for: .normal)
-            menuBtn.setTitleColor(self.selectedTextColor, for: .selected)
-            menuBtn.titleLabel?.font = self.font
-            self.addSubview(menuBtn)
-            if i == 0 {
-                menuBtn.isSelected = true
-                menuBtn.snp.makeConstraints({ (make) in
-                    make.width.equalTo(self).dividedBy(self.titles.count);
-                    make.top.height.equalTo(self);
-                    make.left.equalTo(0);
-                })
-                if (!(self.indicatorLine.superview != nil)) {
-                    self.indicatorLine.backgroundColor = self.indicatorColor
-                    self.addSubview(self.indicatorLine)
-                    self.indicatorLine.frame = CGRect(x: self.indicatorInset, y: self.bottom-2, width: SCREEN_WIDTH/CGFloat(self.titles.count)-2*self.indicatorInset, height: 2)
-                }
-            }else {
-                var formerBtn = UIButton(type: UIButtonType.custom)
-                formerBtn = self.viewWithTag(1000+i-1) as! UIButton
-                menuBtn.snp.makeConstraints({ (make) in
-                    make.width.equalTo(self).dividedBy(self.titles.count);
-                    make.top.height.equalTo(self);
-                    make.left.equalTo(formerBtn.snp.right);
-                })
-            }
-            menuBtn.addTarget(self, action: #selector(menuBtnClick(sender:)), for: .touchUpInside)
-        }
-        if (!(self.seperatorLine.superview != nil)) {
-            self.addSubview(self.seperatorLine)
-            self.seperatorLine.snp.makeConstraints({ (make) in
-                make.left.right.bottom.equalTo(self);
-                make.height.equalTo(0.5);
-            })
-        }
-    }
-    
-    func setSelectedIndex(selectedIndex: NSInteger) {
-        self.selectedIndex = selectedIndex
-        if self.titles.count == 0 {
-            return
-        }
-        for i in 0 ..< self.titles.count {
-            var menuBtn = UIButton()
-            menuBtn = self.viewWithTag(1000+i) as! UIButton
-            menuBtn.isSelected = (i == selectedIndex)
-        }
-        self.animating = true
-        UIView.animate(withDuration: 0.3, animations: {
-            self.indicatorLine.left = self.width/CGFloat(self.titles.count) + self.indicatorInset
-        }) { (true) in
-            self.animating = false
         }
     }
     
@@ -128,42 +125,63 @@ class MenuControl: UIView {
 
 
 
-
 class MenuContainer: UIView, UITableViewDelegate, UITableViewDataSource, MenuControlDelegate {
     
-    var selectedIndex = NSInteger()
-    var childViewControlllers = NSArray()
-    var childViews = NSArray()
-    var scrollAnimated = Bool()
+//    var menuCtrl = MenuControl()
+    
+    typealias IndexChangeBlock = () -> Void
+    
+    var indexChangeBlock: IndexChangeBlock?
+    
+    var selectedIndex = NSInteger() {
+        didSet {
+            self.menuCtrl.selectedIndex = selectedIndex
+            self.containerTableView.scrollToRow(at: IndexPath.init(row: selectedIndex, section: 0), at: .top, animated: self.scrollAnimated)
+        }
+    }
+    var childViewControlllers = NSArray() {
+        didSet {
+            self.containerTableView.reloadData()
+        }
+    }
+    var childViews = NSArray() {
+        didSet {
+            self.containerTableView.reloadData()
+        }
+    }
+    var scrollAnimated = Bool() {
+        didSet {
+            self.containerTableView.isScrollEnabled = scrollAnimated
+        }
+    }
     
     override init(frame: CGRect) {
         super.init(frame: frame)
-        
-        self.backgroundColor = UIColor.orange
+        self.backgroundColor = UIColor.black
         self.scrollAnimated = true
         self.addSubview(self.menuCtrl)
         self.addSubview(self.containerTableView)
         layoutConstraints()
     }
     
-    
     func layoutConstraints() {
         self.menuCtrl.snp.makeConstraints { (make) in
-            make.left.top.right.equalTo(self);
-            make.height.equalTo(44);
+            make.left.top.right.equalTo(self)
+            make.height.equalTo(44)
         }
         
         self.containerTableView.snp.makeConstraints { (make) in
-            make.centerX.equalTo(self);
-            make.centerY.equalTo(self).offset(22);
-            make.height.equalTo(self.snp.width);
-            make.width.equalTo(self.snp.height).offset(-44);
+            make.centerX.equalTo(self)
+            make.centerY.equalTo(self).offset(22)
+            make.height.equalTo(self.snp.width)
+            make.width.equalTo(self.snp.height).offset(-44)
         }
         layoutIfNeeded()
     }
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return self.childViewControlllers.count
+//        return self.childViewControlllers.count
+        return max(self.childViewControlllers.count, self.childViews.count)
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
@@ -194,12 +212,15 @@ class MenuContainer: UIView, UITableViewDelegate, UITableViewDataSource, MenuCon
         return self.width
     }
     
-    func menuCtrl(menuCtrl: MenuControl, didSelectIndex index: NSInteger) {
+    func menuCtrl(_ menuCtrl: MenuControl, didSelectIndex index: NSInteger) {
         if index < self.childViewControlllers.count {
-            self.containerTableView.scrollToRow(at: NSIndexPath.init(row: selectedIndex, section: 0) as IndexPath, at: .top, animated: self.scrollAnimated)
+            self.containerTableView.scrollToRow(at: IndexPath.init(row: selectedIndex, section: 0), at: .top, animated: self.scrollAnimated)
         }
         if index < self.childViews.count {
-            self.containerTableView.scrollToRow(at: NSIndexPath.init(row: selectedIndex, section: 0) as IndexPath, at: .top, animated: self.scrollAnimated)
+            self.containerTableView.scrollToRow(at: IndexPath.init(row: selectedIndex, section: 0), at: .top, animated: self.scrollAnimated)
+        }
+        if (self.indexChangeBlock != nil) {
+            self.indexChangeBlock!()
         }
     }
     
@@ -210,33 +231,16 @@ class MenuContainer: UIView, UITableViewDelegate, UITableViewDataSource, MenuCon
     func scrollViewDidEndDecelerating(_ scrollView: UIScrollView) {
         self.selectedIndex = NSInteger(scrollView.contentOffset.y / scrollView.width)
         self.menuCtrl.selectedIndex = self.selectedIndex
+        
+        if (self.indexChangeBlock != nil) {
+            self.indexChangeBlock!()
+        }
     }
-    
-    func setSelectedIndex(selectedIndex: NSInteger) {
-        self.selectedIndex = selectedIndex
-        self.menuCtrl.selectedIndex = selectedIndex
-        self.containerTableView.scrollToRow(at: NSIndexPath.init(row: selectedIndex, section: 0) as IndexPath, at: .top, animated: self.scrollAnimated)
-    }
-    
-    func setChildViewControlllers(childViewControlllers: NSArray) {
-        self.childViewControlllers = childViewControlllers
-        self.containerTableView.reloadData()
-    }
-    
-    func setChildViews(childViews: NSArray) {
-        self.childViews = childViews
-        self.containerTableView.reloadData()
-    }
-    
-    func setScrollAnimated(scrollAnimated: Bool) {
-        self.scrollAnimated = scrollAnimated
-        self.containerTableView.isScrollEnabled = scrollAnimated
-    }
-    
+   
     public lazy var menuCtrl: MenuControl = {
         let menuCtrl = MenuControl()
         menuCtrl.backgroundColor = UIColor.white
-        menuCtrl.font = UIFont.systemFont(ofSize: 14)
+        menuCtrl.font = UIFont.systemFont(ofSize: 16)
         menuCtrl.delegate = self
         return menuCtrl
     }()

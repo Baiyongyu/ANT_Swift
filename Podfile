@@ -10,4 +10,5 @@ pod 'SnapKit', '~> 3.2.0'
 #pod 'SDCycleScrollView', '~> 1.66'
 #pod 'SDWebImage', '~> 4.0.0'
 pod 'pop', '~> 1.0'
+pod 'IQKeyboardManagerSwift', '4.0.10'
 end

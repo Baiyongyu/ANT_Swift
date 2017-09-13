@@ -17,27 +17,16 @@ class AddressListViewController: BaseViewController, AddressUpdateDelegate {
     
     override func loadSubViews() {
         super.loadSubViews()
-        self.titleLabel.text = "地址列表"
-        self.contentView.addSubview(self.tableView)
+        titleLabel.text = "地址列表"
+        rightBtn.isHidden = false
+        rightBtn.setImage(UIImage.icon(with: TBCityIconInfo.init(text: "\u{e61e}", size: 20, color: UIColor.black)), for: .normal)
+        rightBtn.setImage(UIImage.icon(with: TBCityIconInfo.init(text: "\u{e61e}", size: 20, color: UIColor.gray)), for: .highlighted)
+        contentView.addSubview(tableView)
     }
     
     override func layoutConstraints() {
-        self.tableView.snp.makeConstraints { (make) in
-            make.edges.equalTo(self.view).inset(UIEdgeInsetsMake(64, 0, 0, 0));
-        }
-        
-        self.contentView.addSubview(bottomBar)
-        bottomBar.snp.makeConstraints { (make) in
-            make.left.right.bottom.equalTo(self.view);
-            make.height.equalTo(50);
-        }
-        
-        self.contentView.addSubview(clickBtn)
-        clickBtn.snp.makeConstraints { (make) in
-            make.left.equalTo(self.bottomBar).offset(10);
-            make.right.equalTo(self.bottomBar).offset(-10);
-            make.bottom.equalTo(self.bottomBar).offset(-5);
-            make.top.equalTo(self.bottomBar).offset(5);
+        tableView.snp.makeConstraints { (make) in
+            make.edges.equalTo(view).inset(UIEdgeInsetsMake(64, 0, 0, 0));
         }
     }
     
@@ -54,8 +43,8 @@ class AddressListViewController: BaseViewController, AddressUpdateDelegate {
         addressData1.address_detail = "中华人民共和国安徽省芜湖市"
         addressData1.is_default = false
     
-        self.dataArray = [addressData,addressData1]
-        self.tableView.reloadData()
+        dataArray = [addressData,addressData1]
+        tableView.reloadData()
     }
     
     func updateAddress(addressInfo: AddressModel, actionType: AddressActionType) {
@@ -68,22 +57,19 @@ class AddressListViewController: BaseViewController, AddressUpdateDelegate {
                 AppCommon.push(AddressEditViewController(), animated: true)
                 break
             case .Delete:
-                let alertController = UIAlertController(title: "确定要删除该地址吗?", message: nil, preferredStyle: .alert)
-                let confirm = UIAlertAction(title: "确定", style: .destructive, handler: { (alertController:UIAlertAction) in
-                    print("删除地址")
-                    self.dataArray.removeAllObjects()
-                    self.tableView.reloadData()
-                })
-            
-                let cancel = UIAlertAction(title: "取消", style: .cancel, handler: nil)
-                alertController.addAction(confirm)
-                alertController.addAction(cancel)
-                self.present(alertController, animated: true, completion: nil)
-                break
+                let alertView = ActionAlertView()
+                alertView.initWithTitle(titles: "确定要删除该地址吗?", message: "", sureTitle: "确定", cancleTitle: "取消")
+                alertView.alertSelectIndex = { (index) -> Void in
+                    if index == 2 {
+                        self.dataArray.removeAllObjects()
+                        self.tableView.reloadData()
+                    }
+                }
+                alertView.showAlertView()
         }
     }
     
-    func addAddressAction() {
+    override func rightBtnAction() {
         AppCommon.push(AddressEditViewController(), animated: true)
     }
     
@@ -98,37 +84,17 @@ class AddressListViewController: BaseViewController, AddressUpdateDelegate {
         tableView.tableFooterView = UIView(frame: .zero)
         return tableView
     }()
-    
-    lazy var bottomBar: UIView = {
-        let bottomBar = UIView()
-        bottomBar.backgroundColor = UIColor.white
-        bottomBar.layer.shadowOffset = CGSize(width: 0, height: -0.3)
-        bottomBar.layer.shadowColor = UIColor.init(white: 0, alpha: 0.4).cgColor
-        bottomBar.layer.shadowOpacity = 0.5
-        return bottomBar
-    }()
-    
-    lazy var clickBtn: UIButton = {
-        let clickBtn = UIButton(type: UIButtonType.custom)
-        clickBtn.backgroundColor = UIColor.orange
-        clickBtn.setTitle("添加新地址", for: .normal)
-        clickBtn.setTitleColor(UIColor.white, for: .normal)
-        clickBtn.titleLabel?.font = UIFont.systemFont(ofSize: 14)
-        clickBtn.layer.cornerRadius = 3.0
-        clickBtn.addTarget(self, action: #selector(addAddressAction), for: .touchUpInside)
-        return clickBtn
-    }()
 }
 
 extension AddressListViewController: UITableViewDelegate,UITableViewDataSource {
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return self.dataArray.count
+        return dataArray.count
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: AddressListViewController.classTableViewCellIdentifier, for: indexPath) as! AddressCell
         cell.delegate = self as AddressUpdateDelegate
-        cell.addressData = self.dataArray[indexPath.row] as? AddressModel
+        cell.addressData = dataArray[indexPath.row] as? AddressModel
         return cell
     }
     
@@ -173,65 +139,60 @@ class AddressCell: UITableViewCell {
         
         contentView.addSubview(nameAndTelLabel)
         nameAndTelLabel.snp.makeConstraints { (make) in
-            make.top.equalTo(self.contentView).offset(10);
-            make.left.equalTo(self.contentView).offset(20);
-            make.right.equalTo(self.contentView).offset(-10);
+            make.top.equalTo(contentView).offset(10);
+            make.left.equalTo(contentView).offset(20);
+            make.right.equalTo(contentView).offset(-10);
             make.height.equalTo(15);
         }
         
         contentView.addSubview(addressLabel)
         addressLabel.snp.makeConstraints { (make) in
-            make.top.equalTo(self.nameAndTelLabel.snp.bottom).offset(10);
-            make.left.equalTo(self.contentView).offset(20);
-            make.right.equalTo(self.contentView).offset(-10);
+            make.top.equalTo(nameAndTelLabel.snp.bottom).offset(10);
+            make.left.equalTo(contentView).offset(20);
+            make.right.equalTo(contentView).offset(-10);
             make.height.greaterThanOrEqualTo(40);
         }
         
         contentView.addSubview(lineView)
         lineView.snp.makeConstraints { (make) in
-            make.top.equalTo(self.addressLabel.snp.bottom).offset(10);
-            make.left.right.equalTo(self.contentView);
+            make.top.equalTo(addressLabel.snp.bottom).offset(10);
+            make.left.right.equalTo(contentView);
             make.height.equalTo(0.5);
         }
         
         contentView.addSubview(defaultBtn)
         defaultBtn.snp.makeConstraints { (make) in
-            make.top.equalTo(self.lineView.snp.bottom);
-            make.left.equalTo(self.contentView).offset(20);
+            make.top.equalTo(lineView.snp.bottom);
+            make.left.equalTo(contentView).offset(20);
             make.height.equalTo(40);
             make.width.greaterThanOrEqualTo(80);
-            make.bottom.equalTo(self.contentView);
+            make.bottom.equalTo(contentView);
         }
         
         contentView.addSubview(deleteBtn)
         deleteBtn.snp.makeConstraints { (make) in
-            make.top.equalTo(self.lineView.snp.bottom);
-            make.right.equalTo(self.contentView).offset(-10);
+            make.top.equalTo(lineView.snp.bottom);
+            make.right.equalTo(contentView).offset(-10);
             make.width.greaterThanOrEqualTo(50);
             make.height.equalTo(40);
-            make.bottom.equalTo(self.contentView);
+            make.bottom.equalTo(contentView);
         }
         
         contentView.addSubview(editBtn)
         editBtn.snp.makeConstraints { (make) in
-            make.top.equalTo(self.lineView.snp.bottom);
-            make.right.equalTo(self.deleteBtn.snp.left).offset(-10);
+            make.top.equalTo(lineView.snp.bottom);
+            make.right.equalTo(deleteBtn.snp.left).offset(-10);
             make.width.greaterThanOrEqualTo(50);
             make.height.equalTo(40);
-            make.bottom.equalTo(self.contentView);
+            make.bottom.equalTo(contentView);
         }
     }
-    
     
     var addressData: AddressModel? {
         didSet {
             nameAndTelLabel.text = (addressData?.receiver_name)! + (addressData?.receiver_phone)!
             addressLabel.text = addressData?.address_detail
-            if (addressData?.is_default)! {
-                self.defaultBtn.isSelected = true
-            }else {
-                self.defaultBtn.isSelected = false
-            }
+            defaultBtn.isSelected = (addressData?.is_default)!
         }
     }
     
@@ -272,10 +233,10 @@ class AddressCell: UITableViewCell {
         defaultBtn.setTitle("  设为默认", for: .normal)
         defaultBtn.setTitle("  默认地址", for: .selected)
         defaultBtn.setTitleColor(UIColor.black, for: .normal)
-        defaultBtn.setTitleColor(UIColor.orange, for: .selected)
+        defaultBtn.setTitleColor(UIColor.red, for: .selected)
         defaultBtn.titleLabel?.font = UIFont.systemFont(ofSize: 14)
-        defaultBtn.setImage(UIImage(named: "ic_unselected"), for: .normal)
-        defaultBtn.setImage(UIImage(named: "ic_selected"), for: .selected)
+        defaultBtn.setImage(UIImage.icon(with: TBCityIconInfo.init(text: "\u{e62d}", size: 20, color: UIColor.red)), for: .normal)
+        defaultBtn.setImage(UIImage.icon(with: TBCityIconInfo.init(text: "\u{e630}", size: 20, color: UIColor.red)), for: .selected)
         defaultBtn.addTarget(self, action: #selector(defaultBtnAction(_:)), for: .touchUpInside)
         return defaultBtn
     }()
@@ -284,8 +245,10 @@ class AddressCell: UITableViewCell {
         let editBtn = UIButton(type: UIButtonType.custom)
         editBtn.setTitle("  编辑", for: .normal)
         editBtn.setTitleColor(UIColor.black, for: .normal)
+        editBtn.setTitleColor(UIColor.gray, for: .highlighted)
         editBtn.titleLabel?.font = UIFont.systemFont(ofSize: 14)
-        editBtn.setImage(UIImage(named: "IC_user_bianji"), for: .normal)
+        editBtn.setImage(UIImage.icon(with: TBCityIconInfo.init(text: "\u{e628}", size: 20, color: UIColor.black)), for: .normal)
+        editBtn.setImage(UIImage.icon(with: TBCityIconInfo.init(text: "\u{e628}", size: 20, color: UIColor.gray)), for: .highlighted)
         editBtn.addTarget(self, action: #selector(editBtnAction(_:)), for: .touchUpInside)
         return editBtn
     }()
@@ -294,8 +257,10 @@ class AddressCell: UITableViewCell {
         let deleteBtn = UIButton(type: UIButtonType.custom)
         deleteBtn.setTitle("  删除", for: .normal)
         deleteBtn.setTitleColor(UIColor.black, for: .normal)
+        deleteBtn.setTitleColor(UIColor.gray, for: .highlighted)
         deleteBtn.titleLabel?.font = UIFont.systemFont(ofSize: 14)
-        deleteBtn.setImage(UIImage(named: "IC_user_shanchu"), for: .normal)
+        deleteBtn.setImage(UIImage.icon(with: TBCityIconInfo.init(text: "\u{e639}", size: 20, color: UIColor.black)), for: .normal)
+        deleteBtn.setImage(UIImage.icon(with: TBCityIconInfo.init(text: "\u{e639}", size: 20, color: UIColor.gray)), for: .highlighted)
         deleteBtn.addTarget(self, action: #selector(deleteBtnAction(_:)), for: .touchUpInside)
         return deleteBtn
     }()

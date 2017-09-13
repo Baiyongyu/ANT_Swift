@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import IQKeyboardManagerSwift
 
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {
@@ -25,10 +26,20 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         nav.navigationBar.isHidden = true
         self.window?.rootViewController = nav
         
-        //版本检测
-        let versionManager = VersionManager()
-        versionManager.checkVersionUpdate()
+        /* 版本判断 */
+//        let versionManager = VersionManager()
+//        versionManager.checkVersionUpdate()
         
+        /* IQKeyboardManagerSwift */
+        IQKeyboardManager.sharedManager().enable = true
+        IQKeyboardManager.sharedManager().toolbarDoneBarButtonItemText = "完成"
+        IQKeyboardManager.sharedManager().shouldResignOnTouchOutside = true
+        IQKeyboardManager.sharedManager().enableAutoToolbar = true
+        IQKeyboardManager.sharedManager().shouldShowTextFieldPlaceholder = true
+        IQKeyboardManager.sharedManager().placeholderFont = UIFont.systemFont(ofSize: 14)
+        IQKeyboardManager.sharedManager().toolbarTintColor = BaseColor.ThemeColor
+        /* iconfont图标 */
+        TBCityIconFont.setFontName("iconfont")
         return true
     }
 

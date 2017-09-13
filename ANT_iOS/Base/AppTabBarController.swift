@@ -24,23 +24,23 @@ class AppTabBarController: UITabBarController, AppTabBarDelegate, HyPopMenuViewD
         
         let home = HomeViewController()
         home.tabBarItem.title = "首页"
-        home.tabBarItem.image = UIImage.init(named: "ic_tabbar_home_normal")
-        home.tabBarItem.selectedImage = UIImage.init(named: "ic_tabbar_home_selected")?.withRenderingMode(.alwaysOriginal)
+        home.tabBarItem.image = UIImage.icon(with: TBCityIconInfo.init(text: "\u{e621}", size: 25, color: BaseColor.ThemeColor))
+        home.tabBarItem.selectedImage = UIImage.icon(with: TBCityIconInfo.init(text: "\u{e622}", size: 25, color: BaseColor.ThemeColor))?.withRenderingMode(.alwaysOriginal)
         
         let farm = FarmViewController()
         farm.tabBarItem.title = "农田"
-        farm.tabBarItem.image = UIImage.init(named: "ic_tabbar_farm_normal")
-        farm.tabBarItem.selectedImage = UIImage.init(named: "ic_tabbar_farm_selected")?.withRenderingMode(.alwaysOriginal)
+        farm.tabBarItem.image = UIImage.icon(with: TBCityIconInfo.init(text: "\u{e624}", size: 25, color: BaseColor.ThemeColor))
+        farm.tabBarItem.selectedImage = UIImage.icon(with: TBCityIconInfo.init(text: "\u{e623}", size: 25, color: BaseColor.ThemeColor))?.withRenderingMode(.alwaysOriginal)
         
         let circle = CircleViewController()
         circle.tabBarItem.title = "圈子"
-        circle.tabBarItem.image = UIImage.init(named: "ic_tabbar_circle_normal")
-        circle.tabBarItem.selectedImage = UIImage.init(named: "ic_tabbar_circle_selected")?.withRenderingMode(.alwaysOriginal)
+        circle.tabBarItem.image = UIImage.icon(with: TBCityIconInfo.init(text: "\u{e61f}", size: 25, color: BaseColor.ThemeColor))
+        circle.tabBarItem.selectedImage = UIImage.icon(with: TBCityIconInfo.init(text: "\u{e645}", size: 25, color: BaseColor.ThemeColor))?.withRenderingMode(.alwaysOriginal)
         
         let mine = MineViewController()
         mine.tabBarItem.title = "我的"
-        mine.tabBarItem.image = UIImage.init(named: "ic_tabbar_mine_normal")
-        mine.tabBarItem.selectedImage = UIImage.init(named: "ic_tabbar_mine_selected")?.withRenderingMode(.alwaysOriginal)
+        mine.tabBarItem.image = UIImage.icon(with: TBCityIconInfo.init(text: "\u{e626}", size: 25, color: BaseColor.ThemeColor))
+        mine.tabBarItem.selectedImage = UIImage.icon(with: TBCityIconInfo.init(text: "\u{e627}", size: 25, color: BaseColor.ThemeColor))?.withRenderingMode(.alwaysOriginal)
         
         //创建自己的tabbar，然后用kvc将自己的tabbar和系统的tabBar替换下
         let tabbar = AppTabBar()
@@ -71,7 +71,6 @@ class AppTabBarController: UITabBarController, AppTabBarDelegate, HyPopMenuViewD
         // 使用枚举遍历,判断选中的tabBarItem等于数组中的第几个
         for (key, value) in (tabBar.items?.enumerated())! {
             if value == item {
-//                print(key)
                 // 将下标传入动画方法
                 animationWithIndex(index: key)
             }

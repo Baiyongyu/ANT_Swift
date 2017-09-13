@@ -62,21 +62,21 @@ extension NewsViewController: UITableViewDelegate, UITableViewDataSource {
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let dataSource = dataArray[indexPath.row]
-        if dataSource.title_image?.count == 0 {
-            let cell = tableView.dequeueReusableCell(withIdentifier: NewsViewController.classTableViewCellIdentifier, for: indexPath) as! NewsTableViewCell
-            cell.newsData = dataSource
-            return cell
-        }
+//        if dataSource.title_image?.count == 0 {
+//            let cell = tableView.dequeueReusableCell(withIdentifier: NewsViewController.classTableViewCellIdentifier, for: indexPath) as! NewsTableViewCell
+//            cell.newsData = dataSource
+//            return cell
+//        }
         let cell = tableView.dequeueReusableCell(withIdentifier: NewsViewController.classTableViewCellIdentifier1, for: indexPath) as! NewsTableViewCell1
         cell.newsData = dataSource
         return cell
     }
     
     func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
-        let dataSource = dataArray[indexPath.row]
-        if dataSource.title_image?.count == 0 {
-            return 60
-        }
+//        let dataSource = dataArray[indexPath.row]
+//        if dataSource.title_image?.count == 0 {
+//            return 60
+//        }
         return 110
     }
     

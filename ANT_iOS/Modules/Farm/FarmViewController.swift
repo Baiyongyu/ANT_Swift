@@ -10,24 +10,37 @@ import UIKit
 
 class FarmViewController: BaseViewController {
 
+    var titleArray = Array<Any>()
+    var iconArray = Array<Any>()
+    var colorArray = Array<Any>()
     
-    var titleArray = NSArray()
-    var iconArray = NSArray()
     
     fileprivate static let classCollectionViewCellIdentifier = "ClassCollectionViewCell"
     fileprivate static let reuseHeaderIdentifier = "collectionViewHeader"
-    
-    
+
     override func loadSubViews() {
         super.loadSubViews()
-        self.titleLabel.text = "农田"
-        
-        self.contentView.addSubview(collectionView)
+        navBar.alpha = 0
+        titleLabel.text = "农田"
+        contentView.addSubview(collectionView)
+    }
+    
+    override func layoutConstraints() {
+        contentView.snp.makeConstraints { (make) in
+            make.edges.equalTo(view).inset(UIEdgeInsetsMake(0, 0, 49, 0))
+        }
+        collectionView.snp.makeConstraints { (make) in
+            make.edges.equalTo(view).inset(UIEdgeInsetsMake(0, 0, 49, 0))
+        }
     }
     
     override func loadData() {
-        self.titleArray = ["田块管理","种植管理","农事管理","物联网","质量追溯","账本管理","报表","",""];
-        self.iconArray = ["field_manager","crop_manager","farm_manager","web_thing","quality_ retrospect","account_manager","statement_manager","",""];
+        titleArray = ["田块管理","种植管理","农事管理","物联网","质量追溯","账本管理","运营分析","农场信息",""]
+        iconArray = ["\u{e60c}","\u{e620}","\u{e633}","\u{e615}",
+                     "\u{e61b}","\u{e61a}","\u{e625}","\u{e632}",""]
+        colorArray = [UIColor.HexColor(0xb0d259),UIColor.HexColor(0xf9961f),UIColor.HexColor(0xf38a30),UIColor.HexColor(0x2374b4),
+                      UIColor.HexColor(0xe85351),UIColor.HexColor(0x6a8fdc),UIColor.HexColor(0x19c041),UIColor.HexColor(0x56ab2f),
+                      UIColor.HexColor(0x56ab2f)]
     }
     
     fileprivate lazy var collectionView: UICollectionView = {
@@ -36,7 +49,7 @@ class FarmViewController: BaseViewController {
         layout.minimumInteritemSpacing = 1
         layout.itemSize = CGSize(width: (SCREEN_WIDTH-2)/3, height: 117)
         
-        let collectionView = UICollectionView(frame: CGRect(x: 0, y: -20, width: SCREEN_WIDTH, height: SCREEN_HEIGHT - 64), collectionViewLayout: layout)
+        let collectionView = UICollectionView(frame: .zero, collectionViewLayout: layout)
         collectionView.delegate = self
         collectionView.dataSource = self
         collectionView.backgroundColor = BaseColor.BackGroundColor
@@ -50,13 +63,13 @@ class FarmViewController: BaseViewController {
 extension FarmViewController: UICollectionViewDelegate, UICollectionViewDataSource {
     
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
-        return self.titleArray.count
+        return titleArray.count
     }
     
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
         let cell = collectionView.dequeueReusableCell(withReuseIdentifier: FarmViewController.classCollectionViewCellIdentifier, for: indexPath) as! FarmLandCollectionCell
-        cell.titleLabel.text = self.titleArray[indexPath.row] as? String
-        cell.iconImageView.image = UIImage.init(named: (self.iconArray[indexPath.row] as? String)!)
+        cell.titleLabel.text = titleArray[indexPath.row] as? String
+        cell.iconImageView.image = UIImage.icon(with: TBCityIconInfo.init(text: iconArray[indexPath.row] as! String, size: 32, color: colorArray[indexPath.row] as! UIColor))
         return cell
     }
     
@@ -64,10 +77,9 @@ extension FarmViewController: UICollectionViewDelegate, UICollectionViewDataSour
     func collectionView(_ collectionView: UICollectionView, viewForSupplementaryElementOfKind kind: String, at indexPath: IndexPath) -> UICollectionReusableView {
         let reusableView = collectionView.dequeueReusableSupplementaryView(ofKind: UICollectionElementKindSectionHeader, withReuseIdentifier: FarmViewController.reuseHeaderIdentifier, for: indexPath)
         
-        let headerView = UIView(frame: CGRect(x: 0, y: 0, width: SCREEN_WIDTH, height: 150))
-        headerView.backgroundColor = BaseColor.ThemeColor
-        reusableView.addSubview(headerView)
-        
+        let bgView = UIImageView(frame: CGRect(x: 0, y: 0, width: SCREEN_WIDTH, height: 150))
+        bgView.image = UIImage.init(named: "ic_weather_bg")
+        reusableView.addSubview(bgView)
         return reusableView
     }
     
@@ -77,12 +89,29 @@ extension FarmViewController: UICollectionViewDelegate, UICollectionViewDataSour
 
     func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
         
-        if indexPath.item == 1 {
+        switch indexPath.item {
+        case 1:
             AppCommon.push(PlantManagerViewController(), animated: true)
-        }
-        if indexPath.item == 3 {
+        case 3:
             AppCommon.push(WebThingsViewController(), animated: true)
+        default:
+            break
         }
+    }
+    
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(true)
+        UIApplication.shared.setStatusBarStyle(.lightContent, animated: false)
+    }
+    
+    override func viewDidAppear(_ animated: Bool) {
+        super.viewDidAppear(true)
+        UIApplication.shared.setStatusBarStyle(.lightContent, animated: false)
+    }
+    
+    override func viewWillDisappear(_ animated: Bool) {
+        super.viewWillDisappear(true)
+        UIApplication.shared.setStatusBarStyle(.default, animated: false)
     }
 }
 
@@ -91,19 +120,19 @@ class FarmLandCollectionCell: UICollectionViewCell {
 
     override init(frame: CGRect) {
         super.init(frame: frame)
-        self.contentView.backgroundColor = UIColor.white
+        contentView.backgroundColor = UIColor.white
         
-        self.contentView.addSubview(self.iconImageView)
-        self.iconImageView.snp.makeConstraints { (make) in
+        contentView.addSubview(iconImageView)
+        iconImageView.snp.makeConstraints { (make) in
             make.top.equalTo(29);
-            make.centerX.equalTo(self.contentView);
+            make.centerX.equalTo(contentView);
             make.width.height.equalTo(32);
         }
         
-        self.contentView.addSubview(self.titleLabel)
-        self.titleLabel.snp.makeConstraints { (make) in
-            make.top.equalTo(self.iconImageView.snp.bottom).offset(15);
-            make.centerX.equalTo(self.contentView);
+        contentView.addSubview(titleLabel)
+        titleLabel.snp.makeConstraints { (make) in
+            make.top.equalTo(iconImageView.snp.bottom).offset(15);
+            make.centerX.equalTo(contentView);
         }
     }
     

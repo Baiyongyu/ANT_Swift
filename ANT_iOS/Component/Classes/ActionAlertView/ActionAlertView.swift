@@ -155,7 +155,7 @@ class ActionAlertView: UIView {
     lazy var sureBtn: UIButton = {
         let sureBtn = UIButton(type: UIButtonType.custom)
         sureBtn.setTitle("确定", for: .normal)
-        sureBtn.setTitleColor(UIColor.orange, for: .normal)
+        sureBtn.setTitleColor(UIColor.red, for: .normal)
         sureBtn.setTitleColor(UIColor.lightText, for: .selected)
         sureBtn.tag = 2
         sureBtn.layer.cornerRadius = 2

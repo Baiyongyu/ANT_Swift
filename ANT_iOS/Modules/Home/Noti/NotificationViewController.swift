@@ -31,7 +31,6 @@ class NotificationViewController: BaseViewController {
         messData.content = "阡陌科技旗下的爱农田产品，是世界一流的农服务农产品，功能强大，要啥有啥，屌的一逼，值得下载！"
         self.dataArray = [messData,messData,messData]
         self.tableView.reloadData()
-        
     }
     
     lazy var tableView: UITableView = {
@@ -44,7 +43,6 @@ class NotificationViewController: BaseViewController {
         tableView.tableFooterView = UIView(frame: .zero)
         return tableView
     }()
-
 }
 
 extension NotificationViewController: UITableViewDelegate,UITableViewDataSource {

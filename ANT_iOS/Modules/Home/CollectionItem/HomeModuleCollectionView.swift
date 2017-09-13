@@ -12,7 +12,6 @@ class HomeModuleCollectionView: UIView {
 
     var titleArray = NSArray()
     var iconArray = NSMutableArray()
-    var colorArray = NSMutableArray()
     
     fileprivate static let classCollectionViewCellIdentifier = "ClassCollectionViewCell"
     
@@ -24,9 +23,8 @@ class HomeModuleCollectionView: UIView {
     }
     
     func loadData() {
-        self.iconArray = ["ic_home_daikuan","ic_home_nongzi","ic_home_cetu","baoxian"];
-//        self.colorArray = [UIColor.HexColor(0x56bc8a), UIColor.HexColor(0x48a8db), UIColor.HexColor(0xf09056), UIColor.HexColor(0xf75a39)];
-        self.titleArray = ["办贷款","买农资","测土配肥","买保险"];
+        self.iconArray = ["ic_home_daikuan","ic_home_nongzi","ic_home_nongji","ic_home_cetu","ic_home_baoxian"];
+        self.titleArray = ["办贷款","买农资","买农机","测土配肥","买保险"];
         self.collectionView.performBatchUpdates({ 
             self.collectionView.reloadData()
         }) { (true) in
@@ -43,7 +41,7 @@ class HomeModuleCollectionView: UIView {
         let layout = UICollectionViewFlowLayout()
         layout.minimumLineSpacing = 0
         layout.minimumInteritemSpacing = 0
-        layout.itemSize = CGSize(width: SCREEN_WIDTH/4, height: 90)
+        layout.itemSize = CGSize(width: SCREEN_WIDTH/5, height: 90)
         
         let collectionView = UICollectionView(frame: CGRect(x: 0, y: 0, width: SCREEN_WIDTH, height: 90), collectionViewLayout: layout)
         collectionView.delegate = self
@@ -71,34 +69,27 @@ extension HomeModuleCollectionView: UICollectionViewDelegate,UICollectionViewDat
         let cell = collectionView.dequeueReusableCell(withReuseIdentifier:HomeModuleCollectionView.classCollectionViewCellIdentifier, for: indexPath) as! HomeModuleCell
         cell.titleLabel.text = self.titleArray[indexPath.row] as? String
         cell.iconImageView.image = UIImage.init(named: (self.iconArray[indexPath.row] as? String)!)
-//        cell.bgColor = self.colorArray[indexPath.row] as! UIColor
         return cell
     }
     
     func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
         
-        if indexPath.item == 0 {
+        switch indexPath.item {
+        case 0:
             let loanVC = LoanInsureViewController()
             loanVC.selectType = .loan
             AppCommon.push(loanVC, animated: true)
-        }
-        if indexPath.item == 1 {
+        case 1,2:
             AppCommon.push(ShopListViewController(), animated: true)
-        }
-        
-        if indexPath.item == 2 {
+        case 3:
             AppCommon.push(CetuTypeViewController(), animated: true)
-        }
-        
-        if indexPath.item == 3 {
+        case 4:
             let loanVC = LoanInsureViewController()
             loanVC.selectType = .insure
             AppCommon.push(loanVC, animated: true)
+        default:
+            break
         }
-    }
-    
-    func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
-        return CGSize(width: SCREEN_WIDTH/4, height: 90)
     }
 }
 

@@ -6,6 +6,8 @@
 //  Copyright © 2017年 qianmo. All rights reserved.
 //
 
+#import <UIKit/UIKit.h>
+#import <Foundation/Foundation.h>
 #import "SDCycleScrollView.h"
 #import "UIImageView+WebCache.h"
 #import "AdvertScrollView.h"
@@ -17,3 +19,8 @@
 #import "PopMenuButton.h"
 #import "PopMenuModel.h"
 #import "popMenvTopView.h"
+
+#import "TBCityIconFont.h"
+#import <CoreText/CoreText.h>
+#import "TBCityIconInfo.h"
+#import "UIImage+TBCityIconFont.h"

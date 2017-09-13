@@ -11,19 +11,16 @@ import UIKit
 class ShopListViewController: BaseViewController {
 
     var dataArray = NSArray()
-    
     fileprivate static let classTableViewCellIdentifier = "ClassTableViewCell"
     
     override func loadSubViews() {
         super.loadSubViews()
         self.titleLabel.text = "买农资"
-        
         self.contentView.addSubview(self.tableView)
         self.tableView.snp.makeConstraints { (make) in
             make.edges.equalTo(self.view).inset(UIEdgeInsetsMake(64, 0, 0, 0));
         }
     }
-    
     
     override func loadData() {
         let shopData = ShopModel()
@@ -135,7 +132,6 @@ class ShopCell: UITableViewCell {
         
     }
     
-    
     var shopData: ShopModel? {
         didSet {
             shopImageView.kf.setImage(with: NSURL.init(string: (shopData?.shopImageUrl)!)! as URL, placeholder: IMAGE_PLACEHOLDER, options: nil, progressBlock: nil, completionHandler: nil)
@@ -149,7 +145,6 @@ class ShopCell: UITableViewCell {
     required init?(coder aDecoder: NSCoder) {
         fatalError("init(coder:) has not been implemented")
     }
-    
     
     lazy var shopImageView: UIImageView = {
         let shopImageView = UIImageView()
@@ -177,7 +172,7 @@ class ShopCell: UITableViewCell {
     lazy var distanceLabel: UILabel = {
         let distanceLabel = UILabel()
         distanceLabel.font = UIFont.systemFont(ofSize: 14)
-        distanceLabel.textColor = UIColor.orange
+        distanceLabel.textColor = BaseColor.ThemeColor
         return distanceLabel
     }()
     
@@ -190,5 +185,4 @@ class ShopCell: UITableViewCell {
         authenticatedLabel.backgroundColor = UIColor.init(white: 0, alpha: 0.4)
         return authenticatedLabel
     }()
-    
 }

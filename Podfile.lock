@@ -1,18 +1,21 @@
 PODS:
+  - IQKeyboardManagerSwift (4.0.10)
   - Kingfisher (3.10.2)
   - pop (1.0.9)
   - SnapKit (3.2.0)
 
 DEPENDENCIES:
+  - IQKeyboardManagerSwift (= 4.0.10)
   - Kingfisher (~> 3.10.2)
   - pop (~> 1.0)
   - SnapKit (~> 3.2.0)
 
 SPEC CHECKSUMS:
+  IQKeyboardManagerSwift: 75ba21a23794a1e6b6fe6d9a267ea17f80e06771
   Kingfisher: 7297492bf8cec9b2e2dee3519f2219948580d98e
   pop: f667631a5108a2e60d9e8797c9b32ddaf2080bce
   SnapKit: 1ca44df72cfa543218d177cb8aab029d10d86ea7
 
-PODFILE CHECKSUM: ce6bbe10cf20b17d505adf84b2b17a5cec6747aa
+PODFILE CHECKSUM: 93bb86c716dbe48406a40c1f312bd9222f468dd9
 
 COCOAPODS: 1.0.1

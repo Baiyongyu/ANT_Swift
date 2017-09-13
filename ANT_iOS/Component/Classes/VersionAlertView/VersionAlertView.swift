@@ -141,7 +141,7 @@ class VersionAlertView: UIView {
     
     lazy var sureBtn: UIButton = {
         let sureBtn = UIButton(type: UIButtonType.custom)
-        sureBtn.setTitle(" 立即更新", for: .normal)
+        sureBtn.setTitle("立即更新", for: .normal)
         sureBtn.setTitleColor(UIColor.white, for: .normal)
         sureBtn.tag = 1
         sureBtn.layer.cornerRadius = 2

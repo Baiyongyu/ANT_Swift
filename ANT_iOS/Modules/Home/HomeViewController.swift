@@ -21,54 +21,55 @@ class HomeViewController: BaseViewController {
         self.titleLabel.text = "首页"
         self.leftBtn.isHidden = true
         self.rightBtn.isHidden = false
-        self.rightBtn.setImage(UIImage.init(named: "ic_message_selected"), for: .normal)
-        self.navBar.alpha = 0;
+        self.rightBtn.setImage(UIImage.icon(with: TBCityIconInfo.init(text: "\u{e616}", size: 20, color: UIColor.black)), for: .normal)
+        self.rightBtn.setImage(UIImage.icon(with: TBCityIconInfo.init(text: "\u{e616}", size: 20, color: UIColor.gray)), for: .highlighted)
+        self.navBar.alpha = 0
         self.contentView.snp.updateConstraints { (make) in
-            make.edges.equalTo(self.view).inset(UIEdgeInsetsMake(-20, 0, 49, 0));
+            make.edges.equalTo(self.view).inset(UIEdgeInsetsMake(0, 0, 49, 0))
         }
-        
+        self.contentView.addSubview(self.tableView)
         let messageBtn = UIButton(type: UIButtonType.custom)
         self.contentView.addSubview(messageBtn)
-        messageBtn.setImage(UIImage.init(named: "ic_message_normal"), for: .normal)
+        messageBtn.setImage(UIImage.icon(with: TBCityIconInfo.init(text: "\u{e616}", size: 20, color: UIColor.white)), for: .normal)
         messageBtn.addTarget(self, action: #selector(HomeViewController.rightBtnAction), for: .touchUpInside)
         messageBtn.snp.makeConstraints { (make) in
-            make.right.equalTo(self.view);
-            make.top.equalTo(self.view).offset(20);
-            make.width.equalTo(60);
-            make.height.equalTo(40);
+            make.right.equalTo(self.view)
+            make.top.equalTo(self.view).offset(20)
+            make.width.equalTo(50)
+            make.height.equalTo(40)
         }
         
         self.headerView.backgroundColor = UIColor.white
         self.headerView.addSubview(self.cycleScrollView)
         self.cycleScrollView.snp.makeConstraints { (make) in
-            make.left.top.right.equalTo(self.headerView);
-            make.height.equalTo(240);
+            make.left.top.right.equalTo(self.headerView)
+            make.height.equalTo(240)
         }
         
         let seperator1 = UIView()
         self.headerView.addSubview(seperator1)
         seperator1.backgroundColor = BaseColor.BackGroundColor
         seperator1.snp.makeConstraints { (make) in
-            make.left.right.equalTo(self.headerView);
-            make.top.equalTo(self.cycleScrollView.snp.bottom);
-            make.height.equalTo(10);
+            make.left.right.equalTo(self.headerView)
+            make.top.equalTo(self.cycleScrollView.snp.bottom)
+            make.height.equalTo(10)
         }
         
         let moduleCollectionView = HomeModuleCollectionView()
         self.headerView.addSubview(moduleCollectionView)
         moduleCollectionView.snp.makeConstraints { (make) in
-            make.left.right.equalTo(self.headerView);
-            make.top.equalTo(seperator1.snp.bottom);
-            make.height.equalTo(90);
+            make.left.right.equalTo(self.headerView)
+            make.top.equalTo(seperator1.snp.bottom)
+            make.height.equalTo(90)
         }
         
         let seperator2 = UIView()
         self.headerView.addSubview(seperator2)
         seperator2.backgroundColor = BaseColor.BackGroundColor
         seperator2.snp.makeConstraints { (make) in
-            make.left.right.equalTo(self.headerView);
-            make.top.equalTo(moduleCollectionView.snp.bottom);
-            make.height.equalTo(10);
+            make.left.right.equalTo(self.headerView)
+            make.top.equalTo(moduleCollectionView.snp.bottom)
+            make.height.equalTo(10)
         }
         
         // 农业头条
@@ -76,25 +77,25 @@ class HomeViewController: BaseViewController {
         hotImage.image = UIImage.init(named: "hot_news")
         self.headerView.addSubview(hotImage)
         hotImage.snp.makeConstraints { (make) in
-            make.top.equalTo(seperator2.snp.bottom).offset(10);
-            make.left.equalTo(10);
+            make.top.equalTo(seperator2.snp.bottom).offset(10)
+            make.left.equalTo(10)
         }
         
         let line1 = UIView()
         line1.backgroundColor = BaseColor.BackGroundColor
         self.headerView.addSubview(line1)
         line1.snp.makeConstraints { (make) in
-            make.left.right.equalTo(self.headerView);
-            make.top.equalTo(hotImage.snp.bottom).offset(10);
-            make.height.equalTo(0.5);
+            make.left.right.equalTo(self.headerView)
+            make.top.equalTo(hotImage.snp.bottom).offset(10)
+            make.height.equalTo(0.5)
         }
         
         self.headerView.addSubview(advertScrollView)
         advertScrollView.snp.makeConstraints { (make) in
-            make.top.equalTo(line1.snp.bottom);
-            make.left.equalTo(-10);
-            make.right.equalTo(self.headerView);
-            make.height.equalTo(44);
+            make.top.equalTo(line1.snp.bottom)
+            make.left.equalTo(-10)
+            make.right.equalTo(self.headerView)
+            make.height.equalTo(44)
         }
         
         //当前种植
@@ -102,15 +103,15 @@ class HomeViewController: BaseViewController {
         self.headerView.addSubview(seperator3)
         seperator3.backgroundColor = BaseColor.BackGroundColor
         seperator3.snp.makeConstraints { (make) in
-            make.left.right.equalTo(self.headerView);
-            make.top.equalTo(advertScrollView.snp.bottom);
-            make.height.equalTo(10);
+            make.left.right.equalTo(self.headerView)
+            make.top.equalTo(advertScrollView.snp.bottom)
+            make.height.equalTo(10)
         }
         
         self.headerView.addSubview(cropsCollectionView)
         cropsCollectionView.snp.makeConstraints { (make) in
-            make.left.right.equalTo(self.headerView);
-            make.top.equalTo(seperator3.snp.bottom);
+            make.left.right.equalTo(self.headerView)
+            make.top.equalTo(seperator3.snp.bottom)
         }
         
         //当前种植
@@ -118,16 +119,14 @@ class HomeViewController: BaseViewController {
         self.headerView.addSubview(seperator4)
         seperator4.backgroundColor = BaseColor.BackGroundColor
         seperator4.snp.makeConstraints { (make) in
-            make.left.right.equalTo(self.headerView);
-            make.top.equalTo(cropsCollectionView.snp.bottom);
-            make.height.equalTo(15);
-            make.bottom.equalTo(self.headerView);
+            make.left.right.equalTo(self.headerView)
+            make.top.equalTo(cropsCollectionView.snp.bottom)
+            make.height.equalTo(15)
+            make.bottom.equalTo(self.headerView)
         }
         
-
-        self.contentView.addSubview(self.tableView)
         self.tableView.snp.makeConstraints { (make) in
-            make.edges.equalTo(self.view).inset(UIEdgeInsetsMake(-20, 0, 49, 0));
+            make.edges.equalTo(self.view).inset(UIEdgeInsetsMake(0, 0, 49, 0))
         }
         
         self.headerView.layoutIfNeeded()
@@ -140,7 +139,7 @@ class HomeViewController: BaseViewController {
                                                      "https://timgsa.baidu.com/timg?image&quality=80&size=b9999_10000&sec=1497949236536&di=9ee3b94520d0d468e7965d089738a51d&imgtype=0&src=http%3A%2F%2Fimg1.gamersky.com%2Fimage2014%2F03%2F20140307zx_2%2Fgamersky_31small_62_20143710179F3.jpg",
                                                      "https://timgsa.baidu.com/timg?image&quality=80&size=b9999_10000&sec=1497949253080&di=830853049c767682059db6bd995b08c3&imgtype=0&src=http%3A%2F%2Fwenwen.soso.com%2Fp%2F20110516%2F20110516210729-212837478.jpg"]
         // 新闻滚动
-        self.advertScrollView.titles = ["曹勇就是个大坑货","永远不要相信产品说的话","大勇你个产品汪"]
+        self.advertScrollView.titles = ["杀了一个产品🐶祭天","永远不要相信产品说的话","XXX你个产品汪"]
         
         // 当前种植
         let plantData = PlantModel()
@@ -201,7 +200,6 @@ class HomeViewController: BaseViewController {
 
 //SDCycleScrollView - Delegate
 extension HomeViewController: SDCycleScrollViewDelegate {
-    
     func cycleScrollView(_ cycleScrollView: SDCycleScrollView!, didSelectItemAt index: Int) {
 //        http://h5.eqxiu.com/s/NABANe?eqrcode=1&from=timeline&isappinstalled=0
     }
@@ -246,11 +244,28 @@ extension HomeViewController: UITableViewDelegate, UITableViewDataSource {
     }
     
     func scrollViewDidScroll(_ scrollView: UIScrollView) {
-        if tableView.contentOffset.y > 64 {
+        if tableView.contentOffset.y >= 64 {
             self.navBar.alpha = 1
+            UIApplication.shared.setStatusBarStyle(.default, animated: true)
             return
         }
         self.navBar.alpha = tableView.contentOffset.y/64;
+        UIApplication.shared.setStatusBarStyle(.lightContent, animated: true)
+    }
+    
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(true)
+        UIApplication.shared.setStatusBarStyle(self.tableView.contentOffset.y>=64 ? .default : .lightContent, animated: false)
+    }
+    
+    override func viewDidAppear(_ animated: Bool) {
+        super.viewDidAppear(true)
+        UIApplication.shared.setStatusBarStyle(self.tableView.contentOffset.y>=64 ? .default : .lightContent, animated: false)
+    }
+    
+    override func viewWillDisappear(_ animated: Bool) {
+        super.viewWillDisappear(true)
+        UIApplication.shared.setStatusBarStyle(.default, animated: false)
     }
 }
 

@@ -19,21 +19,26 @@ class AppTabBar: UITabBar {
     override init(frame: CGRect) {
         super.init(frame: frame)
         self.backgroundColor = UIColor.white
-        self.addSubview(plusBtn)
+        self.addSubview(ovalBtn)
     }
     
     override func layoutSubviews() {
         super.layoutSubviews()
         //系统自带的按钮类型是UITabBarButton，找出这些类型的按钮，然后重新排布位置，空出中间的位置
-        let width = plusBtn.currentBackgroundImage?.size.width
-        let height = plusBtn.currentBackgroundImage?.size.height
-        self.plusBtn.frame = CGRect(x: (self.width-width!)/2.0, y: (self.height - height!)/2.0 - CGFloat(2*TabBarMagin), width: width!, height: height!)
+        let width = ovalBtn.currentBackgroundImage?.size.width
+        let height = ovalBtn.currentBackgroundImage?.size.height
+        self.ovalBtn.frame = CGRect(x: (self.width-width!)/2.0, y: (self.height-height!)/2.0 - 3*CGFloat(TabBarMagin)-2, width: width!, height: height!)
+        
         let plusImageView = UIImageView()
-        plusImageView.image = UIImage.init(named: "ic_tabbar_add")
-        self.plusBtn.addSubview(plusImageView)
+        plusImageView.isUserInteractionEnabled = true
+        let tapGesture = UITapGestureRecognizer(target: self, action: #selector(AppTabBar.plusBtnDidClick))
+        plusImageView.addGestureRecognizer(tapGesture)
+        self.ovalBtn.addSubview(plusImageView)
+        plusImageView.image = UIImage.icon(with: TBCityIconInfo.init(text: "\u{e651}", size: 50, color: BaseColor.ThemeColor))
         plusImageView.snp.makeConstraints { (make) in
-            make.centerX.equalTo(self.plusBtn);
-            make.centerY.equalTo(self.plusBtn).offset(3);
+            make.centerX.equalTo(self.ovalBtn)
+            make.top.equalTo(5)
+            make.size.equalTo(CGSize(width: 50, height: 50))
         }
         
         let label = UILabel()
@@ -41,9 +46,9 @@ class AppTabBar: UITabBar {
         label.font = UIFont.init(name: "STHeitiSC-Light", size: 10)
         label.sizeToFit()
         label.textColor = UIColor.gray
-        self.plusBtn.addSubview(label)
-        label.centerX = plusImageView.centerX + 30
-        label.centerY = self.plusBtn.height + CGFloat(TabBarMagin)
+        self.addSubview(label)
+        label.centerX = self.ovalBtn.centerX
+        label.centerY = plusImageView.bottom + 3 * CGFloat(TabBarMagin) + 6
         
         var btnIndex: NSInteger = 0
         for btn in self.subviews { //遍历tabbar的子控件
@@ -59,8 +64,7 @@ class AppTabBar: UITabBar {
                 }
             }
         }
-        self.bringSubview(toFront: self.plusBtn)
-        
+        self.bringSubview(toFront: self.ovalBtn)
     }
     
     func plusBtnDidClick() {
@@ -76,11 +80,11 @@ class AppTabBar: UITabBar {
         if self.isHidden == false {
             //将当前tabbar的触摸点转换坐标系，转换到发布按钮的身上，生成一个新的点
             var newP = CGPoint()
-            newP = self.convert(point, to: self.plusBtn)
+            newP = self.convert(point, to: self.ovalBtn)
             
             //判断如果这个新的点是在发布按钮身上，那么处理点击事件最合适的view就是发布按钮
-            if self.plusBtn.point(inside: newP, with: event) {
-                return self.plusBtn
+            if self.ovalBtn.point(inside: newP, with: event) {
+                return self.ovalBtn
             }else { //如果点不在发布按钮身上，直接让系统处理就可以了
                 return super.hitTest(point, with: event)
             }
@@ -89,12 +93,13 @@ class AppTabBar: UITabBar {
         }
     }
     
-    lazy var plusBtn: UIButton = {
-        let plusBtn = UIButton(type: UIButtonType.custom)
-        plusBtn.setBackgroundImage(UIImage.init(named: "ic_tabbar_add_bg"), for: .normal)
-        plusBtn.setBackgroundImage(UIImage.init(named: "ic_tabbar_add_bg"), for: .highlighted)
-        plusBtn.addTarget(self , action: #selector(plusBtnDidClick), for: .touchUpInside)
-        return plusBtn
+    lazy var ovalBtn: UIButton = {
+        let ovalBtn = UIButton(type: UIButtonType.custom)
+        ovalBtn.setBackgroundImage(UIImage.init(named: "ic_tabbar_oval"), for: .normal)
+        ovalBtn.setBackgroundImage(UIImage.init(named: "ic_tabbar_oval"), for: .highlighted)
+        ovalBtn.sizeToFit()
+        ovalBtn.addTarget(self , action: #selector(plusBtnDidClick), for: .touchUpInside)
+        return ovalBtn
     }()
     
     required init?(coder aDecoder: NSCoder) {

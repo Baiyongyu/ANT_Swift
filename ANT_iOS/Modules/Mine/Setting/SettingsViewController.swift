@@ -15,18 +15,19 @@ class SettingsViewController: BaseViewController {
     var versionLabel = UILabel()
     var companyLabel = UILabel()
     
-    var titleArray = NSArray()
-    var iconArray = NSArray()
+    var titleArray = Array<Any>()
+    var iconArray = Array<Any>()
+    var colorArray = Array<Any>()
     
     override func loadSubViews() {
         super.loadSubViews()
-        self.titleLabel.text = "设置"
-        self.contentView.addSubview(tableView)
+        titleLabel.text = "设置"
+        contentView.addSubview(tableView)
     }
     
     override func layoutConstraints() {
         tableView.snp.makeConstraints { (make) in
-            make.edges.equalTo(self.view).inset(UIEdgeInsetsMake(64, 0, 0, 0));
+            make.edges.equalTo(view).inset(UIEdgeInsetsMake(64, 0, 0, 0))
         }
         headerView.frame = CGRect(x: 0, y: 0, width: SCREEN_WIDTH, height: 250)
         
@@ -36,8 +37,8 @@ class SettingsViewController: BaseViewController {
         logoImageView.clipsToBounds = true
         logoImageView.contentMode = .scaleAspectFill
         logoImageView.snp.makeConstraints { (make) in
-            make.center.equalTo(headerView);
-            make.width.height.equalTo(130);
+            make.center.equalTo(headerView)
+            make.width.height.equalTo(130)
         }
         
         headerView.addSubview(versionLabel)
@@ -46,8 +47,8 @@ class SettingsViewController: BaseViewController {
         versionLabel.textAlignment = .center
         versionLabel.textColor = UIColor.lightGray
         versionLabel.snp.makeConstraints { (make) in
-            make.centerX.equalTo(headerView);
-            make.top.equalTo(logoImageView.snp.bottom).offset(5);
+            make.centerX.equalTo(headerView)
+            make.top.equalTo(logoImageView.snp.bottom).offset(5)
         }
         
         headerView.addSubview(companyLabel)
@@ -56,17 +57,17 @@ class SettingsViewController: BaseViewController {
         companyLabel.textAlignment = .center
         companyLabel.textColor = UIColor.lightGray
         companyLabel.snp.makeConstraints { (make) in
-            make.centerX.equalTo(headerView);
-            make.top.equalTo(versionLabel.snp.bottom).offset(10);
+            make.centerX.equalTo(headerView)
+            make.top.equalTo(versionLabel.snp.bottom).offset(10)
         }
-        self.tableView.tableHeaderView = self.headerView
-        
+        tableView.tableHeaderView = headerView
     }
     
     override func loadData() {
-        self.iconArray = ["ic_settings_clean","ic_settings_logout"];
-        self.titleArray = ["清理缓存","退出",];
-        self.tableView.reloadData()
+        iconArray = ["\u{e644}","\u{e643}"]
+        titleArray = ["清理缓存","退出",]
+        colorArray = [UIColor.HexColor(0x52c3ef),UIColor.HexColor(0xfca51a)]
+        tableView.reloadData()
     }
     
     lazy var tableView: UITableView = {
@@ -85,14 +86,12 @@ class SettingsViewController: BaseViewController {
 extension SettingsViewController: UITableViewDelegate, UITableViewDataSource {
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return self.titleArray.count
+        return titleArray.count
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-//        let cell = tableView.dequeueReusableCell(withIdentifier: "Cell", for: indexPath)
         let cell = UITableViewCell(style: .value1, reuseIdentifier: "Cell")
-        
-        cell.imageView?.image = UIImage.init(named: iconArray[indexPath.row] as! String)
+        cell.imageView?.image = UIImage.icon(with: TBCityIconInfo.init(text: iconArray[indexPath.row] as! String, size: 18, color: colorArray[indexPath.row] as! UIColor))
         cell.textLabel?.text = titleArray[indexPath.row] as? String
         cell.textLabel?.font = UIFont.systemFont(ofSize: 15)
         cell.detailTextLabel?.text = indexPath.row == 0 ? CacheManager.cacheSize : ""

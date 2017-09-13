@@ -45,7 +45,7 @@ class SelectAreaAlert: UIView {
     }
     
     //外部调用的方法
-    public func selectAreaAlert(title: String, titles: NSArray, codes: NSArray) {
+    public func selectAreaAlert(_ title: String, _ titles: NSArray, _ codes: NSArray) {
         self.titleLabel.text = title
         self.titles = titles
         self.codes = codes
@@ -69,7 +69,7 @@ class SelectAreaAlert: UIView {
     func closeAction() {
         UIView.animate(withDuration: 0.1, animations: {
             self.alpha = 0
-        }) { (true) in
+        }) { (_) in
             self.removeFromSuperview()
         }
     }
@@ -98,11 +98,11 @@ class SelectAreaAlert: UIView {
     
     lazy var closeButton: UIButton = {
         let closeButton = UIButton(type: UIButtonType.custom)
-        closeButton.setImage(UIImage.init(named: "ic_close"), for: .normal)
+        closeButton.setImage(UIImage.icon(with: TBCityIconInfo.init(text: "\u{e611}", size: 20, color: UIColor.black)), for: .normal)
+        closeButton.setImage(UIImage.icon(with: TBCityIconInfo.init(text: "\u{e611}", size: 20, color: UIColor.gray)), for: .highlighted)
         closeButton.addTarget(self, action: #selector(closeAction), for: .touchUpInside)
         return closeButton
     }()
-    
     
     lazy var selectCollectionView: UICollectionView = {
         let layout = UICollectionViewFlowLayout()
@@ -158,10 +158,10 @@ class AreaLabelCell: UICollectionViewCell {
     lazy var areaLabel: UILabel = {
         let areaLabel = UILabel()
         areaLabel.font = UIFont.systemFont(ofSize: 14)
-        areaLabel.textColor = UIColor.orange
+        areaLabel.textColor = BaseColor.ThemeColor
         areaLabel.textAlignment = .center
         areaLabel.layer.cornerRadius = 2.0
-        areaLabel.layer.borderColor = UIColor.orange.cgColor
+        areaLabel.layer.borderColor = BaseColor.ThemeColor.cgColor
         areaLabel.layer.borderWidth = 0.5
         areaLabel.clipsToBounds = true
         return areaLabel
