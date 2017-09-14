@@ -61,4 +61,8 @@ struct BaseColor {
      用于头部导航颜色(红色)
      */
     static let RedColor = UIColor.HexColor(0xE43941)
+    /**
+     线的颜色
+     */
+    static let LineColor = UIColor.HexColor(0xD5D5D5)
 }

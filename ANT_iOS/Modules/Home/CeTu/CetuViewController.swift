@@ -29,10 +29,10 @@ class CetuViewController: BaseViewController {
         tipLabel.numberOfLines = 0
         headerView.addSubview(tipLabel)
         tipLabel.snp.makeConstraints { (make) in
-            make.left.equalTo(10);
-            make.right.equalTo(headerView).offset(-10);
-            make.top.equalTo(headerView).offset(10);
-            make.bottom.equalTo(headerView).offset(-10);
+            make.left.equalTo(10)
+            make.right.equalTo(headerView).offset(-10)
+            make.top.equalTo(headerView).offset(10)
+            make.bottom.equalTo(headerView).offset(-10)
         }
         tipLabel.preferredMaxLayoutWidth = (SCREEN_WIDTH - 10 * 2)
         tipLabel.setContentHuggingPriority(UILayoutPriorityRequired, for: UILayoutConstraintAxis.vertical)
@@ -47,21 +47,21 @@ class CetuViewController: BaseViewController {
         footerTipLabel.textAlignment = .center
         footerView.addSubview(footerTipLabel)
         footerTipLabel.snp.makeConstraints { (make) in
-            make.center.equalTo(footerView);
+            make.center.equalTo(footerView)
         }
         self.tableView.tableFooterView = footerView
     }
     
     override func layoutConstraints() {
         self.tableView.snp.makeConstraints { (make) in
-            make.edges.equalTo(self.view).inset(UIEdgeInsetsMake(64, 0, 50, 0));
+            make.edges.equalTo(self.view).inset(UIEdgeInsetsMake(64, 0, 50, 0))
         }
         
         self.rightBtn.snp.updateConstraints { (make) in
-            make.right.equalTo(self.navBar);
-            make.top.equalTo(self.navBar).offset(20);
-            make.width.equalTo(80);
-            make.height.equalTo(40);
+            make.right.equalTo(self.navBar)
+            make.top.equalTo(self.navBar).offset(20)
+            make.width.equalTo(80)
+            make.height.equalTo(40)
         }
     }
     
@@ -140,7 +140,7 @@ extension CetuViewController: UITableViewDelegate, UITableViewDataSource {
 
 class CetuRecommendCell: UITableViewCell {
     override init(style: UITableViewCellStyle, reuseIdentifier: String?) {
-        super.init(style: .default, reuseIdentifier: reuseIdentifier)
+        super.init(style: style, reuseIdentifier: reuseIdentifier)
         buildCellView()
     }
     
@@ -243,7 +243,7 @@ class CetuRecommendCell: UITableViewCell {
         let recommendBtn = UIButton(type: UIButtonType.custom)
         recommendBtn.setTitle("查看施肥建议", for: .normal)
         recommendBtn.titleLabel?.font = UIFont.systemFont(ofSize: 14)
-        recommendBtn.setTitleColor(UIColor.orange, for: .normal)
+        recommendBtn.setTitleColor(UIColor.red, for: .normal)
         recommendBtn.addTarget(self, action: #selector(recommendAction), for: .touchUpInside)
         contentView.addSubview(recommendBtn)
         recommendBtn.snp.makeConstraints { (make) in
@@ -285,7 +285,7 @@ class CetuRecommendCell: UITableViewCell {
     lazy var nameLabel: UILabel = {
         let nameLabel = UILabel()
         nameLabel.font = UIFont.systemFont(ofSize: 14)
-        nameLabel.textColor = UIColor.orange
+        nameLabel.textColor = UIColor.red
         return nameLabel
     }()
     
@@ -316,7 +316,7 @@ class CetuRecommendCell: UITableViewCell {
         addToCartBtn.setTitle("已加入购物车", for: .disabled)
         addToCartBtn.titleLabel?.font = UIFont.systemFont(ofSize: 14)
         addToCartBtn.setTitleColor(UIColor.white, for: .normal)
-        addToCartBtn.backgroundColor = UIColor.orange
+        addToCartBtn.backgroundColor = UIColor.red
         addToCartBtn.layer.cornerRadius = 3.0
         addToCartBtn.clipsToBounds = true
         addToCartBtn.addTarget(self, action: #selector(addToCartAction), for: .touchUpInside)

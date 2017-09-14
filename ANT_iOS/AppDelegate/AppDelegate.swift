@@ -17,14 +17,14 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey: Any]?) -> Bool {
         // Override point for customization after application launch.
         
-        self.window = UIWindow.init(frame: UIScreen.main.bounds)
-        self.window?.backgroundColor = UIColor.white
-        self.window?.makeKeyAndVisible()
+        window = UIWindow.init(frame: UIScreen.main.bounds)
+        window?.backgroundColor = UIColor.white
+        window?.makeKeyAndVisible()
         
         let tabBarController = AppTabBarController()
         let nav = AppNavigationController.init(rootViewController: tabBarController)
         nav.navigationBar.isHidden = true
-        self.window?.rootViewController = nav
+        window?.rootViewController = nav
         
         /* 版本判断 */
 //        let versionManager = VersionManager()
@@ -38,6 +38,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         IQKeyboardManager.sharedManager().shouldShowTextFieldPlaceholder = true
         IQKeyboardManager.sharedManager().placeholderFont = UIFont.systemFont(ofSize: 14)
         IQKeyboardManager.sharedManager().toolbarTintColor = BaseColor.ThemeColor
+        
         /* iconfont图标 */
         TBCityIconFont.setFontName("iconfont")
         return true

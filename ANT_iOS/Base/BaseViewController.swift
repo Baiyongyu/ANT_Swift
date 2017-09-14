@@ -13,55 +13,55 @@ class BaseViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        self.automaticallyAdjustsScrollViewInsets = false
-        self.view.backgroundColor = UIColor.lightGray
+        automaticallyAdjustsScrollViewInsets = false
+        view.backgroundColor = UIColor.lightGray
         loadSubViews()
-        self.view.bringSubview(toFront: self.navBar)
+        view.bringSubview(toFront: navBar)
         layoutConstraints()
         loadData()
     }
     
     public func loadSubViews() {
-        self.view.addSubview(self.contentView)
-        self.view.addSubview(self.navBar)
-        self.navBar.addSubview(self.leftBtn)
-        self.navBar.addSubview(self.rightBtn)
-        self.leftBtn.isHidden = self.navigationController?.childViewControllers.count == 1
-        self.rightBtn.isHidden = true
-        self.navBar.addSubview(self.titleLabel)
+        view.addSubview(contentView)
+        view.addSubview(navBar)
+        navBar.addSubview(leftBtn)
+        navBar.addSubview(rightBtn)
+        leftBtn.isHidden = navigationController?.childViewControllers.count == 1
+        rightBtn.isHidden = true
+        navBar.addSubview(titleLabel)
         layoutNavigationBar()
     }
     
     public func layoutNavigationBar() {
-        self.contentView.snp.makeConstraints { (make) in
-            make.edges.equalTo(self.view).inset(UIEdgeInsetsMake(64, 0, 0, 0));
+        contentView.snp.makeConstraints { (make) in
+            make.edges.equalTo(view).inset(UIEdgeInsetsMake(64, 0, 0, 0));
         }
         
-        self.navBar.snp.makeConstraints { (make) in
-            make.left.equalTo(self.view);
-            make.top.equalTo(self.view);
-            make.right.equalTo(self.view);
+        navBar.snp.makeConstraints { (make) in
+            make.left.equalTo(view);
+            make.top.equalTo(view);
+            make.right.equalTo(view);
             make.height.equalTo(64);
         }
         
-        self.leftBtn.snp.makeConstraints { (make) in
-            make.left.equalTo(self.navBar);
-            make.top.equalTo(self.navBar).offset(20);
+        leftBtn.snp.makeConstraints { (make) in
+            make.left.equalTo(navBar);
+            make.top.equalTo(navBar).offset(20);
             make.width.equalTo(50);
             make.height.equalTo(40);
         }
         
-        self.rightBtn.snp.makeConstraints { (make) in
-            make.right.equalTo(self.navBar);
-            make.top.equalTo(self.navBar).offset(20);
+        rightBtn.snp.makeConstraints { (make) in
+            make.right.equalTo(navBar);
+            make.top.equalTo(navBar).offset(20);
             make.width.equalTo(50);
             make.height.equalTo(40);
         }
         
-        self.titleLabel.snp.makeConstraints { (make) in
-            make.left.equalTo(self.leftBtn.snp.right).offset(5);
-            make.right.equalTo(self.rightBtn.snp.left).offset(-5);
-            make.top.equalTo(self.navBar).offset(20);
+        titleLabel.snp.makeConstraints { (make) in
+            make.left.equalTo(leftBtn.snp.right).offset(5);
+            make.right.equalTo(rightBtn.snp.left).offset(-5);
+            make.top.equalTo(navBar).offset(20);
             make.height.equalTo(40);
         }
         
@@ -77,7 +77,7 @@ class BaseViewController: UIViewController {
     }
     
     public func leftBtnAction() {
-        self.navigationController?.popViewController(animated: true)
+        navigationController?.popViewController(animated: true)
     }
     
     public func rightBtnAction() {

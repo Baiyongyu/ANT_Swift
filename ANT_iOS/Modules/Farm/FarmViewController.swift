@@ -14,7 +14,6 @@ class FarmViewController: BaseViewController {
     var iconArray = Array<Any>()
     var colorArray = Array<Any>()
     
-    
     fileprivate static let classCollectionViewCellIdentifier = "ClassCollectionViewCell"
     fileprivate static let reuseHeaderIdentifier = "collectionViewHeader"
 
@@ -77,19 +76,21 @@ extension FarmViewController: UICollectionViewDelegate, UICollectionViewDataSour
     func collectionView(_ collectionView: UICollectionView, viewForSupplementaryElementOfKind kind: String, at indexPath: IndexPath) -> UICollectionReusableView {
         let reusableView = collectionView.dequeueReusableSupplementaryView(ofKind: UICollectionElementKindSectionHeader, withReuseIdentifier: FarmViewController.reuseHeaderIdentifier, for: indexPath)
         
-        let bgView = UIImageView(frame: CGRect(x: 0, y: 0, width: SCREEN_WIDTH, height: 150))
+        let bgView = UIImageView(frame: CGRect(x: 0, y: 0, width: SCREEN_WIDTH, height: 180))
         bgView.image = UIImage.init(named: "ic_weather_bg")
         reusableView.addSubview(bgView)
         return reusableView
     }
     
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, referenceSizeForHeaderInSection section: Int) -> CGSize {
-        return CGSize(width: SCREEN_WIDTH, height: 150)
+        return CGSize(width: SCREEN_WIDTH, height: 180)
     }
 
     func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
         
         switch indexPath.item {
+        case 0:
+            AppCommon.push(FieldsManagerViewController(), animated: true)
         case 1:
             AppCommon.push(PlantManagerViewController(), animated: true)
         case 3:

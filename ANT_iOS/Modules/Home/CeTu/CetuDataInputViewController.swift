@@ -49,7 +49,7 @@ class CetuDataInputViewController: BaseViewController {
         confirmBtn.setTitle("预约成功，等待测土", for: .disabled)
         confirmBtn.titleLabel?.font = UIFont.systemFont(ofSize: 14)
         confirmBtn.setTitleColor(UIColor.white, for: .normal)
-        confirmBtn.backgroundColor = UIColor.orange
+        confirmBtn.backgroundColor = BaseColor.ThemeColor
         confirmBtn.layer.cornerRadius = 5.0
         confirmBtn.clipsToBounds = true
         footerView.addSubview(confirmBtn)

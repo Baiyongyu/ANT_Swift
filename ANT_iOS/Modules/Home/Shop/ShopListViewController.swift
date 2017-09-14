@@ -172,7 +172,7 @@ class ShopCell: UITableViewCell {
     lazy var distanceLabel: UILabel = {
         let distanceLabel = UILabel()
         distanceLabel.font = UIFont.systemFont(ofSize: 14)
-        distanceLabel.textColor = BaseColor.ThemeColor
+        distanceLabel.textColor = UIColor.gray
         return distanceLabel
     }()
     

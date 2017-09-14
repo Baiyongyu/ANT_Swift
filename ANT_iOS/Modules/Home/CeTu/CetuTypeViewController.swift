@@ -20,7 +20,7 @@ class CetuTypeViewController: BaseViewController {
         bgView.image = UIImage.init(named: "ic_cetu_bg")
         self.contentView.addSubview(bgView)
         bgView.snp.makeConstraints { (make) in
-            make.edges.equalTo(self.view).inset(UIEdgeInsetsMake(64, 0, 0, 0));
+            make.edges.equalTo(self.view).inset(UIEdgeInsetsMake(64, 0, 0, 0))
         }
         
         typeArray = ["免费测基肥","免费测追肥"]
@@ -31,10 +31,10 @@ class CetuTypeViewController: BaseViewController {
             cetuTypeBtn.layer.cornerRadius = 5
             cetuTypeBtn.clipsToBounds = true
             cetuTypeBtn.layer.borderWidth = 0.5
-            cetuTypeBtn.layer.borderColor = UIColor.orange.cgColor
+            cetuTypeBtn.layer.borderColor = BaseColor.ThemeColor.cgColor
             cetuTypeBtn.tag = 100+i
-            cetuTypeBtn.setTitleColor(UIColor.orange, for: .normal)
-            cetuTypeBtn.setTitleColor(UIColor.white, for: .highlighted)
+            cetuTypeBtn.setTitleColor(BaseColor.ThemeColor, for: .normal)
+            cetuTypeBtn.setTitleColor(UIColor.gray, for: .highlighted)
             cetuTypeBtn.addTarget(self, action: #selector(selectTypeAction(sender:)), for: .touchUpInside)
             self.contentView.addSubview(cetuTypeBtn)
             cetuTypeBtn.snp.makeConstraints({ (make) in
@@ -43,7 +43,6 @@ class CetuTypeViewController: BaseViewController {
                 make.bottom.equalTo(bgView).offset(-55);
                 make.height.equalTo(44);
             })
-            
         }
     }
     

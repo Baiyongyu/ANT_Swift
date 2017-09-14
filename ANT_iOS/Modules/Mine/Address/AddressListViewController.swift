@@ -190,7 +190,7 @@ class AddressCell: UITableViewCell {
     
     var addressData: AddressModel? {
         didSet {
-            nameAndTelLabel.text = (addressData?.receiver_name)! + (addressData?.receiver_phone)!
+            nameAndTelLabel.text = (addressData?.receiver_name)! + "    " +  (addressData?.receiver_phone)!
             addressLabel.text = addressData?.address_detail
             defaultBtn.isSelected = (addressData?.is_default)!
         }

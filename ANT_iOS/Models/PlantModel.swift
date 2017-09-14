@@ -13,4 +13,8 @@ class PlantModel: NSObject {
     var plant_crop_nam: String?
     //作物品种
     var crop_variety: String?
+    
+    override func copy() -> Any {
+        return self.yy_modelCopy
+    }
 }

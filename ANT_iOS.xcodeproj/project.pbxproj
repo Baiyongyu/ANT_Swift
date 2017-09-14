@@ -81,6 +81,11 @@
 		F3A1D12F1F04F7020008F051 /* PublishViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3A1D12E1F04F7020008F051 /* PublishViewController.swift */; };
 		F3A1D1321F04FF4C0008F051 /* BaseTableViewDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3A1D1311F04FF4C0008F051 /* BaseTableViewDataSource.swift */; };
 		F3B764FA1EEF73E1009FF0BE /* PopUpPickerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3B764F91EEF73E1009FF0BE /* PopUpPickerView.swift */; };
+		F3BB46211F69234C00E0539C /* FieldsManagerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3BB46201F69234C00E0539C /* FieldsManagerViewController.swift */; };
+		F3BB46231F69267800E0539C /* FieldsTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3BB46221F69267800E0539C /* FieldsTableViewController.swift */; };
+		F3BB46251F69269400E0539C /* FieldsMapViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3BB46241F69269400E0539C /* FieldsMapViewController.swift */; };
+		F3BB46291F69335E00E0539C /* FTPopOverMenu.m in Sources */ = {isa = PBXBuildFile; fileRef = F3BB46281F69335E00E0539C /* FTPopOverMenu.m */; };
+		F3BB462B1F6939FE00E0539C /* FieldGroupModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3BB462A1F6939FE00E0539C /* FieldGroupModel.swift */; };
 		F3D677381EE55EBB00BEB029 /* CropsCollectionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3D677371EE55EBB00BEB029 /* CropsCollectionView.swift */; };
 		F3D6773B1EE5625500BEB029 /* PlantModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3D6773A1EE5625500BEB029 /* PlantModel.swift */; };
 		F3EE54DC1F05F88E004A9523 /* NewsTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3EE54DB1F05F88E004A9523 /* NewsTableViewCell.swift */; };
@@ -212,6 +217,12 @@
 		F3A1D12E1F04F7020008F051 /* PublishViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PublishViewController.swift; sourceTree = "<group>"; };
 		F3A1D1311F04FF4C0008F051 /* BaseTableViewDataSource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseTableViewDataSource.swift; sourceTree = "<group>"; };
 		F3B764F91EEF73E1009FF0BE /* PopUpPickerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PopUpPickerView.swift; sourceTree = "<group>"; };
+		F3BB46201F69234C00E0539C /* FieldsManagerViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FieldsManagerViewController.swift; sourceTree = "<group>"; };
+		F3BB46221F69267800E0539C /* FieldsTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FieldsTableViewController.swift; sourceTree = "<group>"; };
+		F3BB46241F69269400E0539C /* FieldsMapViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FieldsMapViewController.swift; sourceTree = "<group>"; };
+		F3BB46271F69335E00E0539C /* FTPopOverMenu.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FTPopOverMenu.h; sourceTree = "<group>"; };
+		F3BB46281F69335E00E0539C /* FTPopOverMenu.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FTPopOverMenu.m; sourceTree = "<group>"; };
+		F3BB462A1F6939FE00E0539C /* FieldGroupModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FieldGroupModel.swift; sourceTree = "<group>"; };
 		F3D677371EE55EBB00BEB029 /* CropsCollectionView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CropsCollectionView.swift; sourceTree = "<group>"; };
 		F3D6773A1EE5625500BEB029 /* PlantModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PlantModel.swift; sourceTree = "<group>"; };
 		F3EE54DB1F05F88E004A9523 /* NewsTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewsTableViewCell.swift; sourceTree = "<group>"; };
@@ -619,9 +630,29 @@
 			path = PopupMenu;
 			sourceTree = "<group>";
 		};
+		F3BB461F1F69231000E0539C /* FieldsManager */ = {
+			isa = PBXGroup;
+			children = (
+				F3BB46201F69234C00E0539C /* FieldsManagerViewController.swift */,
+				F3BB46221F69267800E0539C /* FieldsTableViewController.swift */,
+				F3BB46241F69269400E0539C /* FieldsMapViewController.swift */,
+			);
+			path = FieldsManager;
+			sourceTree = "<group>";
+		};
+		F3BB46261F69335E00E0539C /* FTPopOverMenu */ = {
+			isa = PBXGroup;
+			children = (
+				F3BB46271F69335E00E0539C /* FTPopOverMenu.h */,
+				F3BB46281F69335E00E0539C /* FTPopOverMenu.m */,
+			);
+			path = FTPopOverMenu;
+			sourceTree = "<group>";
+		};
 		F3D677321EE5584F00BEB029 /* Classes */ = {
 			isa = PBXGroup;
 			children = (
+				F3BB46261F69335E00E0539C /* FTPopOverMenu */,
 				F307E6151F68B79F001664C8 /* TextView */,
 				F314B3581F67C9BF00AAB40B /* IconFont */,
 				F32671C31EF7D33D00121C9B /* ActionAlertView */,
@@ -644,6 +675,7 @@
 				F398558C1EE8F1920042990C /* AddressModel.swift */,
 				F320DE771EEE7114005AF954 /* FormulaModel.swift */,
 				F3EE54E21F064537004A9523 /* NewsModel.swift */,
+				F3BB462A1F6939FE00E0539C /* FieldGroupModel.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -713,6 +745,7 @@
 			isa = PBXGroup;
 			children = (
 				F3F587171EE43CAD0018412D /* FarmViewController.swift */,
+				F3BB461F1F69231000E0539C /* FieldsManager */,
 				F33FBB961EEFDB0900F4B2A8 /* PlantManager */,
 				F3FC1E861EE7E08600CD66E1 /* webthing */,
 			);
@@ -882,11 +915,13 @@
 				F365D6F81EE67AAE00500391 /* UIView+WebCacheOperation.m in Sources */,
 				F365D6F31EE67AAE00500391 /* UIButton+WebCache.m in Sources */,
 				F365D6F11EE67AAE00500391 /* SDWebImageManager.m in Sources */,
+				F3BB462B1F6939FE00E0539C /* FieldGroupModel.swift in Sources */,
 				F314B2CE1F6769EA00AAB40B /* BaseTableViewDelegate.swift in Sources */,
 				F365D6E61EE67AAE00500391 /* TADotView.m in Sources */,
 				F35BB7721EE14DC80032EC02 /* AppTabBarController.swift in Sources */,
 				F398558D1EE8F1920042990C /* AddressModel.swift in Sources */,
 				F365D6EF1EE67AAE00500391 /* SDWebImageDownloader.m in Sources */,
+				F3BB46291F69335E00E0539C /* FTPopOverMenu.m in Sources */,
 				F33FBB981EEFDB2100F4B2A8 /* PlantManagerViewController.swift in Sources */,
 				F3F5871A1EE43CAD0018412D /* CircleViewController.swift in Sources */,
 				F3F7820C1F6632B2007C5768 /* PopMenuModel.m in Sources */,
@@ -900,6 +935,7 @@
 				F398559C1EE954690042990C /* CommonUtils.swift in Sources */,
 				F365D71C1EE67AAE00500391 /* YYClassInfo.m in Sources */,
 				F3320AE91EE79BF800327DC7 /* ShopListViewController.swift in Sources */,
+				F3BB46251F69269400E0539C /* FieldsMapViewController.swift in Sources */,
 				F365D6E91EE67AAE00500391 /* SDCycleScrollView.m in Sources */,
 				F3F5871B1EE43CAD0018412D /* FarmViewController.swift in Sources */,
 				F3EE54E31F064537004A9523 /* NewsModel.swift in Sources */,
@@ -938,6 +974,7 @@
 				F365D6EE1EE67AAE00500391 /* SDWebImageDecoder.m in Sources */,
 				F3EE54DC1F05F88E004A9523 /* NewsTableViewCell.swift in Sources */,
 				F365D6E81EE67AAE00500391 /* SDCollectionViewCell.m in Sources */,
+				F3BB46211F69234C00E0539C /* FieldsManagerViewController.swift in Sources */,
 				F320DE761EEE669A005AF954 /* CetuViewController.swift in Sources */,
 				F32671C51EF7D39700121C9B /* ActionAlertView.swift in Sources */,
 				F3F586841EE407FD0018412D /* HomeViewController.swift in Sources */,
@@ -952,6 +989,7 @@
 				F365D6EA1EE67AAE00500391 /* UIView+SDExtension.m in Sources */,
 				F314B2D01F6770DD00AAB40B /* BaseTableViewCell.swift in Sources */,
 				F398559A1EE93C870042990C /* SelectAreaAlert.swift in Sources */,
+				F3BB46231F69267800E0539C /* FieldsTableViewController.swift in Sources */,
 				F365D6F41EE67AAE00500391 /* UIImage+GIF.m in Sources */,
 				F34C935E1EE6B58600091195 /* CacheManager.swift in Sources */,
 				F3A1D1321F04FF4C0008F051 /* BaseTableViewDataSource.swift in Sources */,

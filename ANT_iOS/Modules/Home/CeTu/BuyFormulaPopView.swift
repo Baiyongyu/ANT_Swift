@@ -108,7 +108,8 @@ class BuyFormulaPopView: UIView {
         }
         
         let closeBtn = UIButton(type: UIButtonType.custom)
-        closeBtn.setImage(UIImage.init(named: "ic_close"), for: .normal)
+        closeBtn.setImage(UIImage.icon(with: TBCityIconInfo.init(text: "\u{e611}", size: 20, color: UIColor.black)), for: .normal)
+        closeBtn.setImage(UIImage.icon(with: TBCityIconInfo.init(text: "\u{e611}", size: 20, color: UIColor.gray)), for: .highlighted)
         closeBtn.addTarget(self, action: #selector(dismiss), for: .touchUpInside)
         self.addSubview(closeBtn)
         closeBtn.snp.makeConstraints { (make) in
@@ -218,7 +219,7 @@ class BuyFormulaPopView: UIView {
         addToCartBtn.titleLabel?.font = UIFont.systemFont(ofSize: 14)
         addToCartBtn.setTitle("加入购物车", for: .normal)
         addToCartBtn.setTitleColor(UIColor.white, for: .normal)
-        addToCartBtn.backgroundColor = UIColor.orange
+        addToCartBtn.backgroundColor = UIColor.red
         addToCartBtn.addTarget(self, action: #selector(addToCartAction), for: .touchUpInside)
         return addToCartBtn
     }()

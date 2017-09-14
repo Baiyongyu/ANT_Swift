@@ -161,4 +161,17 @@ extension UIView {
         
         self.layer.mask = shape
     }
+    
+    /**
+     *  底部增加一根线，自动布局方式
+     */
+    func addLineOnBottom() {
+        let lineView = UIView()
+        lineView.backgroundColor = BaseColor.LineColor
+        self.addSubview(lineView)
+        lineView.snp.makeConstraints { (make) in
+            make.left.right.bottom.equalTo(self);
+            make.height.equalTo(0.5);
+        }
+    }
 }
