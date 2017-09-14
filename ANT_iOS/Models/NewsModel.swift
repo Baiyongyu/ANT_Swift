@@ -17,4 +17,5 @@ class NewsModel: NSObject {
     var create_date: String?
     var title_image: String?
     var imagePathsArray: NSArray?
+    var height: CGFont?
 }

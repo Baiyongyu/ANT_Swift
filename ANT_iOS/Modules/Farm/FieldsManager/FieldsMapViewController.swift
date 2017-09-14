@@ -8,6 +8,7 @@
 
 import UIKit
 import MapKit
+import CoreLocation
 
 class FieldsMapViewController: UIViewController, CLLocationManagerDelegate, MKMapViewDelegate {
 
@@ -32,6 +33,7 @@ class FieldsMapViewController: UIViewController, CLLocationManagerDelegate, MKMa
     
     lazy var mapView: MKMapView = {
         let mapView = MKMapView()
+        mapView.frame = self.view.bounds
         mapView.mapType = .satellite
         return mapView
     }()

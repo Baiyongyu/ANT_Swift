@@ -108,13 +108,11 @@ class FieldsManagerViewController: BaseViewController {
         let fieldsTableVC = FieldsTableViewController(style: .plain)
         fieldsTableVC.tableView.tableFooterView = UIView.init(frame: .zero)
         fieldsTableVC.view.backgroundColor = BaseColor.BackGroundColor
-//        fieldsTableVC.view.backgroundColor = UIColor.red
         return fieldsTableVC
     }()
     
     lazy var fieldsMapVC: FieldsMapViewController = {
         let fieldsMapVC = FieldsMapViewController()
-//        fieldsMapVC.view.backgroundColor = UIColor.blue
         return fieldsMapVC
     }()
     

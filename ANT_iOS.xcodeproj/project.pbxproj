@@ -69,6 +69,7 @@
 		F365D71C1EE67AAE00500391 /* YYClassInfo.m in Sources */ = {isa = PBXBuildFile; fileRef = F365D6E21EE67AAE00500391 /* YYClassInfo.m */; };
 		F365D7201EE67B1700500391 /* AppCommon.m in Sources */ = {isa = PBXBuildFile; fileRef = F365D71F1EE67B1700500391 /* AppCommon.m */; };
 		F376B1FA1F04EFB800447696 /* NewsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F376B1F91F04EFB800447696 /* NewsViewController.swift */; };
+		F37BDDB11F6A62C000641D76 /* ImageModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F37BDDB01F6A62C000641D76 /* ImageModel.swift */; };
 		F398558B1EE8EBE80042990C /* AddressListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F398558A1EE8EBE80042990C /* AddressListViewController.swift */; };
 		F398558D1EE8F1920042990C /* AddressModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F398558C1EE8F1920042990C /* AddressModel.swift */; };
 		F39855951EE8FDF20042990C /* VerticalButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = F39855941EE8FDF20042990C /* VerticalButton.swift */; };
@@ -204,6 +205,7 @@
 		F365D71E1EE67B1700500391 /* AppCommon.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AppCommon.h; sourceTree = "<group>"; };
 		F365D71F1EE67B1700500391 /* AppCommon.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AppCommon.m; sourceTree = "<group>"; };
 		F376B1F91F04EFB800447696 /* NewsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NewsViewController.swift; sourceTree = "<group>"; };
+		F37BDDB01F6A62C000641D76 /* ImageModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ImageModel.swift; sourceTree = "<group>"; };
 		F398558A1EE8EBE80042990C /* AddressListViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AddressListViewController.swift; sourceTree = "<group>"; };
 		F398558C1EE8F1920042990C /* AddressModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AddressModel.swift; sourceTree = "<group>"; };
 		F39855941EE8FDF20042990C /* VerticalButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = VerticalButton.swift; sourceTree = "<group>"; };
@@ -676,6 +678,7 @@
 				F320DE771EEE7114005AF954 /* FormulaModel.swift */,
 				F3EE54E21F064537004A9523 /* NewsModel.swift */,
 				F3BB462A1F6939FE00E0539C /* FieldGroupModel.swift */,
+				F37BDDB01F6A62C000641D76 /* ImageModel.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -941,6 +944,7 @@
 				F3EE54E31F064537004A9523 /* NewsModel.swift in Sources */,
 				F33FBB891EEF857C00F4B2A8 /* BuyFormulaPopView.swift in Sources */,
 				F365D6F61EE67AAE00500391 /* UIImageView+HighlightedWebCache.m in Sources */,
+				F37BDDB11F6A62C000641D76 /* ImageModel.swift in Sources */,
 				F3F5870C1EE4375D0018412D /* HomeModuleCollectionView.swift in Sources */,
 				F3EE54E11F063831004A9523 /* popMenvTopView.m in Sources */,
 				F34C93561EE6991300091195 /* MessageModel.swift in Sources */,

@@ -7,7 +7,6 @@
 //
 
 import UIKit
-
 import Kingfisher
 
 class MineViewController: BaseViewController {
@@ -91,7 +90,7 @@ class MineViewController: BaseViewController {
                       UIColor.HexColor(0x8dd502),UIColor.HexColor(0xff520c),UIColor.HexColor(0xbb1d1d),UIColor.HexColor(0x309e66)]
         
         avatarImageView.kf.setImage(with: NSURL.init(string: "http://img2.imgtn.bdimg.com/it/u=960594752,2162202648&fm=26&gp=0.jpg")! as URL, placeholder: IMAGE_AVATAR_PLACEHOLDER, options: [.transition(ImageTransition.fade(1))], progressBlock: nil, completionHandler: nil)
-        nameLabel.text = "我是路飞，要成为海贼王的男人！"
+        nameLabel.text = "我是路飞，是要成为海贼王的男人！"
         tableView.reloadData()
     }
 
