@@ -194,6 +194,10 @@ class HomeViewController: BaseViewController {
         tableView.showsVerticalScrollIndicator = false
         tableView.register(FarmRecordCell.self, forCellReuseIdentifier: classTableViewCellIdentifier)
         tableView.tableFooterView = UIView(frame: .zero)
+        if #available(iOS 11.0, *) {
+            tableView.contentInsetAdjustmentBehavior = .never
+            tableView.scrollIndicatorInsets = tableView.contentInset
+        }
         return tableView
     }()
 }

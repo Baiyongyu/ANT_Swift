@@ -107,6 +107,10 @@ class MineViewController: BaseViewController {
         tableView.showsVerticalScrollIndicator = false
         tableView.register(UITableViewCell.self, forCellReuseIdentifier: "Cell")
         tableView.tableFooterView = UIView(frame: .zero)
+        if #available(iOS 11.0, *) {
+            tableView.contentInsetAdjustmentBehavior = .never
+            tableView.scrollIndicatorInsets = tableView.contentInset
+        }
         return tableView
     }()
 }

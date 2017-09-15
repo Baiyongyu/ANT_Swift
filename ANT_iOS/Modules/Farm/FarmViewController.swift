@@ -55,6 +55,10 @@ class FarmViewController: BaseViewController {
         collectionView.contentInset = UIEdgeInsetsMake(0, 0, 0, 0)
         collectionView.register(FarmLandCollectionCell.self, forCellWithReuseIdentifier: classCollectionViewCellIdentifier)
         collectionView.register(UICollectionReusableView.self, forSupplementaryViewOfKind: UICollectionElementKindSectionHeader, withReuseIdentifier: reuseHeaderIdentifier)
+        if #available(iOS 11.0, *) {
+            collectionView.contentInsetAdjustmentBehavior = .never
+            collectionView.scrollIndicatorInsets = collectionView.contentInset
+        }
         return collectionView
     }()
 }
