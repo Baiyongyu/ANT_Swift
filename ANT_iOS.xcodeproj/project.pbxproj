@@ -89,6 +89,7 @@
 		F3BB462B1F6939FE00E0539C /* FieldGroupModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3BB462A1F6939FE00E0539C /* FieldGroupModel.swift */; };
 		F3D677381EE55EBB00BEB029 /* CropsCollectionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3D677371EE55EBB00BEB029 /* CropsCollectionView.swift */; };
 		F3D6773B1EE5625500BEB029 /* PlantModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3D6773A1EE5625500BEB029 /* PlantModel.swift */; };
+		F3D84DFA1F6BC5A4008573E3 /* YYSheetView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3D84DF91F6BC5A4008573E3 /* YYSheetView.swift */; };
 		F3EE54DC1F05F88E004A9523 /* NewsTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3EE54DB1F05F88E004A9523 /* NewsTableViewCell.swift */; };
 		F3EE54E01F063831004A9523 /* popMenvTopView.xib in Resources */ = {isa = PBXBuildFile; fileRef = F3EE54DE1F063830004A9523 /* popMenvTopView.xib */; };
 		F3EE54E11F063831004A9523 /* popMenvTopView.m in Sources */ = {isa = PBXBuildFile; fileRef = F3EE54DF1F063830004A9523 /* popMenvTopView.m */; };
@@ -227,6 +228,7 @@
 		F3BB462A1F6939FE00E0539C /* FieldGroupModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FieldGroupModel.swift; sourceTree = "<group>"; };
 		F3D677371EE55EBB00BEB029 /* CropsCollectionView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CropsCollectionView.swift; sourceTree = "<group>"; };
 		F3D6773A1EE5625500BEB029 /* PlantModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PlantModel.swift; sourceTree = "<group>"; };
+		F3D84DF91F6BC5A4008573E3 /* YYSheetView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = YYSheetView.swift; sourceTree = "<group>"; };
 		F3EE54DB1F05F88E004A9523 /* NewsTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewsTableViewCell.swift; sourceTree = "<group>"; };
 		F3EE54DD1F063830004A9523 /* popMenvTopView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = popMenvTopView.h; path = "../../../../../../宇玄丶/各种Demo/OC/HyPopMenuView-master/HyPopMenuView/popMenvTopView.h"; sourceTree = "<group>"; };
 		F3EE54DE1F063830004A9523 /* popMenvTopView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = popMenvTopView.xib; path = "../../../../../../宇玄丶/各种Demo/OC/HyPopMenuView-master/HyPopMenuView/popMenvTopView.xib"; sourceTree = "<group>"; };
@@ -269,22 +271,6 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
-		F307E6151F68B79F001664C8 /* TextView */ = {
-			isa = PBXGroup;
-			children = (
-				F307E6161F68B7E4001664C8 /* InputDialog.swift */,
-			);
-			path = TextView;
-			sourceTree = "<group>";
-		};
-		F30EEEE11EF7598100C6A9FF /* VersionAlertView */ = {
-			isa = PBXGroup;
-			children = (
-				F30EEEE21EF7599100C6A9FF /* VersionAlertView.swift */,
-			);
-			path = VersionAlertView;
-			sourceTree = "<group>";
-		};
 		F314B33F1F67778D00AAB40B /* Network */ = {
 			isa = PBXGroup;
 			children = (
@@ -305,28 +291,12 @@
 			path = IconFont;
 			sourceTree = "<group>";
 		};
-		F32671C31EF7D33D00121C9B /* ActionAlertView */ = {
-			isa = PBXGroup;
-			children = (
-				F32671C41EF7D39700121C9B /* ActionAlertView.swift */,
-			);
-			path = ActionAlertView;
-			sourceTree = "<group>";
-		};
 		F3320AE71EE79BE200327DC7 /* Shop */ = {
 			isa = PBXGroup;
 			children = (
 				F3320AE81EE79BF800327DC7 /* ShopListViewController.swift */,
 			);
 			path = Shop;
-			sourceTree = "<group>";
-		};
-		F33FBB8C1EEFBEC200F4B2A8 /* MenuControl */ = {
-			isa = PBXGroup;
-			children = (
-				F33FBB8D1EEFBEDA00F4B2A8 /* MenuControl.swift */,
-			);
-			path = MenuControl;
 			sourceTree = "<group>";
 		};
 		F33FBB961EEFDB0900F4B2A8 /* PlantManager */ = {
@@ -587,14 +557,6 @@
 			path = Address;
 			sourceTree = "<group>";
 		};
-		F39855981EE93B4E0042990C /* SelectAreaAlert */ = {
-			isa = PBXGroup;
-			children = (
-				F39855991EE93C870042990C /* SelectAreaAlert.swift */,
-			);
-			path = SelectAreaAlert;
-			sourceTree = "<group>";
-		};
 		F3A1D12D1F04F6F30008F051 /* Publish */ = {
 			isa = PBXGroup;
 			children = (
@@ -654,14 +616,15 @@
 		F3D677321EE5584F00BEB029 /* Classes */ = {
 			isa = PBXGroup;
 			children = (
+				F3D84DF91F6BC5A4008573E3 /* YYSheetView.swift */,
+				F30EEEE21EF7599100C6A9FF /* VersionAlertView.swift */,
+				F307E6161F68B7E4001664C8 /* InputDialog.swift */,
+				F32671C41EF7D39700121C9B /* ActionAlertView.swift */,
+				F33FBB8D1EEFBEDA00F4B2A8 /* MenuControl.swift */,
+				F39855991EE93C870042990C /* SelectAreaAlert.swift */,
 				F3BB46261F69335E00E0539C /* FTPopOverMenu */,
-				F307E6151F68B79F001664C8 /* TextView */,
 				F314B3581F67C9BF00AAB40B /* IconFont */,
-				F32671C31EF7D33D00121C9B /* ActionAlertView */,
-				F30EEEE11EF7598100C6A9FF /* VersionAlertView */,
-				F33FBB8C1EEFBEC200F4B2A8 /* MenuControl */,
 				F3B764F81EEF73B3009FF0BE /* PopupMenu */,
-				F39855981EE93B4E0042990C /* SelectAreaAlert */,
 				F34ADDB61EE68B5400328C8E /* AdvertScrollView */,
 			);
 			path = Classes;
@@ -995,6 +958,7 @@
 				F398559A1EE93C870042990C /* SelectAreaAlert.swift in Sources */,
 				F3BB46231F69267800E0539C /* FieldsTableViewController.swift in Sources */,
 				F365D6F41EE67AAE00500391 /* UIImage+GIF.m in Sources */,
+				F3D84DFA1F6BC5A4008573E3 /* YYSheetView.swift in Sources */,
 				F34C935E1EE6B58600091195 /* CacheManager.swift in Sources */,
 				F3A1D1321F04FF4C0008F051 /* BaseTableViewDataSource.swift in Sources */,
 				F320DE781EEE7114005AF954 /* FormulaModel.swift in Sources */,

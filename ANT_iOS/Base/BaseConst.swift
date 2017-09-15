@@ -11,6 +11,7 @@ import UIKit
 import SnapKit
 import Kingfisher
 
+let SCREEN_Window = UIApplication.shared.keyWindow!
 let SCREEN_WIDTH = UIScreen.main.bounds.size.width
 let SCREEN_HEIGHT = UIScreen.main.bounds.size.height
 let SCREEN = UIScreen.main.bounds
