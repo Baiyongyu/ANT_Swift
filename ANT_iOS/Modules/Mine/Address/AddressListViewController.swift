@@ -57,7 +57,7 @@ class AddressListViewController: BaseViewController, AddressUpdateDelegate {
                 AppCommon.push(AddressEditViewController(), animated: true)
                 break
             case .Delete:
-                let alertView = ActionAlertView()
+                let alertView = YYAlertView()
                 alertView.initWithTitle(titles: "确定要删除该地址吗?", message: "", sureTitle: "确定", cancleTitle: "取消")
                 alertView.alertSelectIndex = { (index) -> Void in
                     if index == 2 {

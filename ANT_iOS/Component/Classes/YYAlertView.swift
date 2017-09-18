@@ -1,5 +1,5 @@
 //
-//  ActionAlertView.swift
+//  YYAlertView.swift
 //  ANT_iOS
 //
 //  Created by 宇玄丶 on 2017/6/19.
@@ -10,13 +10,34 @@ import UIKit
 
 typealias AlertSelectIndex = (_ index: NSInteger) -> Void
 
-class ActionAlertView: UIView {
+class YYAlertView: UIView {
 
     var alertView = UIView()
     
     var alertSelectIndex: AlertSelectIndex?
+    
+    override init(frame: CGRect) {
+        super.init(frame: frame)
+        self.backgroundColor = UIColor.init(white: 0, alpha: 0.4)
+        self.frame = UIScreen.main.bounds
+        
+        alertView.backgroundColor = UIColor.white
+        alertView.frame = CGRect(x: 0, y: 0, width: SCREEN_WIDTH - 80, height: 200)
+        alertView.layer.cornerRadius = 5
+        alertView.layer.position = self.center
+        
+        self.addSubview(self.alertView)
+        alertView.addSubview(title)
+        alertView.addSubview(titleLabel)
+        alertView.addSubview(lineView)
+        alertView.addSubview(cancelBtn)
+        alertView.addSubview(verLineView)
+        alertView.addSubview(sureBtn)
+        showAlertView()
+    }
+    
     //外部调用的方法
-    func initWithTitle(titles: String, message: String, sureTitle: String, cancleTitle: String) {
+    public func initWithTitle(titles: String, message: String, sureTitle: String, cancleTitle: String) {
         
         title.text = titles
         title.snp.makeConstraints { (make) in
@@ -76,25 +97,6 @@ class ActionAlertView: UIView {
             make.left.equalTo(40)
             make.right.equalTo(-40)
         }
-    }
-    
-    override init(frame: CGRect) {
-        super.init(frame: frame)
-        self.backgroundColor = UIColor.init(white: 0, alpha: 0.4)
-        self.frame = UIScreen.main.bounds
-        
-        alertView.backgroundColor = UIColor.white
-        alertView.frame = CGRect(x: 0, y: 0, width: SCREEN_WIDTH - 80, height: 200)
-        alertView.layer.cornerRadius = 5
-        alertView.layer.position = self.center
-        
-        self.addSubview(self.alertView)
-        alertView.addSubview(title)
-        alertView.addSubview(titleLabel)
-        alertView.addSubview(lineView)
-        alertView.addSubview(cancelBtn)
-        alertView.addSubview(verLineView)
-        alertView.addSubview(sureBtn)
     }
     
     public func showAlertView() {

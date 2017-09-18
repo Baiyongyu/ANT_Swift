@@ -118,7 +118,7 @@ extension SettingsViewController: UITableViewDelegate, UITableViewDataSource {
         
         switch indexPath.row {
         case 0:
-            let alertView = ActionAlertView()
+            let alertView = YYAlertView()
             alertView.initWithTitle(titles: "清理缓存", message: "缓存大小为" + CacheManager.cacheSize + ", 确定要清理吗?", sureTitle: "确定", cancleTitle: "取消")
             alertView.alertSelectIndex = { (index) -> Void in
                 if index == 2 {
@@ -130,7 +130,7 @@ extension SettingsViewController: UITableViewDelegate, UITableViewDataSource {
             alertView.showAlertView()
             break
         case 1:
-            let alertView = ActionAlertView()
+            let alertView = YYAlertView()
             alertView.initWithTitle(titles: "退出当前账号？", message: "", sureTitle: "确定", cancleTitle: "取消")
             alertView.alertSelectIndex = { (index) -> Void in
                 if index == 2 {

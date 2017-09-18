@@ -343,7 +343,6 @@ class YYAdvertScrollView: UIView, UICollectionViewDelegate, UICollectionViewData
     /// 移除定时器
     func removeTimer() {
         timer.invalidate()
-//        timer = nil
     }
     // MARK: 定时器执行方法 - 更新UI
     func beginUpdateUI() {

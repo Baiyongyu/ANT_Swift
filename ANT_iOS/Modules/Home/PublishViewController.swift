@@ -46,7 +46,7 @@ class PublishViewController: BaseViewController {
     }
     
     override func leftBtnAction() {
-        let alertView = ActionAlertView()
+        let alertView = YYAlertView()
         alertView.initWithTitle(titles: "是否放弃此次编辑？", message: "", sureTitle: "确定", cancleTitle: "取消")
         alertView.alertSelectIndex = { (index) -> Void in
             if index == 2 {

@@ -45,7 +45,7 @@ class SelectAreaAlert: UIView {
     }
     
     //外部调用的方法
-    public func selectAreaAlert(_ title: String, _ titles: NSArray, _ codes: NSArray) {
+    public func selectAreaAlert(title: String, titles: NSArray, codes: NSArray) {
         self.titleLabel.text = title
         self.titles = titles
         self.codes = codes

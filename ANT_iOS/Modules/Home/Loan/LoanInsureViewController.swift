@@ -35,7 +35,7 @@ class LoanInsureViewController: BaseViewController {
         }
         
         self.dataArray = ["北京","上海","哈尔滨","杭州","南京","广东","大连","沈阳","北京","上海","哈尔滨","杭州","南京","广东","大连","沈阳"]
-        SelectAreaAlert().selectAreaAlert("选择地区", self.dataArray, self.dataArray)
+        SelectAreaAlert().selectAreaAlert(title: "选择地区", titles: self.dataArray, codes: self.dataArray)
     }
     
     override func loadData() {
