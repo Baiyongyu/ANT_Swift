@@ -171,8 +171,8 @@ class HomeViewController: BaseViewController {
         return cycleScrollView!
     }()
     
-    lazy var advertScrollView: AdvertScrollView = {
-        let advertScrollView = AdvertScrollView()
+    lazy var advertScrollView: YYAdvertScrollView = {
+        let advertScrollView = YYAdvertScrollView()
         advertScrollView.titleColor = UIColor.black.withAlphaComponent(0.5)
         advertScrollView.scrollTimeInterval = 3
         advertScrollView.titleFont = UIFont.systemFont(ofSize: 14)
@@ -210,8 +210,8 @@ extension HomeViewController: SDCycleScrollViewDelegate {
 }
 
 //AdvertScrollView - Delegate
-extension HomeViewController: AdvertScrollViewDelegate {
-    func advertScrollView(_ advertScrollView: AdvertScrollView!, didSelectedItemAt index: Int) {
+extension HomeViewController: YYAdvertScrollViewDelegate {
+    func advertScrollView(advertScrollView: YYAdvertScrollView, didSelectedItemAtIndex index: NSInteger) {
         AppCommon.push(NewsViewController(), animated: true)
     }
 }

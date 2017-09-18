@@ -10,7 +10,6 @@
 #import <Foundation/Foundation.h>
 #import "SDCycleScrollView.h"
 #import "UIImageView+WebCache.h"
-#import "AdvertScrollView.h"
 #import "YYModel.h"
 #import "AppCommon.h"
 

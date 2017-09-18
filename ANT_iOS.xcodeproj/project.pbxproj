@@ -28,7 +28,6 @@
 		F33FBB8B1EEF97DF00F4B2A8 /* CeTuAdviceViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F33FBB8A1EEF97DF00F4B2A8 /* CeTuAdviceViewController.swift */; };
 		F33FBB8E1EEFBEDA00F4B2A8 /* MenuControl.swift in Sources */ = {isa = PBXBuildFile; fileRef = F33FBB8D1EEFBEDA00F4B2A8 /* MenuControl.swift */; };
 		F33FBB981EEFDB2100F4B2A8 /* PlantManagerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F33FBB971EEFDB2100F4B2A8 /* PlantManagerViewController.swift */; };
-		F34ADDB91EE68B5400328C8E /* AdvertScrollView.m in Sources */ = {isa = PBXBuildFile; fileRef = F34ADDB81EE68B5400328C8E /* AdvertScrollView.m */; };
 		F34C93541EE692F300091195 /* BaseConst.swift in Sources */ = {isa = PBXBuildFile; fileRef = F34C93531EE692F300091195 /* BaseConst.swift */; };
 		F34C93561EE6991300091195 /* MessageModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F34C93551EE6991300091195 /* MessageModel.swift */; };
 		F34C93591EE69EC400091195 /* LoanInsureViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F34C93581EE69EC400091195 /* LoanInsureViewController.swift */; };
@@ -90,6 +89,7 @@
 		F3D677381EE55EBB00BEB029 /* CropsCollectionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3D677371EE55EBB00BEB029 /* CropsCollectionView.swift */; };
 		F3D6773B1EE5625500BEB029 /* PlantModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3D6773A1EE5625500BEB029 /* PlantModel.swift */; };
 		F3D84DFA1F6BC5A4008573E3 /* YYSheetView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3D84DF91F6BC5A4008573E3 /* YYSheetView.swift */; };
+		F3E6C8CC1F6F61FF00E2E45C /* YYAdvertScrollView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3E6C8CB1F6F61FF00E2E45C /* YYAdvertScrollView.swift */; };
 		F3EE54DC1F05F88E004A9523 /* NewsTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3EE54DB1F05F88E004A9523 /* NewsTableViewCell.swift */; };
 		F3EE54E01F063831004A9523 /* popMenvTopView.xib in Resources */ = {isa = PBXBuildFile; fileRef = F3EE54DE1F063830004A9523 /* popMenvTopView.xib */; };
 		F3EE54E11F063831004A9523 /* popMenvTopView.m in Sources */ = {isa = PBXBuildFile; fileRef = F3EE54DF1F063830004A9523 /* popMenvTopView.m */; };
@@ -135,8 +135,6 @@
 		F33FBB8A1EEF97DF00F4B2A8 /* CeTuAdviceViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CeTuAdviceViewController.swift; sourceTree = "<group>"; };
 		F33FBB8D1EEFBEDA00F4B2A8 /* MenuControl.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuControl.swift; sourceTree = "<group>"; };
 		F33FBB971EEFDB2100F4B2A8 /* PlantManagerViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlantManagerViewController.swift; sourceTree = "<group>"; };
-		F34ADDB71EE68B5400328C8E /* AdvertScrollView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AdvertScrollView.h; sourceTree = "<group>"; };
-		F34ADDB81EE68B5400328C8E /* AdvertScrollView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AdvertScrollView.m; sourceTree = "<group>"; };
 		F34C93531EE692F300091195 /* BaseConst.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BaseConst.swift; sourceTree = "<group>"; };
 		F34C93551EE6991300091195 /* MessageModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MessageModel.swift; sourceTree = "<group>"; };
 		F34C93581EE69EC400091195 /* LoanInsureViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoanInsureViewController.swift; sourceTree = "<group>"; };
@@ -229,6 +227,7 @@
 		F3D677371EE55EBB00BEB029 /* CropsCollectionView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CropsCollectionView.swift; sourceTree = "<group>"; };
 		F3D6773A1EE5625500BEB029 /* PlantModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PlantModel.swift; sourceTree = "<group>"; };
 		F3D84DF91F6BC5A4008573E3 /* YYSheetView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = YYSheetView.swift; sourceTree = "<group>"; };
+		F3E6C8CB1F6F61FF00E2E45C /* YYAdvertScrollView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = YYAdvertScrollView.swift; sourceTree = "<group>"; };
 		F3EE54DB1F05F88E004A9523 /* NewsTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewsTableViewCell.swift; sourceTree = "<group>"; };
 		F3EE54DD1F063830004A9523 /* popMenvTopView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = popMenvTopView.h; path = "../../../../../../宇玄丶/各种Demo/OC/HyPopMenuView-master/HyPopMenuView/popMenvTopView.h"; sourceTree = "<group>"; };
 		F3EE54DE1F063830004A9523 /* popMenvTopView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = popMenvTopView.xib; path = "../../../../../../宇玄丶/各种Demo/OC/HyPopMenuView-master/HyPopMenuView/popMenvTopView.xib"; sourceTree = "<group>"; };
@@ -305,15 +304,6 @@
 				F33FBB971EEFDB2100F4B2A8 /* PlantManagerViewController.swift */,
 			);
 			path = PlantManager;
-			sourceTree = "<group>";
-		};
-		F34ADDB61EE68B5400328C8E /* AdvertScrollView */ = {
-			isa = PBXGroup;
-			children = (
-				F34ADDB71EE68B5400328C8E /* AdvertScrollView.h */,
-				F34ADDB81EE68B5400328C8E /* AdvertScrollView.m */,
-			);
-			path = AdvertScrollView;
 			sourceTree = "<group>";
 		};
 		F34C93571EE69EAF00091195 /* Loan */ = {
@@ -616,6 +606,7 @@
 		F3D677321EE5584F00BEB029 /* Classes */ = {
 			isa = PBXGroup;
 			children = (
+				F3E6C8CB1F6F61FF00E2E45C /* YYAdvertScrollView.swift */,
 				F3D84DF91F6BC5A4008573E3 /* YYSheetView.swift */,
 				F30EEEE21EF7599100C6A9FF /* VersionAlertView.swift */,
 				F307E6161F68B7E4001664C8 /* InputDialog.swift */,
@@ -625,7 +616,6 @@
 				F3BB46261F69335E00E0539C /* FTPopOverMenu */,
 				F314B3581F67C9BF00AAB40B /* IconFont */,
 				F3B764F81EEF73B3009FF0BE /* PopupMenu */,
-				F34ADDB61EE68B5400328C8E /* AdvertScrollView */,
 			);
 			path = Classes;
 			sourceTree = "<group>";
@@ -899,6 +889,7 @@
 				F365D6F71EE67AAE00500391 /* UIImageView+WebCache.m in Sources */,
 				F35BB7611EE14CEF0032EC02 /* ViewController.swift in Sources */,
 				F398559C1EE954690042990C /* CommonUtils.swift in Sources */,
+				F3E6C8CC1F6F61FF00E2E45C /* YYAdvertScrollView.swift in Sources */,
 				F365D71C1EE67AAE00500391 /* YYClassInfo.m in Sources */,
 				F3320AE91EE79BF800327DC7 /* ShopListViewController.swift in Sources */,
 				F3BB46251F69269400E0539C /* FieldsMapViewController.swift in Sources */,
@@ -918,7 +909,6 @@
 				F365D6F51EE67AAE00500391 /* UIImage+MultiFormat.m in Sources */,
 				F365D71B1EE67AAE00500391 /* NSObject+YYModel.m in Sources */,
 				F3B764FA1EEF73E1009FF0BE /* PopUpPickerView.swift in Sources */,
-				F34ADDB91EE68B5400328C8E /* AdvertScrollView.m in Sources */,
 				F398558B1EE8EBE80042990C /* AddressListViewController.swift in Sources */,
 				F3320AEB1EE7A4BE00327DC7 /* ShopModel.swift in Sources */,
 				F365D6F01EE67AAE00500391 /* SDWebImageDownloaderOperation.m in Sources */,
