@@ -14,3 +14,9 @@ class QualityTrackModel: NSObject {
     //追溯产品图片
     var trace_crop_pic: String?
 }
+
+class StepGuideModel: NSObject {
+    var server_name: String?
+    var server_image: String?
+    var step_title: String?
+}

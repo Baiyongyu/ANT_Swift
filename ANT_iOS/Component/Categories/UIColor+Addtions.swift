@@ -65,4 +65,8 @@ struct BaseColor {
      线的颜色
      */
     static let LineColor = UIColor.HexColor(0xD5D5D5)
+    /**
+     蓝色
+     */
+    static let BlueColor = UIColor.HexColor(0x4682B4)
 }

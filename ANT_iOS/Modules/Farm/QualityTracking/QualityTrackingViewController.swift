@@ -30,10 +30,30 @@ class QualityTrackingViewController: BaseViewController {
     
     override func loadData() {
         let qualityData = QualityTrackModel()
-        qualityData.trace_crop_name = "大主宰"
-        qualityData.trace_crop_pic = "http://img2.imgtn.bdimg.com/it/u=960594752,2162202648&fm=26&gp=0.jpg"
+        qualityData.trace_crop_name = "五常稻花香"
+        qualityData.trace_crop_pic = "https://timgsa.baidu.com/timg?image&quality=80&size=b9999_10000&sec=1505791341617&di=cb5275bea0a12c26d2449e55392ad180&imgtype=0&src=http%3A%2F%2Fk.zol-img.com.cn%2Fdcbbs%2F23292%2Fa23291659_01000.jpg"
         dataArray = [qualityData,qualityData,qualityData,qualityData,qualityData]
         tableView.reloadData()
+    }
+    
+    func tableHeaderView() -> UIView {
+        let bgView = UIView(frame: CGRect(x: 0, y: 0, width: SCREEN_WIDTH, height: 40))
+        let titleLabel = UILabel(frame: CGRect(x: 0, y: 5, width: SCREEN_WIDTH, height: 40))
+        let label = NSMutableAttributedString.init(string: "定制个性化高级溯源系统，请联系", attributes: [NSFontAttributeName: UIFont.systemFont(ofSize: 15), NSForegroundColorAttributeName: UIColor.black])
+        let phoneLabel = NSAttributedString.init(string: "13666666666", attributes: [NSFontAttributeName: UIFont.systemFont(ofSize: 15), NSForegroundColorAttributeName: BaseColor.BlueColor])
+        label.append(phoneLabel)
+        titleLabel.attributedText = label
+        titleLabel.textAlignment = .center
+        titleLabel.font = UIFont.systemFont(ofSize: 15)
+        titleLabel.numberOfLines = 0
+        bgView.addSubview(titleLabel)
+        return bgView
+    }
+    
+    override func rightBtnAction() {
+        let navigationController = UINavigationController.init(rootViewController: TraceStep1ViewController())
+        navigationController.navigationBar.isHidden = true
+        present(navigationController, animated: true, completion: nil)
     }
     
     lazy var tableView: UITableView = {
@@ -43,11 +63,8 @@ class QualityTrackingViewController: BaseViewController {
         tableView.backgroundColor = BaseColor.BackGroundColor
         tableView.showsVerticalScrollIndicator = false
         tableView.register(QualityTrackingCell.self, forCellReuseIdentifier: classTableViewCellIdentifier)
+        tableView.tableHeaderView = self.tableHeaderView()
         tableView.tableFooterView = UIView(frame: .zero)
-        if #available(iOS 11.0, *) {
-            tableView.contentInsetAdjustmentBehavior = .never
-            tableView.scrollIndicatorInsets = tableView.contentInset
-        }
         return tableView
     }()
 }

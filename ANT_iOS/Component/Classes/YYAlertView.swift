@@ -42,8 +42,10 @@ class YYAlertView: UIView {
         title.text = titles
         title.snp.makeConstraints { (make) in
             make.top.equalTo(20)
+            make.left.equalTo(20)
+            make.right.equalTo(-20)
             make.centerX.equalTo(alertView)
-            make.height.lessThanOrEqualTo(44)
+            make.height.lessThanOrEqualTo(50)
         }
         
         titleLabel.text = message
@@ -136,6 +138,7 @@ class YYAlertView: UIView {
         title.textColor = UIColor.black
         title.font = UIFont.boldSystemFont(ofSize: 18)
         title.textAlignment = .center
+        title.numberOfLines = 0
         return title
     }()
     

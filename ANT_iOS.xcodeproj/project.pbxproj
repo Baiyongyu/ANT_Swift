@@ -70,6 +70,10 @@
 		F365D7201EE67B1700500391 /* AppCommon.m in Sources */ = {isa = PBXBuildFile; fileRef = F365D71F1EE67B1700500391 /* AppCommon.m */; };
 		F376B1FA1F04EFB800447696 /* NewsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F376B1F91F04EFB800447696 /* NewsViewController.swift */; };
 		F37BDDB11F6A62C000641D76 /* ImageModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F37BDDB01F6A62C000641D76 /* ImageModel.swift */; };
+		F38AA1871F709FE300CA9547 /* TraceStep1ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F38AA1861F709FE300CA9547 /* TraceStep1ViewController.swift */; };
+		F38AA1891F70A13600CA9547 /* TraceStepView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F38AA1881F70A13600CA9547 /* TraceStepView.swift */; };
+		F38AA18B1F70B0C100CA9547 /* TraceStep2ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F38AA18A1F70B0C100CA9547 /* TraceStep2ViewController.swift */; };
+		F38AA18D1F70B33300CA9547 /* CustomPageControl.swift in Sources */ = {isa = PBXBuildFile; fileRef = F38AA18C1F70B33300CA9547 /* CustomPageControl.swift */; };
 		F398558B1EE8EBE80042990C /* AddressListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F398558A1EE8EBE80042990C /* AddressListViewController.swift */; };
 		F398558D1EE8F1920042990C /* AddressModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F398558C1EE8F1920042990C /* AddressModel.swift */; };
 		F39855951EE8FDF20042990C /* VerticalButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = F39855941EE8FDF20042990C /* VerticalButton.swift */; };
@@ -208,6 +212,10 @@
 		F365D71F1EE67B1700500391 /* AppCommon.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AppCommon.m; sourceTree = "<group>"; };
 		F376B1F91F04EFB800447696 /* NewsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NewsViewController.swift; sourceTree = "<group>"; };
 		F37BDDB01F6A62C000641D76 /* ImageModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ImageModel.swift; sourceTree = "<group>"; };
+		F38AA1861F709FE300CA9547 /* TraceStep1ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TraceStep1ViewController.swift; sourceTree = "<group>"; };
+		F38AA1881F70A13600CA9547 /* TraceStepView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TraceStepView.swift; sourceTree = "<group>"; };
+		F38AA18A1F70B0C100CA9547 /* TraceStep2ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TraceStep2ViewController.swift; sourceTree = "<group>"; };
+		F38AA18C1F70B33300CA9547 /* CustomPageControl.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomPageControl.swift; sourceTree = "<group>"; };
 		F398558A1EE8EBE80042990C /* AddressListViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AddressListViewController.swift; sourceTree = "<group>"; };
 		F398558C1EE8F1920042990C /* AddressModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AddressModel.swift; sourceTree = "<group>"; };
 		F39855941EE8FDF20042990C /* VerticalButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = VerticalButton.swift; sourceTree = "<group>"; };
@@ -298,6 +306,9 @@
 			isa = PBXGroup;
 			children = (
 				F3235C421F6FB8F5003A0DCE /* QualityTrackingViewController.swift */,
+				F38AA1861F709FE300CA9547 /* TraceStep1ViewController.swift */,
+				F38AA18A1F70B0C100CA9547 /* TraceStep2ViewController.swift */,
+				F38AA1881F70A13600CA9547 /* TraceStepView.swift */,
 			);
 			path = QualityTracking;
 			sourceTree = "<group>";
@@ -618,6 +629,7 @@
 		F3D677321EE5584F00BEB029 /* Classes */ = {
 			isa = PBXGroup;
 			children = (
+				F38AA18C1F70B33300CA9547 /* CustomPageControl.swift */,
 				F3E6C8CB1F6F61FF00E2E45C /* YYAdvertScrollView.swift */,
 				F3D84DF91F6BC5A4008573E3 /* YYSheetView.swift */,
 				F32671C41EF7D39700121C9B /* YYAlertView.swift */,
@@ -911,6 +923,7 @@
 				F3F5871B1EE43CAD0018412D /* FarmViewController.swift in Sources */,
 				F3EE54E31F064537004A9523 /* NewsModel.swift in Sources */,
 				F33FBB891EEF857C00F4B2A8 /* BuyFormulaPopView.swift in Sources */,
+				F38AA18D1F70B33300CA9547 /* CustomPageControl.swift in Sources */,
 				F365D6F61EE67AAE00500391 /* UIImageView+HighlightedWebCache.m in Sources */,
 				F37BDDB11F6A62C000641D76 /* ImageModel.swift in Sources */,
 				F3F5870C1EE4375D0018412D /* HomeModuleCollectionView.swift in Sources */,
@@ -923,6 +936,7 @@
 				F365D6F51EE67AAE00500391 /* UIImage+MultiFormat.m in Sources */,
 				F365D71B1EE67AAE00500391 /* NSObject+YYModel.m in Sources */,
 				F3B764FA1EEF73E1009FF0BE /* PopUpPickerView.swift in Sources */,
+				F38AA18B1F70B0C100CA9547 /* TraceStep2ViewController.swift in Sources */,
 				F398558B1EE8EBE80042990C /* AddressListViewController.swift in Sources */,
 				F3320AEB1EE7A4BE00327DC7 /* ShopModel.swift in Sources */,
 				F365D6F01EE67AAE00500391 /* SDWebImageDownloaderOperation.m in Sources */,
@@ -960,6 +974,8 @@
 				F365D6EA1EE67AAE00500391 /* UIView+SDExtension.m in Sources */,
 				F314B2D01F6770DD00AAB40B /* BaseTableViewCell.swift in Sources */,
 				F398559A1EE93C870042990C /* SelectAreaAlert.swift in Sources */,
+				F38AA1871F709FE300CA9547 /* TraceStep1ViewController.swift in Sources */,
+				F38AA1891F70A13600CA9547 /* TraceStepView.swift in Sources */,
 				F3BB46231F69267800E0539C /* FieldsTableViewController.swift in Sources */,
 				F3D0A6651F6FC27900464265 /* QualityTrackModel.swift in Sources */,
 				F365D6F41EE67AAE00500391 /* UIImage+GIF.m in Sources */,
