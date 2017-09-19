@@ -1,5 +1,5 @@
 //
-//  TraceStep2ViewController.swift
+//  TraceStep4ViewController.swift
 //  ANT_iOS
 //
 //  Created by 宇玄丶 on 2017/9/19.
@@ -8,11 +8,11 @@
 
 import UIKit
 
-class TraceStep2ViewController: BaseViewController {
+class TraceStep4ViewController: BaseViewController {
 
     override func loadSubViews() {
         super.loadSubViews()
-        titleLabel.text = "第二步"
+        titleLabel.text = "第四步"
         contentView.backgroundColor = UIColor.white
         
         rightBtn.isHidden = false
@@ -26,18 +26,17 @@ class TraceStep2ViewController: BaseViewController {
         let stepData = StepGuideModel()
         stepData.server_name = "小陌"
         stepData.server_image = ""
-        stepData.step_title = "给你的农产品取个响当当的名字吧"
+        stepData.step_title = "挑一张好看的农产品图片，展示出来吧"
         traceStepView.stepData = stepData
         contentView.addSubview(traceStepView)
     }
     
     override func layoutConstraints() {
-        contentView.addSubview(productNameInputDialog)
-        productNameInputDialog.snp.makeConstraints { (make) in
-            make.left.equalTo(view).offset(30)
-            make.right.equalTo(view).offset(-30)
-            make.top.equalTo(250)
-            make.height.equalTo(30)
+        contentView.addSubview(productImage)
+        productImage.snp.makeConstraints { (make) in
+            make.top.equalTo(290)
+            make.centerX.equalTo(view)
+            make.width.height.equalTo(160)
         }
         
         contentView.addSubview(nextStepkBtn)
@@ -61,16 +60,26 @@ class TraceStep2ViewController: BaseViewController {
     }
     
     func nextStepkBtnAction() {
-        let step3 = TraceStep3ViewController()
-        self.navigationController?.pushViewController(step3, animated: true)
+        let step5 = TraceStep5ViewController()
+        self.navigationController?.pushViewController(step5, animated: true)
     }
     
-    lazy var productNameInputDialog: InputDialog = {
-        let productNameInputDialog = InputDialog(initWithCountEnabled: true)
-        productNameInputDialog.characterCount = 10
-        productNameInputDialog.textView.placeHolder = " 请输入产品名称"
-        productNameInputDialog.addLineOnBottom()
-        return productNameInputDialog
+    func tapAction() {
+        
+    }
+    
+    lazy var productImage: UIImageView = {
+        let productImage = UIImageView()
+        productImage.contentMode = .scaleAspectFill
+        productImage.kf.setImage(with: nil, placeholder: IMAGE_PLACEHOLDER, options: nil, progressBlock: nil, completionHandler: nil)
+        productImage.layer.cornerRadius = 80
+        productImage.clipsToBounds = true
+        productImage.layer.borderColor = BaseColor.LineColor.cgColor
+        productImage.layer.borderWidth = 0.5
+        productImage.isUserInteractionEnabled = true
+        let tapGesture = UITapGestureRecognizer(target: self, action: #selector(tapAction))
+        productImage.addGestureRecognizer(tapGesture)
+        return productImage
     }()
     
     lazy var nextStepkBtn: UIButton = {

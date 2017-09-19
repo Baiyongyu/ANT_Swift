@@ -74,6 +74,7 @@
 		F38AA1891F70A13600CA9547 /* TraceStepView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F38AA1881F70A13600CA9547 /* TraceStepView.swift */; };
 		F38AA18B1F70B0C100CA9547 /* TraceStep2ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F38AA18A1F70B0C100CA9547 /* TraceStep2ViewController.swift */; };
 		F38AA18D1F70B33300CA9547 /* CustomPageControl.swift in Sources */ = {isa = PBXBuildFile; fileRef = F38AA18C1F70B33300CA9547 /* CustomPageControl.swift */; };
+		F38AA18F1F70EC6A00CA9547 /* CharacteristicCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = F38AA18E1F70EC6A00CA9547 /* CharacteristicCell.swift */; };
 		F398558B1EE8EBE80042990C /* AddressListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F398558A1EE8EBE80042990C /* AddressListViewController.swift */; };
 		F398558D1EE8F1920042990C /* AddressModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F398558C1EE8F1920042990C /* AddressModel.swift */; };
 		F39855951EE8FDF20042990C /* VerticalButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = F39855941EE8FDF20042990C /* VerticalButton.swift */; };
@@ -92,6 +93,9 @@
 		F3BB46291F69335E00E0539C /* FTPopOverMenu.m in Sources */ = {isa = PBXBuildFile; fileRef = F3BB46281F69335E00E0539C /* FTPopOverMenu.m */; };
 		F3BB462B1F6939FE00E0539C /* FieldGroupModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3BB462A1F6939FE00E0539C /* FieldGroupModel.swift */; };
 		F3D0A6651F6FC27900464265 /* QualityTrackModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3D0A6641F6FC27900464265 /* QualityTrackModel.swift */; };
+		F3D16B221F70F11B00985E30 /* TraceStep3ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3D16B211F70F11B00985E30 /* TraceStep3ViewController.swift */; };
+		F3D16B241F70FBAF00985E30 /* TraceStep4ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3D16B231F70FBAF00985E30 /* TraceStep4ViewController.swift */; };
+		F3D16B261F71025400985E30 /* TraceStep5ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3D16B251F71025400985E30 /* TraceStep5ViewController.swift */; };
 		F3D677381EE55EBB00BEB029 /* CropsCollectionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3D677371EE55EBB00BEB029 /* CropsCollectionView.swift */; };
 		F3D6773B1EE5625500BEB029 /* PlantModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3D6773A1EE5625500BEB029 /* PlantModel.swift */; };
 		F3D84DFA1F6BC5A4008573E3 /* YYSheetView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3D84DF91F6BC5A4008573E3 /* YYSheetView.swift */; };
@@ -216,6 +220,7 @@
 		F38AA1881F70A13600CA9547 /* TraceStepView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TraceStepView.swift; sourceTree = "<group>"; };
 		F38AA18A1F70B0C100CA9547 /* TraceStep2ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TraceStep2ViewController.swift; sourceTree = "<group>"; };
 		F38AA18C1F70B33300CA9547 /* CustomPageControl.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomPageControl.swift; sourceTree = "<group>"; };
+		F38AA18E1F70EC6A00CA9547 /* CharacteristicCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CharacteristicCell.swift; sourceTree = "<group>"; };
 		F398558A1EE8EBE80042990C /* AddressListViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AddressListViewController.swift; sourceTree = "<group>"; };
 		F398558C1EE8F1920042990C /* AddressModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AddressModel.swift; sourceTree = "<group>"; };
 		F39855941EE8FDF20042990C /* VerticalButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = VerticalButton.swift; sourceTree = "<group>"; };
@@ -236,6 +241,9 @@
 		F3BB46281F69335E00E0539C /* FTPopOverMenu.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FTPopOverMenu.m; sourceTree = "<group>"; };
 		F3BB462A1F6939FE00E0539C /* FieldGroupModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FieldGroupModel.swift; sourceTree = "<group>"; };
 		F3D0A6641F6FC27900464265 /* QualityTrackModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QualityTrackModel.swift; sourceTree = "<group>"; };
+		F3D16B211F70F11B00985E30 /* TraceStep3ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TraceStep3ViewController.swift; sourceTree = "<group>"; };
+		F3D16B231F70FBAF00985E30 /* TraceStep4ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TraceStep4ViewController.swift; sourceTree = "<group>"; };
+		F3D16B251F71025400985E30 /* TraceStep5ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TraceStep5ViewController.swift; sourceTree = "<group>"; };
 		F3D677371EE55EBB00BEB029 /* CropsCollectionView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CropsCollectionView.swift; sourceTree = "<group>"; };
 		F3D6773A1EE5625500BEB029 /* PlantModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PlantModel.swift; sourceTree = "<group>"; };
 		F3D84DF91F6BC5A4008573E3 /* YYSheetView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = YYSheetView.swift; sourceTree = "<group>"; };
@@ -308,6 +316,9 @@
 				F3235C421F6FB8F5003A0DCE /* QualityTrackingViewController.swift */,
 				F38AA1861F709FE300CA9547 /* TraceStep1ViewController.swift */,
 				F38AA18A1F70B0C100CA9547 /* TraceStep2ViewController.swift */,
+				F3D16B211F70F11B00985E30 /* TraceStep3ViewController.swift */,
+				F3D16B231F70FBAF00985E30 /* TraceStep4ViewController.swift */,
+				F3D16B251F71025400985E30 /* TraceStep5ViewController.swift */,
 				F38AA1881F70A13600CA9547 /* TraceStepView.swift */,
 			);
 			path = QualityTracking;
@@ -629,6 +640,7 @@
 		F3D677321EE5584F00BEB029 /* Classes */ = {
 			isa = PBXGroup;
 			children = (
+				F38AA18E1F70EC6A00CA9547 /* CharacteristicCell.swift */,
 				F38AA18C1F70B33300CA9547 /* CustomPageControl.swift */,
 				F3E6C8CB1F6F61FF00E2E45C /* YYAdvertScrollView.swift */,
 				F3D84DF91F6BC5A4008573E3 /* YYSheetView.swift */,
@@ -957,6 +969,7 @@
 				F34C93591EE69EC400091195 /* LoanInsureViewController.swift in Sources */,
 				F365D6E71EE67AAE00500391 /* TAPageControl.m in Sources */,
 				F365D6EE1EE67AAE00500391 /* SDWebImageDecoder.m in Sources */,
+				F3D16B241F70FBAF00985E30 /* TraceStep4ViewController.swift in Sources */,
 				F3EE54DC1F05F88E004A9523 /* NewsTableViewCell.swift in Sources */,
 				F365D6E81EE67AAE00500391 /* SDCollectionViewCell.m in Sources */,
 				F3BB46211F69234C00E0539C /* FieldsManagerViewController.swift in Sources */,
@@ -968,7 +981,9 @@
 				F34C935C1EE6A6D000091195 /* SettingsViewController.swift in Sources */,
 				F320DE7A1EEE7A65005AF954 /* UIView+Additions.swift in Sources */,
 				F35BB77D1EE1503B0032EC02 /* AppNavigationController.swift in Sources */,
+				F38AA18F1F70EC6A00CA9547 /* CharacteristicCell.swift in Sources */,
 				F365D6891EE67A4100500391 /* AppDelegate.swift in Sources */,
+				F3D16B221F70F11B00985E30 /* TraceStep3ViewController.swift in Sources */,
 				F365D6F21EE67AAE00500391 /* SDWebImagePrefetcher.m in Sources */,
 				F399DDD71EF3DA9B0012AD94 /* UIImage+Additions.swift in Sources */,
 				F365D6EA1EE67AAE00500391 /* UIView+SDExtension.m in Sources */,
@@ -976,6 +991,7 @@
 				F398559A1EE93C870042990C /* SelectAreaAlert.swift in Sources */,
 				F38AA1871F709FE300CA9547 /* TraceStep1ViewController.swift in Sources */,
 				F38AA1891F70A13600CA9547 /* TraceStepView.swift in Sources */,
+				F3D16B261F71025400985E30 /* TraceStep5ViewController.swift in Sources */,
 				F3BB46231F69267800E0539C /* FieldsTableViewController.swift in Sources */,
 				F3D0A6651F6FC27900464265 /* QualityTrackModel.swift in Sources */,
 				F365D6F41EE67AAE00500391 /* UIImage+GIF.m in Sources */,
