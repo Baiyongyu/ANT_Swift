@@ -25,7 +25,7 @@ class HomeViewController: BaseViewController {
         self.rightBtn.setImage(UIImage.icon(with: TBCityIconInfo.init(text: "\u{e616}", size: 20, color: UIColor.gray)), for: .highlighted)
         self.navBar.alpha = 0
         self.contentView.snp.updateConstraints { (make) in
-            make.edges.equalTo(self.view).inset(UIEdgeInsetsMake(0, 0, 49, 0))
+            make.edges.equalTo(self.view).inset(UIEdgeInsetsMake(0, 0, TabBarHeight, 0))
         }
         self.contentView.addSubview(self.tableView)
         let messageBtn = UIButton(type: UIButtonType.custom)
@@ -34,7 +34,7 @@ class HomeViewController: BaseViewController {
         messageBtn.addTarget(self, action: #selector(HomeViewController.rightBtnAction), for: .touchUpInside)
         messageBtn.snp.makeConstraints { (make) in
             make.right.equalTo(self.view)
-            make.top.equalTo(self.view).offset(20)
+            make.top.equalTo(self.view).offset(IS_IPHONE_iPX ? 43 : 20)
             make.width.equalTo(50)
             make.height.equalTo(40)
         }
@@ -126,7 +126,7 @@ class HomeViewController: BaseViewController {
         }
         
         self.tableView.snp.makeConstraints { (make) in
-            make.edges.equalTo(self.view).inset(UIEdgeInsetsMake(0, 0, 49, 0))
+            make.edges.equalTo(self.view).inset(UIEdgeInsetsMake(0, 0, TabBarHeight, 0))
         }
         
         self.headerView.layoutIfNeeded()

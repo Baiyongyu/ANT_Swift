@@ -54,7 +54,7 @@ class CetuViewController: BaseViewController {
     
     override func layoutConstraints() {
         self.tableView.snp.makeConstraints { (make) in
-            make.edges.equalTo(self.view).inset(UIEdgeInsetsMake(64, 0, 50, 0))
+            make.edges.equalTo(self.view).inset(UIEdgeInsetsMake(NavBarHeight, 0, IS_IPHONE_iPX ? 84 : 50, 0))
         }
         
         self.rightBtn.snp.updateConstraints { (make) in

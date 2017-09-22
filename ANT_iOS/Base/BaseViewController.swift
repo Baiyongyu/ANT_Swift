@@ -34,35 +34,35 @@ class BaseViewController: UIViewController {
     
     public func layoutNavigationBar() {
         contentView.snp.makeConstraints { (make) in
-            make.edges.equalTo(view).inset(UIEdgeInsetsMake(64, 0, 0, 0));
+            make.edges.equalTo(view).inset(UIEdgeInsetsMake(NavBarHeight, 0, 0, 0))
         }
         
         navBar.snp.makeConstraints { (make) in
-            make.left.equalTo(view);
-            make.top.equalTo(view);
-            make.right.equalTo(view);
-            make.height.equalTo(64);
+            make.left.equalTo(view)
+            make.top.equalTo(view)
+            make.right.equalTo(view)
+            make.height.equalTo(NavBarHeight)
         }
         
         leftBtn.snp.makeConstraints { (make) in
-            make.left.equalTo(navBar);
-            make.top.equalTo(navBar).offset(20);
-            make.width.equalTo(50);
-            make.height.equalTo(40);
+            make.left.equalTo(navBar)
+            make.bottom.equalTo(-5)
+            make.width.equalTo(50)
+            make.height.equalTo(40)
         }
         
         rightBtn.snp.makeConstraints { (make) in
-            make.right.equalTo(navBar);
-            make.top.equalTo(navBar).offset(20);
-            make.width.equalTo(50);
-            make.height.equalTo(40);
+            make.right.equalTo(navBar)
+            make.bottom.equalTo(-5)
+            make.width.equalTo(50)
+            make.height.equalTo(40)
         }
         
         titleLabel.snp.makeConstraints { (make) in
-            make.left.equalTo(leftBtn.snp.right).offset(5);
-            make.right.equalTo(rightBtn.snp.left).offset(-5);
-            make.top.equalTo(navBar).offset(20);
-            make.height.equalTo(40);
+            make.left.equalTo(leftBtn.snp.right).offset(5)
+            make.right.equalTo(rightBtn.snp.left).offset(-5)
+            make.bottom.equalTo(-5)
+            make.height.equalTo(40)
         }
         
         self.view?.setNeedsLayout()
@@ -133,16 +133,4 @@ class BaseViewController: UIViewController {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }
-    
-
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destinationViewController.
-        // Pass the selected object to the new view controller.
-    }
-    */
-
 }

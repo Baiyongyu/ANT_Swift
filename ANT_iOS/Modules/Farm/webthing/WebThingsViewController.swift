@@ -18,7 +18,7 @@ class WebThingsViewController: BaseViewController {
     
     override func layoutConstraints() {
         webView.snp.makeConstraints { (make) in
-            make.edges.equalTo(self.view).inset(UIEdgeInsetsMake(64, 0, 0, 0));
+            make.edges.equalTo(self.view).inset(UIEdgeInsetsMake(NavBarHeight, 0, 0, 0));
         }
     }
     

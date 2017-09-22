@@ -24,7 +24,7 @@ class QualityTrackingViewController: BaseViewController {
     
     override func layoutConstraints() {
         tableView.snp.makeConstraints { (make) in
-            make.edges.equalTo(self.view).inset(UIEdgeInsetsMake(64, 0, 0, 0))
+            make.edges.equalTo(self.view).inset(UIEdgeInsetsMake(NavBarHeight, 0, 0, 0))
         }
     }
     

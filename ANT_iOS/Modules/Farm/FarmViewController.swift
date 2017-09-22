@@ -26,10 +26,10 @@ class FarmViewController: BaseViewController {
     
     override func layoutConstraints() {
         contentView.snp.makeConstraints { (make) in
-            make.edges.equalTo(view).inset(UIEdgeInsetsMake(0, 0, 49, 0))
+            make.edges.equalTo(view).inset(UIEdgeInsetsMake(0, 0, TabBarHeight, 0))
         }
         collectionView.snp.makeConstraints { (make) in
-            make.edges.equalTo(view).inset(UIEdgeInsetsMake(0, 0, 49, 0))
+            make.edges.equalTo(view).inset(UIEdgeInsetsMake(0, 0, TabBarHeight, 0))
         }
     }
     
@@ -80,14 +80,14 @@ extension FarmViewController: UICollectionViewDelegate, UICollectionViewDataSour
     func collectionView(_ collectionView: UICollectionView, viewForSupplementaryElementOfKind kind: String, at indexPath: IndexPath) -> UICollectionReusableView {
         let reusableView = collectionView.dequeueReusableSupplementaryView(ofKind: UICollectionElementKindSectionHeader, withReuseIdentifier: FarmViewController.reuseHeaderIdentifier, for: indexPath)
         
-        let bgView = UIImageView(frame: CGRect(x: 0, y: 0, width: SCREEN_WIDTH, height: 180))
+        let bgView = UIImageView(frame: CGRect(x: 0, y: 0, width: SCREEN_WIDTH, height: 200))
         bgView.image = UIImage.init(named: "ic_weather_bg")
         reusableView.addSubview(bgView)
         return reusableView
     }
     
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, referenceSizeForHeaderInSection section: Int) -> CGSize {
-        return CGSize(width: SCREEN_WIDTH, height: 180)
+        return CGSize(width: SCREEN_WIDTH, height: 200)
     }
 
     func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {

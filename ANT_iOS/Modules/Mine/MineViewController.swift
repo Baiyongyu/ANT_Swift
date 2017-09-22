@@ -26,14 +26,14 @@ class MineViewController: BaseViewController {
         contentView.addSubview(tableView)
         navBar.alpha = 0;
         contentView.snp.updateConstraints { (make) in
-            make.edges.equalTo(view).inset(UIEdgeInsetsMake(0, 0, 49, 0));
+            make.edges.equalTo(view).inset(UIEdgeInsetsMake(0, 0, TabBarHeight, 0));
         }
     }
     
     override func layoutConstraints() {
         
         tableView.snp.makeConstraints { (make) in
-            make.edges.equalTo(view).inset(UIEdgeInsetsMake(0, 0, 49, 0));
+            make.edges.equalTo(view).inset(UIEdgeInsetsMake(0, 0, TabBarHeight, 0));
         }
         
         headerView.backgroundColor = UIColor.white
@@ -46,7 +46,7 @@ class MineViewController: BaseViewController {
         headerView.addSubview(imageView)
         imageView.snp.makeConstraints { (make) in
             make.left.right.top.equalTo(headerView);
-            make.height.equalTo(180);
+            make.height.equalTo(200);
         }
         
         headerView.addSubview(avatarImageView)

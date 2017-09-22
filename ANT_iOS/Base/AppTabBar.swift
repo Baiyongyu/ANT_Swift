@@ -28,7 +28,7 @@ class AppTabBar: UITabBar {
         //系统自带的按钮类型是UITabBarButton，找出这些类型的按钮，然后重新排布位置，空出中间的位置
         let width = ovalBtn.currentBackgroundImage?.size.width
         let height = ovalBtn.currentBackgroundImage?.size.height
-        self.ovalBtn.frame = CGRect(x: (self.width-width!)/2.0, y: (self.height-height!)/2.0 - 3*CGFloat(TabBarMagin)-2, width: width!, height: height!)
+        self.ovalBtn.frame = CGRect(x: (self.width-width!)/2.0, y: (self.height-height!)/2.0 - 3*CGFloat(TabBarMagin)-2 - (IS_IPHONE_iPX ? 17 : 0), width: width!, height: height!)
         
         let plusImageView = UIImageView()
         self.plusImageView = plusImageView

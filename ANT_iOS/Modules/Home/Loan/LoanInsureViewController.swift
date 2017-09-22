@@ -31,7 +31,7 @@ class LoanInsureViewController: BaseViewController {
         bgView.image = UIImage.init(named: "ic_cetu_bg")
         self.contentView.addSubview(bgView)
         bgView.snp.makeConstraints { (make) in
-            make.edges.equalTo(self.view).inset(UIEdgeInsetsMake(64, 0, 0, 0));
+            make.edges.equalTo(self.view).inset(UIEdgeInsetsMake(NavBarHeight, 0, 0, 0));
         }
         
         self.dataArray = ["北京","上海","哈尔滨","杭州","南京","广东","大连","沈阳","北京","上海","哈尔滨","杭州","南京","广东","大连","沈阳"]

@@ -23,7 +23,7 @@ class PlantManagerViewController: BaseViewController {
     }
     override func layoutConstraints() {
         menuContainer.snp.makeConstraints { (make) in
-            make.edges.equalTo(view).inset(UIEdgeInsetsMake(64, 0, 0, 0));
+            make.edges.equalTo(view).inset(UIEdgeInsetsMake(NavBarHeight, 0, 0, 0));
         }
     }
     

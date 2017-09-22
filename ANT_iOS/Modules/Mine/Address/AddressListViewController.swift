@@ -26,7 +26,7 @@ class AddressListViewController: BaseViewController, AddressUpdateDelegate {
     
     override func layoutConstraints() {
         tableView.snp.makeConstraints { (make) in
-            make.edges.equalTo(view).inset(UIEdgeInsetsMake(64, 0, 0, 0));
+            make.edges.equalTo(view).inset(UIEdgeInsetsMake(NavBarHeight, 0, 0, 0));
         }
     }
     

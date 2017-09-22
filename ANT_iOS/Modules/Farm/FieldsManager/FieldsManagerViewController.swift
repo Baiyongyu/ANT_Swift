@@ -20,15 +20,15 @@ class FieldsManagerViewController: BaseViewController {
         navBar.addSubview(segmentControl)
         
         addChildViewController(fieldsTableVC)
-        fieldsTableVC.view.frame = CGRect(x: 0, y: 0, width: view.width, height: view.height-64)
+        fieldsTableVC.view.frame = CGRect(x: 0, y: 0, width: view.width, height: view.height-NavBarHeight)
         addChildViewController(fieldsMapVC)
-        fieldsMapVC.view.frame = CGRect(x: 0, y: 0, width: view.width, height: view.height-64)
+        fieldsMapVC.view.frame = CGRect(x: 0, y: 0, width: view.width, height: view.height-NavBarHeight)
     }
     
     override func layoutConstraints() {
         segmentControl.snp.makeConstraints { (make) in
             make.centerX.equalTo(navBar);
-            make.centerY.equalTo(navBar).offset(10);
+            make.centerY.equalTo(navBar).offset(IS_IPHONE_iPX ? 15 : 5);
         }
     }
     

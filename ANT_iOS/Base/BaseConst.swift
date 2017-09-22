@@ -24,6 +24,15 @@ let IMAGE_HUD_SUCCESS = UIImage.init(named: "ic_hud_success")
 let TabBarMagin = 12
 let TableViewCellDefaultHeight = 44
 
+//-----------------------------------  手机型号  ------------------------------------
+let IS_IPHONE           = (UI_USER_INTERFACE_IDIOM() == .phone)
+let SCREEN_MAX_LENGTH   = max(SCREEN_WIDTH, SCREEN_HEIGHT)
+let IS_IPHONE_4_OR_LESS = (IS_IPHONE && SCREEN_MAX_LENGTH < 568.0)
+let IS_IPHONE_iPX       = (IS_IPHONE && SCREEN_MAX_LENGTH > 736.0)
+
+let NavBarHeight        = CGFloat(IS_IPHONE_iPX ? 88 : 64)
+let TabBarHeight        = CGFloat(IS_IPHONE_iPX ? 83 : 49)
+
 let PhoneNumber         = "0553-5010050"
 let Tip_RequestError    = "网络请求错误，请重试"
 let Tip_RequestOutTime  = "请求超时"

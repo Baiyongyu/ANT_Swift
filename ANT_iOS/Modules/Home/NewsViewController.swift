@@ -19,7 +19,7 @@ class NewsViewController: BaseViewController {
         titleLabel.text = "资讯"
         contentView.addSubview(tableView)
         tableView.snp.makeConstraints { (make) in
-            make.edges.equalTo(view).inset(UIEdgeInsetsMake(64, 0, 0, 0));
+            make.edges.equalTo(view).inset(UIEdgeInsetsMake(NavBarHeight, 0, 0, 0));
         }
     }
     
