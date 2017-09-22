@@ -96,6 +96,9 @@
 		F3D16B221F70F11B00985E30 /* TraceStep3ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3D16B211F70F11B00985E30 /* TraceStep3ViewController.swift */; };
 		F3D16B241F70FBAF00985E30 /* TraceStep4ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3D16B231F70FBAF00985E30 /* TraceStep4ViewController.swift */; };
 		F3D16B261F71025400985E30 /* TraceStep5ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3D16B251F71025400985E30 /* TraceStep5ViewController.swift */; };
+		F3D16B281F71038300985E30 /* AddTraceCompleteViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3D16B271F71038300985E30 /* AddTraceCompleteViewController.swift */; };
+		F3D16B2A1F7104A000985E30 /* QualityTracDetailsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3D16B291F7104A000985E30 /* QualityTracDetailsViewController.swift */; };
+		F3D16B2C1F710FE800985E30 /* UMSocialShareManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3D16B2B1F710FE800985E30 /* UMSocialShareManager.swift */; };
 		F3D677381EE55EBB00BEB029 /* CropsCollectionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3D677371EE55EBB00BEB029 /* CropsCollectionView.swift */; };
 		F3D6773B1EE5625500BEB029 /* PlantModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3D6773A1EE5625500BEB029 /* PlantModel.swift */; };
 		F3D84DFA1F6BC5A4008573E3 /* YYSheetView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3D84DF91F6BC5A4008573E3 /* YYSheetView.swift */; };
@@ -244,6 +247,9 @@
 		F3D16B211F70F11B00985E30 /* TraceStep3ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TraceStep3ViewController.swift; sourceTree = "<group>"; };
 		F3D16B231F70FBAF00985E30 /* TraceStep4ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TraceStep4ViewController.swift; sourceTree = "<group>"; };
 		F3D16B251F71025400985E30 /* TraceStep5ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TraceStep5ViewController.swift; sourceTree = "<group>"; };
+		F3D16B271F71038300985E30 /* AddTraceCompleteViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddTraceCompleteViewController.swift; sourceTree = "<group>"; };
+		F3D16B291F7104A000985E30 /* QualityTracDetailsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QualityTracDetailsViewController.swift; sourceTree = "<group>"; };
+		F3D16B2B1F710FE800985E30 /* UMSocialShareManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UMSocialShareManager.swift; sourceTree = "<group>"; };
 		F3D677371EE55EBB00BEB029 /* CropsCollectionView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CropsCollectionView.swift; sourceTree = "<group>"; };
 		F3D6773A1EE5625500BEB029 /* PlantModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PlantModel.swift; sourceTree = "<group>"; };
 		F3D84DF91F6BC5A4008573E3 /* YYSheetView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = YYSheetView.swift; sourceTree = "<group>"; };
@@ -314,11 +320,13 @@
 			isa = PBXGroup;
 			children = (
 				F3235C421F6FB8F5003A0DCE /* QualityTrackingViewController.swift */,
+				F3D16B291F7104A000985E30 /* QualityTracDetailsViewController.swift */,
 				F38AA1861F709FE300CA9547 /* TraceStep1ViewController.swift */,
 				F38AA18A1F70B0C100CA9547 /* TraceStep2ViewController.swift */,
 				F3D16B211F70F11B00985E30 /* TraceStep3ViewController.swift */,
 				F3D16B231F70FBAF00985E30 /* TraceStep4ViewController.swift */,
 				F3D16B251F71025400985E30 /* TraceStep5ViewController.swift */,
+				F3D16B271F71038300985E30 /* AddTraceCompleteViewController.swift */,
 				F38AA1881F70A13600CA9547 /* TraceStepView.swift */,
 			);
 			path = QualityTracking;
@@ -559,6 +567,7 @@
 			children = (
 				F34C935D1EE6B58600091195 /* CacheManager.swift */,
 				F30EEEE41EF767A100C6A9FF /* VersionManager.swift */,
+				F3D16B2B1F710FE800985E30 /* UMSocialShareManager.swift */,
 			);
 			path = Manager;
 			sourceTree = "<group>";
@@ -931,6 +940,7 @@
 				F365D71C1EE67AAE00500391 /* YYClassInfo.m in Sources */,
 				F3320AE91EE79BF800327DC7 /* ShopListViewController.swift in Sources */,
 				F3BB46251F69269400E0539C /* FieldsMapViewController.swift in Sources */,
+				F3D16B281F71038300985E30 /* AddTraceCompleteViewController.swift in Sources */,
 				F365D6E91EE67AAE00500391 /* SDCycleScrollView.m in Sources */,
 				F3F5871B1EE43CAD0018412D /* FarmViewController.swift in Sources */,
 				F3EE54E31F064537004A9523 /* NewsModel.swift in Sources */,
@@ -943,6 +953,7 @@
 				F34C93561EE6991300091195 /* MessageModel.swift in Sources */,
 				F365D7201EE67B1700500391 /* AppCommon.m in Sources */,
 				F376B1FA1F04EFB800447696 /* NewsViewController.swift in Sources */,
+				F3D16B2C1F710FE800985E30 /* UMSocialShareManager.swift in Sources */,
 				F365D6EC1EE67AAE00500391 /* SDImageCache.m in Sources */,
 				F365D6E51EE67AAE00500391 /* TAAnimatedDotView.m in Sources */,
 				F365D6F51EE67AAE00500391 /* UIImage+MultiFormat.m in Sources */,
@@ -960,6 +971,7 @@
 				F3FC1E881EE7E09D00CD66E1 /* WebThingsViewController.swift in Sources */,
 				F307E6171F68B7E4001664C8 /* InputDialog.swift in Sources */,
 				F39855971EE927A10042990C /* AddressEditViewController.swift in Sources */,
+				F3D16B2A1F7104A000985E30 /* QualityTracDetailsViewController.swift in Sources */,
 				F365D6781EE63C8900500391 /* FarmRecordCell.swift in Sources */,
 				F365D6EB1EE67AAE00500391 /* NSData+ImageContentType.m in Sources */,
 				F35BB7801EE163DD0032EC02 /* BaseViewController.swift in Sources */,

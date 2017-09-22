@@ -24,3 +24,7 @@
 #import "TBCityIconInfo.h"
 #import "UIImage+TBCityIconFont.h"
 #import "FTPopOverMenu.h"
+
+// U-Share
+#import <UMSocialCore/UMSocialCore.h>
+#import <UShareUI/UShareUI.h>

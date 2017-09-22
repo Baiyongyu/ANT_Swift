@@ -11,4 +11,7 @@ pod 'SnapKit', '~> 3.2.0'
 #pod 'SDWebImage', '~> 4.0.0'
 pod 'pop', '~> 1.0'
 pod 'IQKeyboardManagerSwift', '4.0.10'
+pod ‘UMengUShare/UI’
+pod ‘UMengUShare/Social/ReducedWeChat'
+pod ‘UMengUShare/Social/ReducedQQ'
 end

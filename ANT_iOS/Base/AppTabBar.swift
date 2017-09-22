@@ -15,6 +15,7 @@ protocol AppTabBarDelegate {
 class AppTabBar: UITabBar {
 
     var myDelegate: AppTabBarDelegate?
+    var plusImageView = UIImageView()
     
     override init(frame: CGRect) {
         super.init(frame: frame)
@@ -30,6 +31,7 @@ class AppTabBar: UITabBar {
         self.ovalBtn.frame = CGRect(x: (self.width-width!)/2.0, y: (self.height-height!)/2.0 - 3*CGFloat(TabBarMagin)-2, width: width!, height: height!)
         
         let plusImageView = UIImageView()
+        self.plusImageView = plusImageView
         plusImageView.isUserInteractionEnabled = true
         let tapGesture = UITapGestureRecognizer(target: self, action: #selector(AppTabBar.plusBtnDidClick))
         plusImageView.addGestureRecognizer(tapGesture)
@@ -80,10 +82,10 @@ class AppTabBar: UITabBar {
         if self.isHidden == false {
             //将当前tabbar的触摸点转换坐标系，转换到发布按钮的身上，生成一个新的点
             var newP = CGPoint()
-            newP = self.convert(point, to: self.ovalBtn)
+            newP = self.convert(point, to: self.plusImageView)
             
             //判断如果这个新的点是在发布按钮身上，那么处理点击事件最合适的view就是发布按钮
-            if self.ovalBtn.point(inside: newP, with: event) {
+            if self.ovalBtn.point(inside: newP, with: event) || self.plusImageView.point(inside: newP, with: event) {
                 return self.ovalBtn
             }else { //如果点不在发布按钮身上，直接让系统处理就可以了
                 return super.hitTest(point, with: event)
