@@ -10,7 +10,7 @@ pod 'SnapKit', '~> 3.2.0'
 #pod 'SDCycleScrollView', '~> 1.66'
 #pod 'SDWebImage', '~> 4.0.0'
 pod 'pop', '~> 1.0'
-pod 'IQKeyboardManagerSwift', '4.0.10'
+pod 'IQKeyboardManagerSwift', '5.0.0'
 pod ‘UMengUShare/UI’
 pod ‘UMengUShare/Social/ReducedWeChat'
 pod ‘UMengUShare/Social/ReducedQQ'

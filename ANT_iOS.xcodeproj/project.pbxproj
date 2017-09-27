@@ -68,8 +68,10 @@
 		F365D71B1EE67AAE00500391 /* NSObject+YYModel.m in Sources */ = {isa = PBXBuildFile; fileRef = F365D6E01EE67AAE00500391 /* NSObject+YYModel.m */; };
 		F365D71C1EE67AAE00500391 /* YYClassInfo.m in Sources */ = {isa = PBXBuildFile; fileRef = F365D6E21EE67AAE00500391 /* YYClassInfo.m */; };
 		F365D7201EE67B1700500391 /* AppCommon.m in Sources */ = {isa = PBXBuildFile; fileRef = F365D71F1EE67B1700500391 /* AppCommon.m */; };
+		F37600D51F788BCB00E9A242 /* UMSocialSwiftInterface.swift in Sources */ = {isa = PBXBuildFile; fileRef = F37600D41F788BCB00E9A242 /* UMSocialSwiftInterface.swift */; };
 		F376B1FA1F04EFB800447696 /* NewsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F376B1F91F04EFB800447696 /* NewsViewController.swift */; };
 		F37BDDB11F6A62C000641D76 /* ImageModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F37BDDB01F6A62C000641D76 /* ImageModel.swift */; };
+		F38504741F7B6E27008DD007 /* WebThingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F38504731F7B6E27008DD007 /* WebThingViewController.swift */; };
 		F38AA1871F709FE300CA9547 /* TraceStep1ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F38AA1861F709FE300CA9547 /* TraceStep1ViewController.swift */; };
 		F38AA1891F70A13600CA9547 /* TraceStepView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F38AA1881F70A13600CA9547 /* TraceStepView.swift */; };
 		F38AA18B1F70B0C100CA9547 /* TraceStep2ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F38AA18A1F70B0C100CA9547 /* TraceStep2ViewController.swift */; };
@@ -98,7 +100,6 @@
 		F3D16B261F71025400985E30 /* TraceStep5ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3D16B251F71025400985E30 /* TraceStep5ViewController.swift */; };
 		F3D16B281F71038300985E30 /* AddTraceCompleteViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3D16B271F71038300985E30 /* AddTraceCompleteViewController.swift */; };
 		F3D16B2A1F7104A000985E30 /* QualityTracDetailsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3D16B291F7104A000985E30 /* QualityTracDetailsViewController.swift */; };
-		F3D16B2C1F710FE800985E30 /* UMSocialShareManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3D16B2B1F710FE800985E30 /* UMSocialShareManager.swift */; };
 		F3D677381EE55EBB00BEB029 /* CropsCollectionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3D677371EE55EBB00BEB029 /* CropsCollectionView.swift */; };
 		F3D6773B1EE5625500BEB029 /* PlantModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3D6773A1EE5625500BEB029 /* PlantModel.swift */; };
 		F3D84DFA1F6BC5A4008573E3 /* YYSheetView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3D84DF91F6BC5A4008573E3 /* YYSheetView.swift */; };
@@ -217,8 +218,10 @@
 		F365D6E31EE67AAE00500391 /* YYModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YYModel.h; sourceTree = "<group>"; };
 		F365D71E1EE67B1700500391 /* AppCommon.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AppCommon.h; sourceTree = "<group>"; };
 		F365D71F1EE67B1700500391 /* AppCommon.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AppCommon.m; sourceTree = "<group>"; };
+		F37600D41F788BCB00E9A242 /* UMSocialSwiftInterface.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UMSocialSwiftInterface.swift; sourceTree = "<group>"; };
 		F376B1F91F04EFB800447696 /* NewsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NewsViewController.swift; sourceTree = "<group>"; };
 		F37BDDB01F6A62C000641D76 /* ImageModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ImageModel.swift; sourceTree = "<group>"; };
+		F38504731F7B6E27008DD007 /* WebThingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WebThingViewController.swift; sourceTree = "<group>"; };
 		F38AA1861F709FE300CA9547 /* TraceStep1ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TraceStep1ViewController.swift; sourceTree = "<group>"; };
 		F38AA1881F70A13600CA9547 /* TraceStepView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TraceStepView.swift; sourceTree = "<group>"; };
 		F38AA18A1F70B0C100CA9547 /* TraceStep2ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TraceStep2ViewController.swift; sourceTree = "<group>"; };
@@ -249,7 +252,6 @@
 		F3D16B251F71025400985E30 /* TraceStep5ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TraceStep5ViewController.swift; sourceTree = "<group>"; };
 		F3D16B271F71038300985E30 /* AddTraceCompleteViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddTraceCompleteViewController.swift; sourceTree = "<group>"; };
 		F3D16B291F7104A000985E30 /* QualityTracDetailsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QualityTracDetailsViewController.swift; sourceTree = "<group>"; };
-		F3D16B2B1F710FE800985E30 /* UMSocialShareManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UMSocialShareManager.swift; sourceTree = "<group>"; };
 		F3D677371EE55EBB00BEB029 /* CropsCollectionView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CropsCollectionView.swift; sourceTree = "<group>"; };
 		F3D6773A1EE5625500BEB029 /* PlantModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PlantModel.swift; sourceTree = "<group>"; };
 		F3D84DF91F6BC5A4008573E3 /* YYSheetView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = YYSheetView.swift; sourceTree = "<group>"; };
@@ -403,12 +405,12 @@
 		F35BB7701EE14DA50032EC02 /* Base */ = {
 			isa = PBXGroup;
 			children = (
-				F3A1D1301F04FF0C0008F051 /* BaseTableView */,
 				F35BB77F1EE163DD0032EC02 /* BaseViewController.swift */,
 				F35BB7711EE14DC80032EC02 /* AppTabBarController.swift */,
 				F399DDD01EF38F6A0012AD94 /* AppTabBar.swift */,
 				F35BB77C1EE1503B0032EC02 /* AppNavigationController.swift */,
 				F34C93531EE692F300091195 /* BaseConst.swift */,
+				F3A1D1301F04FF0C0008F051 /* BaseTableView */,
 			);
 			path = Base;
 			sourceTree = "<group>";
@@ -567,7 +569,7 @@
 			children = (
 				F34C935D1EE6B58600091195 /* CacheManager.swift */,
 				F30EEEE41EF767A100C6A9FF /* VersionManager.swift */,
-				F3D16B2B1F710FE800985E30 /* UMSocialShareManager.swift */,
+				F37600D41F788BCB00E9A242 /* UMSocialSwiftInterface.swift */,
 			);
 			path = Manager;
 			sourceTree = "<group>";
@@ -769,6 +771,7 @@
 			isa = PBXGroup;
 			children = (
 				F3FC1E871EE7E09D00CD66E1 /* WebThingsViewController.swift */,
+				F38504731F7B6E27008DD007 /* WebThingViewController.swift */,
 			);
 			path = webthing;
 			sourceTree = "<group>";
@@ -914,6 +917,7 @@
 				F3F7820A1F6632B2007C5768 /* HyPopMenuView.m in Sources */,
 				F314B3641F67D21700AAB40B /* TBCityIconInfo.m in Sources */,
 				F39855951EE8FDF20042990C /* VerticalButton.swift in Sources */,
+				F37600D51F788BCB00E9A242 /* UMSocialSwiftInterface.swift in Sources */,
 				F3F7820B1F6632B2007C5768 /* PopMenuButton.m in Sources */,
 				F365D6F81EE67AAE00500391 /* UIView+WebCacheOperation.m in Sources */,
 				F365D6F31EE67AAE00500391 /* UIButton+WebCache.m in Sources */,
@@ -938,6 +942,7 @@
 				F398559C1EE954690042990C /* CommonUtils.swift in Sources */,
 				F3E6C8CC1F6F61FF00E2E45C /* YYAdvertScrollView.swift in Sources */,
 				F365D71C1EE67AAE00500391 /* YYClassInfo.m in Sources */,
+				F38504741F7B6E27008DD007 /* WebThingViewController.swift in Sources */,
 				F3320AE91EE79BF800327DC7 /* ShopListViewController.swift in Sources */,
 				F3BB46251F69269400E0539C /* FieldsMapViewController.swift in Sources */,
 				F3D16B281F71038300985E30 /* AddTraceCompleteViewController.swift in Sources */,
@@ -953,7 +958,6 @@
 				F34C93561EE6991300091195 /* MessageModel.swift in Sources */,
 				F365D7201EE67B1700500391 /* AppCommon.m in Sources */,
 				F376B1FA1F04EFB800447696 /* NewsViewController.swift in Sources */,
-				F3D16B2C1F710FE800985E30 /* UMSocialShareManager.swift in Sources */,
 				F365D6EC1EE67AAE00500391 /* SDImageCache.m in Sources */,
 				F365D6E51EE67AAE00500391 /* TAAnimatedDotView.m in Sources */,
 				F365D6F51EE67AAE00500391 /* UIImage+MultiFormat.m in Sources */,

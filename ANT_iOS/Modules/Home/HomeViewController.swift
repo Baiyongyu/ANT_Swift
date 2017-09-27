@@ -206,6 +206,7 @@ class HomeViewController: BaseViewController {
 extension HomeViewController: SDCycleScrollViewDelegate {
     func cycleScrollView(_ cycleScrollView: SDCycleScrollView!, didSelectItemAt index: Int) {
 //        http://h5.eqxiu.com/s/NABANe?eqrcode=1&from=timeline&isappinstalled=0
+        AppCommon.push(WebThingsViewController(), animated: true)
     }
 }
 

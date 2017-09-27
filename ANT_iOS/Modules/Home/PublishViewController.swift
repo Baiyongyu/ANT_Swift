@@ -12,9 +12,7 @@ class PublishViewController: BaseViewController {
 
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(true)
-        DispatchQueue.main.asyncAfter(deadline: DispatchTime.now()+0.5) {
-            self.activityInputDialog.textView.becomeFirstResponder()
-        }
+        self.activityInputDialog.textView.becomeFirstResponder()
     }
     
     override func loadSubViews() {

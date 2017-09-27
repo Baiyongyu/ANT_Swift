@@ -59,6 +59,37 @@ class QualityTracDetailsViewController: BaseViewController {
         
     }
     
+    func leftEditBtnAction() {
+        let step1 = TraceStep1ViewController()
+        let nav = UINavigationController.init(rootViewController: step1)
+        nav.navigationBar.isHidden = true
+        self.present(nav, animated: true, completion: nil)
+    }
+    
+    func rightShareBtnAction() {
+        
+//        UMSocialUIManager.removeAllCustomPlatformWithoutFilted()
+//        UMSocialShareUIConfig.shareInstance().sharePageGroupViewConfig.sharePageGroupViewPostionType = .bottom
+//        UMSocialShareUIConfig.shareInstance().sharePageScrollViewConfig.shareScrollViewPageItemStyleType = .iconAndBGRadius
+        
+        UMSocialSwiftInterface.showShareMenuViewInWindowWithPlatformSelectionBlock { (platformType: UMSocialPlatformType, userInfo: Any) in
+            //创建分享消息对象
+            let messageObject = UMSocialMessageObject()
+            //创建网页内容对象
+            let shareTitle = "稻鳖共生米，有态度的农产品！"
+            let shareDesTitle = "稻鳖共生米-阡陌优品"
+            let shareObject = UMShareWebpageObject.shareObject(withTitle: shareTitle, descr: shareDesTitle, thumImage: UIImage.init(named: "ic_settings_logo"))
+            //设置网页地址
+            shareObject?.webpageUrl = ""
+            //分享消息对象设置分享内容对象
+            messageObject.shareObject = shareObject
+            
+            UMSocialSwiftInterface.share(plattype: platformType, messageObject: messageObject, viewController: nil, completion: { (data: Any, error: Error) in
+                
+                } as! (Any?, Error?) -> Void)
+        }
+    }
+
     lazy var leftEditBtn: UIButton = {
         let leftEditBtn = UIButton(type: UIButtonType.custom)
         leftEditBtn.setTitle("再次编辑", for: .normal)
@@ -68,6 +99,7 @@ class QualityTracDetailsViewController: BaseViewController {
         leftEditBtn.backgroundColor = BaseColor.ThemeColor
         leftEditBtn.layer.cornerRadius = 5
         leftEditBtn.clipsToBounds = true
+        leftEditBtn.addTarget(self, action: #selector(leftEditBtnAction), for: .touchUpInside)
         return leftEditBtn
     }()
 
@@ -80,6 +112,7 @@ class QualityTracDetailsViewController: BaseViewController {
         rightShareBtn.backgroundColor = BaseColor.ThemeColor
         rightShareBtn.layer.cornerRadius = 5
         rightShareBtn.clipsToBounds = true
+        rightShareBtn.addTarget(self, action: #selector(rightShareBtnAction), for: .touchUpInside)
         return rightShareBtn
     }()
     
