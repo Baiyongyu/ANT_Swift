@@ -23,7 +23,6 @@
 #import <CoreText/CoreText.h>
 #import "TBCityIconInfo.h"
 #import "UIImage+TBCityIconFont.h"
-#import "FTPopOverMenu.h"
 
 // U-Share
 #import <UMSocialCore/UMSocialCore.h>

@@ -92,7 +92,6 @@
 		F3BB46211F69234C00E0539C /* FieldsManagerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3BB46201F69234C00E0539C /* FieldsManagerViewController.swift */; };
 		F3BB46231F69267800E0539C /* FieldsTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3BB46221F69267800E0539C /* FieldsTableViewController.swift */; };
 		F3BB46251F69269400E0539C /* FieldsMapViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3BB46241F69269400E0539C /* FieldsMapViewController.swift */; };
-		F3BB46291F69335E00E0539C /* FTPopOverMenu.m in Sources */ = {isa = PBXBuildFile; fileRef = F3BB46281F69335E00E0539C /* FTPopOverMenu.m */; };
 		F3BB462B1F6939FE00E0539C /* FieldGroupModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3BB462A1F6939FE00E0539C /* FieldGroupModel.swift */; };
 		F3D0A6651F6FC27900464265 /* QualityTrackModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3D0A6641F6FC27900464265 /* QualityTrackModel.swift */; };
 		F3D16B221F70F11B00985E30 /* TraceStep3ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3D16B211F70F11B00985E30 /* TraceStep3ViewController.swift */; };
@@ -120,6 +119,7 @@
 		F3F7820C1F6632B2007C5768 /* PopMenuModel.m in Sources */ = {isa = PBXBuildFile; fileRef = F3F782091F6632B2007C5768 /* PopMenuModel.m */; };
 		F3FC1E881EE7E09D00CD66E1 /* WebThingsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3FC1E871EE7E09D00CD66E1 /* WebThingsViewController.swift */; };
 		F3FC1E8A1EE7E2EA00CD66E1 /* webthing in Resources */ = {isa = PBXBuildFile; fileRef = F3FC1E891EE7E2EA00CD66E1 /* webthing */; };
+		F3FCEAAD1F7C84CE00148C09 /* PopupMenu.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3FCEAAC1F7C84CE00148C09 /* PopupMenu.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -243,8 +243,6 @@
 		F3BB46201F69234C00E0539C /* FieldsManagerViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FieldsManagerViewController.swift; sourceTree = "<group>"; };
 		F3BB46221F69267800E0539C /* FieldsTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FieldsTableViewController.swift; sourceTree = "<group>"; };
 		F3BB46241F69269400E0539C /* FieldsMapViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FieldsMapViewController.swift; sourceTree = "<group>"; };
-		F3BB46271F69335E00E0539C /* FTPopOverMenu.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FTPopOverMenu.h; sourceTree = "<group>"; };
-		F3BB46281F69335E00E0539C /* FTPopOverMenu.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FTPopOverMenu.m; sourceTree = "<group>"; };
 		F3BB462A1F6939FE00E0539C /* FieldGroupModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FieldGroupModel.swift; sourceTree = "<group>"; };
 		F3D0A6641F6FC27900464265 /* QualityTrackModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QualityTrackModel.swift; sourceTree = "<group>"; };
 		F3D16B211F70F11B00985E30 /* TraceStep3ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TraceStep3ViewController.swift; sourceTree = "<group>"; };
@@ -276,6 +274,7 @@
 		F3F782091F6632B2007C5768 /* PopMenuModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PopMenuModel.m; sourceTree = "<group>"; };
 		F3FC1E871EE7E09D00CD66E1 /* WebThingsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WebThingsViewController.swift; sourceTree = "<group>"; };
 		F3FC1E891EE7E2EA00CD66E1 /* webthing */ = {isa = PBXFileReference; lastKnownFileType = folder; path = webthing; sourceTree = "<group>"; };
+		F3FCEAAC1F7C84CE00148C09 /* PopupMenu.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PopupMenu.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -639,18 +638,10 @@
 			path = FieldsManager;
 			sourceTree = "<group>";
 		};
-		F3BB46261F69335E00E0539C /* FTPopOverMenu */ = {
-			isa = PBXGroup;
-			children = (
-				F3BB46271F69335E00E0539C /* FTPopOverMenu.h */,
-				F3BB46281F69335E00E0539C /* FTPopOverMenu.m */,
-			);
-			path = FTPopOverMenu;
-			sourceTree = "<group>";
-		};
 		F3D677321EE5584F00BEB029 /* Classes */ = {
 			isa = PBXGroup;
 			children = (
+				F3FCEAAC1F7C84CE00148C09 /* PopupMenu.swift */,
 				F38AA18E1F70EC6A00CA9547 /* CharacteristicCell.swift */,
 				F38AA18C1F70B33300CA9547 /* CustomPageControl.swift */,
 				F3E6C8CB1F6F61FF00E2E45C /* YYAdvertScrollView.swift */,
@@ -660,7 +651,6 @@
 				F307E6161F68B7E4001664C8 /* InputDialog.swift */,
 				F33FBB8D1EEFBEDA00F4B2A8 /* MenuControl.swift */,
 				F39855991EE93C870042990C /* SelectAreaAlert.swift */,
-				F3BB46261F69335E00E0539C /* FTPopOverMenu */,
 				F314B3581F67C9BF00AAB40B /* IconFont */,
 				F3B764F81EEF73B3009FF0BE /* PopupMenu */,
 			);
@@ -866,9 +856,18 @@
 			files = (
 			);
 			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-ANT_iOS/Pods-ANT_iOS-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/IQKeyboardManagerSwift/IQKeyboardManagerSwift.framework",
+				"${BUILT_PRODUCTS_DIR}/Kingfisher/Kingfisher.framework",
+				"${BUILT_PRODUCTS_DIR}/SnapKit/SnapKit.framework",
+				"${BUILT_PRODUCTS_DIR}/pop/pop.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/IQKeyboardManagerSwift.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Kingfisher.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SnapKit.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/pop.framework",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
@@ -881,9 +880,13 @@
 			files = (
 			);
 			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-ANT_iOS/Pods-ANT_iOS-resources.sh",
+				"${PODS_ROOT}/UMengUShare/UShareSDK/UMSocialSDK/UMSocialSDKPromptResources.bundle",
+				"${PODS_ROOT}/UMengUShare/UShareSDK/UMSocialUI/UMSocialSDKResources.bundle",
 			);
 			name = "[CP] Copy Pods Resources";
 			outputPaths = (
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
@@ -896,13 +899,16 @@
 			files = (
 			);
 			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
 			);
 			name = "[CP] Check Pods Manifest.lock";
 			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-ANT_iOS-checkManifestLockResult.txt",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
 			showEnvVarsInLog = 0;
 		};
 /* End PBXShellScriptBuildPhase section */
@@ -928,7 +934,6 @@
 				F35BB7721EE14DC80032EC02 /* AppTabBarController.swift in Sources */,
 				F398558D1EE8F1920042990C /* AddressModel.swift in Sources */,
 				F365D6EF1EE67AAE00500391 /* SDWebImageDownloader.m in Sources */,
-				F3BB46291F69335E00E0539C /* FTPopOverMenu.m in Sources */,
 				F33FBB981EEFDB2100F4B2A8 /* PlantManagerViewController.swift in Sources */,
 				F3F5871A1EE43CAD0018412D /* CircleViewController.swift in Sources */,
 				F3F7820C1F6632B2007C5768 /* PopMenuModel.m in Sources */,
@@ -946,6 +951,7 @@
 				F3320AE91EE79BF800327DC7 /* ShopListViewController.swift in Sources */,
 				F3BB46251F69269400E0539C /* FieldsMapViewController.swift in Sources */,
 				F3D16B281F71038300985E30 /* AddTraceCompleteViewController.swift in Sources */,
+				F3FCEAAD1F7C84CE00148C09 /* PopupMenu.swift in Sources */,
 				F365D6E91EE67AAE00500391 /* SDCycleScrollView.m in Sources */,
 				F3F5871B1EE43CAD0018412D /* FarmViewController.swift in Sources */,
 				F3EE54E31F064537004A9523 /* NewsModel.swift in Sources */,

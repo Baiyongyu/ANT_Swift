@@ -11,6 +11,7 @@ import UIKit
 class FieldsManagerViewController: BaseViewController {
 
     var selectedSegmentIndex: NSInteger?
+    var popMenu: PopupMenu!
     
     override func loadSubViews() {
         super.loadSubViews()
@@ -68,18 +69,16 @@ class FieldsManagerViewController: BaseViewController {
     }
     
     override func rightBtnAction() {
-        let configuration = FTPopOverMenuConfiguration.default()
-        configuration?.tintColor = UIColor.white
-        configuration?.textColor = UIColor.black
-        configuration?.borderColor = UIColor.clear
-        configuration?.menuWidth = 150
-        configuration?.menuIconMargin = 20
-        configuration?.menuTextMargin = 12
-        configuration?.menuRowHeight = 44
-        configuration?.backgroundViewColor = UIColor.init(white: 0, alpha: 0.4)
-        FTPopOverMenu.show(forSender: rightBtn, withMenuArray: ["添加田块","添加分组","分组管理"], imageArray: ["ic_add_field","ic_add_fieldgroup","ic_fieldgroup_management"], doneBlock: { (selectedIndex: NSInteger) in
-            
-            switch selectedIndex {
+      
+        popMenu = PopupMenu(frame: CGRect(x: SCREEN_WIDTH - 160, y: NavBarHeight, width: 150, height: 150), arrowMargin: 12)
+        
+        popMenu.popData = [(icon: "ic_add_field", title: "添加田块"),
+                           (icon: "ic_add_fieldgroup", title: "添加分组"),
+                           (icon: "ic_fieldgroup_management", title: "分组管理")]
+        //点击菜单
+        popMenu.didSelectMenuBlock = { [weak self](index: Int)->Void in
+            self?.popMenu.dismiss()
+            switch index {
                 case 0:
                     AppCommon.push(PlantManagerViewController(), animated: true)
                 case 1:
@@ -89,8 +88,8 @@ class FieldsManagerViewController: BaseViewController {
                 default:
                     break
             }
-        }, dismiss: nil)
-        
+        }
+        popMenu.show()
     }
     
     lazy var segmentControl: UISegmentedControl = {

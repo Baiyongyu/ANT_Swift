@@ -105,9 +105,10 @@ class MenuControl: UIView {
         selectedIndex = sender.tag - 1000
         if self.selectedIndex != selectedIndex {
             self.selectedIndex = selectedIndex
-            if ((self.delegate?.menuCtrl(self, didSelectIndex: selectedIndex)) != nil) {
-                self.delegate?.menuCtrl(self, didSelectIndex: selectedIndex)
-            }
+//            if ((self.delegate?.menuCtrl(self, didSelectIndex: selectedIndex)) != nil) {
+//                
+//            }
+            self.delegate?.menuCtrl(self, didSelectIndex: selectedIndex)
         }
     }
     

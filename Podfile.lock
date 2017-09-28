@@ -14,7 +14,7 @@ PODS:
     - UMengUShare/Core
 
 DEPENDENCIES:
-  - IQKeyboardManagerSwift (= 4.0.10)
+  - IQKeyboardManagerSwift
   - Kingfisher (~> 3.10.2)
   - pop (~> 1.0)
   - SnapKit (~> 3.2.0)
@@ -29,6 +29,6 @@ SPEC CHECKSUMS:
   SnapKit: 1ca44df72cfa543218d177cb8aab029d10d86ea7
   UMengUShare: cd54ae52958426b79aa9193a7b02058d6a6d9aa0
 
-PODFILE CHECKSUM: ce7f5354036b9a47be894f241b905fd306501ffc
+PODFILE CHECKSUM: a5e8d0d7f3fce120862bd1a8769331e0cee1eaeb
 
-COCOAPODS: 1.0.1
+COCOAPODS: 1.4.0.beta.1
