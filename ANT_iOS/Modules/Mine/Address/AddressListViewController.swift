@@ -54,7 +54,7 @@ class AddressListViewController: BaseViewController, AddressUpdateDelegate {
                 print("设为默认")
                 break
             case .Edit:
-                AppCommon.push(AddressEditViewController(), animated: true)
+                AppCommon.push(LocationMapViewController(), animated: true)
                 break
             case .Delete:
                 let alertView = YYAlertView()

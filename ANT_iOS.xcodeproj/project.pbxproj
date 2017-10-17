@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		D4031E97425D8295BF9D115C /* Pods_ANT_iOS.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C3D2928A46DF521094C213F0 /* Pods_ANT_iOS.framework */; };
+		F3012C1F1F95DF6D000BF3FB /* LocationMapViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3012C1E1F95DF6D000BF3FB /* LocationMapViewController.swift */; };
 		F30685501F958B6100B6E4C5 /* YYCycleScrollView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F306854F1F958B6100B6E4C5 /* YYCycleScrollView.swift */; };
 		F307E6171F68B7E4001664C8 /* InputDialog.swift in Sources */ = {isa = PBXBuildFile; fileRef = F307E6161F68B7E4001664C8 /* InputDialog.swift */; };
 		F30EEEE31EF7599100C6A9FF /* VersionAlertView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F30EEEE21EF7599100C6A9FF /* VersionAlertView.swift */; };
@@ -24,6 +25,7 @@
 		F320DE7C1EEE8044005AF954 /* CetuDataInputViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F320DE7B1EEE8044005AF954 /* CetuDataInputViewController.swift */; };
 		F3235C431F6FB8F5003A0DCE /* QualityTrackingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3235C421F6FB8F5003A0DCE /* QualityTrackingViewController.swift */; };
 		F32671C51EF7D39700121C9B /* YYAlertView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F32671C41EF7D39700121C9B /* YYAlertView.swift */; };
+		F32844C91F95D88A00456D76 /* LocationManager.m in Sources */ = {isa = PBXBuildFile; fileRef = F32844C81F95D88A00456D76 /* LocationManager.m */; };
 		F3320AE91EE79BF800327DC7 /* ShopListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3320AE81EE79BF800327DC7 /* ShopListViewController.swift */; };
 		F3320AEB1EE7A4BE00327DC7 /* ShopModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3320AEA1EE7A4BE00327DC7 /* ShopModel.swift */; };
 		F33FBB891EEF857C00F4B2A8 /* BuyFormulaPopView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F33FBB881EEF857C00F4B2A8 /* BuyFormulaPopView.swift */; };
@@ -106,7 +108,13 @@
 		022A2B72FB17BBCF3E6BD8BC /* Pods-ANT_iOS.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ANT_iOS.release.xcconfig"; path = "Pods/Target Support Files/Pods-ANT_iOS/Pods-ANT_iOS.release.xcconfig"; sourceTree = "<group>"; };
 		71E885BB0AA338D183331694 /* Pods-ANT_iOS.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ANT_iOS.debug.xcconfig"; path = "Pods/Target Support Files/Pods-ANT_iOS/Pods-ANT_iOS.debug.xcconfig"; sourceTree = "<group>"; };
 		C3D2928A46DF521094C213F0 /* Pods_ANT_iOS.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ANT_iOS.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		F3012C1E1F95DF6D000BF3FB /* LocationMapViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationMapViewController.swift; sourceTree = "<group>"; };
 		F306854F1F958B6100B6E4C5 /* YYCycleScrollView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = YYCycleScrollView.swift; sourceTree = "<group>"; };
+		F30685521F95CD6600B6E4C5 /* SegmentStyle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SegmentStyle.swift; sourceTree = "<group>"; };
+		F30685531F95CD6600B6E4C5 /* UIViewControllerExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIViewControllerExtension.swift; sourceTree = "<group>"; };
+		F30685541F95CD6600B6E4C5 /* ScrollPageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScrollPageView.swift; sourceTree = "<group>"; };
+		F30685551F95CD6600B6E4C5 /* ScrollSegmentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScrollSegmentView.swift; sourceTree = "<group>"; };
+		F30685561F95CD6600B6E4C5 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		F307E6161F68B7E4001664C8 /* InputDialog.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = InputDialog.swift; sourceTree = "<group>"; };
 		F30EEEE21EF7599100C6A9FF /* VersionAlertView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VersionAlertView.swift; sourceTree = "<group>"; };
 		F30EEEE41EF767A100C6A9FF /* VersionManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VersionManager.swift; sourceTree = "<group>"; };
@@ -125,6 +133,8 @@
 		F320DE7B1EEE8044005AF954 /* CetuDataInputViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CetuDataInputViewController.swift; sourceTree = "<group>"; };
 		F3235C421F6FB8F5003A0DCE /* QualityTrackingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QualityTrackingViewController.swift; sourceTree = "<group>"; };
 		F32671C41EF7D39700121C9B /* YYAlertView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = YYAlertView.swift; sourceTree = "<group>"; };
+		F32844C71F95D88A00456D76 /* LocationManager.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LocationManager.h; sourceTree = "<group>"; };
+		F32844C81F95D88A00456D76 /* LocationManager.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LocationManager.m; sourceTree = "<group>"; };
 		F3320AE81EE79BF800327DC7 /* ShopListViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ShopListViewController.swift; sourceTree = "<group>"; };
 		F3320AEA1EE7A4BE00327DC7 /* ShopModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ShopModel.swift; sourceTree = "<group>"; };
 		F33FBB881EEF857C00F4B2A8 /* BuyFormulaPopView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BuyFormulaPopView.swift; sourceTree = "<group>"; };
@@ -233,6 +243,18 @@
 				C3D2928A46DF521094C213F0 /* Pods_ANT_iOS.framework */,
 			);
 			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		F30685511F95CD6600B6E4C5 /* ScrollPageView */ = {
+			isa = PBXGroup;
+			children = (
+				F30685521F95CD6600B6E4C5 /* SegmentStyle.swift */,
+				F30685531F95CD6600B6E4C5 /* UIViewControllerExtension.swift */,
+				F30685541F95CD6600B6E4C5 /* ScrollPageView.swift */,
+				F30685551F95CD6600B6E4C5 /* ScrollSegmentView.swift */,
+				F30685561F95CD6600B6E4C5 /* ContentView.swift */,
+			);
+			path = ScrollPageView;
 			sourceTree = "<group>";
 		};
 		F314B33F1F67778D00AAB40B /* Network */ = {
@@ -440,6 +462,8 @@
 				F34C935D1EE6B58600091195 /* CacheManager.swift */,
 				F30EEEE41EF767A100C6A9FF /* VersionManager.swift */,
 				F37600D41F788BCB00E9A242 /* UMSocialSwiftInterface.swift */,
+				F32844C71F95D88A00456D76 /* LocationManager.h */,
+				F32844C81F95D88A00456D76 /* LocationManager.m */,
 			);
 			path = Manager;
 			sourceTree = "<group>";
@@ -458,6 +482,7 @@
 			children = (
 				F398558A1EE8EBE80042990C /* AddressListViewController.swift */,
 				F39855961EE927A10042990C /* AddressEditViewController.swift */,
+				F3012C1E1F95DF6D000BF3FB /* LocationMapViewController.swift */,
 			);
 			path = Address;
 			sourceTree = "<group>";
@@ -512,6 +537,7 @@
 		F3D677321EE5584F00BEB029 /* Classes */ = {
 			isa = PBXGroup;
 			children = (
+				F30685511F95CD6600B6E4C5 /* ScrollPageView */,
 				F3FCEAAC1F7C84CE00148C09 /* PopupMenu.swift */,
 				F38AA18E1F70EC6A00CA9547 /* CharacteristicCell.swift */,
 				F38AA18C1F70B33300CA9547 /* CustomPageControl.swift */,
@@ -682,7 +708,7 @@
 				TargetAttributes = {
 					F35BB75A1EE14CEF0032EC02 = {
 						CreatedOnToolsVersion = 8.3.2;
-						DevelopmentTeam = KK59AKUJZC;
+						DevelopmentTeam = Q5SWE3562A;
 						LastSwiftMigration = 0830;
 						ProvisioningStyle = Automatic;
 					};
@@ -753,6 +779,7 @@
 			);
 			inputPaths = (
 				"${SRCROOT}/Pods/Target Support Files/Pods-ANT_iOS/Pods-ANT_iOS-resources.sh",
+				"${PODS_ROOT}/AMap3DMap-NO-IDFA/MAMapKit.framework/AMap.bundle",
 				"${PODS_ROOT}/UMengUShare/UShareSDK/UMSocialSDK/UMSocialSDKPromptResources.bundle",
 				"${PODS_ROOT}/UMengUShare/UShareSDK/UMSocialUI/UMSocialSDKResources.bundle",
 			);
@@ -870,8 +897,10 @@
 				F3BB46231F69267800E0539C /* FieldsTableViewController.swift in Sources */,
 				F3D0A6651F6FC27900464265 /* QualityTrackModel.swift in Sources */,
 				F3D84DFA1F6BC5A4008573E3 /* YYSheetView.swift in Sources */,
+				F32844C91F95D88A00456D76 /* LocationManager.m in Sources */,
 				F34C935E1EE6B58600091195 /* CacheManager.swift in Sources */,
 				F3A1D1321F04FF4C0008F051 /* BaseTableViewDataSource.swift in Sources */,
+				F3012C1F1F95DF6D000BF3FB /* LocationMapViewController.swift in Sources */,
 				F320DE781EEE7114005AF954 /* FormulaModel.swift in Sources */,
 				F33FBB8E1EEFBEDA00F4B2A8 /* MenuControl.swift in Sources */,
 				F314B3631F67D21700AAB40B /* TBCityIconFont.m in Sources */,
@@ -993,11 +1022,11 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
-				DEVELOPMENT_TEAM = KK59AKUJZC;
+				DEVELOPMENT_TEAM = Q5SWE3562A;
 				INFOPLIST_FILE = ANT_iOS/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = "com.qianmo.ANT-iOS";
+				PRODUCT_BUNDLE_IDENTIFIER = com.qianmo.antbuyer;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_OBJC_BRIDGING_HEADER = "ANT_iOS/Bridging-Header.h";
 				SWIFT_VERSION = 3.0;
@@ -1011,11 +1040,11 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
-				DEVELOPMENT_TEAM = KK59AKUJZC;
+				DEVELOPMENT_TEAM = Q5SWE3562A;
 				INFOPLIST_FILE = ANT_iOS/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = "com.qianmo.ANT-iOS";
+				PRODUCT_BUNDLE_IDENTIFIER = com.qianmo.antbuyer;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_OBJC_BRIDGING_HEADER = "ANT_iOS/Bridging-Header.h";
 				SWIFT_VERSION = 3.0;

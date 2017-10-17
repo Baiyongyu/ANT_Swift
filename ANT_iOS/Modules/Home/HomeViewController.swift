@@ -131,6 +131,14 @@ class HomeViewController: BaseViewController {
         
         headerView.layoutIfNeeded()
         updateHeaderViewHeight()
+        
+        contentView.addSubview(floatBtn)
+        floatBtn.snp.makeConstraints { (make) in
+            make.right.equalTo(view).offset(-10)
+            make.bottom.equalTo(view).offset(IS_IPHONE_iPX ? -100 : -60)
+            make.width.equalTo(100)
+            make.height.equalTo(90)
+        }
     }
     
     override func loadData() {
@@ -206,6 +214,13 @@ class HomeViewController: BaseViewController {
             tableView.scrollIndicatorInsets = tableView.contentInset
         }
         return tableView
+    }()
+    
+    lazy var floatBtn: UIButton = {
+        let floatBtn = UIButton(type: UIButtonType.custom)
+//        floatBtn.isHidden = true
+        floatBtn.setImage(UIImage.init(named: "ic_sell_food"), for: .normal)
+        return floatBtn
     }()
 }
 

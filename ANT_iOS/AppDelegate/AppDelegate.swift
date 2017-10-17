@@ -30,6 +30,10 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 //        let versionManager = VersionManager()
 //        versionManager.checkVersionUpdate()
         
+        /* 高德地图 */
+        AMapServices.shared().enableHTTPS = true
+        AMapServices.shared().apiKey = AMAP_KEY
+        
         /* 友盟分享 */
         /* 打开调试日志 */
         UMSocialManager.default().openLog(true)
@@ -41,7 +45,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         IQKeyboardManager.sharedManager().toolbarDoneBarButtonItemText = "完成"
         IQKeyboardManager.sharedManager().shouldResignOnTouchOutside = true
         IQKeyboardManager.sharedManager().enableAutoToolbar = true
-        IQKeyboardManager.sharedManager().shouldShowTextFieldPlaceholder = true
+        IQKeyboardManager.sharedManager().shouldShowToolbarPlaceholder = true
         IQKeyboardManager.sharedManager().placeholderFont = UIFont.systemFont(ofSize: 14)
         IQKeyboardManager.sharedManager().toolbarTintColor = BaseColor.ThemeColor
         

@@ -40,8 +40,14 @@ let Tip_NoNetwork       = "暂无网络，请稍后再试"
 let Tip_LoginTimeOut    = "登录超时"
 let Tip_RequestUnlegal  = "账号在其他设备登录，请重新登录"
 
+
+
+let NotificationLocationUpdated    = "NotificationLocationUpdated"
+
+
 let UMSHARE_APPKEY      = "58a11aac4544cb5cd2001b93"
 let WXSHARE_KEY         = "wx2c2b08f1eb7c9ca6"
 let WXSHARE_SECRET      = "9e9a9d2926c129ecba5cc2e2e8902528"
 let QQSHARE_APPKEY      = "1106007592"
 let QQSHARE_SECRET      = "N7SFtmSPnoMQIfHQ"
+let AMAP_KEY            = "2843fcda95d6dae2a40af52628693ab5"

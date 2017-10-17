@@ -1,4 +1,11 @@
 PODS:
+  - AMap3DMap-NO-IDFA (5.3.0):
+    - AMapFoundation-NO-IDFA (~> 1.3)
+  - AMapFoundation-NO-IDFA (1.4.2)
+  - AMapLocation-NO-IDFA (2.4.0):
+    - AMapFoundation-NO-IDFA (~> 1.4)
+  - AMapSearch-NO-IDFA (5.3.0):
+    - AMapFoundation-NO-IDFA (~> 1.2)
   - IQKeyboardManagerSwift (5.0.2)
   - Kingfisher (4.0.1)
   - pop (1.0.9)
@@ -14,6 +21,9 @@ PODS:
     - UMengUShare/Core
 
 DEPENDENCIES:
+  - AMap3DMap-NO-IDFA
+  - AMapLocation-NO-IDFA
+  - AMapSearch-NO-IDFA
   - IQKeyboardManagerSwift (= 5.0.2)
   - Kingfisher (~> 4.0.0)
   - pop (~> 1.0)
@@ -23,12 +33,16 @@ DEPENDENCIES:
   - UMengUShare/UI
 
 SPEC CHECKSUMS:
+  AMap3DMap-NO-IDFA: 20c58f579e570fbd05242c6b0255bb32f2d6c719
+  AMapFoundation-NO-IDFA: 3b9ce87abc6a37c718cc320687469d0b74d5c953
+  AMapLocation-NO-IDFA: 9493012d3241a7d551942c7c1e1069b51f295083
+  AMapSearch-NO-IDFA: eb0f9b424e6c3cdcb0e8c656e9622e8d0ee54238
   IQKeyboardManagerSwift: e580da046d804d2836ee84668cc17e43a850a35d
   Kingfisher: b771785e9461ed4b8686d40e7145f9e58100cb24
   pop: f667631a5108a2e60d9e8797c9b32ddaf2080bce
   SnapKit: a42d492c16e80209130a3379f73596c3454b7694
   UMengUShare: cd54ae52958426b79aa9193a7b02058d6a6d9aa0
 
-PODFILE CHECKSUM: 8bb5da58262cb755603997fd6956bbc5f80700db
+PODFILE CHECKSUM: a74ec591749c4b8e9fa8b4dda3d0d390bfe15193
 
 COCOAPODS: 1.4.0.beta.1

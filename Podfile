@@ -11,4 +11,8 @@ pod 'IQKeyboardManagerSwift', '5.0.2'
 pod ‘UMengUShare/UI’
 pod ‘UMengUShare/Social/ReducedWeChat'
 pod ‘UMengUShare/Social/ReducedQQ'
+
+pod ‘AMap3DMap-NO-IDFA’
+pod ‘AMapSearch-NO-IDFA’
+pod ‘AMapLocation-NO-IDFA’
 end

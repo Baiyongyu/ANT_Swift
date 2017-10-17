@@ -19,11 +19,10 @@ class CetuViewController: BaseViewController {
     
     override func loadSubViews() {
         super.loadSubViews()
-        self.titleLabel.text = "免费测基肥"
-        self.rightBtn.isHidden = false
-        self.rightBtn.setTitle("重新测土", for: .normal)
-        self.contentView.addSubview(self.tableView)
-        
+        titleLabel.text = "免费测基肥"
+        rightBtn.isHidden = false
+        rightBtn.setTitle("重新测土", for: .normal)
+        contentView.addSubview(tableView)
         
         tipLabel.font = UIFont.systemFont(ofSize: 14)
         tipLabel.numberOfLines = 0
@@ -49,25 +48,25 @@ class CetuViewController: BaseViewController {
         footerTipLabel.snp.makeConstraints { (make) in
             make.center.equalTo(footerView)
         }
-        self.tableView.tableFooterView = footerView
+        tableView.tableFooterView = footerView
     }
     
     override func layoutConstraints() {
-        self.tableView.snp.makeConstraints { (make) in
-            make.edges.equalTo(self.view).inset(UIEdgeInsetsMake(NavBarHeight, 0, IS_IPHONE_iPX ? 84 : 50, 0))
+        tableView.snp.makeConstraints { (make) in
+            make.edges.equalTo(view).inset(UIEdgeInsetsMake(NavBarHeight, 0, IS_IPHONE_iPX ? 84 : 50, 0))
         }
         
-        self.rightBtn.snp.updateConstraints { (make) in
-            make.right.equalTo(self.navBar)
-            make.top.equalTo(self.navBar).offset(20)
+        rightBtn.snp.updateConstraints { (make) in
+            make.right.equalTo(navBar)
+            make.top.equalTo(navBar).offset(20)
             make.width.equalTo(80)
             make.height.equalTo(40)
         }
     }
     
     func updateHeaderViewHeight() {
-        self.headerView.frame.size.height = self.headerView.systemLayoutSizeFitting(UILayoutFittingCompressedSize).height
-        self.tableView.tableHeaderView = self.headerView
+        headerView.frame.size.height = headerView.systemLayoutSizeFitting(UILayoutFittingCompressedSize).height
+        tableView.tableHeaderView = headerView
     }
     
     override func loadData() {
@@ -83,8 +82,8 @@ class CetuViewController: BaseViewController {
         footerTipLabel.text = "以上信息由 阡陌科技 提供"
         updateHeaderViewHeight()
         
-        self.dataArray = [formulaData,formulaData,formulaData]
-        self.tableView.reloadData()
+        dataArray = [formulaData,formulaData,formulaData]
+        tableView.reloadData()
     }
     
     lazy var tableView: UITableView = {
@@ -107,13 +106,13 @@ class CetuViewController: BaseViewController {
 extension CetuViewController: UITableViewDelegate, UITableViewDataSource {
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return self.dataArray.count
+        return dataArray.count
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: CetuViewController.classTableViewCellIdentifier, for: indexPath) as! CetuRecommendCell
         cell.selectionStyle = .none
-        cell.formulaData = self.dataArray[indexPath.row] as? FormulaModel
+        cell.formulaData = dataArray[indexPath.row] as? FormulaModel
         return cell
     }
     
@@ -126,11 +125,9 @@ extension CetuViewController: UITableViewDelegate, UITableViewDataSource {
     }
     
     func tableView(_ tableView: UITableView, willDisplay cell: UITableViewCell, forRowAt indexPath: IndexPath) {
-        
         if(cell.responds(to: #selector(setter: UITableViewCell.separatorInset))){
             cell.separatorInset = .zero
         }
-        
         if(cell.responds(to: #selector(setter: UIView.layoutMargins))){
             cell.layoutMargins = .zero
         }
@@ -149,15 +146,15 @@ class CetuRecommendCell: UITableViewCell {
         nameLabel.snp.makeConstraints { (make) in
             make.left.equalTo(10);
             make.height.equalTo(30);
-            make.top.equalTo(self.contentView);
+            make.top.equalTo(contentView);
         }
         
         let line1 = UIView()
         line1.backgroundColor = BaseColor.BackGroundColor
         contentView.addSubview(line1)
         line1.snp.makeConstraints { (make) in
-            make.left.right.equalTo(self.contentView);
-            make.top.equalTo(self.nameLabel.snp.bottom);
+            make.left.right.equalTo(contentView);
+            make.top.equalTo(nameLabel.snp.bottom);
             make.height.equalTo(0.5);
         }
         
@@ -166,14 +163,14 @@ class CetuRecommendCell: UITableViewCell {
         contentView.addSubview(npkBgView)
         npkBgView.snp.makeConstraints { (make) in
             make.left.equalTo(10);
-            make.right.equalTo(self.contentView).offset(-10);
+            make.right.equalTo(contentView).offset(-10);
             make.top.equalTo(line1.snp.bottom).offset(10);
             make.height.equalTo(88);
         }
         
         let width = (SCREEN_WIDTH-20-20)/3
         let npkTitleArray = ["氮(尿素)","磷(磷酸二胺)","钾(氯化钾)"]
-        let valueLabelArray = [self.nRatioLabel,self.pRatioLabel,self.kRatioLabel]
+        let valueLabelArray = [nRatioLabel, pRatioLabel, kRatioLabel]
         
         for i in 0 ..< npkTitleArray.count {
             let npkTitleLabel = UILabel()
@@ -207,7 +204,7 @@ class CetuRecommendCell: UITableViewCell {
         contentView.addSubview(addToCartBtn)
         fertilizerAmountLabel.snp.makeConstraints { (make) in
             make.left.equalTo(10);
-            make.right.equalTo(self.addToCartBtn.snp.left).offset(-10);
+            make.right.equalTo(addToCartBtn.snp.left).offset(-10);
             make.top.equalTo(npkBgView.snp.bottom).offset(5);
             make.height.equalTo(20);
         }
@@ -219,7 +216,7 @@ class CetuRecommendCell: UITableViewCell {
         contentView.addSubview(tipLabel)
         tipLabel.snp.makeConstraints { (make) in
             make.left.equalTo(10);
-            make.top.equalTo(self.fertilizerAmountLabel.snp.bottom).offset(5);
+            make.top.equalTo(fertilizerAmountLabel.snp.bottom).offset(5);
             make.height.equalTo(15);
         }
         
@@ -227,17 +224,17 @@ class CetuRecommendCell: UITableViewCell {
         line2.backgroundColor = BaseColor.BackGroundColor
         contentView.addSubview(line2)
         line2.snp.makeConstraints { (make) in
-            make.left.right.equalTo(self.contentView);
+            make.left.right.equalTo(contentView);
             make.bottom.equalTo(tipLabel).offset(5);
             make.height.equalTo(0.5);
         }
         
         addToCartBtn.snp.makeConstraints { (make) in
-            make.right.equalTo(self.fertilizerAmountLabel);
+            make.right.equalTo(fertilizerAmountLabel);
             make.top.equalTo(npkBgView.snp.bottom).offset(8);
             make.height.equalTo(35);
             make.width.equalTo(100);
-            make.right.equalTo(self.contentView).offset(-10);
+            make.right.equalTo(contentView).offset(-10);
         }
         
         let recommendBtn = UIButton(type: UIButtonType.custom)
@@ -247,7 +244,7 @@ class CetuRecommendCell: UITableViewCell {
         recommendBtn.addTarget(self, action: #selector(recommendAction), for: .touchUpInside)
         contentView.addSubview(recommendBtn)
         recommendBtn.snp.makeConstraints { (make) in
-            make.left.right.equalTo(self.contentView);
+            make.left.right.equalTo(contentView);
             make.top.equalTo(tipLabel.snp.bottom).offset(5);
             make.height.equalTo(44);
         }
@@ -256,10 +253,10 @@ class CetuRecommendCell: UITableViewCell {
         bottomLineView.backgroundColor = BaseColor.BackGroundColor
         contentView.addSubview(bottomLineView)
         bottomLineView.snp.makeConstraints { (make) in
-            make.left.right.equalTo(self.contentView);
+            make.left.right.equalTo(contentView);
             make.top.equalTo(recommendBtn.snp.bottom);
             make.height.equalTo(15);
-            make.bottom.equalTo(self.contentView);
+            make.bottom.equalTo(contentView);
         }
     }
     

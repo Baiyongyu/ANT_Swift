@@ -14,8 +14,8 @@ protocol YYCycleScrollViewDelagate: class {
 }
 
 enum YYCycleScrollViewPageContolAliment: Int {
-    case Right
-    case Center
+    case right
+    case center
 }
 
 let collectionViewCellID = "collectionViewCellID"
@@ -46,7 +46,7 @@ class YYCycleScrollView: UIView {
     var pageControlAliment = YYCycleScrollViewPageContolAliment(rawValue: 1)
     /// 是否显示分页控件
     var showPageControl : Bool? {
-        didSet{
+        didSet {
             pageControl?.isHidden = !showPageControl!
         }
     }
@@ -108,13 +108,13 @@ class YYCycleScrollView: UIView {
         }
     }
     
-    /// 初始化方法1 本地图片
+    /// 初始化方法 本地图片
     class func cycleScrollView(frame : CGRect,imagesGroup : NSArray) -> YYCycleScrollView {
         let cycleScrollView = YYCycleScrollView.init(frame: frame)
         cycleScrollView.imagesGroup = NSMutableArray.init(array: imagesGroup)
         return cycleScrollView
     }
-    /// 初始化方法2 网络图片
+    /// 初始化方法 网络图片
     class func cycleScrollView(frame : CGRect,imageURLGroup : NSArray) -> YYCycleScrollView {
         let cycleScrollView = YYCycleScrollView.init(frame: frame)
         cycleScrollView.imageURLStringsGroup = NSMutableArray.init(array: imageURLGroup)
@@ -147,7 +147,7 @@ class YYCycleScrollView: UIView {
 extension YYCycleScrollView {
     
     fileprivate func initConfiguration() {
-        pageControlAliment = YYCycleScrollViewPageContolAliment.Center
+        pageControlAliment = YYCycleScrollViewPageContolAliment.center
         autoScrollTimeInterval = 2.0
         titleLabelTextColor = UIColor.white
         titleLabelTextFont = UIFont.systemFont(ofSize: 14)
@@ -192,14 +192,14 @@ extension YYCycleScrollView {
         }
         
         var x = SCREEN_WIDTH / 2
-        if pageControlAliment == YYCycleScrollViewPageContolAliment.Right {
+        if pageControlAliment == YYCycleScrollViewPageContolAliment.right {
             x = (self.mainView?.bounds.size.width)! - 20
         }
         let y = (self.mainView?.bounds.size.height)! - 15
         pageControl?.frame = CGRect.init(x: x, y: y, width: x, height: 10)
     }
     
-    fileprivate  func loadImageWithImageURLsGroup(imageURLSGroup: NSArray) {
+    fileprivate func loadImageWithImageURLsGroup(imageURLSGroup: NSArray) {
         for i in 0 ..< imageURLSGroup.count {
             loadImageAtIndex(index: i)
         }
@@ -210,7 +210,6 @@ extension YYCycleScrollView {
         let url = NSURL.init(string: urlStr as! String)
         let image = KingfisherManager.shared.cache.retrieveImageInDiskCache(forKey: urlStr as! String)
         if (image != nil) {
-            
             // self.imagesGroup.insert(image as Any, at: index)
             self.imagesGroup.replaceObject(at: index, with: image as Any)
         }else{
@@ -343,7 +342,6 @@ extension YYCycleScrollView {
         }
     }
 }
-
 
 class CycleScrollCollectionViewCell: UICollectionViewCell {    
     var imageView : UIImageView?

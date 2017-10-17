@@ -9,11 +9,6 @@
 import UIKit
 
 class PublishViewController: BaseViewController {
-
-    override func viewWillAppear(_ animated: Bool) {
-        super.viewWillAppear(true)
-        self.activityInputDialog.textView.becomeFirstResponder()
-    }
     
     override func loadSubViews() {
         super.loadSubViews()

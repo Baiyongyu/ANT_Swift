@@ -14,5 +14,4 @@ class CeTuAdviceViewController: BaseViewController {
         super.loadSubViews()
         self.titleLabel.text = "施肥建议"
     }
-
 }
