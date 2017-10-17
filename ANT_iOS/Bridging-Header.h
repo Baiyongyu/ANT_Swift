@@ -8,8 +8,6 @@
 
 #import <UIKit/UIKit.h>
 #import <Foundation/Foundation.h>
-#import "SDCycleScrollView.h"
-#import "UIImageView+WebCache.h"
 #import "YYModel.h"
 #import "AppCommon.h"
 

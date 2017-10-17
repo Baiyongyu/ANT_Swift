@@ -98,7 +98,7 @@ extension FarmViewController: UICollectionViewDelegate, UICollectionViewDataSour
         case 1:
             AppCommon.push(PlantManagerViewController(), animated: true)
         case 3:
-            AppCommon.push(WebThingsViewController(), animated: true)
+            AppCommon.push(WebThingViewController(), animated: true)
         case 4:
             AppCommon.push(QualityTrackingViewController(), animated: true)
         default:

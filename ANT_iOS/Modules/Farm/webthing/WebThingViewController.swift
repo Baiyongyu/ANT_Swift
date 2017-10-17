@@ -9,7 +9,7 @@
 import UIKit
 
 class WebThingViewController: BaseViewController {
-
+    
     override func loadSubViews() {
         super.loadSubViews()
         titleLabel.text = "物联网"

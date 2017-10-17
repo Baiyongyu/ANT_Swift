@@ -1,8 +1,8 @@
 PODS:
-  - IQKeyboardManagerSwift (4.0.10)
-  - Kingfisher (3.10.2)
+  - IQKeyboardManagerSwift (5.0.2)
+  - Kingfisher (4.0.1)
   - pop (1.0.9)
-  - SnapKit (3.2.0)
+  - SnapKit (4.0.0)
   - UMengUShare/Core (6.4.4):
     - UMengUShare/Network
   - UMengUShare/Network (6.4.4)
@@ -14,21 +14,21 @@ PODS:
     - UMengUShare/Core
 
 DEPENDENCIES:
-  - IQKeyboardManagerSwift
-  - Kingfisher (~> 3.10.2)
+  - IQKeyboardManagerSwift (= 5.0.2)
+  - Kingfisher (~> 4.0.0)
   - pop (~> 1.0)
-  - SnapKit (~> 3.2.0)
+  - SnapKit (~> 4.0.0)
   - UMengUShare/Social/ReducedQQ
   - UMengUShare/Social/ReducedWeChat
   - UMengUShare/UI
 
 SPEC CHECKSUMS:
-  IQKeyboardManagerSwift: 75ba21a23794a1e6b6fe6d9a267ea17f80e06771
-  Kingfisher: 7297492bf8cec9b2e2dee3519f2219948580d98e
+  IQKeyboardManagerSwift: e580da046d804d2836ee84668cc17e43a850a35d
+  Kingfisher: b771785e9461ed4b8686d40e7145f9e58100cb24
   pop: f667631a5108a2e60d9e8797c9b32ddaf2080bce
-  SnapKit: 1ca44df72cfa543218d177cb8aab029d10d86ea7
+  SnapKit: a42d492c16e80209130a3379f73596c3454b7694
   UMengUShare: cd54ae52958426b79aa9193a7b02058d6a6d9aa0
 
-PODFILE CHECKSUM: a5e8d0d7f3fce120862bd1a8769331e0cee1eaeb
+PODFILE CHECKSUM: 8bb5da58262cb755603997fd6956bbc5f80700db
 
 COCOAPODS: 1.4.0.beta.1
