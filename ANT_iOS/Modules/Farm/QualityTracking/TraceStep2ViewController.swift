@@ -78,8 +78,11 @@ class TraceStep2ViewController: BaseViewController {
         nextStepkBtn.setTitle("下一步", for: .normal)
         nextStepkBtn.titleLabel?.font = UIFont.systemFont(ofSize: 15)
         nextStepkBtn.setTitleColor(UIColor.white, for: .normal)
-        nextStepkBtn.setTitleColor(BaseColor.GrayColor, for: .highlighted)
-        nextStepkBtn.backgroundColor = BaseColor.ThemeColor
+        nextStepkBtn.setTitleColor(BaseColor.ThemeColor, for: .highlighted)
+        nextStepkBtn.setBackgroundImage(creatImageWithColor(color: BaseColor.ThemeColor), for: .normal)
+        nextStepkBtn.setBackgroundImage(creatImageWithColor(color: UIColor.white), for: .highlighted)
+        nextStepkBtn.layer.borderWidth = 0.5
+        nextStepkBtn.layer.borderColor = BaseColor.ThemeColor.cgColor
         nextStepkBtn.layer.cornerRadius = 5
         nextStepkBtn.clipsToBounds = true
         nextStepkBtn.addTarget(self, action: #selector(nextStepkBtnAction), for: .touchUpInside)

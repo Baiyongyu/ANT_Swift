@@ -24,7 +24,6 @@ class CetuTypeViewController: BaseViewController {
         }
         
         typeArray = ["免费测基肥","免费测追肥"]
-        
         for i in 0 ..< typeArray.count {
             let cetuTypeBtn = UIButton(type: .custom)
             cetuTypeBtn.setTitle(typeArray[i] as? String, for: .normal)
@@ -34,13 +33,15 @@ class CetuTypeViewController: BaseViewController {
             cetuTypeBtn.layer.borderColor = BaseColor.ThemeColor.cgColor
             cetuTypeBtn.tag = 100+i
             cetuTypeBtn.setTitleColor(BaseColor.ThemeColor, for: .normal)
-            cetuTypeBtn.setTitleColor(UIColor.gray, for: .highlighted)
+            cetuTypeBtn.setTitleColor(UIColor.white, for: .highlighted)
+            cetuTypeBtn.setBackgroundImage(creatImageWithColor(color: UIColor.white), for: .normal)
+            cetuTypeBtn.setBackgroundImage(creatImageWithColor(color: BaseColor.ThemeColor), for: .highlighted)
             cetuTypeBtn.addTarget(self, action: #selector(selectTypeAction(sender:)), for: .touchUpInside)
             self.contentView.addSubview(cetuTypeBtn)
             cetuTypeBtn.snp.makeConstraints({ (make) in
                 make.left.equalTo(20 + (SCREEN_WIDTH - 60)/2 * CGFloat(i) + CGFloat(20 * i))
                 make.width.equalTo((self.view.bounds.size.width-60)/2.0);
-                make.bottom.equalTo(bgView).offset(-55);
+                make.bottom.equalTo(bgView).offset(IS_IPHONE_iPX ? -60 : -25);
                 make.height.equalTo(44);
             })
         }

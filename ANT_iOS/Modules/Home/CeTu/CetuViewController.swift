@@ -22,6 +22,7 @@ class CetuViewController: BaseViewController {
         titleLabel.text = "免费测基肥"
         rightBtn.isHidden = false
         rightBtn.setTitle("重新测土", for: .normal)
+        rightBtn.titleLabel?.font = UIFont.systemFont(ofSize: 12)
         contentView.addSubview(tableView)
         
         tipLabel.font = UIFont.systemFont(ofSize: 14)
@@ -41,7 +42,6 @@ class CetuViewController: BaseViewController {
         
         let footerView = UIView()
         footerView.frame = CGRect(x: 0, y: 0, width: SCREEN_WIDTH, height: 20)
-        
         footerTipLabel.font = UIFont.systemFont(ofSize: 14)
         footerTipLabel.textAlignment = .center
         footerView.addSubview(footerTipLabel)
@@ -53,19 +53,20 @@ class CetuViewController: BaseViewController {
     
     override func layoutConstraints() {
         tableView.snp.makeConstraints { (make) in
-            make.edges.equalTo(view).inset(UIEdgeInsetsMake(NavBarHeight, 0, IS_IPHONE_iPX ? 84 : 50, 0))
+            make.edges.equalTo(view).inset(UIEdgeInsetsMake(NavBarHeight, 0, 0, 0))
         }
         
-        rightBtn.snp.updateConstraints { (make) in
-            make.right.equalTo(navBar)
-            make.top.equalTo(navBar).offset(20)
+        //使用updateConstraints 这个方法直接崩溃，不知道什么鬼
+        rightBtn.snp.makeConstraints { (make) in
+            make.right.equalTo(navBar).offset(-10)
+            make.bottom.equalTo(-5)
             make.width.equalTo(80)
             make.height.equalTo(40)
         }
     }
     
     func updateHeaderViewHeight() {
-        headerView.frame.size.height = headerView.systemLayoutSizeFitting(UILayoutFittingCompressedSize).height
+        headerView.height = headerView.systemLayoutSizeFitting(UILayoutFittingCompressedSize).height
         tableView.tableHeaderView = headerView
     }
     
@@ -92,6 +93,7 @@ class CetuViewController: BaseViewController {
         tableView.dataSource = self
         tableView.backgroundColor = BaseColor.BackGroundColor
         tableView.showsVerticalScrollIndicator = false
+        tableView.separatorStyle = .none
         tableView.register(CetuRecommendCell.self, forCellReuseIdentifier: classTableViewCellIdentifier)
         tableView.tableFooterView = UIView(frame: .zero)
         return tableView
@@ -117,20 +119,11 @@ extension CetuViewController: UITableViewDelegate, UITableViewDataSource {
     }
     
     func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
-        return 235
+        return 225
     }
     
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         tableView.deselectRow(at: indexPath, animated: true)
-    }
-    
-    func tableView(_ tableView: UITableView, willDisplay cell: UITableViewCell, forRowAt indexPath: IndexPath) {
-        if(cell.responds(to: #selector(setter: UITableViewCell.separatorInset))){
-            cell.separatorInset = .zero
-        }
-        if(cell.responds(to: #selector(setter: UIView.layoutMargins))){
-            cell.layoutMargins = .zero
-        }
     }
 }
 
@@ -255,7 +248,7 @@ class CetuRecommendCell: UITableViewCell {
         bottomLineView.snp.makeConstraints { (make) in
             make.left.right.equalTo(contentView);
             make.top.equalTo(recommendBtn.snp.bottom);
-            make.height.equalTo(15);
+            make.height.equalTo(10);
             make.bottom.equalTo(contentView);
         }
     }
@@ -282,7 +275,6 @@ class CetuRecommendCell: UITableViewCell {
     lazy var nameLabel: UILabel = {
         let nameLabel = UILabel()
         nameLabel.font = UIFont.systemFont(ofSize: 14)
-        nameLabel.textColor = UIColor.red
         return nameLabel
     }()
     

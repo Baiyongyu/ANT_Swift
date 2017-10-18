@@ -93,10 +93,13 @@ class QualityTracDetailsViewController: BaseViewController {
     lazy var leftEditBtn: UIButton = {
         let leftEditBtn = UIButton(type: UIButtonType.custom)
         leftEditBtn.setTitle("再次编辑", for: .normal)
-        leftEditBtn.setTitleColor(UIColor.white, for: .normal)
-        leftEditBtn.setTitleColor(UIColor.gray, for: .highlighted)
         leftEditBtn.titleLabel?.font = UIFont.systemFont(ofSize: 15)
-        leftEditBtn.backgroundColor = BaseColor.ThemeColor
+        leftEditBtn.setTitleColor(UIColor.white, for: .normal)
+        leftEditBtn.setTitleColor(BaseColor.ThemeColor, for: .highlighted)
+        leftEditBtn.setBackgroundImage(creatImageWithColor(color: BaseColor.ThemeColor), for: .normal)
+        leftEditBtn.setBackgroundImage(creatImageWithColor(color: UIColor.white), for: .highlighted)
+        leftEditBtn.layer.borderWidth = 0.5
+        leftEditBtn.layer.borderColor = BaseColor.ThemeColor.cgColor
         leftEditBtn.layer.cornerRadius = 5
         leftEditBtn.clipsToBounds = true
         leftEditBtn.addTarget(self, action: #selector(leftEditBtnAction), for: .touchUpInside)
@@ -106,10 +109,13 @@ class QualityTracDetailsViewController: BaseViewController {
     lazy var rightShareBtn: UIButton = {
         let rightShareBtn = UIButton(type: UIButtonType.custom)
         rightShareBtn.setTitle("分享给朋友", for: .normal)
-        rightShareBtn.setTitleColor(UIColor.white, for: .normal)
-        rightShareBtn.setTitleColor(UIColor.gray, for: .highlighted)
         rightShareBtn.titleLabel?.font = UIFont.systemFont(ofSize: 15)
-        rightShareBtn.backgroundColor = BaseColor.ThemeColor
+        rightShareBtn.setTitleColor(UIColor.white, for: .normal)
+        rightShareBtn.setTitleColor(BaseColor.ThemeColor, for: .highlighted)
+        rightShareBtn.setBackgroundImage(creatImageWithColor(color: BaseColor.ThemeColor), for: .normal)
+        rightShareBtn.setBackgroundImage(creatImageWithColor(color: UIColor.white), for: .highlighted)
+        rightShareBtn.layer.borderWidth = 0.5
+        rightShareBtn.layer.borderColor = BaseColor.ThemeColor.cgColor
         rightShareBtn.layer.cornerRadius = 5
         rightShareBtn.clipsToBounds = true
         rightShareBtn.addTarget(self, action: #selector(rightShareBtnAction), for: .touchUpInside)

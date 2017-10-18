@@ -143,10 +143,10 @@ class HomeViewController: BaseViewController {
     
     override func loadData() {
         // 头部滚动视图
-        cycleScrollView.imageURLStringsGroup = ["http://img4.imgtn.bdimg.com/it/u=2957063744,4209924186&fm=11&gp=0.jpg",
-                                                "http://img3.imgtn.bdimg.com/it/u=527949926,2789232199&fm=27&gp=0.jpg",
-                                                "http://img4.imgtn.bdimg.com/it/u=3036360756,1375734404&fm=27&gp=0.jpg"]
-        
+        cycleScrollView.imageURLStringsGroup = ["http://img4.imgtn.bdimg.com/it/u=1176598408,294684300&fm=11&gp=0.jpg",
+                                                "http://img4.imgtn.bdimg.com/it/u=611621945,585367517&fm=27&gp=0.jpg",
+                                                "https://ss3.bdstatic.com/70cFv8Sh_Q1YnxGkpoWK1HF6hhy/it/u=3831640632,3022453093&fm=200&gp=0.jpg"]
+
         // 新闻滚动
         advertScrollView.titles = ["杀了一个产品🐶祭天","永远不要相信产品说的话","XXX你个产品汪"]
         

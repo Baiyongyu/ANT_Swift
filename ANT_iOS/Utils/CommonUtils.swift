@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import WebKit
 
 class CommonUtils: NSObject {
 
@@ -25,5 +26,42 @@ class CommonUtils: NSObject {
         animation.values = values as? [Any]
         view.layer.add(animation, forKey: nil)
     }
+    
+//    public func loadLocalPath(path: String, webView: WKWebView) {
+//        
+//        
+//        
+//
+//    }
+    
+    
+    
+    /*
+    //将文件copy到tmp目录
+    func fileURLForBuggyWKWebView8(fileURL: NSURL) throws -> NSURL {
+        // Some safety checks
+        var error:NSError? = nil;
+        if (!fileURL.isFileURL || !fileURL.checkResourceIsReachableAndReturnError(&error)) {
+            throw error ?? NSError(
+                domain: "BuggyWKWebViewDomain",
+                code: 1001,
+                userInfo: [NSLocalizedDescriptionKey: NSLocalizedString("URL must be a file URL.", comment:"")])
+        }
+        
+        // Create "/temp/www" directory
+        let fm = FileManager.default
+        
+        let tmpDirURL = NSURL.fileURLWithPath(NSTemporaryDirectory()).URLByAppendingPathComponent("www")
+        try! fm.createDirectory(at: tmpDirURL, withIntermediateDirectories: true, attributes: nil)
+        
+        // Now copy given file to the temp directory
+        let dstURL = tmpDirURL.URLByAppendingPathComponent(fileURL.lastPathComponent!)
+        let _ = try? fileURL.removeItemAtURL(dstURL)
+        try! fm.copyItemAtURL(fileURL, toURL: dstURL)
+        
+        // Files in "/temp/www" load flawlesly :)
+        return dstURL
+    }
+    */
     
 }
