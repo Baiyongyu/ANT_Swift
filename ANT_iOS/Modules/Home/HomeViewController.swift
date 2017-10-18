@@ -175,6 +175,10 @@ class HomeViewController: BaseViewController {
         self.navigationController?.pushViewController(NotificationViewController(), animated: true)
     }
     
+    func sellFoodAction() {
+        AppCommon.push(SellFoodViewController(), animated: true)
+    }
+    
     lazy var cycleScrollView: YYCycleScrollView = {
         let cycleScrollView = YYCycleScrollView.init(frame: CGRect.init(x: 0, y: 0, width: SCREEN_WIDTH, height: 240))
         cycleScrollView.placeHolderImage = IMAGE_PLACEHOLDER
@@ -220,6 +224,7 @@ class HomeViewController: BaseViewController {
         let floatBtn = UIButton(type: UIButtonType.custom)
 //        floatBtn.isHidden = true
         floatBtn.setImage(UIImage.init(named: "ic_sell_food"), for: .normal)
+        floatBtn.addTarget(self, action: #selector(sellFoodAction), for: .touchUpInside)
         return floatBtn
     }()
 }

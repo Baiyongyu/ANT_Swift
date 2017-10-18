@@ -104,6 +104,7 @@
 		F3FC1E881EE7E09D00CD66E1 /* WebThingsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3FC1E871EE7E09D00CD66E1 /* WebThingsViewController.swift */; };
 		F3FC1E8A1EE7E2EA00CD66E1 /* webthing in Resources */ = {isa = PBXBuildFile; fileRef = F3FC1E891EE7E2EA00CD66E1 /* webthing */; };
 		F3FCEAAD1F7C84CE00148C09 /* PopupMenu.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3FCEAAC1F7C84CE00148C09 /* PopupMenu.swift */; };
+		F3FE12021F97386D00059BCA /* SellFoodViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3FE12011F97386D00059BCA /* SellFoodViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -229,6 +230,7 @@
 		F3FC1E871EE7E09D00CD66E1 /* WebThingsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WebThingsViewController.swift; sourceTree = "<group>"; };
 		F3FC1E891EE7E2EA00CD66E1 /* webthing */ = {isa = PBXFileReference; lastKnownFileType = folder; path = webthing; sourceTree = "<group>"; };
 		F3FCEAAC1F7C84CE00148C09 /* PopupMenu.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PopupMenu.swift; sourceTree = "<group>"; };
+		F3FE12011F97386D00059BCA /* SellFoodViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SellFoodViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -585,6 +587,7 @@
 			isa = PBXGroup;
 			children = (
 				F3F586831EE407FD0018412D /* HomeViewController.swift */,
+				F3FE12001F97384C00059BCA /* SellFood */,
 				F3BA37B41F96EC7F00F3976E /* News */,
 				F3BA37B81F96EC7F00F3976E /* Publish */,
 				F3320AE71EE79BE200327DC7 /* Shop */,
@@ -672,6 +675,14 @@
 				F38504731F7B6E27008DD007 /* WebThingViewController.swift */,
 			);
 			path = webthing;
+			sourceTree = "<group>";
+		};
+		F3FE12001F97384C00059BCA /* SellFood */ = {
+			isa = PBXGroup;
+			children = (
+				F3FE12011F97386D00059BCA /* SellFoodViewController.swift */,
+			);
+			path = SellFood;
 			sourceTree = "<group>";
 		};
 		FC01FD51F34BE930C40425C2 /* Pods */ = {
@@ -897,6 +908,7 @@
 				F38AA18F1F70EC6A00CA9547 /* CharacteristicCell.swift in Sources */,
 				F365D6891EE67A4100500391 /* AppDelegate.swift in Sources */,
 				F3D16B221F70F11B00985E30 /* TraceStep3ViewController.swift in Sources */,
+				F3FE12021F97386D00059BCA /* SellFoodViewController.swift in Sources */,
 				F399DDD71EF3DA9B0012AD94 /* UIImage+Additions.swift in Sources */,
 				F314B2D01F6770DD00AAB40B /* BaseTableViewCell.swift in Sources */,
 				F398559A1EE93C870042990C /* SelectAreaAlert.swift in Sources */,
