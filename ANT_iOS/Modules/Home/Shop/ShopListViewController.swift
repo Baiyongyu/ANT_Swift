@@ -31,7 +31,6 @@ class ShopListViewController: BaseViewController {
         shopData.isAuthenticated = true
         self.dataArray = [shopData,shopData,shopData,shopData]
         self.tableView.reloadData()
-        
     }
     
     lazy var tableView: UITableView = {

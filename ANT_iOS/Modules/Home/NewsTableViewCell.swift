@@ -17,10 +17,7 @@ enum NewsTableViewCellType {
 class NewsTableViewCell: UITableViewCell {
     
     var imageViewArray = NSMutableArray()
-    
     var imgView = UIImageView()
-    
-    
     var newsType: NewsTableViewCellType? {
         didSet {
             // 防止布局错乱
@@ -29,7 +26,6 @@ class NewsTableViewCell: UITableViewCell {
             }
         }
     }
-    
     var imageArray = NSArray() {
         didSet {
             if imageArray.count == 0 {
@@ -42,9 +38,9 @@ class NewsTableViewCell: UITableViewCell {
         }
     }
     
-    
     override init(style: UITableViewCellStyle, reuseIdentifier: String?) {
         super.init(style: style, reuseIdentifier: reuseIdentifier)
+        selectionStyle = .none
         buildCellView()
     }
     
@@ -58,17 +54,17 @@ class NewsTableViewCell: UITableViewCell {
         didSet {
             titleLabel.text = newsData?.title
             formAndTimeLabel.text = (newsData?.news_source)! + "  " + (newsData?.create_date)!
-//            imageArray = (newsData?.imagePathsArray)!
+            imageArray = (newsData?.imagePathsArray)!
             
             let imageWidth = (SCREEN_WIDTH - 60) / 3
             let imageHeight = 90
             let titleHeight = 20
             
-            if newsType == NewsTableViewCellType.No {
+            if newsType == NewsTableViewCellType.No { //没有图片
                 titleLabel.frame = CGRect(x: 15, y: 10, width: Int(SCREEN_WIDTH-30), height: titleHeight)
                 formAndTimeLabel.frame = CGRect(x: 15, y: titleLabel.bottom+5, width: SCREEN_WIDTH, height: 20)
                 
-            }else if newsType == NewsTableViewCellType.OnlyOne {
+            }else if newsType == NewsTableViewCellType.OnlyOne { //一张图片
                 
                 imgView = UIImageView.init(frame: CGRect(x: Int(SCREEN_WIDTH-15-130), y: 10, width: 130, height: imageHeight))
                 imgView.layer.cornerRadius = 2.0
@@ -76,23 +72,23 @@ class NewsTableViewCell: UITableViewCell {
                 imgView.layer.borderColor = BaseColor.LineColor.cgColor
                 imgView.layer.borderWidth = 0.5
                 imgView.contentMode = .scaleAspectFill
-//                imgView.kf.setImage(with: NSURL.init(string: (imageArray[0] as AnyObject).value(forKey: "title_image") as! String)! as URL, placeholder: IMAGE_PLACEHOLDER, options: nil, progressBlock: nil, completionHandler: nil)
+                imgView.kf.setImage(with: NSURL.init(string: (imageArray[0] as AnyObject).value(forKey: "title_image") as! String)! as URL, placeholder: IMAGE_PLACEHOLDER, options: nil, progressBlock: nil, completionHandler: nil)
                 contentView.addSubview(imgView)
                 imageViewArray.add(imgView)
                 
-                titleLabel.frame = CGRect(x: 15, y: 20, width: Int(SCREEN_WIDTH-45-130), height: imageHeight-30)
+                titleLabel.frame = CGRect(x: 15, y: Int(imgView.top), width: Int(SCREEN_WIDTH-45-130), height: imageHeight-30)
                 formAndTimeLabel.frame = CGRect(x: 15, y: Int(imgView.bottom-15), width: Int(SCREEN_WIDTH-45-130), height: 20)
                 
-            }else {
+            }else { //三张图片
                 titleLabel.frame = CGRect(x: 15, y: 10, width: Int(SCREEN_WIDTH-30), height: titleHeight)
                 for i in 0 ..< 3 {
-                    imgView = UIImageView.init(frame: CGRect(x: i * Int((imageWidth + 10) + 15), y: Int(titleLabel.bottom+10), width: Int(imageWidth), height: imageHeight))
+                    imgView = UIImageView.init(frame: CGRect(x: i * Int((imageWidth+10))+15, y: Int(titleLabel.bottom+10), width: Int(imageWidth), height: imageHeight))
                     imgView.layer.cornerRadius = 2.0
                     imgView.layer.masksToBounds = true
                     imgView.layer.borderColor = BaseColor.LineColor.cgColor
                     imgView.layer.borderWidth = 0.5
                     imgView.contentMode = .scaleAspectFill
-//                    imgView.kf.setImage(with: NSURL.init(string: (imageArray[i] as AnyObject).value(forKey: "title_image") as! String)! as URL, placeholder: IMAGE_PLACEHOLDER, options: nil, progressBlock: nil, completionHandler: nil)
+                    imgView.kf.setImage(with: NSURL.init(string: (imageArray[i] as AnyObject).value(forKey: "title_image") as! String)! as URL, placeholder: IMAGE_PLACEHOLDER, options: nil, progressBlock: nil, completionHandler: nil)
                     contentView.addSubview(imgView)
                     imageViewArray.add(imgView)
                 }

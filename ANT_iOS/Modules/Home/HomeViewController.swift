@@ -34,7 +34,7 @@ class HomeViewController: BaseViewController {
         messageBtn.addTarget(self, action: #selector(HomeViewController.rightBtnAction), for: .touchUpInside)
         messageBtn.snp.makeConstraints { (make) in
             make.right.equalTo(view)
-            make.top.equalTo(view).offset(IS_IPHONE_iPX ? 43 : 20)
+            make.top.equalTo(view).offset(IS_IPHONE_iPX ? 43 : 19)
             make.width.equalTo(50)
             make.height.equalTo(40)
         }

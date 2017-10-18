@@ -16,6 +16,7 @@ class NewsModel: NSObject {
     var news_source: String?
     var create_date: String?
     var title_image: String?
-    var imagePathsArray: NSArray?
+    var imagePathsArray = NSArray()
     var height: CGFont?
+    var newsTableViewCellType: NewsTableViewCellType?
 }
