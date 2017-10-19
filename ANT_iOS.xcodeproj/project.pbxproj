@@ -78,6 +78,7 @@
 		F3BB46231F69267800E0539C /* FieldsTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3BB46221F69267800E0539C /* FieldsTableViewController.swift */; };
 		F3BB46251F69269400E0539C /* FieldsMapViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3BB46241F69269400E0539C /* FieldsMapViewController.swift */; };
 		F3BB462B1F6939FE00E0539C /* FieldGroupModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3BB462A1F6939FE00E0539C /* FieldGroupModel.swift */; };
+		F3C90AD91F98334200333262 /* AddPlantViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3C90AD81F98334200333262 /* AddPlantViewController.swift */; };
 		F3D0A6651F6FC27900464265 /* QualityTrackModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3D0A6641F6FC27900464265 /* QualityTrackModel.swift */; };
 		F3D16B221F70F11B00985E30 /* TraceStep3ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3D16B211F70F11B00985E30 /* TraceStep3ViewController.swift */; };
 		F3D16B241F70FBAF00985E30 /* TraceStep4ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3D16B231F70FBAF00985E30 /* TraceStep4ViewController.swift */; };
@@ -105,6 +106,7 @@
 		F3FC1E8A1EE7E2EA00CD66E1 /* webthing in Resources */ = {isa = PBXBuildFile; fileRef = F3FC1E891EE7E2EA00CD66E1 /* webthing */; };
 		F3FCEAAD1F7C84CE00148C09 /* PopupMenu.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3FCEAAC1F7C84CE00148C09 /* PopupMenu.swift */; };
 		F3FE12021F97386D00059BCA /* SellFoodViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3FE12011F97386D00059BCA /* SellFoodViewController.swift */; };
+		F3FE12041F9756DE00059BCA /* PlantDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3FE12031F9756DE00059BCA /* PlantDetailViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -200,6 +202,7 @@
 		F3BB46221F69267800E0539C /* FieldsTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FieldsTableViewController.swift; sourceTree = "<group>"; };
 		F3BB46241F69269400E0539C /* FieldsMapViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FieldsMapViewController.swift; sourceTree = "<group>"; };
 		F3BB462A1F6939FE00E0539C /* FieldGroupModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FieldGroupModel.swift; sourceTree = "<group>"; };
+		F3C90AD81F98334200333262 /* AddPlantViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddPlantViewController.swift; sourceTree = "<group>"; };
 		F3D0A6641F6FC27900464265 /* QualityTrackModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QualityTrackModel.swift; sourceTree = "<group>"; };
 		F3D16B211F70F11B00985E30 /* TraceStep3ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TraceStep3ViewController.swift; sourceTree = "<group>"; };
 		F3D16B231F70FBAF00985E30 /* TraceStep4ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TraceStep4ViewController.swift; sourceTree = "<group>"; };
@@ -231,6 +234,7 @@
 		F3FC1E891EE7E2EA00CD66E1 /* webthing */ = {isa = PBXFileReference; lastKnownFileType = folder; path = webthing; sourceTree = "<group>"; };
 		F3FCEAAC1F7C84CE00148C09 /* PopupMenu.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PopupMenu.swift; sourceTree = "<group>"; };
 		F3FE12011F97386D00059BCA /* SellFoodViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SellFoodViewController.swift; sourceTree = "<group>"; };
+		F3FE12031F9756DE00059BCA /* PlantDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlantDetailViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -313,6 +317,8 @@
 			isa = PBXGroup;
 			children = (
 				F33FBB971EEFDB2100F4B2A8 /* PlantManagerViewController.swift */,
+				F3FE12031F9756DE00059BCA /* PlantDetailViewController.swift */,
+				F3C90AD81F98334200333262 /* AddPlantViewController.swift */,
 			);
 			path = PlantManager;
 			sourceTree = "<group>";
@@ -872,6 +878,7 @@
 				F3F5870C1EE4375D0018412D /* HomeModuleCollectionView.swift in Sources */,
 				F3EE54E11F063831004A9523 /* popMenvTopView.m in Sources */,
 				F34C93561EE6991300091195 /* MessageModel.swift in Sources */,
+				F3C90AD91F98334200333262 /* AddPlantViewController.swift in Sources */,
 				F365D7201EE67B1700500391 /* AppCommon.m in Sources */,
 				F365D71B1EE67AAE00500391 /* NSObject+YYModel.m in Sources */,
 				F3B764FA1EEF73E1009FF0BE /* PopUpPickerView.swift in Sources */,
@@ -924,6 +931,7 @@
 				F3A1D1321F04FF4C0008F051 /* BaseTableViewDataSource.swift in Sources */,
 				F3012C1F1F95DF6D000BF3FB /* LocationMapViewController.swift in Sources */,
 				F320DE781EEE7114005AF954 /* FormulaModel.swift in Sources */,
+				F3FE12041F9756DE00059BCA /* PlantDetailViewController.swift in Sources */,
 				F33FBB8E1EEFBEDA00F4B2A8 /* MenuControl.swift in Sources */,
 				F314B3631F67D21700AAB40B /* TBCityIconFont.m in Sources */,
 				F3BA37BB1F96EC7F00F3976E /* NewsDetailsViewController.swift in Sources */,

@@ -48,7 +48,7 @@ class FieldsManagerViewController: BaseViewController {
         fieldData.area_size = 500
         
         let plantData = PlantModel()
-        plantData.plant_crop_nam = "辽宁号"
+        plantData.plant_crop_name = "辽宁号"
         fieldData.crop_list.adding(plantData)
     
         fieldGroupData.field_list = [fieldData,fieldData,fieldData]

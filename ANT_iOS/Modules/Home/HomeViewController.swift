@@ -121,7 +121,7 @@ class HomeViewController: BaseViewController {
         seperator4.snp.makeConstraints { (make) in
             make.left.right.equalTo(headerView)
             make.top.equalTo(cropsCollectionView.snp.bottom)
-            make.height.equalTo(15)
+            make.height.equalTo(10)
             make.bottom.equalTo(headerView)
         }
         
@@ -143,8 +143,8 @@ class HomeViewController: BaseViewController {
     
     override func loadData() {
         // 头部滚动视图
-        cycleScrollView.imageURLStringsGroup = ["http://img4.imgtn.bdimg.com/it/u=1176598408,294684300&fm=11&gp=0.jpg",
-                                                "http://img4.imgtn.bdimg.com/it/u=611621945,585367517&fm=27&gp=0.jpg",
+        cycleScrollView.imageURLStringsGroup = ["http://img4.imgtn.bdimg.com/it/u=902359164,2443257076&fm=11&gp=0.jpg",
+                                                "http://img1.imgtn.bdimg.com/it/u=39962520,1910906011&fm=27&gp=0.jpg",
                                                 "https://ss3.bdstatic.com/70cFv8Sh_Q1YnxGkpoWK1HF6hhy/it/u=3831640632,3022453093&fm=200&gp=0.jpg"]
 
         // 新闻滚动
@@ -152,7 +152,7 @@ class HomeViewController: BaseViewController {
         
         // 当前种植
         let plantData = PlantModel()
-        plantData.plant_crop_nam = "水果"
+        plantData.plant_crop_name = "水果"
         plantData.crop_variety = "爱谁谁"
         cropsCollectionView.dataArray = [plantData,plantData,plantData,plantData,plantData]
         

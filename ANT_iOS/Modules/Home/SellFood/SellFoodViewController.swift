@@ -92,7 +92,7 @@ class SellFoodViewController: BaseViewController {
         tableView.dataSource = self
         tableView.backgroundColor = BaseColor.BackGroundColor
         tableView.showsVerticalScrollIndicator = false
-        tableView.register(FarmRecordCell.self, forCellReuseIdentifier: classTableViewCellIdentifier)
+        tableView.register(UITableViewCell.self, forCellReuseIdentifier: classTableViewCellIdentifier)
         tableView.tableHeaderView = UIView.init(frame: CGRect(x: 0, y: 0, width: SCREEN_WIDTH, height: 10))
         if #available(iOS 11.0, *) {
             tableView.contentInsetAdjustmentBehavior = .never
@@ -112,7 +112,6 @@ extension SellFoodViewController: UITableViewDelegate, UITableViewDataSource {
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = UITableViewCell(style: .value1, reuseIdentifier: SellFoodViewController.classTableViewCellIdentifier)
         cell.textLabel?.text = dataArray[indexPath.row] as? String
-//        cell.detailTextLabel?.text = dataArray[indexPath.row] as? String
         switch indexPath.row {
         case 0:
             nameField = UITextField()

@@ -127,12 +127,10 @@ class CropsCollectionCell: UICollectionViewCell {
     
     var plantData: PlantModel? {
         didSet {
-            goodsNameLabel.text = plantData?.plant_crop_nam
+            goodsNameLabel.text = plantData?.plant_crop_name
             varietyLabel.text = plantData?.crop_variety
         }
     }
-    
-    
     
     lazy var goodsNameLabel: UILabel = {
         let goodsNameLabel = UILabel()

@@ -11,7 +11,6 @@ import UIKit
 class NewsViewController: BaseViewController {
     
     var dataArray = [NewsModel]()
-    
     fileprivate static let classTableViewCellIdentifier = "ClassTableViewCell"
     
     override func loadSubViews() {
@@ -118,13 +117,4 @@ extension NewsViewController: UITableViewDelegate, UITableViewDataSource {
         tableView.deselectRow(at: indexPath, animated: true)
         AppCommon.push(NewsDetailsViewController(), animated: true)
     }
-    
-//    func tableView(_ tableView: UITableView, willDisplay cell: UITableViewCell, forRowAt indexPath: IndexPath) {
-//        if(cell.responds(to: #selector(setter: UITableViewCell.separatorInset))){
-//            cell.separatorInset = .zero
-//        }
-//        if(cell.responds(to: #selector(setter: UIView.layoutMargins))){
-//            cell.layoutMargins = .zero
-//        }
-//    }
 }

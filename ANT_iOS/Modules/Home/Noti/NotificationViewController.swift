@@ -72,7 +72,7 @@ class NotificationCell: UITableViewCell {
         
         contentView.addSubview(titleLabel)
         titleLabel.snp.makeConstraints { (make) in
-            make.left.equalTo(10);
+            make.left.equalTo(15);
             make.top.equalTo(15);
             make.right.equalTo(self.contentView).offset(-10);
         }
@@ -81,7 +81,7 @@ class NotificationCell: UITableViewCell {
         contentLabel.preferredMaxLayoutWidth = (SCREEN_WIDTH - 20)/2
         contentLabel.setContentHuggingPriority(UILayoutPriorityRequired, for: .vertical)
         contentLabel.snp.makeConstraints { (make) in
-            make.left.equalTo(10);
+            make.left.equalTo(15);
             make.top.equalTo(self.titleLabel.snp.bottom).offset(5);
             make.right.equalTo(self.contentView).offset(-10);
         }

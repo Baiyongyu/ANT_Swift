@@ -31,14 +31,16 @@ class PlantManagerViewController: BaseViewController {
         
         self.menuContainer.childViews = [self.tableView, self.tableView];
         let plantData = PlantModel()
-        plantData.plant_crop_nam = "水稻 · 稻花香"
+        plantData.plant_crop_name = "水稻 · 稻花香"
         plantData.crop_variety = "1块田，共500W亩"
         dataArray = [plantData,plantData,plantData]
         tableView.reloadData()
     }
     
     override func rightBtnAction() {
-        print("添加种植信息")
+        let addPlant = AddPlantViewController()
+        addPlant.plantInfoType = PlantInfoType.add
+        AppCommon.push(addPlant, animated: true)
     }
     
     lazy var menuContainer: MenuContainer = {
@@ -75,6 +77,7 @@ extension PlantManagerViewController: UITableViewDelegate,UITableViewDataSource 
     
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         tableView.deselectRow(at: indexPath, animated: true)
+        AppCommon.push(PlantDetailViewController(), animated: true)
     }
     
     func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
@@ -116,7 +119,7 @@ class PlantCell: UITableViewCell {
     
     var plantData: PlantModel? {
         didSet {
-            titleLabel.text = plantData?.plant_crop_nam
+            titleLabel.text = plantData?.plant_crop_name
             contentLabel.text = plantData?.crop_variety
         }
     }

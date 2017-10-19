@@ -88,6 +88,7 @@ class PopUpPickerView: UIView {
         let finishBtn = UIButton(type: UIButtonType.system)
         finishBtn.frame = CGRect(x: self.width - 60, y: 0, width: 60, height: 40)
         finishBtn.setTitle("完成", for: .normal)
+        finishBtn.setTitleColor(BaseColor.ThemeColor, for: .normal)
         finishBtn.addTarget(self, action: #selector(finishAction), for: .touchUpInside)
         return finishBtn
     }()
