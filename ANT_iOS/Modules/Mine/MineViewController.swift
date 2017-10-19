@@ -171,6 +171,10 @@ extension MineViewController: UITableViewDelegate, UITableViewDataSource, UIScro
         tableView.deselectRow(at: indexPath, animated: true)
         
         switch indexPath.row {
+        case 2:
+            AppCommon.push(CeTuRecordViewController(), animated: true)
+        case 3:
+            AppCommon.push(TradeRecordViewController(), animated: true)
         case 4:
             AppCommon.push(AddressListViewController(), animated: true)
         case 5:

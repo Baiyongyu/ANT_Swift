@@ -86,10 +86,6 @@ class PlantDetailViewController: BaseViewController {
         tableView.register(UITableViewCell.self, forCellReuseIdentifier: classSystomTableViewCellIdentifier)
         tableView.tableHeaderView = UIView.init(frame: CGRect(x: 0, y: 0, width: SCREEN_WIDTH, height: 10))
         tableView.tableFooterView = UIView(frame: .zero)
-        if #available(iOS 11.0, *) {
-            tableView.contentInsetAdjustmentBehavior = .never
-            tableView.scrollIndicatorInsets = tableView.contentInset
-        }
         return tableView
     }()
     

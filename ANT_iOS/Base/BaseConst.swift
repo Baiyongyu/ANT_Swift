@@ -40,7 +40,7 @@ let Tip_NoNetwork       = "暂无网络，请稍后再试"
 let Tip_LoginTimeOut    = "登录超时"
 let Tip_RequestUnlegal  = "账号在其他设备登录，请重新登录"
 
-
+let delay: TimeInterval = 0.7
 
 let NotificationLocationUpdated    = "NotificationLocationUpdated"
 

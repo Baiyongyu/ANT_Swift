@@ -134,6 +134,7 @@ extension SettingsViewController: UITableViewDelegate, UITableViewDataSource {
             alertView.initWithTitle(titles: "退出当前账号？", message: "", sureTitle: "确定", cancleTitle: "取消")
             alertView.alertSelectIndex = { (index) -> Void in
                 if index == 2 {
+                    AppCommon.push(LoginViewController(), animated: true)
                 }
             }
             alertView.showAlertView()

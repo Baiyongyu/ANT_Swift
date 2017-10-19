@@ -79,6 +79,10 @@
 		F3BB46251F69269400E0539C /* FieldsMapViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3BB46241F69269400E0539C /* FieldsMapViewController.swift */; };
 		F3BB462B1F6939FE00E0539C /* FieldGroupModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3BB462A1F6939FE00E0539C /* FieldGroupModel.swift */; };
 		F3C90AD91F98334200333262 /* AddPlantViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3C90AD81F98334200333262 /* AddPlantViewController.swift */; };
+		F3C90ADC1F98422D00333262 /* TradeRecordViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3C90ADB1F98422D00333262 /* TradeRecordViewController.swift */; };
+		F3C90ADF1F98458000333262 /* CeTuRecordViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3C90ADE1F98458000333262 /* CeTuRecordViewController.swift */; };
+		F3C90AE21F9848A500333262 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3C90AE11F9848A500333262 /* LoginViewController.swift */; };
+		F3C90AE41F984B3200333262 /* UITextField+Additions.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3C90AE31F984B3200333262 /* UITextField+Additions.swift */; };
 		F3D0A6651F6FC27900464265 /* QualityTrackModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3D0A6641F6FC27900464265 /* QualityTrackModel.swift */; };
 		F3D16B221F70F11B00985E30 /* TraceStep3ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3D16B211F70F11B00985E30 /* TraceStep3ViewController.swift */; };
 		F3D16B241F70FBAF00985E30 /* TraceStep4ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3D16B231F70FBAF00985E30 /* TraceStep4ViewController.swift */; };
@@ -88,6 +92,7 @@
 		F3D677381EE55EBB00BEB029 /* CropsCollectionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3D677371EE55EBB00BEB029 /* CropsCollectionView.swift */; };
 		F3D6773B1EE5625500BEB029 /* PlantModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3D6773A1EE5625500BEB029 /* PlantModel.swift */; };
 		F3D84DFA1F6BC5A4008573E3 /* YYSheetView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3D84DF91F6BC5A4008573E3 /* YYSheetView.swift */; };
+		F3DCC7231F986CF500E3FCEC /* YYProgressHUD.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3DCC7221F986CF500E3FCEC /* YYProgressHUD.swift */; };
 		F3E6C8CC1F6F61FF00E2E45C /* YYAdvertScrollView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3E6C8CB1F6F61FF00E2E45C /* YYAdvertScrollView.swift */; };
 		F3EE54E01F063831004A9523 /* popMenvTopView.xib in Resources */ = {isa = PBXBuildFile; fileRef = F3EE54DE1F063830004A9523 /* popMenvTopView.xib */; };
 		F3EE54E11F063831004A9523 /* popMenvTopView.m in Sources */ = {isa = PBXBuildFile; fileRef = F3EE54DF1F063830004A9523 /* popMenvTopView.m */; };
@@ -203,6 +208,10 @@
 		F3BB46241F69269400E0539C /* FieldsMapViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FieldsMapViewController.swift; sourceTree = "<group>"; };
 		F3BB462A1F6939FE00E0539C /* FieldGroupModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FieldGroupModel.swift; sourceTree = "<group>"; };
 		F3C90AD81F98334200333262 /* AddPlantViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddPlantViewController.swift; sourceTree = "<group>"; };
+		F3C90ADB1F98422D00333262 /* TradeRecordViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TradeRecordViewController.swift; sourceTree = "<group>"; };
+		F3C90ADE1F98458000333262 /* CeTuRecordViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CeTuRecordViewController.swift; sourceTree = "<group>"; };
+		F3C90AE11F9848A500333262 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
+		F3C90AE31F984B3200333262 /* UITextField+Additions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UITextField+Additions.swift"; sourceTree = "<group>"; };
 		F3D0A6641F6FC27900464265 /* QualityTrackModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QualityTrackModel.swift; sourceTree = "<group>"; };
 		F3D16B211F70F11B00985E30 /* TraceStep3ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TraceStep3ViewController.swift; sourceTree = "<group>"; };
 		F3D16B231F70FBAF00985E30 /* TraceStep4ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TraceStep4ViewController.swift; sourceTree = "<group>"; };
@@ -212,6 +221,7 @@
 		F3D677371EE55EBB00BEB029 /* CropsCollectionView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CropsCollectionView.swift; sourceTree = "<group>"; };
 		F3D6773A1EE5625500BEB029 /* PlantModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PlantModel.swift; sourceTree = "<group>"; };
 		F3D84DF91F6BC5A4008573E3 /* YYSheetView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = YYSheetView.swift; sourceTree = "<group>"; };
+		F3DCC7221F986CF500E3FCEC /* YYProgressHUD.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = YYProgressHUD.swift; sourceTree = "<group>"; };
 		F3E6C8CB1F6F61FF00E2E45C /* YYAdvertScrollView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = YYAdvertScrollView.swift; sourceTree = "<group>"; };
 		F3EE54DD1F063830004A9523 /* popMenvTopView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = popMenvTopView.h; path = "../../../../../../宇玄丶/各种Demo/OC/HyPopMenuView-master/HyPopMenuView/popMenvTopView.h"; sourceTree = "<group>"; };
 		F3EE54DE1F063830004A9523 /* popMenvTopView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = popMenvTopView.xib; path = "../../../../../../宇玄丶/各种Demo/OC/HyPopMenuView-master/HyPopMenuView/popMenvTopView.xib"; sourceTree = "<group>"; };
@@ -391,6 +401,7 @@
 		F35BB7731EE14DEF0032EC02 /* Modules */ = {
 			isa = PBXGroup;
 			children = (
+				F3C90AE01F98489600333262 /* Login */,
 				F3F586821EE407FD0018412D /* Home */,
 				F3F587161EE43CAD0018412D /* Farm */,
 				F3F587141EE43CAD0018412D /* Circle */,
@@ -551,10 +562,34 @@
 			path = FieldsManager;
 			sourceTree = "<group>";
 		};
+		F3C90ADA1F98421900333262 /* TradeRecord */ = {
+			isa = PBXGroup;
+			children = (
+				F3C90ADB1F98422D00333262 /* TradeRecordViewController.swift */,
+			);
+			path = TradeRecord;
+			sourceTree = "<group>";
+		};
+		F3C90ADD1F98456E00333262 /* CeTuRecord */ = {
+			isa = PBXGroup;
+			children = (
+				F3C90ADE1F98458000333262 /* CeTuRecordViewController.swift */,
+			);
+			path = CeTuRecord;
+			sourceTree = "<group>";
+		};
+		F3C90AE01F98489600333262 /* Login */ = {
+			isa = PBXGroup;
+			children = (
+				F3C90AE11F9848A500333262 /* LoginViewController.swift */,
+			);
+			path = Login;
+			sourceTree = "<group>";
+		};
 		F3D677321EE5584F00BEB029 /* Classes */ = {
 			isa = PBXGroup;
 			children = (
-				F30685511F95CD6600B6E4C5 /* ScrollPageView */,
+				F3DCC7221F986CF500E3FCEC /* YYProgressHUD.swift */,
 				F3FCEAAC1F7C84CE00148C09 /* PopupMenu.swift */,
 				F38AA18E1F70EC6A00CA9547 /* CharacteristicCell.swift */,
 				F38AA18C1F70B33300CA9547 /* CustomPageControl.swift */,
@@ -566,6 +601,7 @@
 				F307E6161F68B7E4001664C8 /* InputDialog.swift */,
 				F33FBB8D1EEFBEDA00F4B2A8 /* MenuControl.swift */,
 				F39855991EE93C870042990C /* SelectAreaAlert.swift */,
+				F30685511F95CD6600B6E4C5 /* ScrollPageView */,
 				F314B3581F67C9BF00AAB40B /* IconFont */,
 				F3B764F81EEF73B3009FF0BE /* PopupMenu */,
 			);
@@ -640,6 +676,7 @@
 				F320DE791EEE7A65005AF954 /* UIView+Additions.swift */,
 				F399DDD61EF3DA9B0012AD94 /* UIImage+Additions.swift */,
 				F3BA37C01F97237900F3976E /* NSObject+Additions.swift */,
+				F3C90AE31F984B3200333262 /* UITextField+Additions.swift */,
 			);
 			path = Categories;
 			sourceTree = "<group>";
@@ -668,6 +705,8 @@
 			isa = PBXGroup;
 			children = (
 				F3F587191EE43CAD0018412D /* MineViewController.swift */,
+				F3C90ADD1F98456E00333262 /* CeTuRecord */,
+				F3C90ADA1F98421900333262 /* TradeRecord */,
 				F39855891EE8EBD90042990C /* Address */,
 				F34C935A1EE6A6C500091195 /* Setting */,
 			);
@@ -851,6 +890,7 @@
 				F39855951EE8FDF20042990C /* VerticalButton.swift in Sources */,
 				F37600D51F788BCB00E9A242 /* UMSocialSwiftInterface.swift in Sources */,
 				F3F7820B1F6632B2007C5768 /* PopMenuButton.m in Sources */,
+				F3C90AE41F984B3200333262 /* UITextField+Additions.swift in Sources */,
 				F3BB462B1F6939FE00E0539C /* FieldGroupModel.swift in Sources */,
 				F314B2CE1F6769EA00AAB40B /* BaseTableViewDelegate.swift in Sources */,
 				F35BB7721EE14DC80032EC02 /* AppTabBarController.swift in Sources */,
@@ -877,6 +917,7 @@
 				F37BDDB11F6A62C000641D76 /* ImageModel.swift in Sources */,
 				F3F5870C1EE4375D0018412D /* HomeModuleCollectionView.swift in Sources */,
 				F3EE54E11F063831004A9523 /* popMenvTopView.m in Sources */,
+				F3DCC7231F986CF500E3FCEC /* YYProgressHUD.swift in Sources */,
 				F34C93561EE6991300091195 /* MessageModel.swift in Sources */,
 				F3C90AD91F98334200333262 /* AddPlantViewController.swift in Sources */,
 				F365D7201EE67B1700500391 /* AppCommon.m in Sources */,
@@ -884,6 +925,7 @@
 				F3B764FA1EEF73E1009FF0BE /* PopUpPickerView.swift in Sources */,
 				F38AA18B1F70B0C100CA9547 /* TraceStep2ViewController.swift in Sources */,
 				F398558B1EE8EBE80042990C /* AddressListViewController.swift in Sources */,
+				F3C90ADF1F98458000333262 /* CeTuRecordViewController.swift in Sources */,
 				F3320AEB1EE7A4BE00327DC7 /* ShopModel.swift in Sources */,
 				F3D6773B1EE5625500BEB029 /* PlantModel.swift in Sources */,
 				F365D67D1EE6791700500391 /* CetuTypeViewController.swift in Sources */,
@@ -933,8 +975,10 @@
 				F320DE781EEE7114005AF954 /* FormulaModel.swift in Sources */,
 				F3FE12041F9756DE00059BCA /* PlantDetailViewController.swift in Sources */,
 				F33FBB8E1EEFBEDA00F4B2A8 /* MenuControl.swift in Sources */,
+				F3C90ADC1F98422D00333262 /* TradeRecordViewController.swift in Sources */,
 				F314B3631F67D21700AAB40B /* TBCityIconFont.m in Sources */,
 				F3BA37BB1F96EC7F00F3976E /* NewsDetailsViewController.swift in Sources */,
+				F3C90AE21F9848A500333262 /* LoginViewController.swift in Sources */,
 				F3BA37BA1F96EC7F00F3976E /* NewsViewController.swift in Sources */,
 				F3F587131EE43BC40018412D /* UIColor+Addtions.swift in Sources */,
 				F3235C431F6FB8F5003A0DCE /* QualityTrackingViewController.swift in Sources */,

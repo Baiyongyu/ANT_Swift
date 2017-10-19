@@ -174,4 +174,10 @@ extension UIView {
             make.height.equalTo(0.5);
         }
     }
+    
+    func createLineView() -> UIView {
+        let lineView = UIView()
+        lineView.backgroundColor = BaseColor.LineColor
+        return lineView
+    }
 }

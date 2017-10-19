@@ -77,6 +77,12 @@ class SellFoodViewController: BaseViewController {
     }
     
     func confirmAction() {
+        
+        if phoneField.text?.characters.count == 0 {
+            YYProgressHUD.showText(text: "请输入手机号", delay: delay)
+            return
+        }
+        
         inputFinished = true
         tipLabel.text = "提交成功后，相关机构会主动联系您，请耐心等待!"
         tipLabel.textAlignment = .center
@@ -94,10 +100,6 @@ class SellFoodViewController: BaseViewController {
         tableView.showsVerticalScrollIndicator = false
         tableView.register(UITableViewCell.self, forCellReuseIdentifier: classTableViewCellIdentifier)
         tableView.tableHeaderView = UIView.init(frame: CGRect(x: 0, y: 0, width: SCREEN_WIDTH, height: 10))
-        if #available(iOS 11.0, *) {
-            tableView.contentInsetAdjustmentBehavior = .never
-            tableView.scrollIndicatorInsets = tableView.contentInset
-        }
         return tableView
     }()
 }
