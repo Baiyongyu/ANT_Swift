@@ -1,9 +1,9 @@
 //
 //  PhotoBrowser+Indicator.swift
-//  PhotoBrowser
+//  ANT_iOS
 //
-//  Created by 冯成林 on 15/8/13.
-//  Copyright (c) 2015年 冯成林. All rights reserved.
+//  Created by 宇玄丶 on 2017/10/20.
+//  Copyright © 2017年 qianmo. All rights reserved.
 //
 
 import UIKit

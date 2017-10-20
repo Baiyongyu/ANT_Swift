@@ -46,9 +46,9 @@ let NotificationTabbarButtonClickDidRepeat = "NotificationTabbarButtonClickDidRe
 let NotificationLocationUpdated            = "NotificationLocationUpdated"
 
 
-let UMSHARE_APPKEY      = "58a11aac4544cb5cd2001b93"
-let WXSHARE_KEY         = "wx2c2b08f1eb7c9ca6"
-let WXSHARE_SECRET      = "9e9a9d2926c129ecba5cc2e2e8902528"
-let QQSHARE_APPKEY      = "1106007592"
-let QQSHARE_SECRET      = "N7SFtmSPnoMQIfHQ"
-let AMAP_KEY            = "2843fcda95d6dae2a40af52628693ab5"
+let UMSHARE_APPKEY      = ""
+let WXSHARE_KEY         = ""
+let WXSHARE_SECRET      = ""
+let QQSHARE_APPKEY      = ""
+let QQSHARE_SECRET      = ""
+let AMAP_KEY            = ""

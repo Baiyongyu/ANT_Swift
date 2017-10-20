@@ -1,5 +1,5 @@
 //
-//  extension.swift
+//  String+Additions.swift
 //  ANT_iOS
 //
 //  Created by 宇玄丶 on 2017/10/20.
