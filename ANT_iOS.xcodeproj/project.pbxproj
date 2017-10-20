@@ -23,6 +23,13 @@
 		F320DE781EEE7114005AF954 /* FormulaModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F320DE771EEE7114005AF954 /* FormulaModel.swift */; };
 		F320DE7A1EEE7A65005AF954 /* UIView+Additions.swift in Sources */ = {isa = PBXBuildFile; fileRef = F320DE791EEE7A65005AF954 /* UIView+Additions.swift */; };
 		F320DE7C1EEE8044005AF954 /* CetuDataInputViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F320DE7B1EEE8044005AF954 /* CetuDataInputViewController.swift */; };
+		F321B5EC1F99936400B11A37 /* CircleTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = F321B5EB1F99936400B11A37 /* CircleTableViewCell.swift */; };
+		F321B5F31F99938F00B11A37 /* CommentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F321B5ED1F99938E00B11A37 /* CommentView.swift */; };
+		F321B5F41F99938F00B11A37 /* CircleData.swift in Sources */ = {isa = PBXBuildFile; fileRef = F321B5EE1F99938F00B11A37 /* CircleData.swift */; };
+		F321B5F51F99938F00B11A37 /* extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = F321B5EF1F99938F00B11A37 /* extension.swift */; };
+		F321B5F61F99938F00B11A37 /* Menu.swift in Sources */ = {isa = PBXBuildFile; fileRef = F321B5F01F99938F00B11A37 /* Menu.swift */; };
+		F321B5F71F99938F00B11A37 /* pingLunFun.swift in Sources */ = {isa = PBXBuildFile; fileRef = F321B5F11F99938F00B11A37 /* pingLunFun.swift */; };
+		F321B5F81F99938F00B11A37 /* Comment_Like_View.swift in Sources */ = {isa = PBXBuildFile; fileRef = F321B5F21F99938F00B11A37 /* Comment_Like_View.swift */; };
 		F3235C431F6FB8F5003A0DCE /* QualityTrackingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3235C421F6FB8F5003A0DCE /* QualityTrackingViewController.swift */; };
 		F32671C51EF7D39700121C9B /* YYAlertView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F32671C41EF7D39700121C9B /* YYAlertView.swift */; };
 		F32844C91F95D88A00456D76 /* LocationManager.m in Sources */ = {isa = PBXBuildFile; fileRef = F32844C81F95D88A00456D76 /* LocationManager.m */; };
@@ -51,6 +58,22 @@
 		F365D71C1EE67AAE00500391 /* YYClassInfo.m in Sources */ = {isa = PBXBuildFile; fileRef = F365D6E21EE67AAE00500391 /* YYClassInfo.m */; };
 		F365D7201EE67B1700500391 /* AppCommon.m in Sources */ = {isa = PBXBuildFile; fileRef = F365D71F1EE67B1700500391 /* AppCommon.m */; };
 		F37600D51F788BCB00E9A242 /* UMSocialSwiftInterface.swift in Sources */ = {isa = PBXBuildFile; fileRef = F37600D41F788BCB00E9A242 /* UMSocialSwiftInterface.swift */; };
+		F378E1DF1F988FEB00A48CF5 /* Layout.swift in Sources */ = {isa = PBXBuildFile; fileRef = F378E1CB1F988FEA00A48CF5 /* Layout.swift */; };
+		F378E1E01F988FEB00A48CF5 /* PhotoBrowser.swift in Sources */ = {isa = PBXBuildFile; fileRef = F378E1CC1F988FEA00A48CF5 /* PhotoBrowser.swift */; };
+		F378E1E11F988FEB00A48CF5 /* PhotoBrowser+ZoomAnim.swift in Sources */ = {isa = PBXBuildFile; fileRef = F378E1CE1F988FEA00A48CF5 /* PhotoBrowser+ZoomAnim.swift */; };
+		F378E1E21F988FEB00A48CF5 /* PhotoBrowser+PBType.swift in Sources */ = {isa = PBXBuildFile; fileRef = F378E1CF1F988FEA00A48CF5 /* PhotoBrowser+PBType.swift */; };
+		F378E1E31F988FEB00A48CF5 /* PhotoBrowser+Main.swift in Sources */ = {isa = PBXBuildFile; fileRef = F378E1D01F988FEA00A48CF5 /* PhotoBrowser+Main.swift */; };
+		F378E1E41F988FEB00A48CF5 /* PhotoBrowser+CollectionViewExtend.swift in Sources */ = {isa = PBXBuildFile; fileRef = F378E1D11F988FEA00A48CF5 /* PhotoBrowser+CollectionViewExtend.swift */; };
+		F378E1E51F988FEB00A48CF5 /* PhotoBrowser+Indicator.swift in Sources */ = {isa = PBXBuildFile; fileRef = F378E1D21F988FEA00A48CF5 /* PhotoBrowser+Indicator.swift */; };
+		F378E1E61F988FEB00A48CF5 /* PhotoBrowser+HUD.swift in Sources */ = {isa = PBXBuildFile; fileRef = F378E1D31F988FEA00A48CF5 /* PhotoBrowser+HUD.swift */; };
+		F378E1E71F988FEB00A48CF5 /* pic.bundle in Resources */ = {isa = PBXBuildFile; fileRef = F378E1D51F988FEA00A48CF5 /* pic.bundle */; };
+		F378E1E81F988FEB00A48CF5 /* PhotoBrowser+Common.swift in Sources */ = {isa = PBXBuildFile; fileRef = F378E1D61F988FEA00A48CF5 /* PhotoBrowser+Common.swift */; };
+		F378E1E91F988FEB00A48CF5 /* PhotoBrowser+Model.swift in Sources */ = {isa = PBXBuildFile; fileRef = F378E1D81F988FEA00A48CF5 /* PhotoBrowser+Model.swift */; };
+		F378E1EA1F988FEB00A48CF5 /* ItemCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = F378E1DA1F988FEA00A48CF5 /* ItemCell.xib */; };
+		F378E1EB1F988FEB00A48CF5 /* ItemCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = F378E1DB1F988FEA00A48CF5 /* ItemCell.swift */; };
+		F378E1EC1F988FEB00A48CF5 /* CollectionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F378E1DC1F988FEA00A48CF5 /* CollectionView.swift */; };
+		F378E1ED1F988FEB00A48CF5 /* ShowImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F378E1DD1F988FEA00A48CF5 /* ShowImageView.swift */; };
+		F378E1EE1F988FEB00A48CF5 /* DisplayView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F378E1DE1F988FEA00A48CF5 /* DisplayView.swift */; };
 		F37BDDB11F6A62C000641D76 /* ImageModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F37BDDB01F6A62C000641D76 /* ImageModel.swift */; };
 		F38504741F7B6E27008DD007 /* WebThingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F38504731F7B6E27008DD007 /* WebThingViewController.swift */; };
 		F38AA1871F709FE300CA9547 /* TraceStep1ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F38AA1861F709FE300CA9547 /* TraceStep1ViewController.swift */; };
@@ -58,6 +81,28 @@
 		F38AA18B1F70B0C100CA9547 /* TraceStep2ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F38AA18A1F70B0C100CA9547 /* TraceStep2ViewController.swift */; };
 		F38AA18D1F70B33300CA9547 /* CustomPageControl.swift in Sources */ = {isa = PBXBuildFile; fileRef = F38AA18C1F70B33300CA9547 /* CustomPageControl.swift */; };
 		F38AA18F1F70EC6A00CA9547 /* CharacteristicCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = F38AA18E1F70EC6A00CA9547 /* CharacteristicCell.swift */; };
+		F39465721F99E82000ADBA13 /* Format.swift in Sources */ = {isa = PBXBuildFile; fileRef = F394655B1F99E81F00ADBA13 /* Format.swift */; };
+		F39465731F99E82000ADBA13 /* Haneke.swift in Sources */ = {isa = PBXBuildFile; fileRef = F394655C1F99E81F00ADBA13 /* Haneke.swift */; };
+		F39465741F99E82000ADBA13 /* String+Haneke.swift in Sources */ = {isa = PBXBuildFile; fileRef = F394655D1F99E81F00ADBA13 /* String+Haneke.swift */; };
+		F39465751F99E82000ADBA13 /* Log.swift in Sources */ = {isa = PBXBuildFile; fileRef = F394655E1F99E81F00ADBA13 /* Log.swift */; };
+		F39465761F99E82000ADBA13 /* Data.swift in Sources */ = {isa = PBXBuildFile; fileRef = F394655F1F99E81F00ADBA13 /* Data.swift */; };
+		F39465771F99E82000ADBA13 /* CryptoSwiftMD5.swift in Sources */ = {isa = PBXBuildFile; fileRef = F39465601F99E81F00ADBA13 /* CryptoSwiftMD5.swift */; };
+		F39465781F99E82000ADBA13 /* Info-iOS.plist in Resources */ = {isa = PBXBuildFile; fileRef = F39465611F99E81F00ADBA13 /* Info-iOS.plist */; };
+		F39465791F99E82000ADBA13 /* NSURLResponse+Haneke.swift in Sources */ = {isa = PBXBuildFile; fileRef = F39465621F99E81F00ADBA13 /* NSURLResponse+Haneke.swift */; };
+		F394657A1F99E82000ADBA13 /* UIView+Haneke.swift in Sources */ = {isa = PBXBuildFile; fileRef = F39465641F99E82000ADBA13 /* UIView+Haneke.swift */; };
+		F394657B1F99E82000ADBA13 /* NSHTTPURLResponse+Haneke.swift in Sources */ = {isa = PBXBuildFile; fileRef = F39465651F99E82000ADBA13 /* NSHTTPURLResponse+Haneke.swift */; };
+		F394657C1F99E82000ADBA13 /* NetworkFetcher.swift in Sources */ = {isa = PBXBuildFile; fileRef = F39465661F99E82000ADBA13 /* NetworkFetcher.swift */; };
+		F394657D1F99E82000ADBA13 /* CGSize+Swift.swift in Sources */ = {isa = PBXBuildFile; fileRef = F39465671F99E82000ADBA13 /* CGSize+Swift.swift */; };
+		F394657E1F99E82000ADBA13 /* UIImage+Haneke.swift in Sources */ = {isa = PBXBuildFile; fileRef = F39465681F99E82000ADBA13 /* UIImage+Haneke.swift */; };
+		F394657F1F99E82000ADBA13 /* Fetch.swift in Sources */ = {isa = PBXBuildFile; fileRef = F39465691F99E82000ADBA13 /* Fetch.swift */; };
+		F39465801F99E82000ADBA13 /* DiskFetcher.swift in Sources */ = {isa = PBXBuildFile; fileRef = F394656A1F99E82000ADBA13 /* DiskFetcher.swift */; };
+		F39465811F99E82000ADBA13 /* DiskCache.swift in Sources */ = {isa = PBXBuildFile; fileRef = F394656B1F99E82000ADBA13 /* DiskCache.swift */; };
+		F39465821F99E82000ADBA13 /* Info-tvOS.plist in Resources */ = {isa = PBXBuildFile; fileRef = F394656C1F99E82000ADBA13 /* Info-tvOS.plist */; };
+		F39465831F99E82000ADBA13 /* Cache.swift in Sources */ = {isa = PBXBuildFile; fileRef = F394656D1F99E82000ADBA13 /* Cache.swift */; };
+		F39465841F99E82000ADBA13 /* UIImageView+Haneke.swift in Sources */ = {isa = PBXBuildFile; fileRef = F394656E1F99E82000ADBA13 /* UIImageView+Haneke.swift */; };
+		F39465851F99E82000ADBA13 /* Fetcher.swift in Sources */ = {isa = PBXBuildFile; fileRef = F394656F1F99E82000ADBA13 /* Fetcher.swift */; };
+		F39465861F99E82000ADBA13 /* UIButton+Haneke.swift in Sources */ = {isa = PBXBuildFile; fileRef = F39465701F99E82000ADBA13 /* UIButton+Haneke.swift */; };
+		F39465871F99E82000ADBA13 /* NSFileManager+Haneke.swift in Sources */ = {isa = PBXBuildFile; fileRef = F39465711F99E82000ADBA13 /* NSFileManager+Haneke.swift */; };
 		F398558B1EE8EBE80042990C /* AddressListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F398558A1EE8EBE80042990C /* AddressListViewController.swift */; };
 		F398558D1EE8F1920042990C /* AddressModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F398558C1EE8F1920042990C /* AddressModel.swift */; };
 		F39855951EE8FDF20042990C /* VerticalButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = F39855941EE8FDF20042990C /* VerticalButton.swift */; };
@@ -141,6 +186,13 @@
 		F320DE771EEE7114005AF954 /* FormulaModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FormulaModel.swift; sourceTree = "<group>"; };
 		F320DE791EEE7A65005AF954 /* UIView+Additions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIView+Additions.swift"; sourceTree = "<group>"; };
 		F320DE7B1EEE8044005AF954 /* CetuDataInputViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CetuDataInputViewController.swift; sourceTree = "<group>"; };
+		F321B5EB1F99936400B11A37 /* CircleTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CircleTableViewCell.swift; sourceTree = "<group>"; };
+		F321B5ED1F99938E00B11A37 /* CommentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CommentView.swift; sourceTree = "<group>"; };
+		F321B5EE1F99938F00B11A37 /* CircleData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CircleData.swift; sourceTree = "<group>"; };
+		F321B5EF1F99938F00B11A37 /* extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = extension.swift; sourceTree = "<group>"; };
+		F321B5F01F99938F00B11A37 /* Menu.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Menu.swift; sourceTree = "<group>"; };
+		F321B5F11F99938F00B11A37 /* pingLunFun.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = pingLunFun.swift; sourceTree = "<group>"; };
+		F321B5F21F99938F00B11A37 /* Comment_Like_View.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Comment_Like_View.swift; sourceTree = "<group>"; };
 		F3235C421F6FB8F5003A0DCE /* QualityTrackingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QualityTrackingViewController.swift; sourceTree = "<group>"; };
 		F32671C41EF7D39700121C9B /* YYAlertView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = YYAlertView.swift; sourceTree = "<group>"; };
 		F32844C71F95D88A00456D76 /* LocationManager.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LocationManager.h; sourceTree = "<group>"; };
@@ -177,6 +229,22 @@
 		F365D71E1EE67B1700500391 /* AppCommon.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AppCommon.h; sourceTree = "<group>"; };
 		F365D71F1EE67B1700500391 /* AppCommon.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AppCommon.m; sourceTree = "<group>"; };
 		F37600D41F788BCB00E9A242 /* UMSocialSwiftInterface.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UMSocialSwiftInterface.swift; sourceTree = "<group>"; };
+		F378E1CB1F988FEA00A48CF5 /* Layout.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Layout.swift; sourceTree = "<group>"; };
+		F378E1CC1F988FEA00A48CF5 /* PhotoBrowser.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PhotoBrowser.swift; sourceTree = "<group>"; };
+		F378E1CE1F988FEA00A48CF5 /* PhotoBrowser+ZoomAnim.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "PhotoBrowser+ZoomAnim.swift"; sourceTree = "<group>"; };
+		F378E1CF1F988FEA00A48CF5 /* PhotoBrowser+PBType.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "PhotoBrowser+PBType.swift"; sourceTree = "<group>"; };
+		F378E1D01F988FEA00A48CF5 /* PhotoBrowser+Main.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "PhotoBrowser+Main.swift"; sourceTree = "<group>"; };
+		F378E1D11F988FEA00A48CF5 /* PhotoBrowser+CollectionViewExtend.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "PhotoBrowser+CollectionViewExtend.swift"; sourceTree = "<group>"; };
+		F378E1D21F988FEA00A48CF5 /* PhotoBrowser+Indicator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "PhotoBrowser+Indicator.swift"; sourceTree = "<group>"; };
+		F378E1D31F988FEA00A48CF5 /* PhotoBrowser+HUD.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "PhotoBrowser+HUD.swift"; sourceTree = "<group>"; };
+		F378E1D51F988FEA00A48CF5 /* pic.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = pic.bundle; sourceTree = "<group>"; };
+		F378E1D61F988FEA00A48CF5 /* PhotoBrowser+Common.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "PhotoBrowser+Common.swift"; sourceTree = "<group>"; };
+		F378E1D81F988FEA00A48CF5 /* PhotoBrowser+Model.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "PhotoBrowser+Model.swift"; sourceTree = "<group>"; };
+		F378E1DA1F988FEA00A48CF5 /* ItemCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ItemCell.xib; sourceTree = "<group>"; };
+		F378E1DB1F988FEA00A48CF5 /* ItemCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ItemCell.swift; sourceTree = "<group>"; };
+		F378E1DC1F988FEA00A48CF5 /* CollectionView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CollectionView.swift; sourceTree = "<group>"; };
+		F378E1DD1F988FEA00A48CF5 /* ShowImageView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ShowImageView.swift; sourceTree = "<group>"; };
+		F378E1DE1F988FEA00A48CF5 /* DisplayView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DisplayView.swift; sourceTree = "<group>"; };
 		F37BDDB01F6A62C000641D76 /* ImageModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ImageModel.swift; sourceTree = "<group>"; };
 		F38504731F7B6E27008DD007 /* WebThingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WebThingViewController.swift; sourceTree = "<group>"; };
 		F38AA1861F709FE300CA9547 /* TraceStep1ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TraceStep1ViewController.swift; sourceTree = "<group>"; };
@@ -184,6 +252,29 @@
 		F38AA18A1F70B0C100CA9547 /* TraceStep2ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TraceStep2ViewController.swift; sourceTree = "<group>"; };
 		F38AA18C1F70B33300CA9547 /* CustomPageControl.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomPageControl.swift; sourceTree = "<group>"; };
 		F38AA18E1F70EC6A00CA9547 /* CharacteristicCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CharacteristicCell.swift; sourceTree = "<group>"; };
+		F394655B1F99E81F00ADBA13 /* Format.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Format.swift; sourceTree = "<group>"; };
+		F394655C1F99E81F00ADBA13 /* Haneke.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Haneke.swift; sourceTree = "<group>"; };
+		F394655D1F99E81F00ADBA13 /* String+Haneke.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "String+Haneke.swift"; sourceTree = "<group>"; };
+		F394655E1F99E81F00ADBA13 /* Log.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Log.swift; sourceTree = "<group>"; };
+		F394655F1F99E81F00ADBA13 /* Data.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Data.swift; sourceTree = "<group>"; };
+		F39465601F99E81F00ADBA13 /* CryptoSwiftMD5.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CryptoSwiftMD5.swift; sourceTree = "<group>"; };
+		F39465611F99E81F00ADBA13 /* Info-iOS.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "Info-iOS.plist"; sourceTree = "<group>"; };
+		F39465621F99E81F00ADBA13 /* NSURLResponse+Haneke.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "NSURLResponse+Haneke.swift"; sourceTree = "<group>"; };
+		F39465631F99E81F00ADBA13 /* Haneke.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Haneke.h; sourceTree = "<group>"; };
+		F39465641F99E82000ADBA13 /* UIView+Haneke.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIView+Haneke.swift"; sourceTree = "<group>"; };
+		F39465651F99E82000ADBA13 /* NSHTTPURLResponse+Haneke.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "NSHTTPURLResponse+Haneke.swift"; sourceTree = "<group>"; };
+		F39465661F99E82000ADBA13 /* NetworkFetcher.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NetworkFetcher.swift; sourceTree = "<group>"; };
+		F39465671F99E82000ADBA13 /* CGSize+Swift.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "CGSize+Swift.swift"; sourceTree = "<group>"; };
+		F39465681F99E82000ADBA13 /* UIImage+Haneke.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIImage+Haneke.swift"; sourceTree = "<group>"; };
+		F39465691F99E82000ADBA13 /* Fetch.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Fetch.swift; sourceTree = "<group>"; };
+		F394656A1F99E82000ADBA13 /* DiskFetcher.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DiskFetcher.swift; sourceTree = "<group>"; };
+		F394656B1F99E82000ADBA13 /* DiskCache.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DiskCache.swift; sourceTree = "<group>"; };
+		F394656C1F99E82000ADBA13 /* Info-tvOS.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "Info-tvOS.plist"; sourceTree = "<group>"; };
+		F394656D1F99E82000ADBA13 /* Cache.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Cache.swift; sourceTree = "<group>"; };
+		F394656E1F99E82000ADBA13 /* UIImageView+Haneke.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIImageView+Haneke.swift"; sourceTree = "<group>"; };
+		F394656F1F99E82000ADBA13 /* Fetcher.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Fetcher.swift; sourceTree = "<group>"; };
+		F39465701F99E82000ADBA13 /* UIButton+Haneke.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIButton+Haneke.swift"; sourceTree = "<group>"; };
+		F39465711F99E82000ADBA13 /* NSFileManager+Haneke.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "NSFileManager+Haneke.swift"; sourceTree = "<group>"; };
 		F398558A1EE8EBE80042990C /* AddressListViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AddressListViewController.swift; sourceTree = "<group>"; };
 		F398558C1EE8F1920042990C /* AddressModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AddressModel.swift; sourceTree = "<group>"; };
 		F39855941EE8FDF20042990C /* VerticalButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = VerticalButton.swift; sourceTree = "<group>"; };
@@ -462,6 +553,7 @@
 		F365D68B1EE67AAE00500391 /* Resources */ = {
 			isa = PBXGroup;
 			children = (
+				F394655A1F99E81F00ADBA13 /* Haneke */,
 				F3BA37BF1F97212600F3976E /* test.html */,
 				F3BA37BE1F96F8F700F3976E /* news.html */,
 				F314B3661F67D2E600AAB40B /* iconfont.ttf */,
@@ -493,6 +585,99 @@
 				F32844C81F95D88A00456D76 /* LocationManager.m */,
 			);
 			path = Manager;
+			sourceTree = "<group>";
+		};
+		F378E1C91F988FEA00A48CF5 /* PhotoBrowser */ = {
+			isa = PBXGroup;
+			children = (
+				F378E1CA1F988FEA00A48CF5 /* Layout */,
+				F378E1CC1F988FEA00A48CF5 /* PhotoBrowser.swift */,
+				F378E1CD1F988FEA00A48CF5 /* Controller */,
+				F378E1D41F988FEA00A48CF5 /* Common */,
+				F378E1D71F988FEA00A48CF5 /* Model */,
+				F378E1D91F988FEA00A48CF5 /* View */,
+				F378E1DE1F988FEA00A48CF5 /* DisplayView.swift */,
+			);
+			path = PhotoBrowser;
+			sourceTree = "<group>";
+		};
+		F378E1CA1F988FEA00A48CF5 /* Layout */ = {
+			isa = PBXGroup;
+			children = (
+				F378E1CB1F988FEA00A48CF5 /* Layout.swift */,
+			);
+			path = Layout;
+			sourceTree = "<group>";
+		};
+		F378E1CD1F988FEA00A48CF5 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				F378E1CE1F988FEA00A48CF5 /* PhotoBrowser+ZoomAnim.swift */,
+				F378E1CF1F988FEA00A48CF5 /* PhotoBrowser+PBType.swift */,
+				F378E1D01F988FEA00A48CF5 /* PhotoBrowser+Main.swift */,
+				F378E1D11F988FEA00A48CF5 /* PhotoBrowser+CollectionViewExtend.swift */,
+				F378E1D21F988FEA00A48CF5 /* PhotoBrowser+Indicator.swift */,
+				F378E1D31F988FEA00A48CF5 /* PhotoBrowser+HUD.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		F378E1D41F988FEA00A48CF5 /* Common */ = {
+			isa = PBXGroup;
+			children = (
+				F378E1D51F988FEA00A48CF5 /* pic.bundle */,
+				F378E1D61F988FEA00A48CF5 /* PhotoBrowser+Common.swift */,
+			);
+			path = Common;
+			sourceTree = "<group>";
+		};
+		F378E1D71F988FEA00A48CF5 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				F378E1D81F988FEA00A48CF5 /* PhotoBrowser+Model.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		F378E1D91F988FEA00A48CF5 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				F378E1DA1F988FEA00A48CF5 /* ItemCell.xib */,
+				F378E1DB1F988FEA00A48CF5 /* ItemCell.swift */,
+				F378E1DC1F988FEA00A48CF5 /* CollectionView.swift */,
+				F378E1DD1F988FEA00A48CF5 /* ShowImageView.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		F394655A1F99E81F00ADBA13 /* Haneke */ = {
+			isa = PBXGroup;
+			children = (
+				F394655B1F99E81F00ADBA13 /* Format.swift */,
+				F394655C1F99E81F00ADBA13 /* Haneke.swift */,
+				F394655D1F99E81F00ADBA13 /* String+Haneke.swift */,
+				F394655E1F99E81F00ADBA13 /* Log.swift */,
+				F394655F1F99E81F00ADBA13 /* Data.swift */,
+				F39465601F99E81F00ADBA13 /* CryptoSwiftMD5.swift */,
+				F39465611F99E81F00ADBA13 /* Info-iOS.plist */,
+				F39465621F99E81F00ADBA13 /* NSURLResponse+Haneke.swift */,
+				F39465631F99E81F00ADBA13 /* Haneke.h */,
+				F39465641F99E82000ADBA13 /* UIView+Haneke.swift */,
+				F39465651F99E82000ADBA13 /* NSHTTPURLResponse+Haneke.swift */,
+				F39465661F99E82000ADBA13 /* NetworkFetcher.swift */,
+				F39465671F99E82000ADBA13 /* CGSize+Swift.swift */,
+				F39465681F99E82000ADBA13 /* UIImage+Haneke.swift */,
+				F39465691F99E82000ADBA13 /* Fetch.swift */,
+				F394656A1F99E82000ADBA13 /* DiskFetcher.swift */,
+				F394656B1F99E82000ADBA13 /* DiskCache.swift */,
+				F394656C1F99E82000ADBA13 /* Info-tvOS.plist */,
+				F394656D1F99E82000ADBA13 /* Cache.swift */,
+				F394656E1F99E82000ADBA13 /* UIImageView+Haneke.swift */,
+				F394656F1F99E82000ADBA13 /* Fetcher.swift */,
+				F39465701F99E82000ADBA13 /* UIButton+Haneke.swift */,
+				F39465711F99E82000ADBA13 /* NSFileManager+Haneke.swift */,
+			);
+			path = Haneke;
 			sourceTree = "<group>";
 		};
 		F39855891EE8EBD90042990C /* Address */ = {
@@ -601,6 +786,7 @@
 				F307E6161F68B7E4001664C8 /* InputDialog.swift */,
 				F33FBB8D1EEFBEDA00F4B2A8 /* MenuControl.swift */,
 				F39855991EE93C870042990C /* SelectAreaAlert.swift */,
+				F378E1C91F988FEA00A48CF5 /* PhotoBrowser */,
 				F30685511F95CD6600B6E4C5 /* ScrollPageView */,
 				F314B3581F67C9BF00AAB40B /* IconFont */,
 				F3B764F81EEF73B3009FF0BE /* PopupMenu */,
@@ -685,6 +871,13 @@
 			isa = PBXGroup;
 			children = (
 				F3F587151EE43CAD0018412D /* CircleViewController.swift */,
+				F321B5EB1F99936400B11A37 /* CircleTableViewCell.swift */,
+				F321B5F21F99938F00B11A37 /* Comment_Like_View.swift */,
+				F321B5ED1F99938E00B11A37 /* CommentView.swift */,
+				F321B5EF1F99938F00B11A37 /* extension.swift */,
+				F321B5F01F99938F00B11A37 /* Menu.swift */,
+				F321B5F11F99938F00B11A37 /* pingLunFun.swift */,
+				F321B5EE1F99938F00B11A37 /* CircleData.swift */,
 			);
 			path = Circle;
 			sourceTree = "<group>";
@@ -803,10 +996,14 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F39465821F99E82000ADBA13 /* Info-tvOS.plist in Resources */,
 				F3FC1E8A1EE7E2EA00CD66E1 /* webthing in Resources */,
 				F35BB7691EE14CEF0032EC02 /* LaunchScreen.storyboard in Resources */,
 				F3EE54E01F063831004A9523 /* popMenvTopView.xib in Resources */,
 				F314B3671F67D2E600AAB40B /* iconfont.ttf in Resources */,
+				F39465781F99E82000ADBA13 /* Info-iOS.plist in Resources */,
+				F378E1EA1F988FEB00A48CF5 /* ItemCell.xib in Resources */,
+				F378E1E71F988FEB00A48CF5 /* pic.bundle in Resources */,
 				F35BB7661EE14CEF0032EC02 /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -885,38 +1082,49 @@
 			files = (
 				F365D67A1EE6415B00500391 /* FarmActivityModel.swift in Sources */,
 				F399DDD11EF38F6A0012AD94 /* AppTabBar.swift in Sources */,
+				F394657C1F99E82000ADBA13 /* NetworkFetcher.swift in Sources */,
 				F3F7820A1F6632B2007C5768 /* HyPopMenuView.m in Sources */,
 				F314B3641F67D21700AAB40B /* TBCityIconInfo.m in Sources */,
 				F39855951EE8FDF20042990C /* VerticalButton.swift in Sources */,
 				F37600D51F788BCB00E9A242 /* UMSocialSwiftInterface.swift in Sources */,
 				F3F7820B1F6632B2007C5768 /* PopMenuButton.m in Sources */,
 				F3C90AE41F984B3200333262 /* UITextField+Additions.swift in Sources */,
+				F378E1E31F988FEB00A48CF5 /* PhotoBrowser+Main.swift in Sources */,
 				F3BB462B1F6939FE00E0539C /* FieldGroupModel.swift in Sources */,
 				F314B2CE1F6769EA00AAB40B /* BaseTableViewDelegate.swift in Sources */,
 				F35BB7721EE14DC80032EC02 /* AppTabBarController.swift in Sources */,
 				F398558D1EE8F1920042990C /* AddressModel.swift in Sources */,
 				F33FBB981EEFDB2100F4B2A8 /* PlantManagerViewController.swift in Sources */,
+				F378E1EB1F988FEB00A48CF5 /* ItemCell.swift in Sources */,
 				F3F5871A1EE43CAD0018412D /* CircleViewController.swift in Sources */,
 				F3F7820C1F6632B2007C5768 /* PopMenuModel.m in Sources */,
 				F33FBB8B1EEF97DF00F4B2A8 /* CeTuAdviceViewController.swift in Sources */,
+				F378E1E51F988FEB00A48CF5 /* PhotoBrowser+Indicator.swift in Sources */,
+				F378E1E01F988FEB00A48CF5 /* PhotoBrowser.swift in Sources */,
 				F30EEEE31EF7599100C6A9FF /* VersionAlertView.swift in Sources */,
 				F35BB7611EE14CEF0032EC02 /* ViewController.swift in Sources */,
 				F398559C1EE954690042990C /* CommonUtils.swift in Sources */,
 				F3E6C8CC1F6F61FF00E2E45C /* YYAdvertScrollView.swift in Sources */,
 				F365D71C1EE67AAE00500391 /* YYClassInfo.m in Sources */,
+				F378E1E61F988FEB00A48CF5 /* PhotoBrowser+HUD.swift in Sources */,
 				F38504741F7B6E27008DD007 /* WebThingViewController.swift in Sources */,
+				F39465801F99E82000ADBA13 /* DiskFetcher.swift in Sources */,
 				F3320AE91EE79BF800327DC7 /* ShopListViewController.swift in Sources */,
 				F3BB46251F69269400E0539C /* FieldsMapViewController.swift in Sources */,
 				F3BA37C11F97237900F3976E /* NSObject+Additions.swift in Sources */,
+				F394657A1F99E82000ADBA13 /* UIView+Haneke.swift in Sources */,
 				F3D16B281F71038300985E30 /* AddTraceCompleteViewController.swift in Sources */,
+				F39465761F99E82000ADBA13 /* Data.swift in Sources */,
 				F3FCEAAD1F7C84CE00148C09 /* PopupMenu.swift in Sources */,
 				F3F5871B1EE43CAD0018412D /* FarmViewController.swift in Sources */,
 				F3EE54E31F064537004A9523 /* NewsModel.swift in Sources */,
 				F33FBB891EEF857C00F4B2A8 /* BuyFormulaPopView.swift in Sources */,
 				F38AA18D1F70B33300CA9547 /* CustomPageControl.swift in Sources */,
 				F37BDDB11F6A62C000641D76 /* ImageModel.swift in Sources */,
+				F378E1E41F988FEB00A48CF5 /* PhotoBrowser+CollectionViewExtend.swift in Sources */,
 				F3F5870C1EE4375D0018412D /* HomeModuleCollectionView.swift in Sources */,
 				F3EE54E11F063831004A9523 /* popMenvTopView.m in Sources */,
+				F321B5F51F99938F00B11A37 /* extension.swift in Sources */,
 				F3DCC7231F986CF500E3FCEC /* YYProgressHUD.swift in Sources */,
 				F34C93561EE6991300091195 /* MessageModel.swift in Sources */,
 				F3C90AD91F98334200333262 /* AddPlantViewController.swift in Sources */,
@@ -924,50 +1132,79 @@
 				F365D71B1EE67AAE00500391 /* NSObject+YYModel.m in Sources */,
 				F3B764FA1EEF73E1009FF0BE /* PopUpPickerView.swift in Sources */,
 				F38AA18B1F70B0C100CA9547 /* TraceStep2ViewController.swift in Sources */,
+				F321B5F81F99938F00B11A37 /* Comment_Like_View.swift in Sources */,
+				F378E1EE1F988FEB00A48CF5 /* DisplayView.swift in Sources */,
+				F321B5F61F99938F00B11A37 /* Menu.swift in Sources */,
 				F398558B1EE8EBE80042990C /* AddressListViewController.swift in Sources */,
 				F3C90ADF1F98458000333262 /* CeTuRecordViewController.swift in Sources */,
+				F394657D1F99E82000ADBA13 /* CGSize+Swift.swift in Sources */,
 				F3320AEB1EE7A4BE00327DC7 /* ShopModel.swift in Sources */,
+				F39465811F99E82000ADBA13 /* DiskCache.swift in Sources */,
 				F3D6773B1EE5625500BEB029 /* PlantModel.swift in Sources */,
+				F321B5F31F99938F00B11A37 /* CommentView.swift in Sources */,
+				F39465841F99E82000ADBA13 /* UIImageView+Haneke.swift in Sources */,
 				F365D67D1EE6791700500391 /* CetuTypeViewController.swift in Sources */,
 				F3F5871C1EE43CAD0018412D /* MineViewController.swift in Sources */,
+				F39465751F99E82000ADBA13 /* Log.swift in Sources */,
 				F320DE7C1EEE8044005AF954 /* CetuDataInputViewController.swift in Sources */,
+				F378E1EC1F988FEB00A48CF5 /* CollectionView.swift in Sources */,
 				F3D677381EE55EBB00BEB029 /* CropsCollectionView.swift in Sources */,
 				F3FC1E881EE7E09D00CD66E1 /* WebThingsViewController.swift in Sources */,
+				F321B5F71F99938F00B11A37 /* pingLunFun.swift in Sources */,
 				F307E6171F68B7E4001664C8 /* InputDialog.swift in Sources */,
 				F39855971EE927A10042990C /* AddressEditViewController.swift in Sources */,
 				F3D16B2A1F7104A000985E30 /* QualityTracDetailsViewController.swift in Sources */,
+				F378E1E81F988FEB00A48CF5 /* PhotoBrowser+Common.swift in Sources */,
+				F378E1ED1F988FEB00A48CF5 /* ShowImageView.swift in Sources */,
 				F365D6781EE63C8900500391 /* FarmRecordCell.swift in Sources */,
 				F35BB7801EE163DD0032EC02 /* BaseViewController.swift in Sources */,
+				F321B5F41F99938F00B11A37 /* CircleData.swift in Sources */,
 				F3A1D0DC1F04F2290008F051 /* UIColor+ImageGetColor.m in Sources */,
 				F3F5870F1EE439EB0018412D /* NotificationViewController.swift in Sources */,
 				F34C93541EE692F300091195 /* BaseConst.swift in Sources */,
+				F39465791F99E82000ADBA13 /* NSURLResponse+Haneke.swift in Sources */,
+				F394657B1F99E82000ADBA13 /* NSHTTPURLResponse+Haneke.swift in Sources */,
+				F39465871F99E82000ADBA13 /* NSFileManager+Haneke.swift in Sources */,
 				F34C93591EE69EC400091195 /* LoanInsureViewController.swift in Sources */,
 				F3D16B241F70FBAF00985E30 /* TraceStep4ViewController.swift in Sources */,
 				F3BB46211F69234C00E0539C /* FieldsManagerViewController.swift in Sources */,
 				F320DE761EEE669A005AF954 /* CetuViewController.swift in Sources */,
 				F32671C51EF7D39700121C9B /* YYAlertView.swift in Sources */,
 				F3F586841EE407FD0018412D /* HomeViewController.swift in Sources */,
+				F394657F1F99E82000ADBA13 /* Fetch.swift in Sources */,
+				F39465861F99E82000ADBA13 /* UIButton+Haneke.swift in Sources */,
 				F30685501F958B6100B6E4C5 /* YYCycleScrollView.swift in Sources */,
 				F30EEEE51EF767A100C6A9FF /* VersionManager.swift in Sources */,
 				F314B3651F67D21700AAB40B /* UIImage+TBCityIconFont.m in Sources */,
 				F34C935C1EE6A6D000091195 /* SettingsViewController.swift in Sources */,
+				F39465851F99E82000ADBA13 /* Fetcher.swift in Sources */,
+				F394657E1F99E82000ADBA13 /* UIImage+Haneke.swift in Sources */,
+				F321B5EC1F99936400B11A37 /* CircleTableViewCell.swift in Sources */,
+				F378E1E21F988FEB00A48CF5 /* PhotoBrowser+PBType.swift in Sources */,
 				F320DE7A1EEE7A65005AF954 /* UIView+Additions.swift in Sources */,
 				F3BA37BC1F96EC7F00F3976E /* NewsTableViewCell.swift in Sources */,
 				F35BB77D1EE1503B0032EC02 /* AppNavigationController.swift in Sources */,
 				F38AA18F1F70EC6A00CA9547 /* CharacteristicCell.swift in Sources */,
 				F365D6891EE67A4100500391 /* AppDelegate.swift in Sources */,
 				F3D16B221F70F11B00985E30 /* TraceStep3ViewController.swift in Sources */,
+				F39465741F99E82000ADBA13 /* String+Haneke.swift in Sources */,
 				F3FE12021F97386D00059BCA /* SellFoodViewController.swift in Sources */,
 				F399DDD71EF3DA9B0012AD94 /* UIImage+Additions.swift in Sources */,
+				F39465831F99E82000ADBA13 /* Cache.swift in Sources */,
 				F314B2D01F6770DD00AAB40B /* BaseTableViewCell.swift in Sources */,
+				F378E1DF1F988FEB00A48CF5 /* Layout.swift in Sources */,
 				F398559A1EE93C870042990C /* SelectAreaAlert.swift in Sources */,
 				F38AA1871F709FE300CA9547 /* TraceStep1ViewController.swift in Sources */,
 				F38AA1891F70A13600CA9547 /* TraceStepView.swift in Sources */,
+				F39465731F99E82000ADBA13 /* Haneke.swift in Sources */,
+				F39465771F99E82000ADBA13 /* CryptoSwiftMD5.swift in Sources */,
+				F39465721F99E82000ADBA13 /* Format.swift in Sources */,
 				F3D16B261F71025400985E30 /* TraceStep5ViewController.swift in Sources */,
 				F3BB46231F69267800E0539C /* FieldsTableViewController.swift in Sources */,
 				F3D0A6651F6FC27900464265 /* QualityTrackModel.swift in Sources */,
 				F3D84DFA1F6BC5A4008573E3 /* YYSheetView.swift in Sources */,
 				F32844C91F95D88A00456D76 /* LocationManager.m in Sources */,
+				F378E1E91F988FEB00A48CF5 /* PhotoBrowser+Model.swift in Sources */,
 				F34C935E1EE6B58600091195 /* CacheManager.swift in Sources */,
 				F3BA37BD1F96EC7F00F3976E /* PublishViewController.swift in Sources */,
 				F3A1D1321F04FF4C0008F051 /* BaseTableViewDataSource.swift in Sources */,
@@ -976,6 +1213,7 @@
 				F3FE12041F9756DE00059BCA /* PlantDetailViewController.swift in Sources */,
 				F33FBB8E1EEFBEDA00F4B2A8 /* MenuControl.swift in Sources */,
 				F3C90ADC1F98422D00333262 /* TradeRecordViewController.swift in Sources */,
+				F378E1E11F988FEB00A48CF5 /* PhotoBrowser+ZoomAnim.swift in Sources */,
 				F314B3631F67D21700AAB40B /* TBCityIconFont.m in Sources */,
 				F3BA37BB1F96EC7F00F3976E /* NewsDetailsViewController.swift in Sources */,
 				F3C90AE21F9848A500333262 /* LoginViewController.swift in Sources */,

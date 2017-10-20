@@ -26,14 +26,14 @@ class MineViewController: BaseViewController {
         contentView.addSubview(tableView)
         navBar.alpha = 0;
         contentView.snp.updateConstraints { (make) in
-            make.edges.equalTo(view).inset(UIEdgeInsetsMake(0, 0, TabBarHeight, 0));
+            make.edges.equalTo(view).inset(UIEdgeInsetsMake(0, 0, TabBarHeight, 0))
         }
     }
     
     override func layoutConstraints() {
         
         tableView.snp.makeConstraints { (make) in
-            make.edges.equalTo(view).inset(UIEdgeInsetsMake(0, 0, TabBarHeight, 0));
+            make.edges.equalTo(view).inset(UIEdgeInsetsMake(0, 0, TabBarHeight, 0))
         }
         
         headerView.backgroundColor = UIColor.white
@@ -45,8 +45,8 @@ class MineViewController: BaseViewController {
         imageView.addGestureRecognizer(tapGesture)
         headerView.addSubview(imageView)
         imageView.snp.makeConstraints { (make) in
-            make.left.right.top.equalTo(headerView);
-            make.height.equalTo(200);
+            make.left.right.top.equalTo(headerView)
+            make.height.equalTo(200)
         }
         
         headerView.addSubview(avatarImageView)
@@ -54,9 +54,9 @@ class MineViewController: BaseViewController {
         avatarImageView.clipsToBounds = true
         avatarImageView.contentMode = .scaleAspectFill
         avatarImageView.snp.makeConstraints { (make) in
-            make.centerY.equalTo(headerView);
-            make.left.equalTo(20);
-            make.width.height.equalTo(80);
+            make.centerY.equalTo(headerView)
+            make.left.equalTo(20)
+            make.width.height.equalTo(80)
         }
         
         headerView.addSubview(nameLabel)
@@ -64,19 +64,19 @@ class MineViewController: BaseViewController {
         nameLabel.textAlignment = .left
         nameLabel.textColor = UIColor.white
         nameLabel.snp.makeConstraints { (make) in
-            make.left.equalTo(avatarImageView.snp.right).offset(20);
-            make.right.equalTo(-20);
-            make.centerY.equalTo(headerView);
+            make.left.equalTo(avatarImageView.snp.right).offset(20)
+            make.right.equalTo(-20)
+            make.centerY.equalTo(headerView)
         }
         
         let seperator = UIView()
         headerView.addSubview(seperator)
         seperator.backgroundColor = BaseColor.BackGroundColor
         seperator.snp.makeConstraints { (make) in
-            make.top.equalTo(imageView.snp.bottom);
-            make.left.right.equalTo(headerView);
-            make.height.equalTo(10);
-            make.bottom.equalTo(headerView);
+            make.top.equalTo(imageView.snp.bottom)
+            make.left.right.equalTo(headerView)
+            make.height.equalTo(10)
+            make.bottom.equalTo(headerView)
         }
         
         headerView.frame.size.height = headerView.systemLayoutSizeFitting(UILayoutFittingCompressedSize).height

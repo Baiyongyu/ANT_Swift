@@ -16,6 +16,8 @@ class AppTabBar: UITabBar {
 
     var myDelegate: AppTabBarDelegate?
     var plusImageView = UIImageView()
+    /** 记录上一次被点击按钮的tag */
+    var previousClickedTag = NSInteger()
     
     override init(frame: CGRect) {
         super.init(frame: frame)
@@ -66,7 +68,25 @@ class AppTabBar: UITabBar {
                 }
             }
         }
+//        for tabbarButton in self.subviews {
+//            if tabbarButton.isKind(of: NSClassFromString("UITabBarButton")!) {
+//                //绑定tag 标识
+//                tabbarButton.tag = btnIndex
+//                btnIndex += 1
+//                (tabbarButton as! UIButton).addTarget(self, action: #selector(AppTabBar.tabbarButtonClick(tabbarBtn:)), for: .touchUpInside)
+//            }
+//        }
+        
         self.bringSubview(toFront: self.ovalBtn)
+    }
+    
+    // tabbar按钮的点击
+    func tabbarButtonClick(tabbarBtn: UIControl) {
+        //判断当前按钮是否为上一个按钮
+        if self.previousClickedTag == tabbarBtn.tag {
+            NotificationCenter.default.post(name: NSNotification.Name(rawValue: NotificationTabbarButtonClickDidRepeat), object: nil)
+        }
+        self.previousClickedTag = tabbarBtn.tag
     }
     
     func plusBtnDidClick() {

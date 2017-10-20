@@ -15,7 +15,7 @@ class AppNavigationController: UINavigationController {
 
         // Do any additional setup after loading the view.
         
-        self.navigationBar.barTintColor = UIColor.orange
+        self.navigationBar.barTintColor = BaseColor.ThemeColor
         self.navigationBar.isTranslucent = false
         
         self.navigationBar.titleTextAttributes = [NSForegroundColorAttributeName: UIColor.white, NSFontAttributeName: UIFont.systemFont(ofSize: 18)];

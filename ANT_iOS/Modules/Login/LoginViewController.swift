@@ -153,6 +153,7 @@ class LoginViewController: BaseViewController {
             YYProgressHUD.showText(text: "请输入6位动态码", delay: delay)
             return
         }
+        self.navigationController?.popViewController(animated: true)
     }
     
     lazy var phoneNumberField: UITextField = {

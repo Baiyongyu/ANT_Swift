@@ -42,7 +42,8 @@ let Tip_RequestUnlegal  = "账号在其他设备登录，请重新登录"
 
 let delay: TimeInterval = 0.7
 
-let NotificationLocationUpdated    = "NotificationLocationUpdated"
+let NotificationTabbarButtonClickDidRepeat = "NotificationTabbarButtonClickDidRepeat"
+let NotificationLocationUpdated            = "NotificationLocationUpdated"
 
 
 let UMSHARE_APPKEY      = "58a11aac4544cb5cd2001b93"
