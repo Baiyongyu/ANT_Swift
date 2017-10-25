@@ -1,5 +1,5 @@
 //
-//  CacheManager.swift
+//  CleanCacheManager.swift
 //  ANT_iOS
 //
 //  Created by 宇玄丶 on 2017/6/6.
@@ -8,21 +8,21 @@
 
 import UIKit
 
-class CacheManager: NSObject {
+class CleanCacheManager: NSObject {
 
     /// 计算缓存大小
-    static var cacheSize: String{
-        get{
+    static var cacheSize: String {
+        get {
             // 路径
             let basePath = NSSearchPathForDirectoriesInDomains(FileManager.SearchPathDirectory.cachesDirectory, FileManager.SearchPathDomainMask.userDomainMask, true).first
             let fileManager = FileManager.default
             // 遍历出所有缓存文件加起来的大小
-            func caculateCache() -> Float{
+            func caculateCache() -> Float {
                 var total: Float = 0
-                if fileManager.fileExists(atPath: basePath!){
+                if fileManager.fileExists(atPath: basePath!) {
                     let childrenPath = fileManager.subpaths(atPath: basePath!)
-                    if childrenPath != nil{
-                        for path in childrenPath!{
+                    if childrenPath != nil {
+                        for path in childrenPath! {
                             let childPath = basePath!.appending("/").appending(path)
                             do{
                                 let attr:NSDictionary = try fileManager.attributesOfItem(atPath: childPath) as NSDictionary

@@ -43,7 +43,7 @@
 		F34C93561EE6991300091195 /* MessageModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F34C93551EE6991300091195 /* MessageModel.swift */; };
 		F34C93591EE69EC400091195 /* LoanInsureViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F34C93581EE69EC400091195 /* LoanInsureViewController.swift */; };
 		F34C935C1EE6A6D000091195 /* SettingsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F34C935B1EE6A6D000091195 /* SettingsViewController.swift */; };
-		F34C935E1EE6B58600091195 /* CacheManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = F34C935D1EE6B58600091195 /* CacheManager.swift */; };
+		F34C935E1EE6B58600091195 /* CleanCacheManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = F34C935D1EE6B58600091195 /* CleanCacheManager.swift */; };
 		F35BB7611EE14CEF0032EC02 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F35BB7601EE14CEF0032EC02 /* ViewController.swift */; };
 		F35BB7661EE14CEF0032EC02 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F35BB7651EE14CEF0032EC02 /* Assets.xcassets */; };
 		F35BB7691EE14CEF0032EC02 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F35BB7671EE14CEF0032EC02 /* LaunchScreen.storyboard */; };
@@ -109,9 +109,7 @@
 		F398559C1EE954690042990C /* CommonUtils.swift in Sources */ = {isa = PBXBuildFile; fileRef = F398559B1EE954690042990C /* CommonUtils.swift */; };
 		F399DDD11EF38F6A0012AD94 /* AppTabBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = F399DDD01EF38F6A0012AD94 /* AppTabBar.swift */; };
 		F399DDD71EF3DA9B0012AD94 /* UIImage+Additions.swift in Sources */ = {isa = PBXBuildFile; fileRef = F399DDD61EF3DA9B0012AD94 /* UIImage+Additions.swift */; };
-		F3A1D0DC1F04F2290008F051 /* UIColor+ImageGetColor.m in Sources */ = {isa = PBXBuildFile; fileRef = F3A1D0DB1F04F2290008F051 /* UIColor+ImageGetColor.m */; };
 		F3A1D1321F04FF4C0008F051 /* BaseTableViewDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3A1D1311F04FF4C0008F051 /* BaseTableViewDataSource.swift */; };
-		F3B764FA1EEF73E1009FF0BE /* PopUpPickerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3B764F91EEF73E1009FF0BE /* PopUpPickerView.swift */; };
 		F3BA37BA1F96EC7F00F3976E /* NewsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3BA37B51F96EC7F00F3976E /* NewsViewController.swift */; };
 		F3BA37BB1F96EC7F00F3976E /* NewsDetailsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3BA37B61F96EC7F00F3976E /* NewsDetailsViewController.swift */; };
 		F3BA37BC1F96EC7F00F3976E /* NewsTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3BA37B71F96EC7F00F3976E /* NewsTableViewCell.swift */; };
@@ -124,6 +122,13 @@
 		F3C90ADC1F98422D00333262 /* TradeRecordViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3C90ADB1F98422D00333262 /* TradeRecordViewController.swift */; };
 		F3C90ADF1F98458000333262 /* CeTuRecordViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3C90ADE1F98458000333262 /* CeTuRecordViewController.swift */; };
 		F3C90AE21F9848A500333262 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3C90AE11F9848A500333262 /* LoginViewController.swift */; };
+		F3CFDE2D1FA01569002E42C4 /* popMenvTopView.xib in Resources */ = {isa = PBXBuildFile; fileRef = F3CFDE211FA01568002E42C4 /* popMenvTopView.xib */; };
+		F3CFDE2E1FA01569002E42C4 /* UIColor+ImageGetColor.m in Sources */ = {isa = PBXBuildFile; fileRef = F3CFDE241FA01568002E42C4 /* UIColor+ImageGetColor.m */; };
+		F3CFDE2F1FA01569002E42C4 /* PopMenuModel.m in Sources */ = {isa = PBXBuildFile; fileRef = F3CFDE271FA01568002E42C4 /* PopMenuModel.m */; };
+		F3CFDE301FA01569002E42C4 /* PopMenuButton.m in Sources */ = {isa = PBXBuildFile; fileRef = F3CFDE291FA01568002E42C4 /* PopMenuButton.m */; };
+		F3CFDE311FA01569002E42C4 /* popMenvTopView.m in Sources */ = {isa = PBXBuildFile; fileRef = F3CFDE2A1FA01568002E42C4 /* popMenvTopView.m */; };
+		F3CFDE321FA01569002E42C4 /* PopUpPickerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3CFDE2B1FA01568002E42C4 /* PopUpPickerView.swift */; };
+		F3CFDE331FA01569002E42C4 /* HyPopMenuView.m in Sources */ = {isa = PBXBuildFile; fileRef = F3CFDE2C1FA01568002E42C4 /* HyPopMenuView.m */; };
 		F3D0A6651F6FC27900464265 /* QualityTrackModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3D0A6641F6FC27900464265 /* QualityTrackModel.swift */; };
 		F3D16B221F70F11B00985E30 /* TraceStep3ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3D16B211F70F11B00985E30 /* TraceStep3ViewController.swift */; };
 		F3D16B241F70FBAF00985E30 /* TraceStep4ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3D16B231F70FBAF00985E30 /* TraceStep4ViewController.swift */; };
@@ -135,8 +140,6 @@
 		F3D84DFA1F6BC5A4008573E3 /* YYSheetView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3D84DF91F6BC5A4008573E3 /* YYSheetView.swift */; };
 		F3DCC7231F986CF500E3FCEC /* YYProgressHUD.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3DCC7221F986CF500E3FCEC /* YYProgressHUD.swift */; };
 		F3E6C8CC1F6F61FF00E2E45C /* YYAdvertScrollView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3E6C8CB1F6F61FF00E2E45C /* YYAdvertScrollView.swift */; };
-		F3EE54E01F063831004A9523 /* popMenvTopView.xib in Resources */ = {isa = PBXBuildFile; fileRef = F3EE54DE1F063830004A9523 /* popMenvTopView.xib */; };
-		F3EE54E11F063831004A9523 /* popMenvTopView.m in Sources */ = {isa = PBXBuildFile; fileRef = F3EE54DF1F063830004A9523 /* popMenvTopView.m */; };
 		F3EE54E31F064537004A9523 /* NewsModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3EE54E21F064537004A9523 /* NewsModel.swift */; };
 		F3F586841EE407FD0018412D /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3F586831EE407FD0018412D /* HomeViewController.swift */; };
 		F3F5870C1EE4375D0018412D /* HomeModuleCollectionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3F5870B1EE4375D0018412D /* HomeModuleCollectionView.swift */; };
@@ -145,9 +148,6 @@
 		F3F5871A1EE43CAD0018412D /* CircleViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3F587151EE43CAD0018412D /* CircleViewController.swift */; };
 		F3F5871B1EE43CAD0018412D /* FarmViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3F587171EE43CAD0018412D /* FarmViewController.swift */; };
 		F3F5871C1EE43CAD0018412D /* MineViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3F587191EE43CAD0018412D /* MineViewController.swift */; };
-		F3F7820A1F6632B2007C5768 /* HyPopMenuView.m in Sources */ = {isa = PBXBuildFile; fileRef = F3F782051F6632B2007C5768 /* HyPopMenuView.m */; };
-		F3F7820B1F6632B2007C5768 /* PopMenuButton.m in Sources */ = {isa = PBXBuildFile; fileRef = F3F782071F6632B2007C5768 /* PopMenuButton.m */; };
-		F3F7820C1F6632B2007C5768 /* PopMenuModel.m in Sources */ = {isa = PBXBuildFile; fileRef = F3F782091F6632B2007C5768 /* PopMenuModel.m */; };
 		F3FC1E881EE7E09D00CD66E1 /* WebThingsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3FC1E871EE7E09D00CD66E1 /* WebThingsViewController.swift */; };
 		F3FC1E8A1EE7E2EA00CD66E1 /* webthing in Resources */ = {isa = PBXBuildFile; fileRef = F3FC1E891EE7E2EA00CD66E1 /* webthing */; };
 		F3FCEAAD1F7C84CE00148C09 /* PopupMenu.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3FCEAAC1F7C84CE00148C09 /* PopupMenu.swift */; };
@@ -203,7 +203,7 @@
 		F34C93551EE6991300091195 /* MessageModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MessageModel.swift; sourceTree = "<group>"; };
 		F34C93581EE69EC400091195 /* LoanInsureViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoanInsureViewController.swift; sourceTree = "<group>"; };
 		F34C935B1EE6A6D000091195 /* SettingsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SettingsViewController.swift; sourceTree = "<group>"; };
-		F34C935D1EE6B58600091195 /* CacheManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CacheManager.swift; sourceTree = "<group>"; };
+		F34C935D1EE6B58600091195 /* CleanCacheManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CleanCacheManager.swift; sourceTree = "<group>"; };
 		F35BB75B1EE14CEF0032EC02 /* ANT_iOS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ANT_iOS.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F35BB7601EE14CEF0032EC02 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		F35BB7651EE14CEF0032EC02 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -277,10 +277,7 @@
 		F398559B1EE954690042990C /* CommonUtils.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CommonUtils.swift; sourceTree = "<group>"; };
 		F399DDD01EF38F6A0012AD94 /* AppTabBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppTabBar.swift; sourceTree = "<group>"; };
 		F399DDD61EF3DA9B0012AD94 /* UIImage+Additions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIImage+Additions.swift"; sourceTree = "<group>"; };
-		F3A1D0DA1F04F2290008F051 /* UIColor+ImageGetColor.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIColor+ImageGetColor.h"; sourceTree = "<group>"; };
-		F3A1D0DB1F04F2290008F051 /* UIColor+ImageGetColor.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIColor+ImageGetColor.m"; sourceTree = "<group>"; };
 		F3A1D1311F04FF4C0008F051 /* BaseTableViewDataSource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseTableViewDataSource.swift; sourceTree = "<group>"; };
-		F3B764F91EEF73E1009FF0BE /* PopUpPickerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PopUpPickerView.swift; sourceTree = "<group>"; };
 		F3BA37B51F96EC7F00F3976E /* NewsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NewsViewController.swift; sourceTree = "<group>"; };
 		F3BA37B61F96EC7F00F3976E /* NewsDetailsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NewsDetailsViewController.swift; sourceTree = "<group>"; };
 		F3BA37B71F96EC7F00F3976E /* NewsTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NewsTableViewCell.swift; sourceTree = "<group>"; };
@@ -295,6 +292,18 @@
 		F3C90ADB1F98422D00333262 /* TradeRecordViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TradeRecordViewController.swift; sourceTree = "<group>"; };
 		F3C90ADE1F98458000333262 /* CeTuRecordViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CeTuRecordViewController.swift; sourceTree = "<group>"; };
 		F3C90AE11F9848A500333262 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
+		F3CFDE211FA01568002E42C4 /* popMenvTopView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = popMenvTopView.xib; sourceTree = "<group>"; };
+		F3CFDE221FA01568002E42C4 /* PopMenuModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PopMenuModel.h; sourceTree = "<group>"; };
+		F3CFDE231FA01568002E42C4 /* PopMenuButton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PopMenuButton.h; sourceTree = "<group>"; };
+		F3CFDE241FA01568002E42C4 /* UIColor+ImageGetColor.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIColor+ImageGetColor.m"; sourceTree = "<group>"; };
+		F3CFDE251FA01568002E42C4 /* popMenvTopView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = popMenvTopView.h; sourceTree = "<group>"; };
+		F3CFDE261FA01568002E42C4 /* HyPopMenuView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HyPopMenuView.h; sourceTree = "<group>"; };
+		F3CFDE271FA01568002E42C4 /* PopMenuModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PopMenuModel.m; sourceTree = "<group>"; };
+		F3CFDE281FA01568002E42C4 /* UIColor+ImageGetColor.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIColor+ImageGetColor.h"; sourceTree = "<group>"; };
+		F3CFDE291FA01568002E42C4 /* PopMenuButton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PopMenuButton.m; sourceTree = "<group>"; };
+		F3CFDE2A1FA01568002E42C4 /* popMenvTopView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = popMenvTopView.m; sourceTree = "<group>"; };
+		F3CFDE2B1FA01568002E42C4 /* PopUpPickerView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PopUpPickerView.swift; sourceTree = "<group>"; };
+		F3CFDE2C1FA01568002E42C4 /* HyPopMenuView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HyPopMenuView.m; sourceTree = "<group>"; };
 		F3D0A6641F6FC27900464265 /* QualityTrackModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QualityTrackModel.swift; sourceTree = "<group>"; };
 		F3D16B211F70F11B00985E30 /* TraceStep3ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TraceStep3ViewController.swift; sourceTree = "<group>"; };
 		F3D16B231F70FBAF00985E30 /* TraceStep4ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TraceStep4ViewController.swift; sourceTree = "<group>"; };
@@ -306,9 +315,6 @@
 		F3D84DF91F6BC5A4008573E3 /* YYSheetView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = YYSheetView.swift; sourceTree = "<group>"; };
 		F3DCC7221F986CF500E3FCEC /* YYProgressHUD.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = YYProgressHUD.swift; sourceTree = "<group>"; };
 		F3E6C8CB1F6F61FF00E2E45C /* YYAdvertScrollView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = YYAdvertScrollView.swift; sourceTree = "<group>"; };
-		F3EE54DD1F063830004A9523 /* popMenvTopView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = popMenvTopView.h; path = "../../../../../../宇玄丶/各种Demo/OC/HyPopMenuView-master/HyPopMenuView/popMenvTopView.h"; sourceTree = "<group>"; };
-		F3EE54DE1F063830004A9523 /* popMenvTopView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = popMenvTopView.xib; path = "../../../../../../宇玄丶/各种Demo/OC/HyPopMenuView-master/HyPopMenuView/popMenvTopView.xib"; sourceTree = "<group>"; };
-		F3EE54DF1F063830004A9523 /* popMenvTopView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = popMenvTopView.m; path = "../../../../../../宇玄丶/各种Demo/OC/HyPopMenuView-master/HyPopMenuView/popMenvTopView.m"; sourceTree = "<group>"; };
 		F3EE54E21F064537004A9523 /* NewsModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewsModel.swift; sourceTree = "<group>"; };
 		F3F586831EE407FD0018412D /* HomeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
 		F3F5870B1EE4375D0018412D /* HomeModuleCollectionView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomeModuleCollectionView.swift; sourceTree = "<group>"; };
@@ -317,12 +323,6 @@
 		F3F587151EE43CAD0018412D /* CircleViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CircleViewController.swift; sourceTree = "<group>"; };
 		F3F587171EE43CAD0018412D /* FarmViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FarmViewController.swift; sourceTree = "<group>"; };
 		F3F587191EE43CAD0018412D /* MineViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MineViewController.swift; sourceTree = "<group>"; };
-		F3F782041F6632B2007C5768 /* HyPopMenuView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HyPopMenuView.h; sourceTree = "<group>"; };
-		F3F782051F6632B2007C5768 /* HyPopMenuView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HyPopMenuView.m; sourceTree = "<group>"; };
-		F3F782061F6632B2007C5768 /* PopMenuButton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PopMenuButton.h; sourceTree = "<group>"; };
-		F3F782071F6632B2007C5768 /* PopMenuButton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PopMenuButton.m; sourceTree = "<group>"; };
-		F3F782081F6632B2007C5768 /* PopMenuModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PopMenuModel.h; sourceTree = "<group>"; };
-		F3F782091F6632B2007C5768 /* PopMenuModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PopMenuModel.m; sourceTree = "<group>"; };
 		F3FC1E871EE7E09D00CD66E1 /* WebThingsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WebThingsViewController.swift; sourceTree = "<group>"; };
 		F3FC1E891EE7E2EA00CD66E1 /* webthing */ = {isa = PBXFileReference; lastKnownFileType = folder; path = webthing; sourceTree = "<group>"; };
 		F3FCEAAC1F7C84CE00148C09 /* PopupMenu.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PopupMenu.swift; sourceTree = "<group>"; };
@@ -570,7 +570,7 @@
 		F365D71D1EE67ADC00500391 /* Manager */ = {
 			isa = PBXGroup;
 			children = (
-				F34C935D1EE6B58600091195 /* CacheManager.swift */,
+				F34C935D1EE6B58600091195 /* CleanCacheManager.swift */,
 				F30EEEE41EF767A100C6A9FF /* VersionManager.swift */,
 				F37600D41F788BCB00E9A242 /* UMSocialSwiftInterface.swift */,
 				F32844C71F95D88A00456D76 /* LocationManager.h */,
@@ -691,25 +691,6 @@
 			path = BaseTableView;
 			sourceTree = "<group>";
 		};
-		F3B764F81EEF73B3009FF0BE /* PopupMenu */ = {
-			isa = PBXGroup;
-			children = (
-				F3B764F91EEF73E1009FF0BE /* PopUpPickerView.swift */,
-				F3F782041F6632B2007C5768 /* HyPopMenuView.h */,
-				F3F782051F6632B2007C5768 /* HyPopMenuView.m */,
-				F3F782061F6632B2007C5768 /* PopMenuButton.h */,
-				F3F782071F6632B2007C5768 /* PopMenuButton.m */,
-				F3F782081F6632B2007C5768 /* PopMenuModel.h */,
-				F3F782091F6632B2007C5768 /* PopMenuModel.m */,
-				F3A1D0DA1F04F2290008F051 /* UIColor+ImageGetColor.h */,
-				F3A1D0DB1F04F2290008F051 /* UIColor+ImageGetColor.m */,
-				F3EE54DE1F063830004A9523 /* popMenvTopView.xib */,
-				F3EE54DD1F063830004A9523 /* popMenvTopView.h */,
-				F3EE54DF1F063830004A9523 /* popMenvTopView.m */,
-			);
-			path = PopupMenu;
-			sourceTree = "<group>";
-		};
 		F3BA37B41F96EC7F00F3976E /* News */ = {
 			isa = PBXGroup;
 			children = (
@@ -762,6 +743,25 @@
 			path = Login;
 			sourceTree = "<group>";
 		};
+		F3CFDE201FA01568002E42C4 /* PopupMenu */ = {
+			isa = PBXGroup;
+			children = (
+				F3CFDE211FA01568002E42C4 /* popMenvTopView.xib */,
+				F3CFDE221FA01568002E42C4 /* PopMenuModel.h */,
+				F3CFDE231FA01568002E42C4 /* PopMenuButton.h */,
+				F3CFDE241FA01568002E42C4 /* UIColor+ImageGetColor.m */,
+				F3CFDE251FA01568002E42C4 /* popMenvTopView.h */,
+				F3CFDE261FA01568002E42C4 /* HyPopMenuView.h */,
+				F3CFDE271FA01568002E42C4 /* PopMenuModel.m */,
+				F3CFDE281FA01568002E42C4 /* UIColor+ImageGetColor.h */,
+				F3CFDE291FA01568002E42C4 /* PopMenuButton.m */,
+				F3CFDE2A1FA01568002E42C4 /* popMenvTopView.m */,
+				F3CFDE2B1FA01568002E42C4 /* PopUpPickerView.swift */,
+				F3CFDE2C1FA01568002E42C4 /* HyPopMenuView.m */,
+			);
+			path = PopupMenu;
+			sourceTree = "<group>";
+		};
 		F3D677321EE5584F00BEB029 /* Classes */ = {
 			isa = PBXGroup;
 			children = (
@@ -777,10 +777,10 @@
 				F307E6161F68B7E4001664C8 /* InputDialog.swift */,
 				F33FBB8D1EEFBEDA00F4B2A8 /* MenuControl.swift */,
 				F39855991EE93C870042990C /* SelectAreaAlert.swift */,
+				F3CFDE201FA01568002E42C4 /* PopupMenu */,
 				F378E1C91F988FEA00A48CF5 /* PhotoBrowser */,
 				F30685511F95CD6600B6E4C5 /* ScrollPageView */,
 				F314B3581F67C9BF00AAB40B /* IconFont */,
-				F3B764F81EEF73B3009FF0BE /* PopupMenu */,
 			);
 			path = Classes;
 			sourceTree = "<group>";
@@ -987,10 +987,10 @@
 				F39465821F99E82000ADBA13 /* Info-tvOS.plist in Resources */,
 				F3FC1E8A1EE7E2EA00CD66E1 /* webthing in Resources */,
 				F35BB7691EE14CEF0032EC02 /* LaunchScreen.storyboard in Resources */,
-				F3EE54E01F063831004A9523 /* popMenvTopView.xib in Resources */,
 				F314B3671F67D2E600AAB40B /* iconfont.ttf in Resources */,
 				F39465781F99E82000ADBA13 /* Info-iOS.plist in Resources */,
 				F378E1EA1F988FEB00A48CF5 /* ItemCell.xib in Resources */,
+				F3CFDE2D1FA01569002E42C4 /* popMenvTopView.xib in Resources */,
 				F378E1E71F988FEB00A48CF5 /* pic.bundle in Resources */,
 				F35BB7661EE14CEF0032EC02 /* Assets.xcassets in Resources */,
 			);
@@ -1006,16 +1006,22 @@
 			);
 			inputPaths = (
 				"${SRCROOT}/Pods/Target Support Files/Pods-ANT_iOS/Pods-ANT_iOS-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/Alamofire/Alamofire.framework",
+				"${BUILT_PRODUCTS_DIR}/Cache/Cache.framework",
 				"${BUILT_PRODUCTS_DIR}/IQKeyboardManagerSwift/IQKeyboardManagerSwift.framework",
 				"${BUILT_PRODUCTS_DIR}/Kingfisher/Kingfisher.framework",
 				"${BUILT_PRODUCTS_DIR}/SnapKit/SnapKit.framework",
+				"${BUILT_PRODUCTS_DIR}/SwiftHash/SwiftHash.framework",
 				"${BUILT_PRODUCTS_DIR}/pop/pop.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Alamofire.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Cache.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/IQKeyboardManagerSwift.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Kingfisher.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SnapKit.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SwiftHash.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/pop.framework",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -1071,10 +1077,8 @@
 				F365D67A1EE6415B00500391 /* FarmActivityModel.swift in Sources */,
 				F399DDD11EF38F6A0012AD94 /* AppTabBar.swift in Sources */,
 				F394657C1F99E82000ADBA13 /* NetworkFetcher.swift in Sources */,
-				F3F7820A1F6632B2007C5768 /* HyPopMenuView.m in Sources */,
 				F314B3641F67D21700AAB40B /* TBCityIconInfo.m in Sources */,
 				F37600D51F788BCB00E9A242 /* UMSocialSwiftInterface.swift in Sources */,
-				F3F7820B1F6632B2007C5768 /* PopMenuButton.m in Sources */,
 				F378E1E31F988FEB00A48CF5 /* PhotoBrowser+Main.swift in Sources */,
 				F3BB462B1F6939FE00E0539C /* FieldGroupModel.swift in Sources */,
 				F314B2CE1F6769EA00AAB40B /* BaseTableViewDelegate.swift in Sources */,
@@ -1083,7 +1087,6 @@
 				F33FBB981EEFDB2100F4B2A8 /* PlantManagerViewController.swift in Sources */,
 				F378E1EB1F988FEB00A48CF5 /* ItemCell.swift in Sources */,
 				F3F5871A1EE43CAD0018412D /* CircleViewController.swift in Sources */,
-				F3F7820C1F6632B2007C5768 /* PopMenuModel.m in Sources */,
 				F33FBB8B1EEF97DF00F4B2A8 /* CeTuAdviceViewController.swift in Sources */,
 				F378E1E51F988FEB00A48CF5 /* PhotoBrowser+Indicator.swift in Sources */,
 				F378E1E01F988FEB00A48CF5 /* PhotoBrowser.swift in Sources */,
@@ -1108,14 +1111,13 @@
 				F37BDDB11F6A62C000641D76 /* ImageModel.swift in Sources */,
 				F378E1E41F988FEB00A48CF5 /* PhotoBrowser+CollectionViewExtend.swift in Sources */,
 				F3F5870C1EE4375D0018412D /* HomeModuleCollectionView.swift in Sources */,
-				F3EE54E11F063831004A9523 /* popMenvTopView.m in Sources */,
 				F321B5F51F99938F00B11A37 /* String+Additions.swift in Sources */,
 				F3DCC7231F986CF500E3FCEC /* YYProgressHUD.swift in Sources */,
 				F34C93561EE6991300091195 /* MessageModel.swift in Sources */,
+				F3CFDE2E1FA01569002E42C4 /* UIColor+ImageGetColor.m in Sources */,
 				F3C90AD91F98334200333262 /* AddPlantViewController.swift in Sources */,
 				F365D7201EE67B1700500391 /* AppCommon.m in Sources */,
 				F365D71B1EE67AAE00500391 /* NSObject+YYModel.m in Sources */,
-				F3B764FA1EEF73E1009FF0BE /* PopUpPickerView.swift in Sources */,
 				F38AA18B1F70B0C100CA9547 /* TraceStep2ViewController.swift in Sources */,
 				F321B5F81F99938F00B11A37 /* Comment_Like_View.swift in Sources */,
 				F378E1EE1F988FEB00A48CF5 /* DisplayView.swift in Sources */,
@@ -1143,7 +1145,6 @@
 				F365D6781EE63C8900500391 /* FarmRecordCell.swift in Sources */,
 				F35BB7801EE163DD0032EC02 /* BaseViewController.swift in Sources */,
 				F321B5F41F99938F00B11A37 /* CircleData.swift in Sources */,
-				F3A1D0DC1F04F2290008F051 /* UIColor+ImageGetColor.m in Sources */,
 				F3F5870F1EE439EB0018412D /* NotificationViewController.swift in Sources */,
 				F34C93541EE692F300091195 /* BaseConst.swift in Sources */,
 				F39465791F99E82000ADBA13 /* NSURLResponse+Haneke.swift in Sources */,
@@ -1151,6 +1152,7 @@
 				F39465871F99E82000ADBA13 /* NSFileManager+Haneke.swift in Sources */,
 				F34C93591EE69EC400091195 /* LoanInsureViewController.swift in Sources */,
 				F3D16B241F70FBAF00985E30 /* TraceStep4ViewController.swift in Sources */,
+				F3CFDE311FA01569002E42C4 /* popMenvTopView.m in Sources */,
 				F3BB46211F69234C00E0539C /* FieldsManagerViewController.swift in Sources */,
 				F320DE761EEE669A005AF954 /* CetuViewController.swift in Sources */,
 				F32671C51EF7D39700121C9B /* YYAlertView.swift in Sources */,
@@ -1167,11 +1169,13 @@
 				F378E1E21F988FEB00A48CF5 /* PhotoBrowser+PBType.swift in Sources */,
 				F320DE7A1EEE7A65005AF954 /* UIView+Additions.swift in Sources */,
 				F3BA37BC1F96EC7F00F3976E /* NewsTableViewCell.swift in Sources */,
+				F3CFDE301FA01569002E42C4 /* PopMenuButton.m in Sources */,
 				F35BB77D1EE1503B0032EC02 /* AppNavigationController.swift in Sources */,
 				F38AA18F1F70EC6A00CA9547 /* CharacteristicCell.swift in Sources */,
 				F365D6891EE67A4100500391 /* AppDelegate.swift in Sources */,
 				F3D16B221F70F11B00985E30 /* TraceStep3ViewController.swift in Sources */,
 				F39465741F99E82000ADBA13 /* String+Haneke.swift in Sources */,
+				F3CFDE321FA01569002E42C4 /* PopUpPickerView.swift in Sources */,
 				F3FE12021F97386D00059BCA /* SellFoodViewController.swift in Sources */,
 				F399DDD71EF3DA9B0012AD94 /* UIImage+Additions.swift in Sources */,
 				F39465831F99E82000ADBA13 /* Cache.swift in Sources */,
@@ -1189,9 +1193,10 @@
 				F3D84DFA1F6BC5A4008573E3 /* YYSheetView.swift in Sources */,
 				F32844C91F95D88A00456D76 /* LocationManager.m in Sources */,
 				F378E1E91F988FEB00A48CF5 /* PhotoBrowser+Model.swift in Sources */,
-				F34C935E1EE6B58600091195 /* CacheManager.swift in Sources */,
+				F34C935E1EE6B58600091195 /* CleanCacheManager.swift in Sources */,
 				F3BA37BD1F96EC7F00F3976E /* PublishViewController.swift in Sources */,
 				F3A1D1321F04FF4C0008F051 /* BaseTableViewDataSource.swift in Sources */,
+				F3CFDE331FA01569002E42C4 /* HyPopMenuView.m in Sources */,
 				F3012C1F1F95DF6D000BF3FB /* LocationMapViewController.swift in Sources */,
 				F320DE781EEE7114005AF954 /* FormulaModel.swift in Sources */,
 				F3FE12041F9756DE00059BCA /* PlantDetailViewController.swift in Sources */,
@@ -1203,6 +1208,7 @@
 				F3C90AE21F9848A500333262 /* LoginViewController.swift in Sources */,
 				F3BA37BA1F96EC7F00F3976E /* NewsViewController.swift in Sources */,
 				F3F587131EE43BC40018412D /* UIColor+Addtions.swift in Sources */,
+				F3CFDE2F1FA01569002E42C4 /* PopMenuModel.m in Sources */,
 				F3235C431F6FB8F5003A0DCE /* QualityTrackingViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -1320,12 +1326,15 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = Q5SWE3562A;
 				INFOPLIST_FILE = ANT_iOS/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.qianmo.ANT-iOS";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_OBJC_BRIDGING_HEADER = "ANT_iOS/Bridging-Header.h";
 				SWIFT_VERSION = 3.0;
 				USER_HEADER_SEARCH_PATHS = "${SRCROOT}/**";
@@ -1338,12 +1347,15 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = Q5SWE3562A;
 				INFOPLIST_FILE = ANT_iOS/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.qianmo.ANT-iOS";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_OBJC_BRIDGING_HEADER = "ANT_iOS/Bridging-Header.h";
 				SWIFT_VERSION = 3.0;
 				USER_HEADER_SEARCH_PATHS = "${SRCROOT}/**";
