@@ -18,9 +18,6 @@ class PlantModel: NSObject {
     
     var year: String?
     
-    override func copy() -> Any {
-        return self.yy_modelCopy
-    }
 }
 
 //田块分组列表

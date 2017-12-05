@@ -7,7 +7,7 @@
 //
 
 import UIKit
-
+import Alamofire
 
 class HomeViewController: BaseViewController {
     
@@ -142,6 +142,21 @@ class HomeViewController: BaseViewController {
     }
     
     override func loadData() {
+        
+//        let param = ["user_name" : "13520245101", "password" : "123456"]
+//        let params = ParamsSignature().signatureParams(param) as! [String: String]
+        
+        //头部banner请求
+        YYNetWork().request(Goods_Banner_Url, params: nil).cache(true).responseCacheAndJson { (json) in
+            
+            switch json.result {
+            case .success(let string):
+                print(string)
+            case .failure(let error):
+                print(error)
+            }
+        }
+        
         // 头部滚动视图
         cycleScrollView.imageURLStringsGroup = ["http://img4.imgtn.bdimg.com/it/u=902359164,2443257076&fm=11&gp=0.jpg",
                                                 "http://img1.imgtn.bdimg.com/it/u=39962520,1910906011&fm=27&gp=0.jpg",

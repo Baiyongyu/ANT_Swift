@@ -29,25 +29,25 @@ extension PhotoBrowser {
             handleShowAnim(propImgV: propImgV, thumbNailSize: nil)
             
         }else {
-            let cache = Cache<UIImage>(name: CFPBCacheKey)
-            cache.fetch(key: photoModel.hostHDImgURL).onSuccess {[unowned self] image in
-                propImgV.image = image
-                self.handleShowAnim(propImgV: propImgV, thumbNailSize: nil)
-    
-            }.onFailure{[unowned self] error in
-                
-                let size = CGSize(width: CFPBThumbNailWH, height: CFPBThumbNailWH)
-                if photoModel.hostThumbnailImg != nil {
-                    propImgV.image = photoModel.hostThumbnailImg
-                    self.handleShowAnim(propImgV: propImgV, thumbNailSize: size)
-                    
-                }else {
-                    /** 这里需要大量修改 */
-                    let img = UIImage.imageWithColor(size: CGSize(width: CFPBThumbNailWH, height: CFPBThumbNailWH))
-                    propImgV.image = img
-                    self.handleShowAnim(propImgV: propImgV, thumbNailSize: size)
-                }
-            }
+//            let cache = Cache<UIImage>(name: CFPBCacheKey)
+//            cache.fetch(key: photoModel.hostHDImgURL).onSuccess {[unowned self] image in
+//                propImgV.image = image
+//                self.handleShowAnim(propImgV: propImgV, thumbNailSize: nil)
+//
+//            }.onFailure{[unowned self] error in
+//
+//                let size = CGSize(width: CFPBThumbNailWH, height: CFPBThumbNailWH)
+//                if photoModel.hostThumbnailImg != nil {
+//                    propImgV.image = photoModel.hostThumbnailImg
+//                    self.handleShowAnim(propImgV: propImgV, thumbNailSize: size)
+//
+//                }else {
+//                    /** 这里需要大量修改 */
+//                    let img = UIImage.imageWithColor(size: CGSize(width: CFPBThumbNailWH, height: CFPBThumbNailWH))
+//                    propImgV.image = img
+//                    self.handleShowAnim(propImgV: propImgV, thumbNailSize: size)
+//                }
+//            }
         }
     }
     

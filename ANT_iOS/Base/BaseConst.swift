@@ -8,6 +8,7 @@
 
 import UIKit
 /******************************* ThirdLib *******************************/
+import Alamofire
 import SnapKit
 import Kingfisher
 

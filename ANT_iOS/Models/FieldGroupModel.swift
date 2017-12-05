@@ -25,14 +25,6 @@ class FieldGroupModel: NSObject {
     var isOpen: Bool?
     //是否选中
     var isChecked: Bool?
-    
-    override func copy() -> Any {
-        return self.yy_modelCopy
-    }
-    
-    func modelCustomPropertyMapper() -> NSDictionary {
-        return ["field_list":FieldModel()]
-    }
 }
 
 class FieldModel: NSObject {
@@ -64,14 +56,4 @@ class FieldModel: NSObject {
     var group_name: String?
     //是否选中
     var selected: Bool?
-    
-    override func copy() -> Any {
-        return self.yy_modelCopy
-    }
-    
-    func modelCustomPropertyMapper() -> NSDictionary {
-        return ["crop_list":PlantModel(),
-                "plan_list":PlantModel()]
-    }
-    
 }

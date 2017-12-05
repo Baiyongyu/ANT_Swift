@@ -30,5 +30,4 @@ class WebThingViewController: BaseViewController {
             navigationController?.interactivePopGestureRecognizer?.isEnabled = true
         }
     }
-    
 }

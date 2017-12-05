@@ -23,9 +23,9 @@ class ItemCell: UICollectionViewCell {
     }
     weak var vc: UIViewController!
     /**  缓存  */
-    var cache: Cache<UIImage>!
+//    var cache: Cache<UIImage>!
     /**  format  */
-    var format: Format<UIImage>!
+//    var format: Format<UIImage>!
     
     @IBOutlet weak var scrollView: UIScrollView!
     @IBOutlet weak var imageV: ShowImageView!
@@ -55,7 +55,7 @@ class ItemCell: UICollectionViewCell {
     lazy var screenW: CGFloat = UIScreen.main.bounds.size.width
 
     deinit {
-        cache = nil
+//        cache = nil
         self.asHUD?.removeFromSuperview()
         NotificationCenter.default.removeObserver(self)
     }
@@ -178,7 +178,7 @@ extension ItemCell: UIScrollViewDelegate {
     
     /**  数据填充  */
     func dataFill() {
-        
+        /*
         if photoType == PhotoBrowser.PhotoType.Local {
             
             /**  本地图片模式  */
@@ -200,9 +200,9 @@ extension ItemCell: UIScrollViewDelegate {
             /** 服务器图片模式 */
             //let url = NSURL(string: photoModel.hostHDImgURL)!
             
-            if cache == nil {
-                cache = Cache<UIImage>(name: CFPBCacheKey)
-            }
+//            if cache == nil {
+//                cache = Cache<UIImage>(name: CFPBCacheKey)
+//            }
             
             if format == nil {
                 format = Format(name: photoModel.hostHDImgURL, diskCapacity: 10 * 1024 * 1024, transform: { img in
@@ -274,7 +274,7 @@ extension ItemCell: UIScrollViewDelegate {
                 }
             })
         }
-        
+        */
         /**  标题  */
         if photoModel.titleStr != nil {msgTitleLabel.text = photoModel.titleStr}
         

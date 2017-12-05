@@ -8,8 +8,10 @@
 
 #import <UIKit/UIKit.h>
 #import <Foundation/Foundation.h>
-#import "YYModel.h"
 #import "AppCommon.h"
+
+//接口加密
+#import "ParamsSignature.h"
 
 #import "UIColor+ImageGetColor.h"
 #import "HyPopMenuView.h"

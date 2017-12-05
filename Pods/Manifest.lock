@@ -14,6 +14,7 @@ PODS:
   - pop (1.0.9)
   - SnapKit (4.0.0)
   - SwiftHash (2.0.0)
+  - SwiftyJSON (3.1.4)
   - UMengUShare/Core (6.4.4):
     - UMengUShare/Network
   - UMengUShare/Network (6.4.4)
@@ -34,6 +35,7 @@ DEPENDENCIES:
   - Kingfisher (~> 4.0.0)
   - pop (~> 1.0)
   - SnapKit (~> 4.0.0)
+  - SwiftyJSON
   - UMengUShare/Social/ReducedQQ
   - UMengUShare/Social/ReducedWeChat
   - UMengUShare/UI
@@ -50,8 +52,9 @@ SPEC CHECKSUMS:
   pop: f667631a5108a2e60d9e8797c9b32ddaf2080bce
   SnapKit: a42d492c16e80209130a3379f73596c3454b7694
   SwiftHash: d2e09b13495447178cdfb8e46e54a5c46f15f5a9
+  SwiftyJSON: c2842d878f95482ffceec5709abc3d05680c0220
   UMengUShare: cd54ae52958426b79aa9193a7b02058d6a6d9aa0
 
-PODFILE CHECKSUM: 98f1d4d51c4c7926ef23eced55f814475b15fe49
+PODFILE CHECKSUM: 6a9e4eeecb9817ceb74591335e3d330aa565bac3
 
 COCOAPODS: 1.4.0.beta.1

@@ -7,7 +7,6 @@
 //
 
 #import "AppCommon.h"
-#import "YYModel.h"
 
 UIWindow *mainWindow() {
     id appDelegate = [UIApplication sharedApplication].delegate;
@@ -79,7 +78,7 @@ UIViewController *topMostViewController() {
 + (void)pushWithVCClass:(Class)vcClass properties:(NSDictionary*)properties {
     id obj = [vcClass new];
     if(properties)
-        [obj yy_modelSetWithDictionary:properties];
+//        [obj yy_modelSetWithDictionary:properties];
     [self pushViewController:obj animated:YES];
 }
 

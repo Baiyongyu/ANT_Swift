@@ -9,6 +9,13 @@
 /* Begin PBXBuildFile section */
 		D4031E97425D8295BF9D115C /* Pods_ANT_iOS.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C3D2928A46DF521094C213F0 /* Pods_ANT_iOS.framework */; };
 		F3012C1F1F95DF6D000BF3FB /* LocationMapViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3012C1E1F95DF6D000BF3FB /* LocationMapViewController.swift */; };
+		F3049E841FD4D36E002AB835 /* YYRequestManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3049E7E1FD4D36E002AB835 /* YYRequestManager.swift */; };
+		F3049E851FD4D36E002AB835 /* YYNetCacheManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3049E7F1FD4D36E002AB835 /* YYNetCacheManager.swift */; };
+		F3049E861FD4D36E002AB835 /* YYLog.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3049E801FD4D36E002AB835 /* YYLog.swift */; };
+		F3049E871FD4D36E002AB835 /* YYDownloadManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3049E811FD4D36E002AB835 /* YYDownloadManager.swift */; };
+		F3049E881FD4D36E002AB835 /* YYNetWork.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3049E821FD4D36E002AB835 /* YYNetWork.swift */; };
+		F3049E891FD4D36E002AB835 /* YYNetValue.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3049E831FD4D36E002AB835 /* YYNetValue.swift */; };
+		F3049E8B1FD4D481002AB835 /* ServerMacro.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3049E8A1FD4D481002AB835 /* ServerMacro.swift */; };
 		F30685501F958B6100B6E4C5 /* YYCycleScrollView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F306854F1F958B6100B6E4C5 /* YYCycleScrollView.swift */; };
 		F307E6171F68B7E4001664C8 /* InputDialog.swift in Sources */ = {isa = PBXBuildFile; fileRef = F307E6161F68B7E4001664C8 /* InputDialog.swift */; };
 		F30EEEE31EF7599100C6A9FF /* VersionAlertView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F30EEEE21EF7599100C6A9FF /* VersionAlertView.swift */; };
@@ -33,6 +40,7 @@
 		F3235C431F6FB8F5003A0DCE /* QualityTrackingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3235C421F6FB8F5003A0DCE /* QualityTrackingViewController.swift */; };
 		F32671C51EF7D39700121C9B /* YYAlertView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F32671C41EF7D39700121C9B /* YYAlertView.swift */; };
 		F32844C91F95D88A00456D76 /* LocationManager.m in Sources */ = {isa = PBXBuildFile; fileRef = F32844C81F95D88A00456D76 /* LocationManager.m */; };
+		F32B56E71FCC150F00CFBDAA /* ParamsSignature.m in Sources */ = {isa = PBXBuildFile; fileRef = F32B56E61FCC150F00CFBDAA /* ParamsSignature.m */; };
 		F3320AE91EE79BF800327DC7 /* ShopListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3320AE81EE79BF800327DC7 /* ShopListViewController.swift */; };
 		F3320AEB1EE7A4BE00327DC7 /* ShopModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3320AEA1EE7A4BE00327DC7 /* ShopModel.swift */; };
 		F33FBB891EEF857C00F4B2A8 /* BuyFormulaPopView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F33FBB881EEF857C00F4B2A8 /* BuyFormulaPopView.swift */; };
@@ -54,8 +62,6 @@
 		F365D67A1EE6415B00500391 /* FarmActivityModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F365D6791EE6415B00500391 /* FarmActivityModel.swift */; };
 		F365D67D1EE6791700500391 /* CetuTypeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F365D67C1EE6791700500391 /* CetuTypeViewController.swift */; };
 		F365D6891EE67A4100500391 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F365D6881EE67A4100500391 /* AppDelegate.swift */; };
-		F365D71B1EE67AAE00500391 /* NSObject+YYModel.m in Sources */ = {isa = PBXBuildFile; fileRef = F365D6E01EE67AAE00500391 /* NSObject+YYModel.m */; };
-		F365D71C1EE67AAE00500391 /* YYClassInfo.m in Sources */ = {isa = PBXBuildFile; fileRef = F365D6E21EE67AAE00500391 /* YYClassInfo.m */; };
 		F365D7201EE67B1700500391 /* AppCommon.m in Sources */ = {isa = PBXBuildFile; fileRef = F365D71F1EE67B1700500391 /* AppCommon.m */; };
 		F37600D51F788BCB00E9A242 /* UMSocialSwiftInterface.swift in Sources */ = {isa = PBXBuildFile; fileRef = F37600D41F788BCB00E9A242 /* UMSocialSwiftInterface.swift */; };
 		F378E1DF1F988FEB00A48CF5 /* Layout.swift in Sources */ = {isa = PBXBuildFile; fileRef = F378E1CB1F988FEA00A48CF5 /* Layout.swift */; };
@@ -80,28 +86,6 @@
 		F38AA18B1F70B0C100CA9547 /* TraceStep2ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F38AA18A1F70B0C100CA9547 /* TraceStep2ViewController.swift */; };
 		F38AA18D1F70B33300CA9547 /* CustomPageControl.swift in Sources */ = {isa = PBXBuildFile; fileRef = F38AA18C1F70B33300CA9547 /* CustomPageControl.swift */; };
 		F38AA18F1F70EC6A00CA9547 /* CharacteristicCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = F38AA18E1F70EC6A00CA9547 /* CharacteristicCell.swift */; };
-		F39465721F99E82000ADBA13 /* Format.swift in Sources */ = {isa = PBXBuildFile; fileRef = F394655B1F99E81F00ADBA13 /* Format.swift */; };
-		F39465731F99E82000ADBA13 /* Haneke.swift in Sources */ = {isa = PBXBuildFile; fileRef = F394655C1F99E81F00ADBA13 /* Haneke.swift */; };
-		F39465741F99E82000ADBA13 /* String+Haneke.swift in Sources */ = {isa = PBXBuildFile; fileRef = F394655D1F99E81F00ADBA13 /* String+Haneke.swift */; };
-		F39465751F99E82000ADBA13 /* Log.swift in Sources */ = {isa = PBXBuildFile; fileRef = F394655E1F99E81F00ADBA13 /* Log.swift */; };
-		F39465761F99E82000ADBA13 /* Data.swift in Sources */ = {isa = PBXBuildFile; fileRef = F394655F1F99E81F00ADBA13 /* Data.swift */; };
-		F39465771F99E82000ADBA13 /* CryptoSwiftMD5.swift in Sources */ = {isa = PBXBuildFile; fileRef = F39465601F99E81F00ADBA13 /* CryptoSwiftMD5.swift */; };
-		F39465781F99E82000ADBA13 /* Info-iOS.plist in Resources */ = {isa = PBXBuildFile; fileRef = F39465611F99E81F00ADBA13 /* Info-iOS.plist */; };
-		F39465791F99E82000ADBA13 /* NSURLResponse+Haneke.swift in Sources */ = {isa = PBXBuildFile; fileRef = F39465621F99E81F00ADBA13 /* NSURLResponse+Haneke.swift */; };
-		F394657A1F99E82000ADBA13 /* UIView+Haneke.swift in Sources */ = {isa = PBXBuildFile; fileRef = F39465641F99E82000ADBA13 /* UIView+Haneke.swift */; };
-		F394657B1F99E82000ADBA13 /* NSHTTPURLResponse+Haneke.swift in Sources */ = {isa = PBXBuildFile; fileRef = F39465651F99E82000ADBA13 /* NSHTTPURLResponse+Haneke.swift */; };
-		F394657C1F99E82000ADBA13 /* NetworkFetcher.swift in Sources */ = {isa = PBXBuildFile; fileRef = F39465661F99E82000ADBA13 /* NetworkFetcher.swift */; };
-		F394657D1F99E82000ADBA13 /* CGSize+Swift.swift in Sources */ = {isa = PBXBuildFile; fileRef = F39465671F99E82000ADBA13 /* CGSize+Swift.swift */; };
-		F394657E1F99E82000ADBA13 /* UIImage+Haneke.swift in Sources */ = {isa = PBXBuildFile; fileRef = F39465681F99E82000ADBA13 /* UIImage+Haneke.swift */; };
-		F394657F1F99E82000ADBA13 /* Fetch.swift in Sources */ = {isa = PBXBuildFile; fileRef = F39465691F99E82000ADBA13 /* Fetch.swift */; };
-		F39465801F99E82000ADBA13 /* DiskFetcher.swift in Sources */ = {isa = PBXBuildFile; fileRef = F394656A1F99E82000ADBA13 /* DiskFetcher.swift */; };
-		F39465811F99E82000ADBA13 /* DiskCache.swift in Sources */ = {isa = PBXBuildFile; fileRef = F394656B1F99E82000ADBA13 /* DiskCache.swift */; };
-		F39465821F99E82000ADBA13 /* Info-tvOS.plist in Resources */ = {isa = PBXBuildFile; fileRef = F394656C1F99E82000ADBA13 /* Info-tvOS.plist */; };
-		F39465831F99E82000ADBA13 /* Cache.swift in Sources */ = {isa = PBXBuildFile; fileRef = F394656D1F99E82000ADBA13 /* Cache.swift */; };
-		F39465841F99E82000ADBA13 /* UIImageView+Haneke.swift in Sources */ = {isa = PBXBuildFile; fileRef = F394656E1F99E82000ADBA13 /* UIImageView+Haneke.swift */; };
-		F39465851F99E82000ADBA13 /* Fetcher.swift in Sources */ = {isa = PBXBuildFile; fileRef = F394656F1F99E82000ADBA13 /* Fetcher.swift */; };
-		F39465861F99E82000ADBA13 /* UIButton+Haneke.swift in Sources */ = {isa = PBXBuildFile; fileRef = F39465701F99E82000ADBA13 /* UIButton+Haneke.swift */; };
-		F39465871F99E82000ADBA13 /* NSFileManager+Haneke.swift in Sources */ = {isa = PBXBuildFile; fileRef = F39465711F99E82000ADBA13 /* NSFileManager+Haneke.swift */; };
 		F398558B1EE8EBE80042990C /* AddressListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F398558A1EE8EBE80042990C /* AddressListViewController.swift */; };
 		F398558D1EE8F1920042990C /* AddressModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F398558C1EE8F1920042990C /* AddressModel.swift */; };
 		F39855971EE927A10042990C /* AddressEditViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F39855961EE927A10042990C /* AddressEditViewController.swift */; };
@@ -160,6 +144,13 @@
 		71E885BB0AA338D183331694 /* Pods-ANT_iOS.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ANT_iOS.debug.xcconfig"; path = "Pods/Target Support Files/Pods-ANT_iOS/Pods-ANT_iOS.debug.xcconfig"; sourceTree = "<group>"; };
 		C3D2928A46DF521094C213F0 /* Pods_ANT_iOS.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ANT_iOS.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		F3012C1E1F95DF6D000BF3FB /* LocationMapViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationMapViewController.swift; sourceTree = "<group>"; };
+		F3049E7E1FD4D36E002AB835 /* YYRequestManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = YYRequestManager.swift; sourceTree = "<group>"; };
+		F3049E7F1FD4D36E002AB835 /* YYNetCacheManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = YYNetCacheManager.swift; sourceTree = "<group>"; };
+		F3049E801FD4D36E002AB835 /* YYLog.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = YYLog.swift; sourceTree = "<group>"; };
+		F3049E811FD4D36E002AB835 /* YYDownloadManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = YYDownloadManager.swift; sourceTree = "<group>"; };
+		F3049E821FD4D36E002AB835 /* YYNetWork.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = YYNetWork.swift; sourceTree = "<group>"; };
+		F3049E831FD4D36E002AB835 /* YYNetValue.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = YYNetValue.swift; sourceTree = "<group>"; };
+		F3049E8A1FD4D481002AB835 /* ServerMacro.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ServerMacro.swift; sourceTree = "<group>"; };
 		F306854F1F958B6100B6E4C5 /* YYCycleScrollView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = YYCycleScrollView.swift; sourceTree = "<group>"; };
 		F30685521F95CD6600B6E4C5 /* SegmentStyle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SegmentStyle.swift; sourceTree = "<group>"; };
 		F30685531F95CD6600B6E4C5 /* UIViewControllerExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIViewControllerExtension.swift; sourceTree = "<group>"; };
@@ -193,6 +184,8 @@
 		F32671C41EF7D39700121C9B /* YYAlertView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = YYAlertView.swift; sourceTree = "<group>"; };
 		F32844C71F95D88A00456D76 /* LocationManager.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LocationManager.h; sourceTree = "<group>"; };
 		F32844C81F95D88A00456D76 /* LocationManager.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LocationManager.m; sourceTree = "<group>"; };
+		F32B56E51FCC150F00CFBDAA /* ParamsSignature.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ParamsSignature.h; sourceTree = "<group>"; };
+		F32B56E61FCC150F00CFBDAA /* ParamsSignature.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ParamsSignature.m; sourceTree = "<group>"; };
 		F3320AE81EE79BF800327DC7 /* ShopListViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ShopListViewController.swift; sourceTree = "<group>"; };
 		F3320AEA1EE7A4BE00327DC7 /* ShopModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ShopModel.swift; sourceTree = "<group>"; };
 		F33FBB881EEF857C00F4B2A8 /* BuyFormulaPopView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BuyFormulaPopView.swift; sourceTree = "<group>"; };
@@ -217,11 +210,6 @@
 		F365D6791EE6415B00500391 /* FarmActivityModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FarmActivityModel.swift; sourceTree = "<group>"; };
 		F365D67C1EE6791700500391 /* CetuTypeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CetuTypeViewController.swift; sourceTree = "<group>"; };
 		F365D6881EE67A4100500391 /* AppDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		F365D6DF1EE67AAE00500391 /* NSObject+YYModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSObject+YYModel.h"; sourceTree = "<group>"; };
-		F365D6E01EE67AAE00500391 /* NSObject+YYModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSObject+YYModel.m"; sourceTree = "<group>"; };
-		F365D6E11EE67AAE00500391 /* YYClassInfo.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YYClassInfo.h; sourceTree = "<group>"; };
-		F365D6E21EE67AAE00500391 /* YYClassInfo.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YYClassInfo.m; sourceTree = "<group>"; };
-		F365D6E31EE67AAE00500391 /* YYModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YYModel.h; sourceTree = "<group>"; };
 		F365D71E1EE67B1700500391 /* AppCommon.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AppCommon.h; sourceTree = "<group>"; };
 		F365D71F1EE67B1700500391 /* AppCommon.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AppCommon.m; sourceTree = "<group>"; };
 		F37600D41F788BCB00E9A242 /* UMSocialSwiftInterface.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UMSocialSwiftInterface.swift; sourceTree = "<group>"; };
@@ -247,29 +235,6 @@
 		F38AA18A1F70B0C100CA9547 /* TraceStep2ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TraceStep2ViewController.swift; sourceTree = "<group>"; };
 		F38AA18C1F70B33300CA9547 /* CustomPageControl.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomPageControl.swift; sourceTree = "<group>"; };
 		F38AA18E1F70EC6A00CA9547 /* CharacteristicCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CharacteristicCell.swift; sourceTree = "<group>"; };
-		F394655B1F99E81F00ADBA13 /* Format.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Format.swift; sourceTree = "<group>"; };
-		F394655C1F99E81F00ADBA13 /* Haneke.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Haneke.swift; sourceTree = "<group>"; };
-		F394655D1F99E81F00ADBA13 /* String+Haneke.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "String+Haneke.swift"; sourceTree = "<group>"; };
-		F394655E1F99E81F00ADBA13 /* Log.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Log.swift; sourceTree = "<group>"; };
-		F394655F1F99E81F00ADBA13 /* Data.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Data.swift; sourceTree = "<group>"; };
-		F39465601F99E81F00ADBA13 /* CryptoSwiftMD5.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CryptoSwiftMD5.swift; sourceTree = "<group>"; };
-		F39465611F99E81F00ADBA13 /* Info-iOS.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "Info-iOS.plist"; sourceTree = "<group>"; };
-		F39465621F99E81F00ADBA13 /* NSURLResponse+Haneke.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "NSURLResponse+Haneke.swift"; sourceTree = "<group>"; };
-		F39465631F99E81F00ADBA13 /* Haneke.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Haneke.h; sourceTree = "<group>"; };
-		F39465641F99E82000ADBA13 /* UIView+Haneke.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIView+Haneke.swift"; sourceTree = "<group>"; };
-		F39465651F99E82000ADBA13 /* NSHTTPURLResponse+Haneke.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "NSHTTPURLResponse+Haneke.swift"; sourceTree = "<group>"; };
-		F39465661F99E82000ADBA13 /* NetworkFetcher.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NetworkFetcher.swift; sourceTree = "<group>"; };
-		F39465671F99E82000ADBA13 /* CGSize+Swift.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "CGSize+Swift.swift"; sourceTree = "<group>"; };
-		F39465681F99E82000ADBA13 /* UIImage+Haneke.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIImage+Haneke.swift"; sourceTree = "<group>"; };
-		F39465691F99E82000ADBA13 /* Fetch.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Fetch.swift; sourceTree = "<group>"; };
-		F394656A1F99E82000ADBA13 /* DiskFetcher.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DiskFetcher.swift; sourceTree = "<group>"; };
-		F394656B1F99E82000ADBA13 /* DiskCache.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DiskCache.swift; sourceTree = "<group>"; };
-		F394656C1F99E82000ADBA13 /* Info-tvOS.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "Info-tvOS.plist"; sourceTree = "<group>"; };
-		F394656D1F99E82000ADBA13 /* Cache.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Cache.swift; sourceTree = "<group>"; };
-		F394656E1F99E82000ADBA13 /* UIImageView+Haneke.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIImageView+Haneke.swift"; sourceTree = "<group>"; };
-		F394656F1F99E82000ADBA13 /* Fetcher.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Fetcher.swift; sourceTree = "<group>"; };
-		F39465701F99E82000ADBA13 /* UIButton+Haneke.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIButton+Haneke.swift"; sourceTree = "<group>"; };
-		F39465711F99E82000ADBA13 /* NSFileManager+Haneke.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "NSFileManager+Haneke.swift"; sourceTree = "<group>"; };
 		F398558A1EE8EBE80042990C /* AddressListViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AddressListViewController.swift; sourceTree = "<group>"; };
 		F398558C1EE8F1920042990C /* AddressModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AddressModel.swift; sourceTree = "<group>"; };
 		F39855961EE927A10042990C /* AddressEditViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AddressEditViewController.swift; sourceTree = "<group>"; };
@@ -365,6 +330,7 @@
 		F314B33F1F67778D00AAB40B /* Network */ = {
 			isa = PBXGroup;
 			children = (
+				F3D7CC111FCD884200486415 /* BaseNetwork */,
 			);
 			path = Network;
 			sourceTree = "<group>";
@@ -476,6 +442,7 @@
 				F399DDD01EF38F6A0012AD94 /* AppTabBar.swift */,
 				F35BB77C1EE1503B0032EC02 /* AppNavigationController.swift */,
 				F34C93531EE692F300091195 /* BaseConst.swift */,
+				F3049E8A1FD4D481002AB835 /* ServerMacro.swift */,
 				F3A1D1301F04FF0C0008F051 /* BaseTableView */,
 			);
 			path = Base;
@@ -538,6 +505,8 @@
 				F365D71E1EE67B1700500391 /* AppCommon.h */,
 				F365D71F1EE67B1700500391 /* AppCommon.m */,
 				F398559B1EE954690042990C /* CommonUtils.swift */,
+				F32B56E51FCC150F00CFBDAA /* ParamsSignature.h */,
+				F32B56E61FCC150F00CFBDAA /* ParamsSignature.m */,
 			);
 			path = Utils;
 			sourceTree = "<group>";
@@ -545,26 +514,12 @@
 		F365D68B1EE67AAE00500391 /* Resources */ = {
 			isa = PBXGroup;
 			children = (
-				F394655A1F99E81F00ADBA13 /* Haneke */,
 				F3BA37BF1F97212600F3976E /* test.html */,
 				F3BA37BE1F96F8F700F3976E /* news.html */,
 				F314B3661F67D2E600AAB40B /* iconfont.ttf */,
 				F3FC1E891EE7E2EA00CD66E1 /* webthing */,
-				F365D6DE1EE67AAE00500391 /* YYModel */,
 			);
 			path = Resources;
-			sourceTree = "<group>";
-		};
-		F365D6DE1EE67AAE00500391 /* YYModel */ = {
-			isa = PBXGroup;
-			children = (
-				F365D6DF1EE67AAE00500391 /* NSObject+YYModel.h */,
-				F365D6E01EE67AAE00500391 /* NSObject+YYModel.m */,
-				F365D6E11EE67AAE00500391 /* YYClassInfo.h */,
-				F365D6E21EE67AAE00500391 /* YYClassInfo.m */,
-				F365D6E31EE67AAE00500391 /* YYModel.h */,
-			);
-			path = YYModel;
 			sourceTree = "<group>";
 		};
 		F365D71D1EE67ADC00500391 /* Manager */ = {
@@ -639,36 +594,6 @@
 				F378E1DD1F988FEA00A48CF5 /* ShowImageView.swift */,
 			);
 			path = View;
-			sourceTree = "<group>";
-		};
-		F394655A1F99E81F00ADBA13 /* Haneke */ = {
-			isa = PBXGroup;
-			children = (
-				F394655B1F99E81F00ADBA13 /* Format.swift */,
-				F394655C1F99E81F00ADBA13 /* Haneke.swift */,
-				F394655D1F99E81F00ADBA13 /* String+Haneke.swift */,
-				F394655E1F99E81F00ADBA13 /* Log.swift */,
-				F394655F1F99E81F00ADBA13 /* Data.swift */,
-				F39465601F99E81F00ADBA13 /* CryptoSwiftMD5.swift */,
-				F39465611F99E81F00ADBA13 /* Info-iOS.plist */,
-				F39465621F99E81F00ADBA13 /* NSURLResponse+Haneke.swift */,
-				F39465631F99E81F00ADBA13 /* Haneke.h */,
-				F39465641F99E82000ADBA13 /* UIView+Haneke.swift */,
-				F39465651F99E82000ADBA13 /* NSHTTPURLResponse+Haneke.swift */,
-				F39465661F99E82000ADBA13 /* NetworkFetcher.swift */,
-				F39465671F99E82000ADBA13 /* CGSize+Swift.swift */,
-				F39465681F99E82000ADBA13 /* UIImage+Haneke.swift */,
-				F39465691F99E82000ADBA13 /* Fetch.swift */,
-				F394656A1F99E82000ADBA13 /* DiskFetcher.swift */,
-				F394656B1F99E82000ADBA13 /* DiskCache.swift */,
-				F394656C1F99E82000ADBA13 /* Info-tvOS.plist */,
-				F394656D1F99E82000ADBA13 /* Cache.swift */,
-				F394656E1F99E82000ADBA13 /* UIImageView+Haneke.swift */,
-				F394656F1F99E82000ADBA13 /* Fetcher.swift */,
-				F39465701F99E82000ADBA13 /* UIButton+Haneke.swift */,
-				F39465711F99E82000ADBA13 /* NSFileManager+Haneke.swift */,
-			);
-			path = Haneke;
 			sourceTree = "<group>";
 		};
 		F39855891EE8EBD90042990C /* Address */ = {
@@ -800,6 +725,19 @@
 				F3D0A6641F6FC27900464265 /* QualityTrackModel.swift */,
 			);
 			path = Models;
+			sourceTree = "<group>";
+		};
+		F3D7CC111FCD884200486415 /* BaseNetwork */ = {
+			isa = PBXGroup;
+			children = (
+				F3049E7F1FD4D36E002AB835 /* YYNetCacheManager.swift */,
+				F3049E801FD4D36E002AB835 /* YYLog.swift */,
+				F3049E821FD4D36E002AB835 /* YYNetWork.swift */,
+				F3049E831FD4D36E002AB835 /* YYNetValue.swift */,
+				F3049E811FD4D36E002AB835 /* YYDownloadManager.swift */,
+				F3049E7E1FD4D36E002AB835 /* YYRequestManager.swift */,
+			);
+			path = BaseNetwork;
 			sourceTree = "<group>";
 		};
 		F3F586821EE407FD0018412D /* Home */ = {
@@ -984,11 +922,9 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				F39465821F99E82000ADBA13 /* Info-tvOS.plist in Resources */,
 				F3FC1E8A1EE7E2EA00CD66E1 /* webthing in Resources */,
 				F35BB7691EE14CEF0032EC02 /* LaunchScreen.storyboard in Resources */,
 				F314B3671F67D2E600AAB40B /* iconfont.ttf in Resources */,
-				F39465781F99E82000ADBA13 /* Info-iOS.plist in Resources */,
 				F378E1EA1F988FEB00A48CF5 /* ItemCell.xib in Resources */,
 				F3CFDE2D1FA01569002E42C4 /* popMenvTopView.xib in Resources */,
 				F378E1E71F988FEB00A48CF5 /* pic.bundle in Resources */,
@@ -1012,6 +948,7 @@
 				"${BUILT_PRODUCTS_DIR}/Kingfisher/Kingfisher.framework",
 				"${BUILT_PRODUCTS_DIR}/SnapKit/SnapKit.framework",
 				"${BUILT_PRODUCTS_DIR}/SwiftHash/SwiftHash.framework",
+				"${BUILT_PRODUCTS_DIR}/SwiftyJSON/SwiftyJSON.framework",
 				"${BUILT_PRODUCTS_DIR}/pop/pop.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
@@ -1022,6 +959,7 @@
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Kingfisher.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SnapKit.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SwiftHash.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SwiftyJSON.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/pop.framework",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -1076,7 +1014,6 @@
 			files = (
 				F365D67A1EE6415B00500391 /* FarmActivityModel.swift in Sources */,
 				F399DDD11EF38F6A0012AD94 /* AppTabBar.swift in Sources */,
-				F394657C1F99E82000ADBA13 /* NetworkFetcher.swift in Sources */,
 				F314B3641F67D21700AAB40B /* TBCityIconInfo.m in Sources */,
 				F37600D51F788BCB00E9A242 /* UMSocialSwiftInterface.swift in Sources */,
 				F378E1E31F988FEB00A48CF5 /* PhotoBrowser+Main.swift in Sources */,
@@ -1094,15 +1031,11 @@
 				F35BB7611EE14CEF0032EC02 /* ViewController.swift in Sources */,
 				F398559C1EE954690042990C /* CommonUtils.swift in Sources */,
 				F3E6C8CC1F6F61FF00E2E45C /* YYAdvertScrollView.swift in Sources */,
-				F365D71C1EE67AAE00500391 /* YYClassInfo.m in Sources */,
 				F378E1E61F988FEB00A48CF5 /* PhotoBrowser+HUD.swift in Sources */,
 				F38504741F7B6E27008DD007 /* WebThingViewController.swift in Sources */,
-				F39465801F99E82000ADBA13 /* DiskFetcher.swift in Sources */,
 				F3320AE91EE79BF800327DC7 /* ShopListViewController.swift in Sources */,
 				F3BB46251F69269400E0539C /* FieldsMapViewController.swift in Sources */,
-				F394657A1F99E82000ADBA13 /* UIView+Haneke.swift in Sources */,
 				F3D16B281F71038300985E30 /* AddTraceCompleteViewController.swift in Sources */,
-				F39465761F99E82000ADBA13 /* Data.swift in Sources */,
 				F3FCEAAD1F7C84CE00148C09 /* PopupMenu.swift in Sources */,
 				F3F5871B1EE43CAD0018412D /* FarmViewController.swift in Sources */,
 				F3EE54E31F064537004A9523 /* NewsModel.swift in Sources */,
@@ -1117,23 +1050,19 @@
 				F3CFDE2E1FA01569002E42C4 /* UIColor+ImageGetColor.m in Sources */,
 				F3C90AD91F98334200333262 /* AddPlantViewController.swift in Sources */,
 				F365D7201EE67B1700500391 /* AppCommon.m in Sources */,
-				F365D71B1EE67AAE00500391 /* NSObject+YYModel.m in Sources */,
 				F38AA18B1F70B0C100CA9547 /* TraceStep2ViewController.swift in Sources */,
 				F321B5F81F99938F00B11A37 /* Comment_Like_View.swift in Sources */,
 				F378E1EE1F988FEB00A48CF5 /* DisplayView.swift in Sources */,
 				F321B5F61F99938F00B11A37 /* Menu.swift in Sources */,
 				F398558B1EE8EBE80042990C /* AddressListViewController.swift in Sources */,
 				F3C90ADF1F98458000333262 /* CeTuRecordViewController.swift in Sources */,
-				F394657D1F99E82000ADBA13 /* CGSize+Swift.swift in Sources */,
 				F3320AEB1EE7A4BE00327DC7 /* ShopModel.swift in Sources */,
-				F39465811F99E82000ADBA13 /* DiskCache.swift in Sources */,
 				F3D6773B1EE5625500BEB029 /* PlantModel.swift in Sources */,
 				F321B5F31F99938F00B11A37 /* CommentView.swift in Sources */,
-				F39465841F99E82000ADBA13 /* UIImageView+Haneke.swift in Sources */,
 				F365D67D1EE6791700500391 /* CetuTypeViewController.swift in Sources */,
 				F3F5871C1EE43CAD0018412D /* MineViewController.swift in Sources */,
-				F39465751F99E82000ADBA13 /* Log.swift in Sources */,
 				F320DE7C1EEE8044005AF954 /* CetuDataInputViewController.swift in Sources */,
+				F3049E881FD4D36E002AB835 /* YYNetWork.swift in Sources */,
 				F3D677381EE55EBB00BEB029 /* CropsCollectionView.swift in Sources */,
 				F3FC1E881EE7E09D00CD66E1 /* WebThingsViewController.swift in Sources */,
 				F321B5F71F99938F00B11A37 /* pingLunFun.swift in Sources */,
@@ -1147,9 +1076,6 @@
 				F321B5F41F99938F00B11A37 /* CircleData.swift in Sources */,
 				F3F5870F1EE439EB0018412D /* NotificationViewController.swift in Sources */,
 				F34C93541EE692F300091195 /* BaseConst.swift in Sources */,
-				F39465791F99E82000ADBA13 /* NSURLResponse+Haneke.swift in Sources */,
-				F394657B1F99E82000ADBA13 /* NSHTTPURLResponse+Haneke.swift in Sources */,
-				F39465871F99E82000ADBA13 /* NSFileManager+Haneke.swift in Sources */,
 				F34C93591EE69EC400091195 /* LoanInsureViewController.swift in Sources */,
 				F3D16B241F70FBAF00985E30 /* TraceStep4ViewController.swift in Sources */,
 				F3CFDE311FA01569002E42C4 /* popMenvTopView.m in Sources */,
@@ -1157,41 +1083,39 @@
 				F320DE761EEE669A005AF954 /* CetuViewController.swift in Sources */,
 				F32671C51EF7D39700121C9B /* YYAlertView.swift in Sources */,
 				F3F586841EE407FD0018412D /* HomeViewController.swift in Sources */,
-				F394657F1F99E82000ADBA13 /* Fetch.swift in Sources */,
-				F39465861F99E82000ADBA13 /* UIButton+Haneke.swift in Sources */,
+				F3049E891FD4D36E002AB835 /* YYNetValue.swift in Sources */,
 				F30685501F958B6100B6E4C5 /* YYCycleScrollView.swift in Sources */,
+				F3049E841FD4D36E002AB835 /* YYRequestManager.swift in Sources */,
 				F30EEEE51EF767A100C6A9FF /* VersionManager.swift in Sources */,
 				F314B3651F67D21700AAB40B /* UIImage+TBCityIconFont.m in Sources */,
 				F34C935C1EE6A6D000091195 /* SettingsViewController.swift in Sources */,
-				F39465851F99E82000ADBA13 /* Fetcher.swift in Sources */,
-				F394657E1F99E82000ADBA13 /* UIImage+Haneke.swift in Sources */,
 				F321B5EC1F99936400B11A37 /* CircleTableViewCell.swift in Sources */,
+				F3049E871FD4D36E002AB835 /* YYDownloadManager.swift in Sources */,
 				F378E1E21F988FEB00A48CF5 /* PhotoBrowser+PBType.swift in Sources */,
 				F320DE7A1EEE7A65005AF954 /* UIView+Additions.swift in Sources */,
+				F3049E8B1FD4D481002AB835 /* ServerMacro.swift in Sources */,
 				F3BA37BC1F96EC7F00F3976E /* NewsTableViewCell.swift in Sources */,
 				F3CFDE301FA01569002E42C4 /* PopMenuButton.m in Sources */,
 				F35BB77D1EE1503B0032EC02 /* AppNavigationController.swift in Sources */,
 				F38AA18F1F70EC6A00CA9547 /* CharacteristicCell.swift in Sources */,
 				F365D6891EE67A4100500391 /* AppDelegate.swift in Sources */,
 				F3D16B221F70F11B00985E30 /* TraceStep3ViewController.swift in Sources */,
-				F39465741F99E82000ADBA13 /* String+Haneke.swift in Sources */,
 				F3CFDE321FA01569002E42C4 /* PopUpPickerView.swift in Sources */,
 				F3FE12021F97386D00059BCA /* SellFoodViewController.swift in Sources */,
 				F399DDD71EF3DA9B0012AD94 /* UIImage+Additions.swift in Sources */,
-				F39465831F99E82000ADBA13 /* Cache.swift in Sources */,
 				F314B2D01F6770DD00AAB40B /* BaseTableViewCell.swift in Sources */,
 				F378E1DF1F988FEB00A48CF5 /* Layout.swift in Sources */,
 				F398559A1EE93C870042990C /* SelectAreaAlert.swift in Sources */,
 				F38AA1871F709FE300CA9547 /* TraceStep1ViewController.swift in Sources */,
+				F3049E851FD4D36E002AB835 /* YYNetCacheManager.swift in Sources */,
 				F38AA1891F70A13600CA9547 /* TraceStepView.swift in Sources */,
-				F39465731F99E82000ADBA13 /* Haneke.swift in Sources */,
-				F39465771F99E82000ADBA13 /* CryptoSwiftMD5.swift in Sources */,
-				F39465721F99E82000ADBA13 /* Format.swift in Sources */,
 				F3D16B261F71025400985E30 /* TraceStep5ViewController.swift in Sources */,
 				F3BB46231F69267800E0539C /* FieldsTableViewController.swift in Sources */,
 				F3D0A6651F6FC27900464265 /* QualityTrackModel.swift in Sources */,
 				F3D84DFA1F6BC5A4008573E3 /* YYSheetView.swift in Sources */,
+				F32B56E71FCC150F00CFBDAA /* ParamsSignature.m in Sources */,
 				F32844C91F95D88A00456D76 /* LocationManager.m in Sources */,
+				F3049E861FD4D36E002AB835 /* YYLog.swift in Sources */,
 				F378E1E91F988FEB00A48CF5 /* PhotoBrowser+Model.swift in Sources */,
 				F34C935E1EE6B58600091195 /* CleanCacheManager.swift in Sources */,
 				F3BA37BD1F96EC7F00F3976E /* PublishViewController.swift in Sources */,
